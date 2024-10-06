@@ -8,7 +8,6 @@
 
     <ItemGroup>
       <Folder Include="Moves\" />
-      <Folder Include="Pokemon\" />
     </ItemGroup>
 
 </Project>
