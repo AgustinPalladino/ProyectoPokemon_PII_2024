@@ -6,7 +6,7 @@ namespace Library;
 public class Combate
 {
     public List<IPokemon> listaPokemon = new List<IPokemon>();
-    
+
     public void mostrarCatalogo()
     {
         int i = 1;
@@ -20,31 +20,36 @@ public class Combate
             i++;
         }
     }
-    
-    
-    public void Logica(Jugador j1, Jugador j2)
+
+    public void escogerEquipo(Jugador j)
     {
-        mostrarCatalogo();
-        bool bandera = false;
         for (int i = 1; i <= 2; i++)
         {
-            Console.WriteLine($"Jugador uno elija su pokemon numero {i}");
+            int bandera = 0;
+            Console.WriteLine($"{j.Nombre} elija su pokemon numero {i}");
             string pokeIngresado = Console.ReadLine();
             foreach (IPokemon pokemon in this.listaPokemon)
             {
                 if (pokeIngresado == pokemon.Name)
                 {
-                    bandera = true;
-                    j1.agregarPokemon(pokemon);
+                    bandera = 1;
+                    if (!j.equipoPokemon.Contains(pokemon))
+                    {
+                        bandera = 2;
+                        j.agregarPokemon(pokemon);
+                    }
                 }
             }
-            if (bandera == false)
+            if (bandera == 0)
             {
                 Console.WriteLine("Pokemon no encontrado seleccione nuevamente");
                 i--;
             }
-            bandera = false;
+            else if (bandera == 1)
+            {
+                Console.WriteLine("El pokemon ya esta seleccionado");
+                i--;
+            }
         }
-        j1.mostrarEquipo();
     }
 }
