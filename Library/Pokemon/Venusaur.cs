@@ -1,11 +1,10 @@
 namespace Library.Pokemon;
-using Moves;
 using Tipos;
 
-public class Charizard:IPokemon,IFuego
+public class Venusaur:IPokemon,IPlanta
 {
-    private string name = "Charizard";
-    private string tipo = "Fuego";
+    private string name = "Venusaur";
+    private string tipo = "Planta";
     private int vida = 100;
     private int defensa = 50;
     private int ataque = 85;
@@ -39,8 +38,4 @@ public class Charizard:IPokemon,IFuego
         set { this.ataque = value; }
     }
 
-    public void mostrarAtaque()
-    {
-        Console.Write(this.ataque + "\n");
-    }
 }

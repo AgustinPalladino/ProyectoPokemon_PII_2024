@@ -1,14 +1,12 @@
 namespace Library.Pokemon;
-using Moves;
-using Tipos;
 
-public class Charizard:IPokemon,IFuego
+public class Jolteon:IPokemon
 {
-    private string name = "Charizard";
-    private string tipo = "Fuego";
-    private int vida = 100;
-    private int defensa = 50;
-    private int ataque = 85;
+    private string name = "Jolteon";
+    private string tipo = "Electrico";
+    private int vida = 80;
+    private int defensa = 40;
+    private int ataque = 110;
 
     public string Name
     {
@@ -37,10 +35,5 @@ public class Charizard:IPokemon,IFuego
     {
         get { return this.ataque; }
         set { this.ataque = value; }
-    }
-
-    public void mostrarAtaque()
-    {
-        Console.Write(this.ataque + "\n");
     }
 }
