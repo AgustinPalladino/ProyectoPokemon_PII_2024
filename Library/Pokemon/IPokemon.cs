@@ -1,6 +1,5 @@
 namespace Library.Pokemon;
 using Moves;
-using Tipos;
 
 public interface IPokemon
 {
@@ -9,4 +8,5 @@ public interface IPokemon
     public int Vida { get; }
     public int Defensa { get; }
     public int Ataque { get; }
+    bool EstaActivo { get; set; }
 }

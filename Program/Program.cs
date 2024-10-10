@@ -1,12 +1,14 @@
 ﻿using Library;
 using Library.Pokemon;
 
+MostrarCatalogo mostrarCatalogo = new MostrarCatalogo();
 Combate combate = new Combate();
 Jugador j1 = new Jugador("Jugador 1");
 Jugador j2 = new Jugador("Jugador 2");
 
-combate.mostrarCatalogo();
-combate.escogerEquipo(j1);
+mostrarCatalogo.crearCatalogo();
+combate.logicaEscogerEquipo(j1);
 j1.mostrarEquipo();
-combate.escogerEquipo(j2);
+combate.logicaEscogerEquipo(j2);
 j2.mostrarEquipo();
+

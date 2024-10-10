@@ -13,7 +13,6 @@ public class Combate
         this.listaPokemon.Add(new Venusaur());
         this.listaPokemon.Add(new Charizard());
         this.listaPokemon.Add(new Blastoise());
-        this.listaPokemon.Add(new Jolteon());
         foreach (IPokemon pokemon in this.listaPokemon)
         {
             Console.WriteLine(i + "-" + pokemon.Name);
@@ -21,7 +20,7 @@ public class Combate
         }
     }
 
-    public void escogerEquipo(Jugador j)
+    public void logicaEscogerEquipo(Jugador j)
     {
         for (int i = 1; i <= 2; i++)
         {
@@ -51,5 +50,30 @@ public class Combate
                 i--;
             }
         }
+    }
+
+    public void turno(Jugador j1, Jugador j2)
+    {
+        bool bandera = false;
+        Console.WriteLine($"{j1.Nombre} que decide hacer?");
+        while (bandera == false)
+        {
+            Console.WriteLine($"1-Ver las habilidades de su pokemon(No consume turno) \n 2-Ver la salud de su pokemon(No consume turno) \n 3-Ataque normal(Consume un turno) \n 4-Ataque especial(Consume un turno)");
+            int opcion = Convert.ToInt32(Console.ReadLine());
+            if (opcion == 1)
+            {
+                //Va a mostrar el nombre y daño de sus ataques
+            }
+            else if (opcion == 2)
+            {
+                //Va a mostrar su cantidad de vida
+            }
+            else if (opcion == 3)
+            {
+              
+            }
+        }
+
+        
     }
 }

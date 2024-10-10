@@ -1,7 +1,6 @@
 namespace Library.Pokemon;
-using Tipos;
 
-public class Venusaur:IPokemon,IPlanta
+public class Venusaur:IPokemon
 {
     private string name = "Venusaur";
     private string tipo = "Planta";

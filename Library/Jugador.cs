@@ -5,9 +5,10 @@ namespace Library;
 
 public class Jugador
 {
-    private string nombre;
+    public string nombre;
     public List<IPokemon> equipoPokemon = new List<IPokemon>();
     private Combate combate = new Combate();
+    public IPokemon pokemonActivo;
 
     public Jugador(string Nombre)
     {
@@ -34,5 +35,30 @@ public class Jugador
             Console.WriteLine(i + "-" + pokemon.Name);
             i++;
         }
+    }
+
+    public void pokemonEnCancha()
+    {
+        
+    }
+    public void cambiarPokemonEnCancha(int indice)
+    {
+        if (indice < 1 || indice > equipoPokemon.Count)
+        {
+            Console.WriteLine("Índice no válido.");
+            return;
+        }
+
+        // Desactivar el Pokémon que está en cancha actualmente
+        if (pokemonActivo != null)
+        {
+            pokemonActivo.EstaActivo = false;
+        }
+
+        // Activar el nuevo Pokémon seleccionado
+        pokemonActivo = equipoPokemon[indice - 1]; // Restar 1 ya que la lista empieza en 0
+        pokemonActivo.EstaActivo = true;
+
+        Console.WriteLine($"{pokemonActivo.Name} ha sido enviado al campo de batalla.");
     }
 }

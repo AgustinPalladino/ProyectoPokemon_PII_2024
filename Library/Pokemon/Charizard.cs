@@ -1,8 +1,7 @@
 namespace Library.Pokemon;
 using Moves;
-using Tipos;
 
-public class Charizard:IPokemon,IFuego
+public class Charizard:IPokemon
 {
     private string name = "Charizard";
     private string tipo = "Fuego";
