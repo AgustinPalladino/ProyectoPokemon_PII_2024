@@ -14,12 +14,6 @@ public class Jugador
     {
         this.nombre = Nombre;
     }
-
-    public string Nombre
-    {
-        get { return this.nombre; }
-        set { this.nombre = value; }
-    }
     
     public void agregarPokemon(IPokemon pokemon)
     {
@@ -37,10 +31,18 @@ public class Jugador
         }
     }
 
-    public void pokemonEnCancha()
+    public IPokemon pokemonEnCancha(string pokeIngresado)
     {
-        
+        foreach (IPokemon pokemon in this.equipoPokemon)
+        {
+            if (pokeIngresado == pokemon.Name)
+            {
+                return pokemon;
+            }
+        }
+        return null;
     }
+    
     public void cambiarPokemonEnCancha(int indice)
     {
         if (indice < 1 || indice > equipoPokemon.Count)

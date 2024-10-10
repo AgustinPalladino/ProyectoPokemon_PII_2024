@@ -25,7 +25,7 @@ public class Combate
         for (int i = 1; i <= 2; i++)
         {
             int bandera = 0;
-            Console.WriteLine($"{j.Nombre} elija su pokemon numero {i}");
+            Console.WriteLine($"{j.nombre} elija su pokemon numero {i}");
             string pokeIngresado = Console.ReadLine();
             foreach (IPokemon pokemon in this.listaPokemon)
             {
@@ -51,11 +51,12 @@ public class Combate
             }
         }
     }
+    
 
     public void turno(Jugador j1, Jugador j2)
     {
         bool bandera = false;
-        Console.WriteLine($"{j1.Nombre} que decide hacer?");
+        Console.WriteLine($"{j1.nombre} que decide hacer?");
         while (bandera == false)
         {
             Console.WriteLine($"1-Ver las habilidades de su pokemon(No consume turno) \n 2-Ver la salud de su pokemon(No consume turno) \n 3-Ataque normal(Consume un turno) \n 4-Ataque especial(Consume un turno)");

@@ -2,38 +2,42 @@ namespace Library.Pokemon;
 
 public class Blastoise:IPokemon
 {
-    private string name = "Blastoise";
-    private string tipo = "Agua";
-    private int vida = 120;
-    private int defensa = 70;
-    private int ataque = 40;
+    private bool _estaActivo;
+    private int vida = 79;
+    private int ataque = 85;
+    private int defensa = 105;
 
     public string Name
     {
-        get { return this.name; }
-        set { this.name = value; }
+        get { return "Blastoise"; }
     }
+
     public string Tipo
     {
-        get { return this.tipo; }
-        set { this.tipo = value; }
+        get { return "Agua"; }
     }
-    
+
     public int Vida
     {
         get { return this.vida; }
         set { this.vida = value; }
     }
 
+    public int Ataque
+    {
+        get { return this.ataque; }
+        set { this.ataque = value; }
+    }
+    
     public int Defensa
     {
         get { return this.defensa; }
         set { this.defensa = value; }
     }
 
-    public int Ataque
+    bool IPokemon.EstaActivo
     {
-        get { return this.ataque; }
-        set { this.ataque = value; }
+        get => _estaActivo;
+        set => _estaActivo = value;
     }
 }

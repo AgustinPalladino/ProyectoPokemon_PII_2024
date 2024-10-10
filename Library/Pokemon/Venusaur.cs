@@ -2,33 +2,25 @@ namespace Library.Pokemon;
 
 public class Venusaur:IPokemon
 {
-    private string name = "Venusaur";
-    private string tipo = "Planta";
-    private int vida = 100;
-    private int defensa = 50;
-    private int ataque = 85;
+    private bool _estaActivo;
+    private int vida = 80;
+    private int ataque = 100;
+    private int defensa = 100;
 
     public string Name
     {
-        get { return this.name; }
-        set { this.name = value; }
+        get { return "Venusaur"; }
     }
+
     public string Tipo
     {
-        get { return this.tipo; }
-        set { this.tipo = value; }
+        get { return "Planta"; }
     }
-    
+
     public int Vida
     {
         get { return this.vida; }
         set { this.vida = value; }
-    }
-
-    public int Defensa
-    {
-        get { return this.defensa; }
-        set { this.defensa = value; }
     }
 
     public int Ataque
@@ -36,5 +28,16 @@ public class Venusaur:IPokemon
         get { return this.ataque; }
         set { this.ataque = value; }
     }
+    
+    public int Defensa
+    {
+        get { return this.defensa; }
+        set { this.defensa = value; }
+    }
 
+    bool IPokemon.EstaActivo
+    {
+        get => _estaActivo;
+        set => _estaActivo = value;
+    }
 }
