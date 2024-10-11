@@ -1,5 +1,6 @@
 namespace Library.Moves;
 
+//Se crea clase Arañazo con interface IMovimiento
 public class Hidrocañon:IMovimiento
 {
     public string Nombre

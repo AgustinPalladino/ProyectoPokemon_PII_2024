@@ -1,5 +1,7 @@
 ﻿using Library;
+// Nuestra fachada es el Program, es decir el usuario interactua directamente con el Program
 
+//Dinamica de seleccion de pokemones
 Combate combate = new Combate();
 Jugador j1 = new Jugador("Jugador 1");
 Jugador j2 = new Jugador("Jugador 2");
@@ -8,13 +10,14 @@ combate.mostrarCatalogo();
 combate.logicaEscogerEquipo(j1);
 combate.logicaEscogerEquipo(j2);
 
+//Dinamica de seleccion de pokemon en cancha
 Console.WriteLine("\nEquipo del jugador uno:");
 j1.mostrarEquipo();
 Console.WriteLine("¿Jugador uno, cual va a ser su pokemon en cancha?");
 string pokeIngresado1 = Console.ReadLine();
 j1.pokemonEnCancha(pokeIngresado1);
 
-Console.WriteLine("\nEquipo del jugador uno:");
+Console.WriteLine("\nEquipo del jugador dos:");
 j2.mostrarEquipo();
 Console.WriteLine("¿Jugador dos, cual va a ser su pokemon en cancha?");
 string pokeIngresado2 = Console.ReadLine();

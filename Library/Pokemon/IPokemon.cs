@@ -3,6 +3,7 @@ using Moves;
 
 public interface IPokemon
 {
+    //Propiedades de la interface pokemon
     public string Nombre { get; }
     public string Tipo { get; }
     public int Vida { get; set; }
