@@ -5,7 +5,7 @@ public class Charizard:IPokemon
 {
     public List<IMovimiento> listaMovimientos { get; set; }  = new List<IMovimiento>();
     private int vida = 78;
-    private int ataque = 109;
+    private int ataque = 30;
     private int defensa = 85;
 
     public string Nombre  

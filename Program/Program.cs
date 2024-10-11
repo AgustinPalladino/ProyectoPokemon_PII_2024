@@ -19,6 +19,7 @@ Console.WriteLine("¿Jugador dos, cual va a ser su pokemon en cancha?");
 string pokeIngresado2 = Console.ReadLine();
 IPokemon hola2 = j2.pokemonEnCancha(pokeIngresado2);
 
+j1.atacar(j2,pokeIngresado1,pokeIngresado2);
 Console.WriteLine(hola.Nombre);
 Console.WriteLine(hola2.Nombre);
 

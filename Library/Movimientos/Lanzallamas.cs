@@ -9,7 +9,7 @@ public class Lanzallamas:IMovimiento
 
     public int Ataque
     {
-        get { return 100; }
+        get { return 20; }
     }
 
     public string Tipo
