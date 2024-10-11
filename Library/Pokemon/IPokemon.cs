@@ -7,7 +7,6 @@ public interface IPokemon
     public string Tipo { get; }
     public int Vida { get; set; }
     public int Defensa { get; }
-    public int Ataque { get; set; }
+    public int Ataque { get; }
     List<IMovimiento> listaMovimientos { get; set; }
-    public void verMovimientos();
 }

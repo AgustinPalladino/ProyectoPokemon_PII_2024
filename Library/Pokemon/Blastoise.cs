@@ -5,10 +5,13 @@ namespace Library.Pokemon;
 public class Blastoise:IPokemon
 {
     public List<IMovimiento> listaMovimientos { get; set; }  = new List<IMovimiento>();
-    private int vida = 79;
-    private int ataque = 85;
-    private int defensa = 105;
+    private int vida = 100;
 
+    public Blastoise()
+    {
+        listaMovimientos.Add(new Hidrocañon());
+    }
+    
     public string Nombre
     {
         get { return "Blastoise"; }
@@ -27,24 +30,12 @@ public class Blastoise:IPokemon
 
     public int Ataque
     {
-        get { return this.ataque; }
-        set { this.ataque = value; }
+        get { return 85; }
+
     }
     
     public int Defensa
     {
-        get { return this.defensa; }
-        set { this.defensa = value; }
-    }
-
-    public void verMovimientos()
-    {
-        int i = 1;
-        listaMovimientos.Add(new Hidrocañon());
-        foreach (IMovimiento movimiento in this.listaMovimientos)
-        {
-            Console.WriteLine(i + "-" + movimiento.Nombre);
-            i++;
-        }
+        get { return 105; }
     }
 }

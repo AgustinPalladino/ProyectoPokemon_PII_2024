@@ -1,4 +1,3 @@
-using System.ComponentModel;
 using Library.Moves;
 using Library.Pokemon;
 
@@ -6,13 +5,12 @@ namespace Library;
 
 public class Jugador
 {
-    public string nombre;
+    public string Nombre;
     public List<IPokemon> equipoPokemon = new List<IPokemon>();
-    private Combate combate = new Combate();
 
     public Jugador(string Nombre)
     {
-        this.nombre = Nombre;
+        this.Nombre = Nombre;
     }
     
     public void agregarPokemon(IPokemon pokemon)
@@ -22,15 +20,38 @@ public class Jugador
 
     public void mostrarEquipo()
     {
-        int i = 1;
-        Console.WriteLine($"El equipo del {this.nombre} equipo es: ");
+        Console.WriteLine($"El equipo del {this.Nombre} equipo es: ");
         foreach (IPokemon pokemon in this.equipoPokemon)
         {
-            Console.WriteLine(i + "-" + pokemon.Nombre);
-            i++;
+            Console.WriteLine($"-{pokemon.Nombre}");
         }
     }
 
+    public void verMovimientos(string pokeIngresado)
+    {
+        foreach (IPokemon pokemon in this.equipoPokemon)
+        {
+            if (pokeIngresado == pokemon.Nombre)
+            {
+                foreach (IMovimiento movimiento in pokemon.listaMovimientos)
+                {
+                    Console.WriteLine($"-{movimiento.Nombre}");
+                }
+            }
+        }
+    }
+
+    public void verSalud(string pokeIngresado)
+    {
+        foreach (IPokemon pokemon in this.equipoPokemon)
+        {          
+            if (pokeIngresado == pokemon.Nombre)
+            {
+                Console.WriteLine($"{pokemon.Vida}/100");
+            }
+        }
+    }
+    
     public IPokemon pokemonEnCancha(string pokeIngresado)
     {
         foreach (IPokemon pokemon in this.equipoPokemon)
@@ -48,7 +69,7 @@ public class Jugador
         IPokemon pokemonAliado = null;
         IPokemon pokemonEnemigo = null;
         int ataqueTotal = 0;
-        Console.WriteLine("¿Que movimiento deseas usar?");
+        Console.WriteLine($"¿{this.Nombre} que movimiento deseas usar?");
         string movimiento = Console.ReadLine();
         foreach (IPokemon pokemon in this.equipoPokemon)
         {
@@ -64,18 +85,30 @@ public class Jugador
                 pokemonEnemigo = pokemon;
             }
         }
-        if (pokemonAliado != null && pokemonEnemigo != null)
+        if (pokemonAliado.Vida <= 0)
+        {
+            Console.WriteLine($"{this.Nombre}, tu pokemon no tiene vida. Debes cambiar de Pokémon");
+        }
+        else
         {
             foreach (IMovimiento mov in pokemonAliado.listaMovimientos)
             {
                 if (movimiento == mov.Nombre)
                 {
                     ataqueTotal = pokemonAliado.Ataque + mov.Ataque;
-                    
                 }
             }
             pokemonEnemigo.Vida -= ataqueTotal;
-            Console.WriteLine(pokemonEnemigo.Vida);
+            
+            if (pokemonEnemigo.Vida <= 0)
+            {
+                Console.WriteLine($"{jEnemigo.Nombre}, tu {pokemonEnemigo.Nombre} fue derrotado");
+                jEnemigo.equipoPokemon.Remove(pokemonEnemigo);
+            }
+            else
+            {
+                Console.WriteLine($"La vida del {pokemonEnemigo.Nombre} es: {pokemonEnemigo.Vida}"); 
+            }
         }
     }
 }
