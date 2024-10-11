@@ -100,13 +100,14 @@ public class Combate
         return 1;
     }
     
-    public void ChequeoVictoria(Jugador jEnSuTurno, Jugador jEsperando, bool bandera, int opcion)
+    public bool chequeoVictoria(Jugador jEnSuTurno, Jugador jEsperando)
     {
         if (jEsperando.equipoPokemon.Count() == 0)
         {
-            bandera = true;
-            opcion = 3;
             Console.WriteLine($"\n El {jEnSuTurno.Nombre} es el ganador");
+            return true;
         }
+
+        return false;
     }
 }
