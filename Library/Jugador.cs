@@ -7,6 +7,7 @@ public class Jugador
 {
     public string Nombre;
     public List<IPokemon> equipoPokemon = new List<IPokemon>();
+    private Combate combate = new Combate();
 
     public Jugador(string Nombre)
     {
@@ -68,9 +69,11 @@ public class Jugador
     {
         IPokemon pokemonAliado = null;
         IPokemon pokemonEnemigo = null;
-        int ataqueTotal = 0;
-        Console.WriteLine($"¿{this.Nombre} que movimiento deseas usar?");
+        int danioBase;
+        
+        Console.WriteLine($"{this.Nombre}. ingrese el nombre del movimiento desee usar");
         string movimiento = Console.ReadLine();
+        
         foreach (IPokemon pokemon in this.equipoPokemon)
         {
             if (pokeAliado == pokemon.Nombre)
@@ -85,7 +88,8 @@ public class Jugador
                 pokemonEnemigo = pokemon;
             }
         }
-        if (pokemonAliado.Vida <= 0)
+        
+        if (pokemonAliado == null)
         {
             Console.WriteLine($"{this.Nombre}, tu pokemon no tiene vida. Debes cambiar de Pokémon");
         }
@@ -95,10 +99,10 @@ public class Jugador
             {
                 if (movimiento == mov.Nombre)
                 {
-                    ataqueTotal = pokemonAliado.Ataque + mov.Ataque;
+                    danioBase = (2 * pokemonAliado.Ataque) * mov.Ataque / (pokemonEnemigo.Defensa) + 2;
+                    pokemonEnemigo.Vida -= (int)(danioBase * combate.bonificacionTipos(mov.Tipo, pokemonEnemigo.Tipo));
                 }
             }
-            pokemonEnemigo.Vida -= ataqueTotal;
             
             if (pokemonEnemigo.Vida <= 0)
             {

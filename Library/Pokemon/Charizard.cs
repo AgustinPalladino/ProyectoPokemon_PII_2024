@@ -30,11 +30,11 @@ public class Charizard:IPokemon
 
     public int Ataque
     {
-        get { return 109; }
+        get { return 70; }
     }
     
     public int Defensa
     {
-        get { return 85; }
+        get { return 50; }
     }
 }

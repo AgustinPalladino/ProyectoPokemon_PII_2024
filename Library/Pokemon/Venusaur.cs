@@ -30,11 +30,11 @@ public class Venusaur:IPokemon
 
     public int Ataque
     {
-        get { return 100; }
+        get { return 45; }
     }
     
     public int Defensa
     {
-        get { return 100; }
+        get { return 45; }
     }
 }

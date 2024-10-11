@@ -9,7 +9,7 @@ public class Lluevehojas:IMovimiento
 
     public int Ataque
     {
-        get { return 110; }
+        get { return 20; }
     }
     
     public string Tipo

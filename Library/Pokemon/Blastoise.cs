@@ -30,12 +30,12 @@ public class Blastoise:IPokemon
 
     public int Ataque
     {
-        get { return 85; }
+        get { return 50; }
 
     }
     
     public int Defensa
     {
-        get { return 105; }
+        get { return 60; }
     }
 }

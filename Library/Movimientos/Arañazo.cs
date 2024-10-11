@@ -9,7 +9,7 @@ public class Arañazo:IMovimiento
 
     public int Ataque
     {
-        get { return 45; }
+        get { return 5; }
     }
 
     public string Tipo

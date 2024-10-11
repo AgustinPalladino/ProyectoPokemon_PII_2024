@@ -9,7 +9,7 @@ public class Hidrocañon:IMovimiento
 
     public int Ataque
     {
-        get { return 105; }
+        get { return 20; }
     }
 
     public string Tipo
