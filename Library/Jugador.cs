@@ -26,7 +26,7 @@ public class Jugador
         Console.WriteLine($"El equipo del {this.nombre} equipo es: ");
         foreach (IPokemon pokemon in this.equipoPokemon)
         {
-            Console.WriteLine(i + "-" + pokemon.Name);
+            Console.WriteLine(i + "-" + pokemon.Nombre);
             i++;
         }
     }
@@ -35,32 +35,17 @@ public class Jugador
     {
         foreach (IPokemon pokemon in this.equipoPokemon)
         {
-            if (pokeIngresado == pokemon.Name)
+            if (pokeIngresado == pokemon.Nombre)
             {
                 return pokemon;
             }
         }
         return null;
     }
-    
-    public void cambiarPokemonEnCancha(int indice)
+
+    public void atacar(Jugador enemigo)
     {
-        if (indice < 1 || indice > equipoPokemon.Count)
-        {
-            Console.WriteLine("Índice no válido.");
-            return;
-        }
-
-        // Desactivar el Pokémon que está en cancha actualmente
-        if (pokemonActivo != null)
-        {
-            pokemonActivo.EstaActivo = false;
-        }
-
-        // Activar el nuevo Pokémon seleccionado
-        pokemonActivo = equipoPokemon[indice - 1]; // Restar 1 ya que la lista empieza en 0
-        pokemonActivo.EstaActivo = true;
-
-        Console.WriteLine($"{pokemonActivo.Name} ha sido enviado al campo de batalla.");
+        IPokemon pokemonAtacante = this.pokemonEnCancha("pokemonAtacante");
+        IPokemon pokemonDefensor = enemigo.pokemonEnCancha("pokemonDefensor");
     }
 }

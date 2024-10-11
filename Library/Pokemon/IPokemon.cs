@@ -3,10 +3,11 @@ using Moves;
 
 public interface IPokemon
 {
-    public string Name { get; }
+    public string Nombre { get; }
     public string Tipo { get; }
     public int Vida { get; }
     public int Defensa { get; }
     public int Ataque { get; }
-    bool EstaActivo { get; set; }
+    List<IMovimiento> listaMovimientos { get; set; }
+    public void verMovimientos();
 }

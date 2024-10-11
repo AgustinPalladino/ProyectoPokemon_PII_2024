@@ -15,7 +15,7 @@ public class Combate
         this.listaPokemon.Add(new Blastoise());
         foreach (IPokemon pokemon in this.listaPokemon)
         {
-            Console.WriteLine(i + "-" + pokemon.Name);
+            Console.WriteLine(i + "-" + pokemon.Nombre);
             i++;
         }
     }
@@ -29,7 +29,7 @@ public class Combate
             string pokeIngresado = Console.ReadLine();
             foreach (IPokemon pokemon in this.listaPokemon)
             {
-                if (pokeIngresado == pokemon.Name)
+                if (pokeIngresado == pokemon.Nombre)
                 {
                     bandera = 1;
                     if (!j.equipoPokemon.Contains(pokemon))

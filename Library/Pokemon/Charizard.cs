@@ -3,12 +3,12 @@ using Moves;
 
 public class Charizard:IPokemon
 {
-    private bool _estaActivo;
+    public List<IMovimiento> listaMovimientos { get; set; }  = new List<IMovimiento>();
     private int vida = 78;
     private int ataque = 109;
     private int defensa = 85;
 
-    public string Name
+    public string Nombre  
     {
         get { return "Charizard"; }
     }
@@ -36,12 +36,17 @@ public class Charizard:IPokemon
         set { this.defensa = value; }
     }
 
-    bool IPokemon.EstaActivo
+    public void verMovimientos()
     {
-        get => _estaActivo;
-        set => _estaActivo = value;
+        int i = 1;
+        listaMovimientos.Add(new Arañazo());
+        listaMovimientos.Add(new Lanzallamas());
+        foreach (IMovimiento movimiento in this.listaMovimientos)
+        {
+            Console.WriteLine(i + "-" + movimiento.Nombre);
+            i++;
+        }
     }
-
     public void sumarAtaque()
     {
         this.Ataque += 30;

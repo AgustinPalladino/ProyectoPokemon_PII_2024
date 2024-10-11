@@ -1,13 +1,15 @@
+using Library.Moves;
+
 namespace Library.Pokemon;
 
 public class Blastoise:IPokemon
 {
-    private bool _estaActivo;
+    public List<IMovimiento> listaMovimientos { get; set; }  = new List<IMovimiento>();
     private int vida = 79;
     private int ataque = 85;
     private int defensa = 105;
 
-    public string Name
+    public string Nombre
     {
         get { return "Blastoise"; }
     }
@@ -35,9 +37,14 @@ public class Blastoise:IPokemon
         set { this.defensa = value; }
     }
 
-    bool IPokemon.EstaActivo
+    public void verMovimientos()
     {
-        get => _estaActivo;
-        set => _estaActivo = value;
+        int i = 1;
+        listaMovimientos.Add(new Hidrocañon());
+        foreach (IMovimiento movimiento in this.listaMovimientos)
+        {
+            Console.WriteLine(i + "-" + movimiento.Nombre);
+            i++;
+        }
     }
 }

@@ -1,13 +1,15 @@
+using Library.Moves;
+
 namespace Library.Pokemon;
 
 public class Venusaur:IPokemon
 {
-    private bool _estaActivo;
+    public List<IMovimiento> listaMovimientos { get; set; }  = new List<IMovimiento>();
     private int vida = 80;
     private int ataque = 100;
     private int defensa = 100;
 
-    public string Name
+    public string Nombre
     {
         get { return "Venusaur"; }
     }
@@ -34,10 +36,14 @@ public class Venusaur:IPokemon
         get { return this.defensa; }
         set { this.defensa = value; }
     }
-
-    bool IPokemon.EstaActivo
+    public void verMovimientos()
     {
-        get => _estaActivo;
-        set => _estaActivo = value;
+        int i = 1;
+        listaMovimientos.Add(new Lluevehojas());
+        foreach (IMovimiento movimiento in this.listaMovimientos)
+        {
+            Console.WriteLine(i + "-" + movimiento.Nombre);
+            i++;
+        }
     }
 }
