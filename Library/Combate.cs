@@ -49,56 +49,6 @@ public class Combate
             }
         }
     }
-
-    public double exBonificacionTipos(string movimiento, string pokemon)
-    {
-        if (movimiento == "Fuego")
-        {
-            if (pokemon == "Agua")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-
-            if (pokemon == "Planta")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-        }
-
-        if (movimiento == "Agua")
-        {
-            if (pokemon == "Planta")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-
-            if (pokemon == "Fuego")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-        }
-
-        if (movimiento == "Planta")
-        {
-            if (pokemon == "Fuego")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-
-            if (pokemon == "Agua")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-        }
-        
-        return 1;
-    }
     
     public bool chequeoVictoria(Jugador jEnSuTurno, Jugador jEsperando)
     {

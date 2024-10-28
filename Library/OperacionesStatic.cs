@@ -9,7 +9,7 @@ public static class OperacionesStatic
     }
     
     //A continuación se crea bonificacionTipos el cual es un multiplicador al valor del ataque, dependiendo si hay efectividad de tipo o no.
-    //Discutir si se podria crear un diccionario envez de muchos if
+    //Discutir que se podría hacer envez de muchos ifs
     public static double bonificacionTipos(string tipoMovimiento, string tipoPokemonDefensor)
     {
         if (tipoPokemonDefensor == "Agua")
