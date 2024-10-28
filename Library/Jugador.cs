@@ -8,17 +8,12 @@ public class Jugador
 {
     public string Nombre;
     public List<IPokemon> equipoPokemon = new List<IPokemon>();
-    public List<Item> listaItem = new List<Item>();
+
 
     public Jugador(string Nombre)
     {
         this.Nombre = Nombre;
         
-        listaItem.Add(new Revivir());
-        listaItem.Add(new SuperPocion());
-        listaItem.Add(new SuperPocion());
-        listaItem.Add(new SuperPocion());
-        listaItem.Add(new SuperPocion());
     }
     
     public void agregarPokemon(IPokemon pokemon)
