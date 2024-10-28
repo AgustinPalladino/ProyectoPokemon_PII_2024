@@ -5,7 +5,7 @@ namespace Library.Pokemon;
 public class Blastoise:IPokemon
 {
     public List<IMovimiento> listaMovimientos { get; set; }  = new List<IMovimiento>();
-    private int vida = 100;
+    private int vida = 145;
 
     public Blastoise()
     {
@@ -22,10 +22,15 @@ public class Blastoise:IPokemon
         get { return "Agua"; }
     }
 
+    public string Estado
+    {
+        get { return "Neutral"; }
+        set { this.Estado = value; }
+    }
+    
     public int Vida
     {
         get { return this.vida; }
-        set { this.vida = value; }
     }
 
     public int VidaActual

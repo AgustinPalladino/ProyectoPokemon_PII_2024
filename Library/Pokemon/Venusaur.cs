@@ -5,7 +5,7 @@ namespace Library.Pokemon;
 public class Venusaur:IPokemon
 {
     public List<IMovimiento> listaMovimientos { get; set; }  = new List<IMovimiento>();
-    private int vida = 100;
+    private int vida = 150;
 
     public Venusaur()
     {
@@ -22,10 +22,15 @@ public class Venusaur:IPokemon
         get { return "Planta"; }
     }
 
+    public string Estado
+    {
+        get { return "Neutral"; }
+        set { this.Estado = value; }
+    }
+    
     public int Vida
     {
         get { return this.vida; }
-        set { this.vida = value; }
     }
 
     public int VidaActual

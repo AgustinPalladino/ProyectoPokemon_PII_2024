@@ -4,7 +4,7 @@ using Moves;
 public class Charizard:IPokemon
 {
     public List<IMovimiento> listaMovimientos { get; set; }  = new List<IMovimiento>();
-    private int vida = 100;
+    private int vida = 140;
 
     public Charizard()
     {
@@ -21,11 +21,16 @@ public class Charizard:IPokemon
     {
         get { return "Fuego"; }
     }
+    
+    public string Estado
+    {
+        get { return "Neutral"; }
+        set { this.Estado = value; }
+    }
 
     public int Vida
     {
         get { return this.vida; }
-        set { this.vida = value; }
     }
 
     public int VidaActual
