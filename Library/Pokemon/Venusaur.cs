@@ -28,6 +28,12 @@ public class Venusaur:IPokemon
         set { this.vida = value; }
     }
 
+    public int VidaActual
+    {
+        get { return this.VidaActual = Vida; }
+        set { this.VidaActual = value; }
+    }
+    
     public int Ataque
     {
         get { return 45; }

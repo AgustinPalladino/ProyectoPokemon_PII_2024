@@ -7,7 +7,6 @@ public class Jugador
 {
     public string Nombre;
     public List<IPokemon> equipoPokemon = new List<IPokemon>();
-    private Combate combate = new Combate();
 
     public Jugador(string Nombre)
     {
@@ -28,66 +27,47 @@ public class Jugador
         }
     }
 
-    public void verMovimientos(string pokeIngresado)
+    public void verMovimientos()
     {
-        foreach (IPokemon pokemon in this.equipoPokemon)
+        foreach (IMovimiento movimiento in this.pokemonEnCancha().listaMovimientos)
         {
-            if (pokeIngresado == pokemon.Nombre)
-            {
-                foreach (IMovimiento movimiento in pokemon.listaMovimientos)
-                {
-                    Console.WriteLine($"-{movimiento.Nombre}");
-                }
-            }
+            Console.WriteLine($"-{movimiento.Nombre}");
         }
     }
 
-    public void verSalud(string pokeIngresado)
+    public void verSalud()
     {
-        foreach (IPokemon pokemon in this.equipoPokemon)
-        {          
-            if (pokeIngresado == pokemon.Nombre)
-            {
-                Console.WriteLine($"{pokemon.Vida}/100");
-            }
-        }
+        Console.WriteLine($"{this.pokemonEnCancha().VidaActual}/{this.pokemonEnCancha().Vida}");
     }
     
-    public IPokemon pokemonEnCancha(string pokeIngresado)
+    public IPokemon pokemonEnCancha()
     {
+        return equipoPokemon[0];
+    }
+
+    public IPokemon cambiarPokemon(string pokeIngresado)
+    {
+        IPokemon guardarPokemon = equipoPokemon[0];
         foreach (IPokemon pokemon in this.equipoPokemon)
         {
             if (pokeIngresado == pokemon.Nombre)
             {
-                return pokemon;
+                int posicionPokemon = equipoPokemon.IndexOf(pokemon);
+                equipoPokemon[0] = equipoPokemon[posicionPokemon];
+                equipoPokemon[posicionPokemon] = guardarPokemon;
             }
         }
-        return null;
+        return pokemonEnCancha();
     }
-
-    public void atacar(Jugador jEnemigo, string pokeAliado, string pokeEnemigo)
+    
+    public void atacar(Jugador jEnemigo)
     {
-        IPokemon pokemonAliado = null;
-        IPokemon pokemonEnemigo = null;
+        IPokemon pokemonAliado = this.pokemonEnCancha();
+        IPokemon pokemonEnemigo = jEnemigo.pokemonEnCancha();
         int danioBase;
         
         Console.WriteLine($"{this.Nombre}. ingrese el nombre del movimiento desee usar");
         string movimiento = Console.ReadLine();
-        
-        foreach (IPokemon pokemon in this.equipoPokemon)
-        {
-            if (pokeAliado == pokemon.Nombre)
-            {
-                pokemonAliado = pokemon;
-            }
-        }
-        foreach (IPokemon pokemon in jEnemigo.equipoPokemon)
-        {
-            if (pokeEnemigo == pokemon.Nombre)
-            {
-                pokemonEnemigo = pokemon;
-            }
-        }
         
         if (pokemonAliado == null)
         {
@@ -100,7 +80,7 @@ public class Jugador
                 if (movimiento == mov.Nombre)
                 {
                     danioBase = (2 * pokemonAliado.Ataque) * mov.Ataque / (pokemonEnemigo.Defensa) + 2;
-                    pokemonEnemigo.Vida -= (int)(danioBase * OperacionesStatic.bonificacionTipos(mov.Tipo, pokemonEnemigo.Tipo));
+                    pokemonEnemigo.VidaActual -= (int)(danioBase * OperacionesStatic.bonificacionTipos(mov.Tipo, pokemonEnemigo.Tipo));
                 }
             }
             
