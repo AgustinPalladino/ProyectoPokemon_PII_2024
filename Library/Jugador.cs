@@ -9,10 +9,37 @@ public class Jugador
     public string Nombre;
     public List<IPokemon> equipoPokemon = new List<IPokemon>();
     private Combate combate = new Combate();
+    public List<Item> inventario = new List<Item>();
 
     public Jugador(string Nombre)
     {
         this.Nombre = Nombre;
+        inventario.Add(new SuperPocion());
+        inventario.Add(new SuperPocion());
+        inventario.Add(new SuperPocion());
+        inventario.Add(new SuperPocion());
+        inventario.Add(new Revivir());
+        //inventario.Add(new CuraTotal()); //aun no implementamos la logica de Curatotal
+        //inventario.Add(new CuraTotal()); //aun no implementamos la logica de Curatotal
+    }
+      public void UsarItem(int index, IPokemon pokemon)
+    {
+        if (index >= 0 && index < inventario.Count) 
+        {
+            inventario[index].Usar(pokemon);  //Utiliza el item 
+            inventario.RemoveAt(index); // Elimina el item después de usarlo
+        }
+        else
+        {
+            Console.WriteLine("Ítem no válido.");
+        }
+    }
+    public void MostrarInventario()
+    {
+        for (int i = 0; i < inventario.Count; i++)
+        {
+             Console.WriteLine($"{i}: {inventario[i]}");
+        }
     }
     
     public void agregarPokemon(IPokemon pokemon)
@@ -53,6 +80,7 @@ public class Jugador
             }
         }
     }
+    
     
     public IPokemon pokemonEnCancha(string pokeIngresado)
     {

@@ -6,9 +6,16 @@ Combate combate = new Combate();
 Jugador j1 = new Jugador("Jugador 1");
 Jugador j2 = new Jugador("Jugador 2");
 
+Console.WriteLine("Inventario del Jugador:");//chequear 
+jugador.MostrarInventario();//chequear 
+Console.WriteLine("\nElige el número del ítem que deseas usar:");//chequear 
+int index = int.Parse(Console.ReadLine());//chequear 
+jugador.UsarItem(index, pokemon);//chequear 
+
 combate.mostrarCatalogo();
 combate.logicaEscogerEquipo(j1);
 combate.logicaEscogerEquipo(j2);
+
 
 //Dinamica de seleccion de pokemon en cancha
 Console.WriteLine("\nEquipo del jugador uno:");
@@ -16,11 +23,13 @@ j1.mostrarEquipo();
 Console.WriteLine("¿Jugador uno, cual va a ser su pokemon en cancha?");
 string pokeIngresado1 = Console.ReadLine();
 j1.pokemonEnCancha(pokeIngresado1);
+Jugador.MostrarInventario();
 
 Console.WriteLine("\nEquipo del jugador dos:");
 j2.mostrarEquipo();
 Console.WriteLine("¿Jugador dos, cual va a ser su pokemon en cancha?");
 string pokeIngresado2 = Console.ReadLine();
+
 j2.pokemonEnCancha(pokeIngresado2);
 
 
