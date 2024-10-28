@@ -7,7 +7,9 @@ public static class OperacionesStatic
         Random random = new Random();
         return random.Next(minimo, maximo);
     }
-
+    
+    //A continuación se crea bonificacionTipos el cual es un multiplicador al valor del ataque, dependiendo si hay efectividad de tipo o no.
+    //Discutir si se podria crear un diccionario envez de muchos if
     public static double bonificacionTipos(string tipoMovimiento, string tipoPokemonDefensor)
     {
         if (tipoPokemonDefensor == "Agua")
