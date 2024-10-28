@@ -100,7 +100,7 @@ public class Jugador
                 if (movimiento == mov.Nombre)
                 {
                     danioBase = (2 * pokemonAliado.Ataque) * mov.Ataque / (pokemonEnemigo.Defensa) + 2;
-                    pokemonEnemigo.Vida -= (int)(danioBase * combate.bonificacionTipos(mov.Tipo, pokemonEnemigo.Tipo));
+                    pokemonEnemigo.Vida -= (int)(danioBase * combate.exBonificacionTipos(mov.Tipo, pokemonEnemigo.Tipo));
                 }
             }
             

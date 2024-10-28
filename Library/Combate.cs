@@ -50,7 +50,7 @@ public class Combate
         }
     }
 
-    public double bonificacionTipos(string movimiento, string pokemon)
+    public double exBonificacionTipos(string movimiento, string pokemon)
     {
         if (movimiento == "Fuego")
         {
