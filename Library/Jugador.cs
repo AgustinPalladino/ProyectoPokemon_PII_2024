@@ -5,7 +5,6 @@ namespace Library;
 
 public class Jugador
 {
-    //Atributos
     public string Nombre;
     public List<IPokemon> equipoPokemon = new List<IPokemon>();
     private Combate combate = new Combate();
@@ -17,7 +16,7 @@ public class Jugador
     
     public void agregarPokemon(IPokemon pokemon)
     {
-        this.equipoPokemon.Add(pokemon); //Se agregan Pokemones al equipo
+        this.equipoPokemon.Add(pokemon);
     }
 
     public void mostrarEquipo()
@@ -25,7 +24,7 @@ public class Jugador
         Console.WriteLine($"El equipo del {this.Nombre} equipo es: ");
         foreach (IPokemon pokemon in this.equipoPokemon)
         {
-            Console.WriteLine($"-{pokemon.Nombre}"); //Imprime el equipo
+            Console.WriteLine($"-{pokemon.Nombre}");
         }
     }
 
@@ -37,7 +36,7 @@ public class Jugador
             {
                 foreach (IMovimiento movimiento in pokemon.listaMovimientos)
                 {
-                    Console.WriteLine($"-{movimiento.Nombre}"); //Muestra los Movimientos del pokemon
+                    Console.WriteLine($"-{movimiento.Nombre}");
                 }
             }
         }
@@ -49,7 +48,7 @@ public class Jugador
         {          
             if (pokeIngresado == pokemon.Nombre)
             {
-                Console.WriteLine($"{pokemon.Vida}/100"); // Imprime la vida del pokemon
+                Console.WriteLine($"{pokemon.Vida}/100");
             }
         }
     }
@@ -60,7 +59,7 @@ public class Jugador
         {
             if (pokeIngresado == pokemon.Nombre)
             {
-                return pokemon; //devuelve el pokemon que se seleccionó
+                return pokemon;
             }
         }
         return null;
@@ -70,29 +69,29 @@ public class Jugador
     {
         IPokemon pokemonAliado = null;
         IPokemon pokemonEnemigo = null;
-        int danioBase; 
+        int danioBase;
         
         Console.WriteLine($"{this.Nombre}. ingrese el nombre del movimiento desee usar");
         string movimiento = Console.ReadLine();
         
-        foreach (IPokemon pokemon in this.equipoPokemon) //recorre el equipo del jugador que llama al metodo
+        foreach (IPokemon pokemon in this.equipoPokemon)
         {
             if (pokeAliado == pokemon.Nombre)
             {
-                pokemonAliado = pokemon;  // setea pokemonAliado
+                pokemonAliado = pokemon;
             }
         }
-        foreach (IPokemon pokemon in jEnemigo.equipoPokemon) //recorre el equipo del jugador rival
+        foreach (IPokemon pokemon in jEnemigo.equipoPokemon)
         {
             if (pokeEnemigo == pokemon.Nombre)
             {
-                pokemonEnemigo = pokemon; // setea pokemon que se defiende pokemonEnemigo
+                pokemonEnemigo = pokemon;
             }
         }
         
         if (pokemonAliado == null)
         {
-            Console.WriteLine($"{this.Nombre}, tu pokemon no tiene vida. Debes cambiar de Pokémon"); //Si no encuentra el pokemon devuelve esto
+            Console.WriteLine($"{this.Nombre}, tu pokemon no tiene vida. Debes cambiar de Pokémon");
         }
         else
         {
@@ -100,19 +99,19 @@ public class Jugador
             {
                 if (movimiento == mov.Nombre)
                 {
-                    danioBase = (2 * pokemonAliado.Ataque) * mov.Ataque / (pokemonEnemigo.Defensa) + 2; // Valor de daño
-                    pokemonEnemigo.Vida -= (int)(danioBase * combate.bonificacionTipos(mov.Tipo, pokemonEnemigo.Tipo)); // ecuación para actuar sobre la vida del pokemon rival
+                    danioBase = (2 * pokemonAliado.Ataque) * mov.Ataque / (pokemonEnemigo.Defensa) + 2;
+                    pokemonEnemigo.Vida -= (int)(danioBase * OperacionesStatic.bonificacionTipos(mov.Tipo, pokemonEnemigo.Tipo));
                 }
             }
             
             if (pokemonEnemigo.Vida <= 0)
             {
                 Console.WriteLine($"{jEnemigo.Nombre}, tu {pokemonEnemigo.Nombre} fue derrotado");
-                jEnemigo.equipoPokemon.Remove(pokemonEnemigo); //Elimina pokemon del equipo
+                jEnemigo.equipoPokemon.Remove(pokemonEnemigo);
             }
             else
             {
-                Console.WriteLine($"La vida del {pokemonEnemigo.Nombre} es: {pokemonEnemigo.Vida}"); // Imprime la vida que le queda al pokemon Enemigo
+                Console.WriteLine($"La vida del {pokemonEnemigo.Nombre} es: {pokemonEnemigo.Vida}"); 
             }
         }
     }
