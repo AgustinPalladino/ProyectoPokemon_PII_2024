@@ -6,5 +6,5 @@ namespace Library;
 
 public abstract class Item
 {
-    public abstract void Usar(IPokemon pokemon);
+    public abstract void Usar(Jugador j);
 }
