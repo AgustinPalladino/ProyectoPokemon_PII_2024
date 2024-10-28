@@ -14,11 +14,11 @@ public class Jugador
     {
         this.Nombre = Nombre;
         
-        listaItem.Add(new SuperPocion());
-        listaItem.Add(new SuperPocion());
-        listaItem.Add(new SuperPocion());
-        listaItem.Add(new SuperPocion());
         listaItem.Add(new Revivir());
+        listaItem.Add(new SuperPocion());
+        listaItem.Add(new SuperPocion());
+        listaItem.Add(new SuperPocion());
+        listaItem.Add(new SuperPocion());
     }
     
     public void agregarPokemon(IPokemon pokemon)
@@ -66,6 +66,23 @@ public class Jugador
             }
         }
         return pokemonEnCancha();
+    }
+    
+    public void UsarItem(string itemName) 
+    {
+        switch (itemName.ToLower())
+        {
+            case "revivir":
+                Item opcion = listaItem[0];
+                opcion.funcionItem(this);
+                break;
+            case "superpocion":
+                SuperPocion(pokemon);
+                break;
+            case "curatotal":
+                CuracionTotal(pokemon);
+                break;
+        }
     }
     
     public void atacar(Jugador jEnemigo)

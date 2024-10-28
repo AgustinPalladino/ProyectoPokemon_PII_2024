@@ -2,6 +2,11 @@ namespace Library.Items;
 
 public class Revivir : Item
 {
+    public string Nombre  
+    {
+        get { return "Revivir"; }
+    }
+    
     public Revivir() : base()
     {
         

@@ -2,6 +2,11 @@ namespace Library.Items;
 
 public class SuperPocion : Item
 {
+    public string Nombre  
+    {
+        get { return "SuperPocion"; }
+    }
+    
     public SuperPocion() : base()
     {
         
