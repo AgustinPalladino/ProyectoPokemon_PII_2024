@@ -1,4 +1,3 @@
-using Library.Items;
 using Library.Moves;
 using Library.Pokemon;
 
@@ -61,23 +60,6 @@ public class Jugador
             }
         }
         return pokemonEnCancha();
-    }
-    
-    public void UsarItem(string itemName) 
-    {
-        switch (itemName.ToLower())
-        {
-            case "revivir":
-                Item opcion = listaItem[0];
-                opcion.funcionItem(this);
-                break;
-            case "superpocion":
-                SuperPocion(pokemon);
-                break;
-            case "curatotal":
-                CuracionTotal(pokemon);
-                break;
-        }
     }
     
     public void atacar(Jugador jEnemigo)
