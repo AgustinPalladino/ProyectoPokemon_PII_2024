@@ -1,18 +1,20 @@
 using System.Reflection.Metadata;
-using Library.Pokemon;
 
 namespace Library;
 
-public class Combate
+public class Logica
 {
-    public List<IPokemon> listaPokemon = new List<IPokemon>();
+    private List<Pokemon> listaPokemon = new List<Pokemon>();
+    public Logica()
+    {
+        CreadorDePokemon creadorDePokemon = new CreadorDePokemon();
+        this.listaPokemon = creadorDePokemon.ListaPokemon;
+    }
+
 
     public void mostrarCatalogo()
     {
-        this.listaPokemon.Add(new Venusaur());
-        this.listaPokemon.Add(new Charizard());
-        this.listaPokemon.Add(new Blastoise());
-        foreach (IPokemon pokemon in this.listaPokemon)
+        foreach (Pokemon pokemon in this.listaPokemon)
         {
             Console.WriteLine($"-{pokemon.Nombre}");
         }
@@ -25,7 +27,7 @@ public class Combate
             int bandera = 0;
             Console.WriteLine($"{j.Nombre} ingrese el nombre de su pokemon numero {i}");
             string pokeIngresado = Console.ReadLine();
-            foreach (IPokemon pokemon in this.listaPokemon)
+            foreach (Pokemon pokemon in this.listaPokemon)
             {
                 if (pokeIngresado == pokemon.Nombre)
                 {
