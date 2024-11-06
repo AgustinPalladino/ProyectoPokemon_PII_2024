@@ -5,24 +5,11 @@ namespace Library;
 
 public class Logica
 {
-    public List<Pokemon> listaPokemon = new List<Pokemon>();
-    
     public Logica()
     {
-        CreadorDePokemonYMovimiento creadorDePokemonYMovimiento = new CreadorDePokemonYMovimiento();
-        listaPokemon = creadorDePokemonYMovimiento.listaPokemon;
     }
 
-
-    public void mostrarCatalogo()
-    {
-        foreach (Pokemon pokemon in this.listaPokemon)
-        {
-            Console.WriteLine($"-{pokemon.Nombre}");
-        }
-    }
-
-    public void logicaEscogerEquipo(Jugador j)
+    public void logicaEscogerEquipo(Jugador j, List<Pokemon> listaPokemon)
     {
         bool bandera = true;
     
@@ -39,7 +26,7 @@ public class Logica
                     throw new ArgumentException("Entrada erronea, hagalo nuevamente");
                 }
 
-                foreach (Pokemon pokemon in this.listaPokemon)
+                foreach (Pokemon pokemon in listaPokemon)
                 {
                     if (pokeIngresado == pokemon.Nombre)
                     {

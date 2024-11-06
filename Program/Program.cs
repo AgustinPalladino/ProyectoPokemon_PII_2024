@@ -3,13 +3,15 @@
 
 //Dinamica de seleccion de pokemones
 Logica logica = new Logica();
+Combate combate = new Combate();
+CreadorDePokemonYMovimiento creadorDePokemonYMovimiento = new CreadorDePokemonYMovimiento();
 Jugador j1 = new Jugador("Jugador 1");
 Jugador j2 = new Jugador("Jugador 2");
 
 
-logica.mostrarCatalogo();
-logica.logicaEscogerEquipo(j1);
-logica.logicaEscogerEquipo(j2);
+combate.mostrarCatalogo(creadorDePokemonYMovimiento.listaPokemon);
+logica.logicaEscogerEquipo(j1, creadorDePokemonYMovimiento.listaPokemon);
+logica.logicaEscogerEquipo(j2, creadorDePokemonYMovimiento.listaPokemon);
 
 
 //Dinamica de seleccion de pokemon en cancha

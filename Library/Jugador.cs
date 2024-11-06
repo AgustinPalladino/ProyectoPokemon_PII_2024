@@ -6,8 +6,7 @@ public class Jugador
 {
     public string Nombre;
     public List<Pokemon> equipoPokemon = new List<Pokemon>();
-
-
+    
     public Jugador(string Nombre)
     {
         this.Nombre = Nombre;
