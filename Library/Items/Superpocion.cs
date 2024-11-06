@@ -1,23 +1,28 @@
-using System.Formats.Asn1;
-using System.Reflection.Metadata;
-using Library.Pokemon;
-namespace Library;
-public class SuperPocion : Item
+using System;
+
+namespace Library
 {
-    public override void Usar(Jugador j)
+    public class SuperPocion : Item
     {
-         if (pokemon.vidaActual>0)
+        public override void Usar(Jugador j)
         {
-            pokemon.vidaActual+=70;
-            if( pokemon.vidaActual>pokemon.vidaMax)
+            var pokemon = j.pokemonEnCancha();
+            
+            if (pokemon.VidaActual > 0)
             {
-                 pokemon.vidaActual = pokemon.vidaMax;
+                pokemon.VidaActual += 70;
+                
+                if (pokemon.VidaActual > pokemon.VidaMax)
+                {
+                    pokemon.VidaActual = pokemon.VidaMax;
+                }
+                
+                Console.WriteLine($"{pokemon.Nombre} se ha restaurado 70 puntos de vida.");
             }
-             Console.WriteLine($"{pokemon.Nombre} se ha restaurado 70 puntos de vida.");
-        }
-        else
-        {
-        Console.WriteLine($"{pokemon.Nombre} no puede ser restaurado porque está incapacitado.");
+            else
+            {
+                Console.WriteLine($"{pokemon.Nombre} no puede ser restaurado porque está incapacitado.");
+            }
         }
     }
 }
