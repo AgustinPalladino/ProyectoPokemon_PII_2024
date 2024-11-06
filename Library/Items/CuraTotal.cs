@@ -1,23 +1,26 @@
-using System
-using System.Formats.Asn1;
-using System.Reflection.Metadata;
-using Library.Pokemon;
+using System;
 
-namespace Library;
-
-public class Revivir : Item
+namespace Library
 {
-    
-    public override void Usar(Jugador j)
+    public class CuraTotal : Item
     {
-        if (pokemon.vidaActual>0){
-             pokemon.Estado = "Normal";
-            pokemon.PorcentajeDañoPorTurno = 0;
-            pokemon.TurnosDormido = 0;
-            console.WriteLine("El pokemon se ha curado de todos sus estados")
-        }
-        else {
-            console.WriteLine("El Pokemon no tiene puntos de salud")
+        public override void Usar(Jugador j)
+        {
+            //VariableLocal
+            var pokemon = j.pokemonEnCancha();
+
+            if (pokemon.VidaActual > 0)
+            {
+                // Restablecer el estado del Pokémon a "Normal"
+                pokemon.Estado = "Normal";
+
+                // Mensaje de confirmación
+                Console.WriteLine($"{pokemon.Nombre} se ha curado de todos sus estados.");
+            }
+            else
+            {
+                Console.WriteLine($"{pokemon.Nombre} no tiene puntos de salud y no puede ser curado.");
+            }
         }
     }
 }

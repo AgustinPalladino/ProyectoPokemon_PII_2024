@@ -1,25 +1,23 @@
-using System.Formats.Asn1;
-using System.Reflection.Metadata;
-using Library.Pokemon;
+using System;
 
-namespace Library;
-
-public class Revivir : Item
+namespace Library
 {
-    public override void Usar(Jugador j)
+    public class Revivir : Item
     {
-        if (pokemon.vidaActual <= 0)
+        public override void Usar(Jugador j)
         {
-                        
-            int vida = pokemon.vidaMax; 
-            pokemon.Vida = vida / 2; // Revive con el 50% de su vida máxima
-            Console.WriteLine($"{pokemon.Nombre} ha sido revivido con {pokemon.vidaActual} puntos de vida.");
+            var pokemon = j.pokemonEnCancha();
+            
+            if (pokemon.VidaActual <= 0)
+            {
+                pokemon.VidaActual = pokemon.VidaMax / 2; // Revive con el 50% de su vida máxima
+                pokemon.Estado = "Normal";
+                Console.WriteLine($"{pokemon.Nombre} ha sido revivido con {pokemon.VidaActual} puntos de vida.");
+            }
+            else
+            {
+                Console.WriteLine($"{pokemon.Nombre} ya está vivo.");
+            }
         }
-        else
-        {
-            Console.WriteLine($"{pokemon.Nombre} ya está vivo.");
-        }
-         Console.WriteLine($"{pokemon.Nombre} se ha restaurado 70 puntos de vida.");
     }
-    
 }
