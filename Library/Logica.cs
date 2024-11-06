@@ -4,11 +4,12 @@ namespace Library;
 
 public class Logica
 {
-    private List<Pokemon> listaPokemon = new List<Pokemon>();
+    public List<Pokemon> listaPokemon = new List<Pokemon>();
+    
     public Logica()
     {
         CreadorDePokemon creadorDePokemon = new CreadorDePokemon();
-        this.listaPokemon = creadorDePokemon.ListaPokemon;
+        listaPokemon = creadorDePokemon.listaPokemon;
     }
 
 
