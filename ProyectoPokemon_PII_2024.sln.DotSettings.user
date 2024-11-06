@@ -2,6 +2,7 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=36b6d997_002D7134_002D441a_002D8b18_002Dc6af8565023b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="PruebaPokemon" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::Tests.PokemonTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::Tests.LogicaTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=83237dc7_002D2f3b_002D4e97_002Db0f6_002D261667ebb70a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="PruebaPokemon #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;

@@ -8,8 +8,8 @@ public class Logica
     
     public Logica()
     {
-        CreadorDePokemon creadorDePokemon = new CreadorDePokemon();
-        listaPokemon = creadorDePokemon.listaPokemon;
+        CreadorDePokemonYMovimiento creadorDePokemonYMovimiento = new CreadorDePokemonYMovimiento();
+        listaPokemon = creadorDePokemonYMovimiento.listaPokemon;
     }
 
 

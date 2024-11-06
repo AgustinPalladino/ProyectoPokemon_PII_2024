@@ -1,10 +1,10 @@
 namespace Library;
 
-public class CreadorDePokemon
+public class CreadorDePokemonYMovimiento
 {
     public List<Pokemon> listaPokemon = new List<Pokemon>();
 
-    public CreadorDePokemon()
+    public CreadorDePokemonYMovimiento()
     {
         agregarPokemon();
     }

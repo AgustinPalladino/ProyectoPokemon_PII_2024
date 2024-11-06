@@ -8,8 +8,8 @@ public class PokemonTests
     public void PruebaPosicionPokemonExitosa()
     {  
         List<Pokemon> listaPokemon = new List<Pokemon>();
-        CreadorDePokemon creadorDePokemon = new CreadorDePokemon();
-        listaPokemon = creadorDePokemon.listaPokemon;
+        CreadorDePokemonYMovimiento creadorDePokemonYMovimiento = new CreadorDePokemonYMovimiento();
+        listaPokemon = creadorDePokemonYMovimiento.listaPokemon;
         Assert.That(listaPokemon[0].Nombre == "Venusaur");
     }
     
@@ -18,8 +18,8 @@ public class PokemonTests
     public void PruebaPosicionPokemonFallida()
     {  
         List<Pokemon> listaPokemon = new List<Pokemon>();
-        CreadorDePokemon creadorDePokemon = new CreadorDePokemon();
-        listaPokemon = creadorDePokemon.listaPokemon;
+        CreadorDePokemonYMovimiento creadorDePokemonYMovimiento = new CreadorDePokemonYMovimiento();
+        listaPokemon = creadorDePokemonYMovimiento.listaPokemon;
         Assert.That(listaPokemon[1].Nombre == "Venusaur");
     }
     
@@ -27,8 +27,8 @@ public class PokemonTests
     public void PruebaEstadisticaPokemonExitosa()
     {  
         List<Pokemon> listaPokemon = new List<Pokemon>();
-        CreadorDePokemon creadorDePokemon = new CreadorDePokemon();
-        listaPokemon = creadorDePokemon.listaPokemon;
+        CreadorDePokemonYMovimiento creadorDePokemonYMovimiento = new CreadorDePokemonYMovimiento();
+        listaPokemon = creadorDePokemonYMovimiento.listaPokemon;
         Assert.That(listaPokemon[1].VidaMax == 100);
     }
     
@@ -36,8 +36,8 @@ public class PokemonTests
     public void PruebaEstadisticaPokemonFallida()
     {  
         List<Pokemon> listaPokemon = new List<Pokemon>();
-        CreadorDePokemon creadorDePokemon = new CreadorDePokemon();
-        listaPokemon = creadorDePokemon.listaPokemon;
+        CreadorDePokemonYMovimiento creadorDePokemonYMovimiento = new CreadorDePokemonYMovimiento();
+        listaPokemon = creadorDePokemonYMovimiento.listaPokemon;
         Assert.That(listaPokemon[1].VidaMax == 120);
     }
 }
