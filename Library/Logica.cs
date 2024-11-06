@@ -1,3 +1,4 @@
+using System.Linq.Expressions;
 using System.Reflection.Metadata;
 
 namespace Library;
@@ -23,35 +24,58 @@ public class Logica
 
     public void logicaEscogerEquipo(Jugador j)
     {
-        for (int i = 1; i <= 2; i++)
+        bool bandera = true;
+    
+        while (bandera)
         {
-            int bandera = 0;
-            Console.WriteLine($"{j.Nombre} ingrese el nombre de su pokemon numero {i}");
-            string pokeIngresado = Console.ReadLine();
-            foreach (Pokemon pokemon in this.listaPokemon)
+            bool pokemonEncontrado = false; // Variable para verificar si el pokemon fue encontrado
+            try
             {
-                if (pokeIngresado == pokemon.Nombre)
+                Console.WriteLine($"{j.Nombre}, ingrese el nombre del pokemon que desea elegir:");
+                string pokeIngresado = Console.ReadLine();
+
+                if (string.IsNullOrWhiteSpace(pokeIngresado))
                 {
-                    bandera = 1;
-                    if (!j.equipoPokemon.Contains(pokemon))
+                    throw new ArgumentException("Entrada erronea, hagalo nuevamente");
+                }
+
+                foreach (Pokemon pokemon in this.listaPokemon)
+                {
+                    if (pokeIngresado == pokemon.Nombre)
                     {
-                        bandera = 2;
-                        j.agregarPokemon(pokemon);
+                        pokemonEncontrado = true; // Marcamos que el pokemon fue encontrado
+
+                        if (!j.equipoPokemon.Contains(pokemon))
+                        {
+                            j.agregarPokemon(pokemon);
+                            Console.WriteLine($"{pokemon.Nombre} ha sido agregado a tu equipo");
+                            bandera = false; // Salimos del bucle después de agregar el Pokémon
+                        }
+                        else
+                        {
+                            Console.WriteLine("El pokemon ya esta en el equipo, elija otro pokemon");
+                        }
+                        break; // Salimos del foreach ya que encontramos el pokemon
                     }
                 }
+
+                if (!pokemonEncontrado)
+                {
+                    Console.WriteLine("Pokemon no encontrado, hagalo nuevamente");
+                }
             }
-            if (bandera == 0)
+            catch (ArgumentException ex)
             {
-                Console.WriteLine("Pokemon no encontrado seleccione nuevamente");
-                i--;
+                Console.WriteLine(ex.Message);
             }
-            else if (bandera == 1)
+            catch (Exception ex)
             {
-                Console.WriteLine("El pokemon ya esta seleccionado");
-                i--;
+                Console.WriteLine("Ocurrio un error inesperado: " + ex.Message);
             }
         }
     }
+
+
     
     public bool chequeoVictoria(Jugador jEnSuTurno, Jugador jEsperando)
     {
