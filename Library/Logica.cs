@@ -75,8 +75,50 @@ public class Logica
         }
     }
 
-
+    public void chequeoVidaPokemon(Jugador j)
+    {
+        if (j.pokemonEnCancha() == null)
+        {
+            Console.WriteLine($"{j.Nombre}, tu pokemon no tiene vida. Debes cambiar de Pokémon");
+            j.cambiarPokemon();
+        }
+    }
     
+    public Movimiento logicaEscogerMovimiento(Jugador j)
+    {
+        bool bandera = true;
+        while (bandera)
+        {
+            Console.WriteLine($"{j.Nombre}. ingrese el nombre del movimiento desee usar");
+            string movimiento = Console.ReadLine();
+            foreach (Movimiento mov in j.pokemonEnCancha().listaMovimientos)
+            {
+                if (movimiento == mov.Nombre)
+                {
+                    return mov;
+                }
+            }
+            Console.WriteLine("Error");
+        }
+        return null;
+    }
+    
+    public int logicaAtacar(Jugador jAliado, Jugador jEnemigo)
+    {
+        Pokemon pokemonAliado = jAliado.pokemonEnCancha();
+        Pokemon pokemonEnemigo = jEnemigo.pokemonEnCancha();
+        if (pokemonEnemigo.VidaActual <= 0)
+        {
+            Console.WriteLine($"{jEnemigo.Nombre}, tu {pokemonEnemigo.Nombre} fue derrotado");
+            jEnemigo.equipoPokemon.Remove(pokemonEnemigo);
+        }
+        else
+        {
+            Console.WriteLine($"La vida del {pokemonEnemigo.Nombre} es: {pokemonEnemigo.VidaActual}");
+        }
+        return 0;
+    }
+
     public bool chequeoVictoria(Jugador jEnSuTurno, Jugador jEsperando)
     {
         if (jEsperando.equipoPokemon.Count() == 0)
@@ -84,7 +126,6 @@ public class Logica
             Console.WriteLine($"\n El {jEnSuTurno.Nombre} es el ganador");
             return true;
         }
-
         return false;
     }
 }

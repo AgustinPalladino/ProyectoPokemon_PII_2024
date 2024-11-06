@@ -46,16 +46,26 @@ public class Jugador
         return equipoPokemon[0];
     }
 
-    public Pokemon cambiarPokemon(string pokeIngresado)
+    public Pokemon cambiarPokemon()
     {
-        Pokemon guardarPokemon = equipoPokemon[0];
-        foreach (Pokemon pokemon in this.equipoPokemon)
+        bool pokemonValido = false;
+        while (!pokemonValido)
         {
-            if (pokeIngresado == pokemon.Nombre)
+            Console.WriteLine("Escoge un Pokémon:");
+            string pokeIngresado = Console.ReadLine();
+
+            foreach (Pokemon pokemon in this.equipoPokemon)
             {
-                int posicionPokemon = equipoPokemon.IndexOf(pokemon);
-                equipoPokemon[0] = equipoPokemon[posicionPokemon];
-                equipoPokemon[posicionPokemon] = guardarPokemon;
+                if (pokeIngresado == pokemon.Nombre)
+                {
+                    int posicionPokemon = equipoPokemon.IndexOf(pokemon);
+                    (equipoPokemon[0], equipoPokemon[posicionPokemon]) = (equipoPokemon[posicionPokemon], equipoPokemon[0]);
+                    break;
+                }
+            }
+            if (!pokemonValido)
+            {
+                Console.WriteLine("Pokémon no encontrado, elija nuevamente.");
             }
         }
         return pokemonEnCancha();
@@ -63,37 +73,9 @@ public class Jugador
     
     public void atacar(Jugador jEnemigo)
     {
-        Pokemon pokemonAliado = this.pokemonEnCancha();
-        Pokemon pokemonEnemigo = jEnemigo.pokemonEnCancha();
-        int danioBase;
-        
-        Console.WriteLine($"{this.Nombre}. ingrese el nombre del movimiento desee usar");
-        string movimiento = Console.ReadLine();
-        
-        if (pokemonAliado == null)
-        {
-            Console.WriteLine($"{this.Nombre}, tu pokemon no tiene vida. Debes cambiar de Pokémon");
-        }
-        else
-        {
-            foreach (IMovimiento mov in pokemonAliado.listaMovimientos)
-            {
-                if (movimiento == mov.Nombre)
-                {
-                    danioBase = (2 * pokemonAliado.Ataque) * mov.Ataque / (pokemonEnemigo.Defensa) + 2;
-                    pokemonEnemigo.VidaActual -= (int)(danioBase * OperacionesStatic.bonificacionTipos(mov.Tipo, pokemonEnemigo.Tipo));
-                }
-            }
-            
-            if (pokemonEnemigo.VidaActual <= 0)
-            {
-                Console.WriteLine($"{jEnemigo.Nombre}, tu {pokemonEnemigo.Nombre} fue derrotado");
-                jEnemigo.equipoPokemon.Remove(pokemonEnemigo);
-            }
-            else
-            {
-                Console.WriteLine($"La vida del {pokemonEnemigo.Nombre} es: {pokemonEnemigo.VidaActual}"); 
-            }
-        }
+        Logica logica = new Logica();
+        Movimiento movimiento = logica.logicaEscogerMovimiento(this);
+        int danio = (2 * this.pokemonEnCancha().Ataque) * movimiento.Ataque / (jEnemigo.pokemonEnCancha().Defensa) + 2;
+        jEnemigo.pokemonEnCancha().VidaActual -= (int)(danio * OperacionesStatic.bonificacionTipos(movimiento.Tipo, jEnemigo.pokemonEnCancha().Tipo));
     }
 }
