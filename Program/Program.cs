@@ -2,14 +2,14 @@
 // Nuestra fachada es el Program, es decir el usuario interactua directamente con el Program
 
 //Dinamica de seleccion de pokemones
-Combate combate = new Combate();
+Logica logica = new Logica();
 Jugador j1 = new Jugador("Jugador 1");
 Jugador j2 = new Jugador("Jugador 2");
 
 
-combate.mostrarCatalogo();
-combate.logicaEscogerEquipo(j1);
-combate.logicaEscogerEquipo(j2);
+logica.mostrarCatalogo();
+logica.logicaEscogerEquipo(j1);
+logica.logicaEscogerEquipo(j2);
 
 
 //Dinamica de seleccion de pokemon en cancha
@@ -38,7 +38,7 @@ while (bandera == false)
             Console.WriteLine($"{j1.Nombre}. su pokemon se encuentra derrotado, debe cambiar");
             pokeIngresado1 = Console.ReadLine();
             j1.pokemonEnCancha();
-            bandera = combate.chequeoVictoria(j1,j2);
+            bandera = logica.chequeoVictoria(j1,j2);
             opcion = 5;
         }
         else
@@ -57,7 +57,7 @@ while (bandera == false)
             {
                 j1.atacar(j2);
                 opcion = 5;
-                bandera = combate.chequeoVictoria(j1,j2);
+                bandera = logica.chequeoVictoria(j1,j2);
                 
                 break;
             }
@@ -67,7 +67,7 @@ while (bandera == false)
                 pokeIngresado1 = Console.ReadLine();
                 j1.pokemonEnCancha();
                 opcion = 5;
-                bandera = combate.chequeoVictoria(j1,j2);
+                bandera = logica.chequeoVictoria(j1,j2);
                 break;
             }
         }
@@ -81,7 +81,7 @@ while (bandera == false)
             Console.WriteLine("¿A que pokemon desea cambiar?");
             pokeIngresado2 = Console.ReadLine();
             j2.pokemonEnCancha();
-            bandera = combate.chequeoVictoria(j2, j1);
+            bandera = logica.chequeoVictoria(j2, j1);
             opcion = 5;
         }
         else
@@ -102,7 +102,7 @@ while (bandera == false)
             if (opcion == 3)
             {
                 j2.atacar(j1);
-                bandera = combate.chequeoVictoria(j2, j1);
+                bandera = logica.chequeoVictoria(j2, j1);
                 break;
             }
 
@@ -111,7 +111,7 @@ while (bandera == false)
                 Console.WriteLine("¿A que pokemon desea cambiar?");
                 pokeIngresado2 = Console.ReadLine();
                 j1.pokemonEnCancha();
-                bandera = combate.chequeoVictoria(j2, j1);
+                bandera = logica.chequeoVictoria(j2, j1);
                 break;
             }
         }

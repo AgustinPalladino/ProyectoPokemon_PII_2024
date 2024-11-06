@@ -1,12 +1,11 @@
 using Library.Moves;
-using Library.Pokemon;
 
 namespace Library;
 
 public class Jugador
 {
     public string Nombre;
-    public List<IPokemon> equipoPokemon = new List<IPokemon>();
+    public List<Pokemon> equipoPokemon = new List<Pokemon>();
 
 
     public Jugador(string Nombre)
@@ -15,7 +14,7 @@ public class Jugador
         
     }
     
-    public void agregarPokemon(IPokemon pokemon)
+    public void agregarPokemon(Pokemon pokemon)
     {
         this.equipoPokemon.Add(pokemon);
     }
@@ -23,7 +22,7 @@ public class Jugador
     public void mostrarEquipo()
     {
         Console.WriteLine($"El equipo del {this.Nombre} equipo es: ");
-        foreach (IPokemon pokemon in this.equipoPokemon)
+        foreach (Pokemon pokemon in this.equipoPokemon)
         {
             Console.WriteLine($"-{pokemon.Nombre}");
         }
@@ -39,18 +38,18 @@ public class Jugador
 
     public void verSalud()
     {
-        Console.WriteLine($"{this.pokemonEnCancha().VidaActual}/{this.pokemonEnCancha().Vida}");
+        Console.WriteLine($"{this.pokemonEnCancha().VidaActual}/{this.pokemonEnCancha().VidaMax}");
     }
     
-    public IPokemon pokemonEnCancha()
+    public Pokemon pokemonEnCancha()
     {
         return equipoPokemon[0];
     }
 
-    public IPokemon cambiarPokemon(string pokeIngresado)
+    public Pokemon cambiarPokemon(string pokeIngresado)
     {
-        IPokemon guardarPokemon = equipoPokemon[0];
-        foreach (IPokemon pokemon in this.equipoPokemon)
+        Pokemon guardarPokemon = equipoPokemon[0];
+        foreach (Pokemon pokemon in this.equipoPokemon)
         {
             if (pokeIngresado == pokemon.Nombre)
             {
@@ -64,8 +63,8 @@ public class Jugador
     
     public void atacar(Jugador jEnemigo)
     {
-        IPokemon pokemonAliado = this.pokemonEnCancha();
-        IPokemon pokemonEnemigo = jEnemigo.pokemonEnCancha();
+        Pokemon pokemonAliado = this.pokemonEnCancha();
+        Pokemon pokemonEnemigo = jEnemigo.pokemonEnCancha();
         int danioBase;
         
         Console.WriteLine($"{this.Nombre}. ingrese el nombre del movimiento desee usar");
@@ -86,14 +85,14 @@ public class Jugador
                 }
             }
             
-            if (pokemonEnemigo.Vida <= 0)
+            if (pokemonEnemigo.VidaActual <= 0)
             {
                 Console.WriteLine($"{jEnemigo.Nombre}, tu {pokemonEnemigo.Nombre} fue derrotado");
                 jEnemigo.equipoPokemon.Remove(pokemonEnemigo);
             }
             else
             {
-                Console.WriteLine($"La vida del {pokemonEnemigo.Nombre} es: {pokemonEnemigo.Vida}"); 
+                Console.WriteLine($"La vida del {pokemonEnemigo.Nombre} es: {pokemonEnemigo.VidaActual}"); 
             }
         }
     }
