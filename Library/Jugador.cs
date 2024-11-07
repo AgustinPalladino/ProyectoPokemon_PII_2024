@@ -29,7 +29,7 @@ public class Jugador
 
     public void verMovimientos()
     {
-        foreach (IMovimiento movimiento in this.pokemonEnCancha().listaMovimientos)
+        foreach (Movimiento movimiento in this.pokemonEnCancha().listaMovimientos)
         {
             Console.WriteLine($"-{movimiento.Nombre}");
         }
@@ -52,9 +52,56 @@ public class Jugador
         return pokemonEnCancha();
     }
     
-    public void atacar(Jugador jEnemigo, Movimiento movimiento)
+    public void atacar(Jugador jEnemigo)
     {
-        int danio = (2 * this.pokemonEnCancha().Ataque) * movimiento.Ataque / (jEnemigo.pokemonEnCancha().Defensa) + 2;
-        jEnemigo.pokemonEnCancha().VidaActual -= (int)(danio * OperacionesStatic.bonificacionTipos(movimiento.Tipo, jEnemigo.pokemonEnCancha().Tipo));
+        Pokemon pokemonAliado = this.pokemonEnCancha();
+        Pokemon pokemonEnemigo = jEnemigo.pokemonEnCancha();
+        int danioBase;
+        
+        Console.WriteLine($"{this.Nombre}. ingrese el nombre del movimiento desee usar");
+        string movimiento = Console.ReadLine();
+        
+        if (pokemonAliado == null)
+        {
+            Console.WriteLine($"{this.Nombre}, tu pokemon no tiene vida. Debes cambiar de Pokémon");
+        }
+        else
+        {
+            if (pokemonAliado.puedeAtacar())
+            {
+                
+            
+                foreach (Movimiento mov in pokemonAliado.listaMovimientos)
+                {
+                    if (movimiento == mov.Nombre)
+                    {
+                        danioBase = (2 * pokemonAliado.Ataque) * mov.Ataque / (pokemonEnemigo.Defensa) + 2;
+                        pokemonEnemigo.VidaActual -= (int)(danioBase * OperacionesStatic.bonificacionTipos(mov.Tipo, pokemonEnemigo.Tipo));
+                        pokemonEnemigo.aplicarDañoRecurrente();
+                    }
+
+                    if (mov.EsEspecial && pokemonEnemigo.Estado == "Normal")
+                    {
+                        mov.AplicarAtaquesEspeciales(pokemonEnemigo);
+                        Console.WriteLine($"{pokemonEnemigo.Nombre} ahora está bajo efecto del ataque {mov.Nombre}");
+                        pokemonEnemigo.aplicarDañoRecurrente();
+                    }
+                }
+            
+                if (pokemonEnemigo.VidaActual <= 0)
+                {
+                    Console.WriteLine($"{jEnemigo.Nombre}, tu {pokemonEnemigo.Nombre} fue derrotado");
+                    jEnemigo.equipoPokemon.Remove(pokemonEnemigo);
+                }
+                else
+                {
+                    Console.WriteLine($"La vida del {pokemonEnemigo.Nombre} es: {pokemonEnemigo.VidaActual}"); 
+                }
+            }
+            else
+            {
+                Console.WriteLine("Pokemon bajo efecto especial, no puede atacar.");
+            }
+        }
     }
 }

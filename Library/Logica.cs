@@ -1,11 +1,31 @@
 using System.Linq.Expressions;
 using System.Reflection.Metadata;
+using Library.Moves;
 
 namespace Library;
 
 public class Logica
 {
-    public void logicaEscogerEquipo(Jugador j, List<Pokemon> listaPokemon)
+    public List<Pokemon> listaPokemon = new List<Pokemon>();
+    public List<Movimiento> listaMovimiento = new List<Movimiento>();
+    
+    public Logica()
+    {
+        CreadorDePokemonYMovimiento creadorDePokemonYMovimiento = new CreadorDePokemonYMovimiento();
+        listaPokemon = creadorDePokemonYMovimiento.listaPokemon;
+        listaMovimiento = creadorDePokemonYMovimiento.listaMovimiento;
+    }
+
+
+    public void mostrarCatalogo()
+    {
+        foreach (Pokemon pokemon in this.listaPokemon)
+        {
+            Console.WriteLine($"-{pokemon.Nombre}");
+        }
+    }
+
+    public void logicaEscogerEquipo(Jugador j)
     {
         bool bandera = true;
     
@@ -137,6 +157,7 @@ public class Logica
         {
             return true;
         }
+
         return false;
     }
 }
