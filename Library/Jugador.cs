@@ -6,12 +6,18 @@ public class Jugador
 {
     public string Nombre;
     public List<Pokemon> equipoPokemon = new List<Pokemon>();
-
+    public List<Iitem> Mochila = new List<Iitem>();
 
     public Jugador(string Nombre)
     {
         this.Nombre = Nombre;
-        
+        Mochila.Add(new SuperPocion());
+        Mochila.Add(new SuperPocion());
+        Mochila.Add(new SuperPocion());
+        Mochila.Add(new SuperPocion());
+        Mochila.Add(new Revivir());
+        Mochila.Add(new CuraTotal()); 
+        Mochila.Add(new CuraTotal()); 
     }
     
     public void agregarPokemon(Pokemon pokemon)

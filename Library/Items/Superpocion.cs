@@ -2,9 +2,9 @@ using System;
 
 namespace Library
 {
-    public class SuperPocion : Item
+    public class SuperPocion : Iitem
     {
-        public override void Usar(Jugador j)
+        public void Usar(Jugador j)
         {
             var pokemon = j.pokemonEnCancha();
             

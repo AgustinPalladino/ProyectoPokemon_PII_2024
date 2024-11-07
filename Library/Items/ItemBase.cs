@@ -1,7 +1,7 @@
 namespace Library;
 
 
-public abstract class Item
+public interface Iitem
 {
-    public abstract void Usar(Jugador j);
+    void Usar(Jugador j);
 }
