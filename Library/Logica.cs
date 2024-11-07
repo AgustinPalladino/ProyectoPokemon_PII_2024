@@ -129,6 +129,19 @@ public class Logica
         Pokemon pokemonEnemigo = jEnemigo.pokemonEnCancha();
         Movimiento movimiento = logicaEscogerMovimiento(jAliado);
         jAliado.atacar(jEnemigo, movimiento);
+        if (pokemonAliado.puedeAtacar())
+        {
+            jAliado.atacar(jEnemigo, movimiento);
+            pokemonEnemigo.aplicarDañoRecurrente();
+        }
+
+        if (movimiento.EsEspecial && pokemonEnemigo.Estado == "Normal")
+        {
+            movimiento.AplicarAtaquesEspeciales(pokemonEnemigo);
+            Console.WriteLine($"{pokemonEnemigo.Nombre} ahora está bajo efecto del ataque {movimiento.Nombre}");
+            pokemonEnemigo.aplicarDañoRecurrente();
+        }
+        
         if (pokemonEnemigo.VidaActual <= 0)
         {
             Console.WriteLine($"{jEnemigo.Nombre}, tu {pokemonEnemigo.Nombre} fue derrotado");
