@@ -17,7 +17,7 @@ public class Movimiento
     /// <param name="ataque"></param>
     /// <param name="tipo"></param>
     /// <param name="esEspecial"></param>
-    public void Movimiento (string nombre, int ataque, string tipo, bool esEspecial)
+    public  Movimiento (string nombre, int ataque, string tipo, bool esEspecial)
     {
         this.Nombre = nombre;
         this.Ataque = ataque;
@@ -29,7 +29,7 @@ public class Movimiento
     /// Método abstracto para aplicar el ataque especial
     /// </summary>
     /// <param name="pokemonEnemigo"></param>
-    public void AplicarAtaquesEspeciales(IPokemon pokemonEnemigo)
+    public void AplicarAtaquesEspeciales(Pokemon pokemonEnemigo)
     {
         if (!EsEspecial) return; /// Con el ! implica que cuando es EsEspecial es falso, se ejecuta el return, saliendo del método. 
 
@@ -39,8 +39,8 @@ public class Movimiento
                 if (pokemonEnemigo.Estado == null)
                 {
                     pokemonEnemigo.Estado = "Dormido";
-                    pokemonEnemigo.TurnosEstado = new Random().Next(1, 5);
-                    Console.WriteLine($"{pokemonEnemigo.Nombre} ha sido dormido por {pokemonEnemigo.TurnosEstado} turnos.");
+                    pokemonEnemigo.TurnosDormido = new Random().Next(1, 5);
+                    Console.WriteLine($"{pokemonEnemigo.Nombre} ha sido dormido por {pokemonEnemigo.TurnosDormido} turnos.");
                 }
                 break;
 

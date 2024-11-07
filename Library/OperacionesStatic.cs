@@ -9,7 +9,7 @@ public static class OperacionesStatic
     }
            private static double CalcularCritico(string tipoMovimiento, string tipoPokemonDefensor)
         {
-            int probabilidad = random.Next(1, 101); //Numero entre 1 y 100
+            int probabilidad = new Random().Next(1, 101); //Numero entre 1 y 100
             if (probabilidad <= 10) // 10% de probabilidad d golpe critico
             {
                 Console.WriteLine("¡Golpe crítico!");
