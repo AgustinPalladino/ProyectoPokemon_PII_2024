@@ -9,4 +9,5 @@ public class Combate
             Console.WriteLine($"-{pokemon.Nombre}");
         }
     }
+    
 }

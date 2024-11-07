@@ -5,10 +5,6 @@ namespace Library;
 
 public class Logica
 {
-    public Logica()
-    {
-    }
-
     public void logicaEscogerEquipo(Jugador j, List<Pokemon> listaPokemon)
     {
         bool bandera = true;
@@ -62,14 +58,30 @@ public class Logica
         }
     }
 
-    public void chequeoVidaPokemon(Jugador j)
+    
+    public void logicaCambiarPokemon(Jugador j)
     {
-        if (j.pokemonEnCancha() == null)
+        bool pokemonValido = true;
+        while (pokemonValido)
         {
-            Console.WriteLine($"{j.Nombre}, tu pokemon no tiene vida. Debes cambiar de Pokémon");
-            j.cambiarPokemon();
+            Console.WriteLine("Escoge un pokemon:");
+            string pokeIngresado = Console.ReadLine();
+
+            foreach (Pokemon pokemon in j.equipoPokemon)
+            {
+                if (pokeIngresado == pokemon.Nombre)
+                {
+                    j.cambiarPokemon(pokemon);
+                    pokemonValido = false;
+                }
+            }
+            if (pokemonValido)
+            {
+                Console.WriteLine("Pokemon no encontrado, elija nuevamente.");
+            }
         }
     }
+    
     
     public Movimiento logicaEscogerMovimiento(Jugador j)
     {
@@ -90,14 +102,26 @@ public class Logica
         return null;
     }
     
+    
     public int logicaAtacar(Jugador jAliado, Jugador jEnemigo)
     {
         Pokemon pokemonAliado = jAliado.pokemonEnCancha();
         Pokemon pokemonEnemigo = jEnemigo.pokemonEnCancha();
+        Movimiento movimiento = logicaEscogerMovimiento(jAliado);
+        jAliado.atacar(jEnemigo, movimiento);
         if (pokemonEnemigo.VidaActual <= 0)
         {
             Console.WriteLine($"{jEnemigo.Nombre}, tu {pokemonEnemigo.Nombre} fue derrotado");
             jEnemigo.equipoPokemon.Remove(pokemonEnemigo);
+            if (chequeoVictoria(jEnemigo) == true)
+            {
+                Console.WriteLine($"\n El {jAliado.Nombre} es el ganador");
+            }
+            else
+            {
+                logicaCambiarPokemon(jEnemigo);
+            }
+            
         }
         else
         {
@@ -106,11 +130,11 @@ public class Logica
         return 0;
     }
 
-    public bool chequeoVictoria(Jugador jEnSuTurno, Jugador jEsperando)
+    
+    public bool chequeoVictoria(Jugador jEnemigo)
     {
-        if (jEsperando.equipoPokemon.Count() == 0)
+        if (jEnemigo.equipoPokemon.Count() == 0)
         {
-            Console.WriteLine($"\n El {jEnSuTurno.Nombre} es el ganador");
             return true;
         }
         return false;

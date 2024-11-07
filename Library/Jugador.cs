@@ -45,35 +45,15 @@ public class Jugador
         return equipoPokemon[0];
     }
 
-    public Pokemon cambiarPokemon()
+    public Pokemon cambiarPokemon(Pokemon pokemon)
     {
-        bool pokemonValido = false;
-        while (!pokemonValido)
-        {
-            Console.WriteLine("Escoge un Pokémon:");
-            string pokeIngresado = Console.ReadLine();
-
-            foreach (Pokemon pokemon in this.equipoPokemon)
-            {
-                if (pokeIngresado == pokemon.Nombre)
-                {
-                    int posicionPokemon = equipoPokemon.IndexOf(pokemon);
-                    (equipoPokemon[0], equipoPokemon[posicionPokemon]) = (equipoPokemon[posicionPokemon], equipoPokemon[0]);
-                    break;
-                }
-            }
-            if (!pokemonValido)
-            {
-                Console.WriteLine("Pokémon no encontrado, elija nuevamente.");
-            }
-        }
+        int posicionPokemon = equipoPokemon.IndexOf(pokemon);
+        (equipoPokemon[0], equipoPokemon[posicionPokemon]) = (equipoPokemon[posicionPokemon], equipoPokemon[0]);
         return pokemonEnCancha();
     }
     
-    public void atacar(Jugador jEnemigo)
+    public void atacar(Jugador jEnemigo, Movimiento movimiento)
     {
-        Logica logica = new Logica();
-        Movimiento movimiento = logica.logicaEscogerMovimiento(this);
         int danio = (2 * this.pokemonEnCancha().Ataque) * movimiento.Ataque / (jEnemigo.pokemonEnCancha().Defensa) + 2;
         jEnemigo.pokemonEnCancha().VidaActual -= (int)(danio * OperacionesStatic.bonificacionTipos(movimiento.Tipo, jEnemigo.pokemonEnCancha().Tipo));
     }
