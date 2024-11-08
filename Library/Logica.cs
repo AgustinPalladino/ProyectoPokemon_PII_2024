@@ -9,6 +9,7 @@ public class Logica
     public List<Pokemon> listaPokemon = new List<Pokemon>();
     public List<Movimiento> listaMovimiento = new List<Movimiento>();
     
+    
     public Logica()
     {
         CreadorDePokemonYMovimiento creadorDePokemonYMovimiento = new CreadorDePokemonYMovimiento();
@@ -25,7 +26,8 @@ public class Logica
         }
     }
 
-    public void logicaEscogerEquipo(Jugador j)
+    
+    public void EscogerEquipo(Jugador j)
     {
         bool bandera = true;
     
@@ -50,7 +52,7 @@ public class Logica
 
                         if (!j.equipoPokemon.Contains(pokemon))
                         {
-                            j.agregarPokemon(pokemon);
+                            j.agregarPokemon(pokemon.Clonar());
                             Console.WriteLine($"{pokemon.Nombre} ha sido agregado a tu equipo");
                             bandera = false; // Salimos del bucle después de agregar el Pokémon
                         }
@@ -79,12 +81,12 @@ public class Logica
     }
 
     
-    public void logicaCambiarPokemon(Jugador j)
+    public void CambiarPokemon(Jugador j)
     {
         bool pokemonValido = true;
         while (pokemonValido)
         {
-            Console.WriteLine("Escoge un pokemon:");
+            Console.WriteLine("Escoge el pokemon a cambiar:");
             string pokeIngresado = Console.ReadLine();
 
             foreach (Pokemon pokemon in j.equipoPokemon)
@@ -103,7 +105,7 @@ public class Logica
     }
     
     
-    public Movimiento logicaEscogerMovimiento(Jugador j)
+    public Movimiento EscogerMovimiento(Jugador j)
     {
         bool bandera = true;
         while (bandera)
@@ -123,11 +125,11 @@ public class Logica
     }
     
     
-    public int logicaAtacar(Jugador jAliado, Jugador jEnemigo)
+    public int Ataque(Jugador jAliado, Jugador jEnemigo)
     {
         Pokemon pokemonAliado = jAliado.pokemonEnCancha();
         Pokemon pokemonEnemigo = jEnemigo.pokemonEnCancha();
-        Movimiento movimiento = logicaEscogerMovimiento(jAliado);
+        Movimiento movimiento = EscogerMovimiento(jAliado);
         jAliado.atacar(jEnemigo, movimiento);
         if (pokemonAliado.puedeAtacar())
         {
@@ -152,7 +154,7 @@ public class Logica
             }
             else
             {
-                logicaCambiarPokemon(jEnemigo);
+                CambiarPokemon(jEnemigo);
             }
             
         }
@@ -170,7 +172,6 @@ public class Logica
         {
             return true;
         }
-
         return false;
     }
 }

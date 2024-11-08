@@ -35,11 +35,11 @@ public class CreadorDePokemonYMovimiento
         venusaur.agregarMovimiento(Arañazo);
         venusaur.agregarMovimiento(Dormir);
         venusaur.agregarMovimiento(Quemar);
-        venusaur.agregarMovimiento(Lanzallamas);
-        charizard.agregarMovimiento(Lluevehojas);
+        venusaur.agregarMovimiento(Lluevehojas);
+        charizard.agregarMovimiento(Arañazo);
         charizard.agregarMovimiento(Paralizar);
         charizard.agregarMovimiento(Quemar);
-        charizard.agregarMovimiento(Hidrocañon);
+        charizard.agregarMovimiento(Lanzallamas);
         blastoise.agregarMovimiento(Arañazo);
         blastoise.agregarMovimiento(Envenenar);
         blastoise.agregarMovimiento(Dormir);

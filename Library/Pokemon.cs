@@ -66,12 +66,23 @@ public class Pokemon
         get { return this.estado; }
         set { this.estado = value; }
     }
+    
     public int TurnosDormido
     {
         get { return this.turnosDormido; }
         set { this.turnosDormido = value; }
     }
 
+    
+    public Pokemon Clonar()
+    {
+        return new Pokemon(this.Nombre, this.Tipo, this.VidaMax, this.Ataque, this.Defensa)
+        {
+            listaMovimientos = this.listaMovimientos.Select(m => m.Clonar()).ToList()
+        };
+    }
+    
+    
     public double PorcentajeDañoPorTurno
     {
         get { return this.porcentajeDañoPorTurno; }

@@ -25,6 +25,13 @@ public class Movimiento
         this.EsEspecial = esEspecial;
     }
 
+    
+    public Movimiento Clonar()
+    {
+        // Crea una nueva instancia con los mismos atributos
+        return new Movimiento(this.Nombre, this.Ataque, this.Tipo, this.EsEspecial);
+    }
+    
     /// <summary>
     /// Método abstracto para aplicar el ataque especial
     /// </summary>

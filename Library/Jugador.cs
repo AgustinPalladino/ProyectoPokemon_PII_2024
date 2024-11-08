@@ -7,17 +7,14 @@ public class Jugador
     public string Nombre;
     public List<Pokemon> equipoPokemon = new List<Pokemon>();
     
+    
     public Jugador(string Nombre)
     {
         this.Nombre = Nombre;
         
     }
-    
-    public void agregarPokemon(Pokemon pokemon)
-    {
-        this.equipoPokemon.Add(pokemon);
-    }
 
+    
     public void mostrarEquipo()
     {
         Console.WriteLine($"El equipo del {this.Nombre} equipo es: ");
@@ -27,6 +24,7 @@ public class Jugador
         }
     }
 
+    
     public void verMovimientos()
     {
         foreach (Movimiento movimiento in this.pokemonEnCancha().listaMovimientos)
@@ -35,22 +33,32 @@ public class Jugador
         }
     }
 
+    
     public void verSalud()
     {
         Console.WriteLine($"{this.pokemonEnCancha().VidaActual}/{this.pokemonEnCancha().VidaMax}");
     }
+    
+    
+    public void agregarPokemon(Pokemon pokemon)
+    {
+        this.equipoPokemon.Add(pokemon);
+    }
+    
     
     public Pokemon pokemonEnCancha()
     {
         return equipoPokemon[0];
     }
 
+    
     public Pokemon cambiarPokemon(Pokemon pokemon)
     {
         int posicionPokemon = equipoPokemon.IndexOf(pokemon);
         (equipoPokemon[0], equipoPokemon[posicionPokemon]) = (equipoPokemon[posicionPokemon], equipoPokemon[0]);
         return pokemonEnCancha();
     }
+    
     
     public void atacar(Jugador jEnemigo, Movimiento movimiento)
     {
