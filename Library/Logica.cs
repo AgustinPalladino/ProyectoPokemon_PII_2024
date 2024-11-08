@@ -6,26 +6,15 @@ namespace Library;
 
 public class Logica
 {
-    public List<Pokemon> listaPokemon = new List<Pokemon>();
-    public List<Movimiento> listaMovimiento = new List<Movimiento>();
+    public List<Pokemon> listaPokemon = new ();
     
     
     public Logica()
     {
         CreadorDePokemonYMovimiento creadorDePokemonYMovimiento = new CreadorDePokemonYMovimiento();
         listaPokemon = creadorDePokemonYMovimiento.listaPokemon;
-        listaMovimiento = creadorDePokemonYMovimiento.listaMovimiento;
     }
-
-
-    public void mostrarCatalogo()
-    {
-        foreach (Pokemon pokemon in this.listaPokemon)
-        {
-            Console.WriteLine($"-{pokemon.Nombre}");
-        }
-    }
-
+    
     
     public void EscogerEquipo(Jugador j)
     {
@@ -89,11 +78,11 @@ public class Logica
             Console.WriteLine("Escoge el pokemon a cambiar:");
             string pokeIngresado = Console.ReadLine();
 
-            foreach (Pokemon pokemon in j.equipoPokemon)
+            for (int i = 0; i < j.equipoPokemon.Count; i++)
             {
-                if (pokeIngresado == pokemon.Nombre)
+                if (pokeIngresado == j.equipoPokemon[i].Nombre)
                 {
-                    j.cambiarPokemon(pokemon);
+                    j.cambiarPokemon(j.equipoPokemon[i]);
                     pokemonValido = false;
                 }
             }
@@ -125,48 +114,41 @@ public class Logica
     }
     
     
-    public int Ataque(Jugador jAliado, Jugador jEnemigo)
+    public int Ataque(Jugador jugador, Jugador jEnemigo)
     {
-        Pokemon pokemonAliado = jAliado.pokemonEnCancha();
-        Pokemon pokemonEnemigo = jEnemigo.pokemonEnCancha();
-        Movimiento movimiento = EscogerMovimiento(jAliado);
-        jAliado.atacar(jEnemigo, movimiento);
-        if (pokemonAliado.puedeAtacar())
+        Movimiento movimiento = EscogerMovimiento(jugador);
+        jugador.atacar(jEnemigo, movimiento);
+        if (jugador.pokemonEnCancha().puedeAtacar())
         {
-            jAliado.atacar(jEnemigo, movimiento);
-            pokemonEnemigo.aplicarDañoRecurrente();
+            jugador.atacar(jEnemigo, movimiento);
+            jEnemigo.pokemonEnCancha().aplicarDañoRecurrente();
         }
 
-        if (movimiento.EsEspecial && pokemonEnemigo.Estado == "Normal")
+        if (movimiento.EsEspecial && jEnemigo.pokemonEnCancha().Estado == "Normal")
         {
-            movimiento.AplicarAtaquesEspeciales(pokemonEnemigo);
-            Console.WriteLine($"{pokemonEnemigo.Nombre} ahora está bajo efecto del ataque {movimiento.Nombre}");
-            pokemonEnemigo.aplicarDañoRecurrente();
+            movimiento.AplicarAtaquesEspeciales(jEnemigo.pokemonEnCancha());
+            Console.WriteLine($"{jEnemigo.pokemonEnCancha().Nombre} ahora está bajo efecto del ataque {movimiento.Nombre}");
+            jEnemigo.pokemonEnCancha().aplicarDañoRecurrente();
         }
         
-        if (pokemonEnemigo.VidaActual <= 0)
+        if (jEnemigo.pokemonEnCancha().VidaActual <= 0)
         {
-            Console.WriteLine($"{jEnemigo.Nombre}, tu {pokemonEnemigo.Nombre} fue derrotado");
-            jEnemigo.equipoPokemon.Remove(pokemonEnemigo);
-            if (chequeoVictoria(jEnemigo) == true)
-            {
-                Console.WriteLine($"\n El {jAliado.Nombre} es el ganador");
-            }
-            else
+            Console.WriteLine($"{jEnemigo.Nombre}, tu {jEnemigo.pokemonEnCancha().Nombre} fue derrotado");
+            jEnemigo.equipoPokemon.Remove(jEnemigo.pokemonEnCancha());
+            if (ChequeoVictoria(jugador, jEnemigo) == false)
             {
                 CambiarPokemon(jEnemigo);
             }
-            
         }
         else
         {
-            Console.WriteLine($"La vida del {pokemonEnemigo.Nombre} es: {pokemonEnemigo.VidaActual}");
+            Console.WriteLine($"La vida del {jEnemigo.pokemonEnCancha().Nombre} es: {jEnemigo.pokemonEnCancha().VidaActual}");
         }
         return 0;
     }
 
     
-    public bool chequeoVictoria(Jugador jEnemigo)
+    public bool ChequeoVictoria(Jugador jugador, Jugador jEnemigo)
     {
         if (jEnemigo.equipoPokemon.Count() == 0)
         {

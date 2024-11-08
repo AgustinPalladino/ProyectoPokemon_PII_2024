@@ -52,11 +52,10 @@ public class Jugador
     }
 
     
-    public Pokemon cambiarPokemon(Pokemon pokemon)
+    public void cambiarPokemon(Pokemon pokemon)
     {
         int posicionPokemon = equipoPokemon.IndexOf(pokemon);
         (equipoPokemon[0], equipoPokemon[posicionPokemon]) = (equipoPokemon[posicionPokemon], equipoPokemon[0]);
-        return pokemonEnCancha();
     }
     
     

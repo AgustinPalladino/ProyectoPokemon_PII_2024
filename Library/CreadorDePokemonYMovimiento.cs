@@ -4,15 +4,14 @@ namespace Library;
 
 public class CreadorDePokemonYMovimiento
 {
-    public List<Pokemon> listaPokemon = new List<Pokemon>();
-    public List<Movimiento> listaMovimiento = new List<Movimiento>();
+    public List<Pokemon> listaPokemon = new ();
 
     public CreadorDePokemonYMovimiento()
     {
-        agregarPokemon();
+        AgregarPokemon();
     }
     
-    public void agregarPokemon()
+    public void AgregarPokemon()
     {
         /// Creación de pokemons
         Pokemon venusaur = new Pokemon("Venusaur", "Planta", 120, 40, 60);

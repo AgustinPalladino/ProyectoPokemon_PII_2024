@@ -2,7 +2,7 @@ namespace Library;
 
 public class Combate
 {
-    public void mostrarCatalogo(List<Pokemon> listaPokemon)
+    public void MostrarCatalogo(List<Pokemon> listaPokemon)
     {
         foreach (Pokemon pokemon in listaPokemon)
         {
@@ -10,84 +10,115 @@ public class Combate
         }
     }
 
-    public void buclePrincipal(Jugador j1, Jugador j2)
+    public void BuclePrincipal(Jugador j1, Jugador j2)
     {
         Logica logica = new Logica();
         CreadorDePokemonYMovimiento creadorDePokemonYMovimiento = new CreadorDePokemonYMovimiento();
-        mostrarCatalogo(creadorDePokemonYMovimiento.listaPokemon);
+        MostrarCatalogo(creadorDePokemonYMovimiento.listaPokemon);
+        
         for(int i = 0; i < 2; i++)
         {
             logica.EscogerEquipo(j1);
             logica.EscogerEquipo(j2);
         }
+        
         j1.mostrarEquipo();
         j2.mostrarEquipo();
         bool bandera = true;
-        while (bandera)
+        bool banderaGlobal = true;
+        while (banderaGlobal)
         {
-            int opcion = 0;
-            //turno jugador 1
-            while ((opcion != 3 && bandera == true) || (opcion != 4 && bandera == true))
+            // Turno del jugador 1
+            while (bandera)
             {
                 Console.WriteLine($"\n ¿{j1.Nombre}, que desea hacer? \n 1-Ver las habilidades de su pokemon(No consume turno) \n 2-Ver la salud de su pokemon(No consume turno) \n 3-Atacar(Consume un turno) \n 4-Cambiar de pokemon(Consume un turno)");
-                opcion = Convert.ToInt32(Console.ReadLine());
-                if (opcion == 1)
+                int opcion = Convert.ToInt32(Console.ReadLine());
+                switch (opcion)
                 {
-                    j1.verMovimientos();
-                }
-
-                if (opcion == 2)
-                {
-                    j1.verSalud();
-                }
-
-                if (opcion == 3)
-                {
-                    logica.Ataque(j1, j2);
-                    if (bandera == logica.chequeoVictoria(j2))
-                    {
+                    
+                    case 1: // Opcion 1 para ver los movimientos de su pokemon
+                        j1.verMovimientos();
+                        break;
+                    
+                    case 2: // Opcion 2 para ver la salud
+                        j1.verSalud();
+                        break;
+                    
+                    case 3: // Si presiona la opcion 3 ataca y sale del bucle
+                        logica.Ataque(j1, j2);
+                        if (logica.ChequeoVictoria(j1, j2)) // Si gano se finaliza la bandera global y termina el programa
+                        {
+                            Console.WriteLine($"\n {j1.Nombre} es el ganador");
+                            banderaGlobal = false;
+                        }
                         bandera = false;
-                    }
-                    break;
+                        break;
+                    
+                    case 4: //Si presiona la opcion 4 cambia de pokemon y sale del bucle
+                        logica.CambiarPokemon(j1);
+                        bandera = false;
+                        break;
+                    
+                    default:
+                        Console.WriteLine("Opcion no valida");
+                        break;
                 }
-                if (opcion == 4)
-                {
-                    logica.CambiarPokemon(j1);
-                    break;
-                }
+                if (!bandera) break;
             }
-
-            //turno jugador 2
-            while ((opcion != 3 && bandera == true) || (opcion != 4 && bandera == true))
+            
+            // Si la bandera global esta en false, significa que el jugador 2 perdio, por lo que la bandera de su while, estara en false y no podra entrar
+            if (banderaGlobal == false)
+            {
+                bandera = false;
+            }
+            else
+            {
+                bandera = true;
+            }
+            
+            
+            // Turno del jugador 2
+            while (bandera)
             {
                 Console.WriteLine($"\n ¿{j2.Nombre}, que desea hacer? \n 1-Ver las habilidades de su pokemon(No consume turno) \n 2-Ver la salud de su pokemon(No consume turno) \n 3-Atacar(Consume un turno) \n 4-Cambiar de pokemon(Consume un turno)");
-                opcion = Convert.ToInt32(Console.ReadLine());
-                if (opcion == 1)
+                int opcion = Convert.ToInt32(Console.ReadLine());
+                switch (opcion)
                 {
-                    j2.verMovimientos();
-                }
+                    
+                    case 1: // Opcion 1 para ver los movimientos de su pokemon
+                        j2.verMovimientos();
+                        break;
+                    
+                    case 2: // Opcion 2 para ver la salud
+                        j2.verSalud();
+                        break;
+                    
+                    case 3: // Si presiona la opcion 3 ataca y sale del bucle
+                        logica.Ataque(j2, j1);
+                        if (logica.ChequeoVictoria(j2, j1))
+                        {
+                            Console.WriteLine($"\n {j2.Nombre} es el ganador");
+                            banderaGlobal = false;
 
-                if (opcion == 2)
-                {
-                    j2.verSalud();
-                }
-
-                if (opcion == 3)
-                {
-                    logica.Ataque(j2, j1);
-                    if (bandera == logica.chequeoVictoria(j1))
-                    {
+                        }
                         bandera = false;
-                    }
+                        break;
 
-                    break;
+                    case 4: // Si presiona la opcion 4 cambia de pokemon y sale del bucle
+                        logica.CambiarPokemon(j2);
+                        bandera = false;
+                        break;
+                    
+                    default:
+                        Console.WriteLine("Opcion no valida");
+                        break;
                 }
-                if (opcion == 4)
-                {
-                    logica.CambiarPokemon(j2);
-                    break;
-                }
+                if (!bandera) break;
             }
+            
+            //setea la bandera en true
+            bandera = true;
+            
         }
     }
 }
