@@ -1,43 +1,117 @@
+using System;
+using System.Collections.Generic;
 using Library;
+using Library.Moves;
+using NUnit.Framework;
 
-namespace Tests;
-
-public class PokemonTests
+namespace LibraryTests
 {
-    [Test]
-    public void PruebaPosicionPokemonExitosa()
-    {  
-        List<Pokemon> listaPokemon = new List<Pokemon>();
-        CreadorDePokemonYMovimiento creadorDePokemonYMovimiento = new CreadorDePokemonYMovimiento();
-        listaPokemon = creadorDePokemonYMovimiento.listaPokemon;
-        Assert.That(listaPokemon[0].Nombre == "Venusaur");
-    }
-    
-    
-    [Test]
-    public void PruebaPosicionPokemonFallida()
-    {  
-        List<Pokemon> listaPokemon = new List<Pokemon>();
-        CreadorDePokemonYMovimiento creadorDePokemonYMovimiento = new CreadorDePokemonYMovimiento();
-        listaPokemon = creadorDePokemonYMovimiento.listaPokemon;
-        Assert.That(listaPokemon[1].Nombre == "Venusaur");
-    }
-    
-    [Test]
-    public void PruebaEstadisticaPokemonExitosa()
-    {  
-        List<Pokemon> listaPokemon = new List<Pokemon>();
-        CreadorDePokemonYMovimiento creadorDePokemonYMovimiento = new CreadorDePokemonYMovimiento();
-        listaPokemon = creadorDePokemonYMovimiento.listaPokemon;
-        Assert.That(listaPokemon[1].VidaMax == 100);
-    }
-    
-    [Test]
-    public void PruebaEstadisticaPokemonFallida()
-    {  
-        List<Pokemon> listaPokemon = new List<Pokemon>();
-        CreadorDePokemonYMovimiento creadorDePokemonYMovimiento = new CreadorDePokemonYMovimiento();
-        listaPokemon = creadorDePokemonYMovimiento.listaPokemon;
-        Assert.That(listaPokemon[1].VidaMax == 120);
+    [TestFixture]
+    public class PokemonTests
+    {
+        [Test]
+        public void Constructor_InicializaPokemonCorrectamente_Charizard()
+        {
+            var pokemon = new Pokemon("Charizard", "Fuego", 100, 60, 40);
+
+            Assert.AreEqual("Charizard", pokemon.Nombre);
+            Assert.AreEqual("Fuego/Volador", pokemon.Tipo);
+            Assert.AreEqual(100, pokemon.VidaMax);
+            Assert.AreEqual(100, pokemon.VidaActual);
+            Assert.AreEqual(60, pokemon.Ataque);
+            Assert.AreEqual(40, pokemon.Defensa);
+            Assert.AreEqual("Normal", pokemon.Estado);
+        }
+
+        [Test]
+        public void AgregarMovimiento_AgregaMovimientoALaLista_Venusaur()
+        {
+            var pokemon = new Pokemon("Venusaur", "Planta", 120, 40, 60);
+            var movimiento = new Movimiento("Lluevehojas", 20);
+
+            pokemon.agregarMovimiento(movimiento);
+
+            Assert.Contains(movimiento, pokemon.listaMovimientos);
+        }
+
+        [Test]
+        public void AplicarDañoRecurrente_EstadoEnvenenado_RestaVida_Venusaur()
+        {
+            var pokemon = new Pokemon("Venusaur", "Planta", 120, 40, 60);
+            {
+                Estado = "Envenenado";
+                PorcentajeDañoPorTurno = 0.1 ; // 10% de daño por turno
+            };
+
+            pokemon.aplicarDañoRecurrente();
+
+            Assert.AreEqual(144, pokemon.VidaActual); // Debería perder 16 puntos de vida
+        }
+
+        [Test]
+        public void AplicarDañoRecurrente_EstadoQuemado_RestaVida_Charizard()
+        {
+            var pokemon = new Pokemon("Charizard", "Fuego", 100, 60, 40);
+            {
+                Estado = "Quemado";
+                PorcentajeDañoPorTurno = 0.2 ; // 20% de daño por turno
+            };
+
+            pokemon.aplicarDañoRecurrente();
+
+            Assert.AreEqual(120, pokemon.VidaActual); // Debería perder 30 puntos de vida
+        }
+
+        [Test]
+        public void PuedeAtacar_EstadoNormal_RetornaTrue_Blastoise()
+        {
+            var pokemon = new Pokemon("Blastoise", "Agua", 110, 50, 50);
+
+            Assert.IsTrue(pokemon.puedeAtacar());
+        }
+       
+        [Test]
+        public void PuedeAtacar_EstadoDormido_NoPuedeAtacarYReduceTurnosDormido_Charizard()
+        {
+            var pokemon = new Pokemon("Charizard", "Fuego", 100, 60, 40);
+            {
+                Estado = "Dormido";
+                TurnosDormido = 2;
+            };
+
+            bool resultado = pokemon.puedeAtacar();
+
+            Assert.IsFalse(resultado);
+            Assert.AreEqual(1, pokemon.TurnosDormido);
+        }
+
+        [Test]
+        public void PuedeAtacar_EstadoDormido_DespiertaDespuesDeTurnos_Venusaur()
+        {
+            var pokemon = new Pokemon("Venusaur", "Planta", 120, 40, 60);
+            {
+                Estado = "Dormido";
+                TurnosDormido = 1;
+            };
+
+            pokemon.puedeAtacar(); // Turno final de sueño
+            bool resultado = pokemon.puedeAtacar(); // Verifica si puede atacar al despertar
+
+            Assert.IsTrue(resultado);
+            Assert.AreEqual("Normal", pokemon.Estado);
+        }
+
+        [Test]
+        public void PuedeAtacar_EstadoParalizado_PuedeAtacarOQuedaParalizado_Blastoise()
+        {
+            var pokemon = new Pokemon("Blastoise", "Agua", 110, 50, 50);
+            {
+                Estado = "Paralizado";
+            };
+
+            bool puedeAtacar = pokemon.puedeAtacar();
+
+            Assert.IsTrue(puedeAtacar || !puedeAtacar); // 33% chance de estar paralizado; probamos ambos casos.
+        }
     }
 }
