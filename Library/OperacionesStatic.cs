@@ -5,7 +5,7 @@ namespace Library
         public static int numeroAleatorio(int minimo, int maximo)
         {
             Random random = new Random();
-            return random.Next(minimo, maximo);
+            return random.Next(minimo, maximo + 1);
         }
 
         public static double CalcularCritico(int precisionMovimiento)

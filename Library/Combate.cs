@@ -58,13 +58,13 @@ public class Combate
             else
             {
                 // Turno del jugador 2
-                banderaGlobal = logica.MenuDeJugador(j1, j2); 
+                banderaGlobal = logica.MenuDeJugador(j2, j1); 
                 // Si la bandera global toma el valor de falso, significa que termino el combate
 
                 if (banderaGlobal)
                 {
                     // Turno del jugador 1
-                    banderaGlobal = logica.MenuDeJugador(j2, j1);
+                    banderaGlobal = logica.MenuDeJugador(j1, j2);
                 }
             }
         }
