@@ -2,11 +2,14 @@ using System;
 
 namespace Library
 {
+    /// <summary>
+    /// Esta clase como las demas, estaran heredando mi interfaz de Iitems, con su metodo con diferente funcionalidad
+    /// </summary>
     public class CuraTotal : Iitem
     {
         public void Usar(Jugador j)
         {
-            ///Variable local
+            //Utilizo mi variable local
             var pokemon = j.pokemonEnCancha();
             if(pokemon.Estado=="Normal") {
                 Console.WriteLine("No puedes usar el item ya que el pokemon esta en estado normal");
