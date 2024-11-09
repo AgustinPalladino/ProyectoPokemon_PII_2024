@@ -23,7 +23,7 @@ public class Logica
         while (bandera)
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine($"\nTurno de {j1.Nombre}. ¿Qué deseas hacer?");
+            Console.WriteLine($"\nTurno de {j1.Nombre}. ¿Qué deseas hacer? Seleccione un numero porfavor.");
             Console.WriteLine($"Su pokemon en el combate es: {j1.pokemonEnCancha().Nombre}");
             Console.ResetColor();
 
@@ -89,61 +89,51 @@ public class Logica
         while (bandera)
         {
             bool pokemonEncontrado = false;
-            try
-            {
-                Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.WriteLine($"{j.Nombre}, ingrese el nombre del pokemon que desea elegir");
-                Console.ResetColor();
-                string pokeIngresado = Console.ReadLine();
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine($"{j.Nombre}, ingrese el nombre del pokemon que desea elegir");
+            Console.ResetColor();
+            string pokeIngresado = Console.ReadLine();
 
-                foreach (Pokemon pokemon in listaPokemon)
+            foreach (Pokemon pokemon in listaPokemon)
+            {
+                if (pokeIngresado == pokemon.Nombre)
                 {
-                    if (pokeIngresado == pokemon.Nombre)
+                    pokemonEncontrado = true;
+                    if (!j.nombreCheck.Contains(pokeIngresado)) // Añade al pokemon si no estaba en el equipo
                     {
-                        pokemonEncontrado = true;
-                        if (!j.equipoPokemon.Contains(pokemon)) // Añade al pokemon si no estaba en el equipo
-                        {
-                            j.agregarPokemon(pokemon.Clonar());
-                            Console.ForegroundColor = ConsoleColor.Green;
-                            Console.WriteLine($"{pokemon.Nombre} ha sido agregado a tu equipo.");
-                            Console.ResetColor();
-                            bandera = false;
-                        }
-                        else
-                        {
-                            Console.ForegroundColor = ConsoleColor.Yellow;
-                            Console.WriteLine("El pokemon ya está en el equipo, elija otro pokemon.");
-                            Console.ResetColor();
-                        }
-                        break;
+                        j.nombreCheck.Add(pokeIngresado);
+                        j.agregarPokemon(pokemon.Clonar());
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine($"{pokemon.Nombre} ha sido agregado a tu equipo.");
+                        Console.ResetColor();
+                        bandera = false;
                     }
-                }
-                //Si el pokemon nunca se encontro, vuelve a pedirlo
-                if (!pokemonEncontrado)
-                {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Pokemon no encontrado, intente nuevamente.");
-                    Console.ResetColor();
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.WriteLine("El pokemon ya está en el equipo, elija otro pokemon.");
+                        Console.ResetColor();
+                    }
+                    break;
                 }
             }
-            // Captura cualquier tipo de error extra y muestra un mensaje
-            catch (Exception ex)
+            //Si el pokemon nunca se encontro, vuelve a pedirlo
+            if (!pokemonEncontrado)
             {
-                // Captura cualquier excepción y muestra un mensaje
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Ocurrio un error inesperado: " + ex.Message);
+                Console.WriteLine("Pokemon no encontrado, intente nuevamente.");
                 Console.ResetColor();
             }
         }
     }
 
+    
     public bool CambiarPokemon(Jugador j)
     {
         bool bandera = true;
         string pokeIngresado;
         while (bandera)
         {
-            
             try
             {
                 if (j.equipoPokemon[0] == null)
@@ -173,11 +163,11 @@ public class Logica
                 // Cambia al pokemon si el nombre de este coincide
                 for (int i = 0; i < j.equipoPokemon.Count; i++)
                 {
-                    if (pokeIngresado == j.equipoPokemon[i]?.Nombre) // Usar '?' para evitar NullReferenceException
+                    if (pokeIngresado == j.equipoPokemon[i].Nombre) // Usar '?' para evitar NullReferenceException
                     {
                         j.cambiarPokemon(j.equipoPokemon[i]);
+                        return true;
                     }
-                    return true;
                 }
             }
             // Maneja errores inesperados
