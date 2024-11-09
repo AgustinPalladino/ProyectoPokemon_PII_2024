@@ -13,8 +13,10 @@ public class Logica
         //Al instanciarse logica se copian la lista de pokemon en su propia lista
     }
     
-    
-    //Este metodo despliega el menu de opciones de cada jugador
+    /// <summary>
+    /// Este metodo despliega el menu de opciones de cada jugador, decidimos ponerlo aqui, por uno de los patrones GRASP
+    /// llamado bajo acomplamiento, con la intencion de que logica interactue con jugador de una manera mas cercana que combate
+    /// </summary>
     public bool switchCase(Jugador j1, Jugador j2)
     {
         bool bandera = true;
@@ -204,7 +206,7 @@ public class Logica
                 Console.ResetColor();
                 for (int i = 0; i < j.Mochila.Count; i++)
                 {
-                    Console.WriteLine($"{i + 1}- {j.Mochila[i].Nombre}");
+                    Console.WriteLine($"- {j.Mochila[i].Nombre}");
                 }
                 Console.WriteLine("Seleccione el nombre del item para usarlo o 0 para salir");
                 string item = Console.ReadLine();
