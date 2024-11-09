@@ -9,6 +9,10 @@ public class Jugador
     public List<IItem> Mochila = new List<IItem>();
     
     
+    /// <summary>
+    /// Constructor
+    /// </summary>
+    /// <param name="Nombre"></param>
     public Jugador(string Nombre)
     {
         this.Nombre = Nombre;
@@ -21,7 +25,9 @@ public class Jugador
         Mochila.Add(new CuraTotal()); 
     }
 
-    
+    /// <summary>
+    /// Metodo para mostrar pokemones en el equipo
+    /// </summary>
     public void mostrarEquipo()
     {
         Console.WriteLine($"El equipo del {this.Nombre} equipo es: ");
@@ -31,7 +37,9 @@ public class Jugador
         }
     }
     
-
+    /// <summary>
+    /// Método para ver ataques que tiene el pokemon
+    /// </summary>
     
     public void verMovimientos()
     {
@@ -41,31 +49,47 @@ public class Jugador
         }
     }
 
-    
+    /// <summary>
+    /// Metodo para ver la salud del pokemon
+    /// </summary>
     public void verSalud()
     {
         Console.WriteLine($"{this.pokemonEnCancha().VidaActual}/{this.pokemonEnCancha().VidaMax}");
     }
     
-    
+    /// <summary>
+    /// Método para agregar pokemon
+    /// </summary>
+    /// <param name="pokemon"></param>
     public void agregarPokemon(Pokemon pokemon)
     {
         this.equipoPokemon.Add(pokemon);
     }
-    
+    /// <summary>
+    /// Método que devuelvo el pokemon en cancha
+    /// </summary>
+    /// <returns></returns>
     
     public Pokemon pokemonEnCancha()
     {
         return equipoPokemon[0];
     }
 
-    
+    /// <summary>
+    /// Método para cambiar de pokemon
+    /// </summary>
+    /// <param name="pokemon"></param>
     public void cambiarPokemon(Pokemon pokemon)
     {
         int posicionPokemon = equipoPokemon.IndexOf(pokemon);
         (equipoPokemon[0], equipoPokemon[posicionPokemon]) = (equipoPokemon[posicionPokemon], equipoPokemon[0]);
     }
     
+    /// <summary>
+    /// Método para atacar al enemigo
+    /// </summary>
+    /// <param name="jEnemigo"></param>
+    /// <param name="movimiento"></param>
     
     public void atacar(Jugador jEnemigo, Movimiento movimiento)
     {
@@ -73,22 +97,20 @@ public class Jugador
         jEnemigo.pokemonEnCancha().VidaActual -= (int)(danio * OperacionesStatic.bonificacionTipos(movimiento.Tipo, jEnemigo.pokemonEnCancha().Tipo));
     }
     
+    /// <summary>
+    /// Método usar Mochila
+    /// </summary>
+    /// <returns></returns>
     public bool UsarMochila()
     {
         if (this.Mochila.Count == 0)
         {
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("⚠️ Tu mochila esta vacia");
-            Console.ResetColor();
+            Console.WriteLine(" Tu mochila esta vacia");
             return false;
         }
-
-        Console.ForegroundColor = ConsoleColor.Cyan;
-        Console.WriteLine("\n📦 Mochila:");
-        Console.ResetColor();
-        Console.ForegroundColor = ConsoleColor.Cyan;
+        
+        Console.WriteLine("\n Mochila:");
         Console.WriteLine("Seleccione el nombre del item para usarlo, o '0' para salir");
-        Console.ResetColor();
         for (int i = 0; i < this.Mochila.Count; i++)
         {
             Console.WriteLine($"{i + 1}. {this.Mochila[i].Nombre}");

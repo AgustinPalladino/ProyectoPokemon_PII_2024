@@ -4,9 +4,7 @@ public class Combate
 {
     public void MostrarCatalogo(List<Pokemon> listaPokemon)
     {
-        Console.ForegroundColor = ConsoleColor.Cyan;
-        Console.WriteLine("\n📜 Catálogo de Pokémon disponibles:");
-        Console.ResetColor();
+        Console.WriteLine("\nCatálogo de Pokémon disponibles:");
 
         foreach (Pokemon pokemon in listaPokemon)
         {
@@ -25,10 +23,8 @@ public class Combate
             logica.EscogerEquipo(j1);
             logica.EscogerEquipo(j2);
         }
-
-        Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine("\n✅ Equipos seleccionados:");
-        Console.ResetColor();
+        
+        Console.WriteLine("\nEquipos seleccionados:");
         j1.mostrarEquipo();
         j2.mostrarEquipo();
 
@@ -40,9 +36,7 @@ public class Combate
             // Turno del jugador 1
             while (bandera)
             {
-                Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine($"\n🎮 Turno de {j1.Nombre}. ¿Qué deseas hacer?");
-                Console.ResetColor();
+                Console.WriteLine($"\n Turno de {j1.Nombre}. ¿Qué deseas hacer?");
 
                 Console.WriteLine("1️⃣ Ver las habilidades de tu Pokémon (No consume turno)");
                 Console.WriteLine("2️⃣ Ver la salud de tu Pokémon (No consume turno)");
@@ -66,9 +60,7 @@ public class Combate
                         logica.Ataque(j1, j2);
                         if (logica.ChequeoVictoria(j1, j2))
                         {
-                            Console.ForegroundColor = ConsoleColor.Green;
-                            Console.WriteLine($"\n🎉 {j1.Nombre} es el ganador!");
-                            Console.ResetColor();
+                            Console.WriteLine($"\n {j1.Nombre} es el ganador!");
                             banderaGlobal = false;
                         }
                         bandera = false;
@@ -81,13 +73,10 @@ public class Combate
                         j1.UsarMochila();
                         break;
                     case 6:
-                        Console.ForegroundColor = ConsoleColor.Red;
                         Environment.Exit(0);//acabo con al ejecucion de forma bruta
                         break;
                     default:
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("❌ Opción no válida, intenta de nuevo.");
-                        Console.ResetColor();
+                        Console.WriteLine("Opción no válida, intenta de nuevo.");
                         break;
                 }
                 if (!bandera) break;
@@ -105,9 +94,7 @@ public class Combate
             // Turno del jugador 2
             while (bandera)
             {
-                Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine($"\n🎮 Turno de {j2.Nombre}. ¿Qué deseas hacer?");
-                Console.ResetColor();
+                Console.WriteLine($"\nTurno de {j2.Nombre}. ¿Qué deseas hacer?");
 
                 Console.WriteLine("1️⃣ Ver las habilidades de tu Pokémon (No consume turno)");
                 Console.WriteLine("2️⃣ Ver la salud de tu Pokémon (No consume turno)");
@@ -129,9 +116,7 @@ public class Combate
                         logica.Ataque(j2, j1);
                         if (logica.ChequeoVictoria(j2, j1))
                         {
-                            Console.ForegroundColor = ConsoleColor.Green;
-                            Console.WriteLine($"\n🎉 {j2.Nombre} es el ganador!");
-                            Console.ResetColor();
+                            Console.WriteLine($"\n{j2.Nombre} es el ganador!");
                             banderaGlobal = false;
                         }
                         bandera = false;
@@ -144,9 +129,7 @@ public class Combate
                         j2.UsarMochila();
                         break;
                     default:
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("❌ Opción no válida, intenta de nuevo.");
-                        Console.ResetColor();
+                        Console.WriteLine("Opción no válida, intenta de nuevo.");
                         break;
                 }
                 if (!bandera) break;

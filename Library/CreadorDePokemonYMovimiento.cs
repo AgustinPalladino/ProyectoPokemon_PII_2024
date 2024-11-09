@@ -7,12 +7,17 @@ namespace Library
     public class CreadorDePokemonYMovimiento
     {
         public List<Pokemon> listaPokemon = new();
-
+        
+        /// <summary>
+        /// Constructor.
+        /// </summary>
         public CreadorDePokemonYMovimiento()
         {
             AgregarPokemon();
         }
-
+        /// <summary>
+        /// Método para agregar Pokemones con sus respectivos movimientos.
+        /// </summary>
         public void AgregarPokemon()
         {
             
@@ -44,37 +49,71 @@ namespace Library
             Movimiento GarraDragon = new Movimiento("GarraDragon", 30, "Lucha", false);
             Movimiento Confusion = new Movimiento("Confusion",50,"Psiquico",false);
             Movimiento LanzaRocas = new Movimiento("LanzaRocas", 20, "Tierra", false);
+            Movimiento Dormir = new Movimiento("Dormir", 0, "Psiquico", true);
+            Movimiento Envenenar = new Movimiento("Envenenar", 0, "Veneno", true);
+            Movimiento Quemar = new Movimiento("Quemar", 0, "Fuego", true);
+            Movimiento Paralizar = new Movimiento("Paralizar", 0, "Electrico", true);
             // Agregar movimientos a los pokemons
             venusaur.agregarMovimiento(Arañazo);
             venusaur.agregarMovimiento(Lluevehojas);
+            venusaur.agregarMovimiento(Dormir);
+            venusaur.agregarMovimiento(Quemar);
             charizard.agregarMovimiento(Arañazo);
             charizard.agregarMovimiento(Lanzallamas);
+            charizard.agregarMovimiento(Paralizar);
+            charizard.agregarMovimiento(Quemar);
             blastoise.agregarMovimiento(Arañazo);
             blastoise.agregarMovimiento(Hidrocañon);
+            blastoise.agregarMovimiento(Dormir);
+            blastoise.agregarMovimiento(Envenenar);
             pikachu.agregarMovimiento(Arañazo);
             pikachu.agregarMovimiento(Electrocañon);
+            pikachu.agregarMovimiento(Envenenar);
+            pikachu.agregarMovimiento(Paralizar);
             pidgeot.agregarMovimiento(Aéreo);
             pidgeot.agregarMovimiento(Arañazo);
+            pidgeot.agregarMovimiento(Dormir);
+            pidgeot.agregarMovimiento(Paralizar);
             butterfree.agregarMovimiento(Colmilloveneno);
             butterfree.agregarMovimiento(Aéreo);
+            butterfree.agregarMovimiento(Quemar);
+            butterfree.agregarMovimiento(Dormir);
             dragonite.agregarMovimiento(Puñofuego);
             dragonite.agregarMovimiento(GarraDragon);
+            dragonite.agregarMovimiento(Paralizar);
+            dragonite.agregarMovimiento(Paralizar);
             articuno.agregarMovimiento(Arañazo);
             articuno.agregarMovimiento(Aéreo);
+            articuno.agregarMovimiento(Dormir);
+            articuno.agregarMovimiento(Envenenar);
             machamp.agregarMovimiento(Arañazo);
             machamp.agregarMovimiento(Puñodinámico);
+            machamp.agregarMovimiento(Paralizar);
+            machamp.agregarMovimiento(Quemar);
             alakazam.agregarMovimiento(Arañazo);
             alakazam.agregarMovimiento(Confusion);
+            alakazam.agregarMovimiento(Quemar);
+            alakazam.agregarMovimiento(Envenenar);
             gengar.agregarMovimiento(Arañazo);
             gengar.agregarMovimiento(Confusion);
+            gengar.agregarMovimiento(Quemar);
+            gengar.agregarMovimiento(Envenenar);
             onix.agregarMovimiento(LanzaRocas);
             onix.agregarMovimiento(Arañazo);
+            onix.agregarMovimiento(Dormir);
+            onix.agregarMovimiento(Envenenar);
             groudon.agregarMovimiento(LanzaRocas);
             groudon.agregarMovimiento(Arañazo);
+            groudon.agregarMovimiento(Envenenar);
+            groudon.agregarMovimiento(Paralizar);
             muk.agregarMovimiento(Colmilloveneno);
             muk.agregarMovimiento(Confusion);
+            muk.agregarMovimiento(Dormir);
+            muk.agregarMovimiento(Quemar);
             snorlax.agregarMovimiento(Arañazo);
             snorlax.agregarMovimiento(Puñodinámico);
+            snorlax.agregarMovimiento(Envenenar);
+            snorlax.agregarMovimiento(Dormir);
 
 
 
