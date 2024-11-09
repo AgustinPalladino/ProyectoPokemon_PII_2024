@@ -1,490 +1,125 @@
-namespace Library;
-
-public static class OperacionesStatic
+namespace Library
 {
-    public static int numeroAleatorio(int minimo, int maximo)
+    public static class OperacionesStatic
     {
-        Random random = new Random();
-        return random.Next(minimo, maximo);
-    }
-    private static double CalcularCritico(string tipoMovimiento, string tipoPokemonDefensor)
-    {
-           
-        int probabilidad = numeroAleatorio(1, 101); //Numero entre 1 y 100
-        if (probabilidad <= 10) // 10% de probabilidad d golpe critico
+        public static int numeroAleatorio(int minimo, int maximo)
         {
-            Console.WriteLine("¡Golpe crítico!");
-            return 1.2; // Multiplicador de 20% más de daño
-        }
-        return 1.0; // Sin crítico, el daño es normal
-    }
-    
-    //A continuación se crea bonificacionTipos el cual es un multiplicador al valor del ataque, dependiendo si hay efectividad de tipo o no.
-    //Discutir que se podría hacer envez de muchos ifs
-    public static double bonificacionTipos(string tipoMovimiento, string tipoPokemonDefensor)
-    {
-        if (tipoPokemonDefensor == "Agua")
-        {
-            if (tipoMovimiento == "Eléctrico")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Planta")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Agua")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-            if (tipoMovimiento == "Fuego")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-            if (tipoMovimiento == "Hielo")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-        }
-        
-        if (tipoPokemonDefensor == "Bicho")
-        {
-            if (tipoMovimiento == "Fuego")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Roca")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Volador")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Veneno")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Lucha")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-            if (tipoMovimiento == "Planta")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-            if (tipoMovimiento == "Tierra")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-        }
-        
-        if (tipoPokemonDefensor == "Dragón")
-        {
-            if (tipoMovimiento == "Dragón")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Hielo")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Agua")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-            if (tipoMovimiento == "Eléctrico")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-            if (tipoMovimiento == "Fuego")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-            if (tipoMovimiento == "Planta")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-        }
-        
-        if (tipoPokemonDefensor == "Eléctrico")
-        {
-            if (tipoMovimiento == "Tierra")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Volador")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-            if (tipoMovimiento == "Eléctrico")
-            {
-                Console.WriteLine("No le afecta ese ataque");
-                return 0;
-            }
-        }
-        
-        if (tipoPokemonDefensor == "Fantasma")
-        {
-            if (tipoMovimiento == "Fantasma")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Veneno")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-            if (tipoMovimiento == "Lucha")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-            if (tipoMovimiento == "Normal")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
+            Random random = new Random();
+            return random.Next(minimo, maximo);
         }
 
-        if (tipoPokemonDefensor == "Fuego")
+        public static double CalcularCritico(string tipoMovimiento, string tipoPokemonDefensor)
         {
-            if (tipoMovimiento == "Agua")
+            int probabilidad = numeroAleatorio(1, 101); // Número entre 1 y 100
+            if (probabilidad <= 10) // 10% de probabilidad de golpe crítico
             {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
+                Console.WriteLine("¡Golpe crítico!");
+                return 1.2; // Multiplicador de 20% más de daño
             }
-            if (tipoMovimiento == "Roca")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Tierra")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Bicho")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-            if (tipoMovimiento == "Fuego")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-            if (tipoMovimiento == "Planta")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
+            return 1.0; // Sin crítico, el daño es normal
         }
-        
-        if (tipoPokemonDefensor == "Hielo")
+
+        /// Diccionario para definir bonificaciones de tipo
+        private static readonly Dictionary<(string tipoMovimiento, string tipoPokemonDefensor), double> bonificacionesTipos =
+            new Dictionary<(string, string), double>
+            {
+                { ("Eléctrico", "Agua"), 2 },
+                { ("Planta", "Agua"), 2 },
+                { ("Agua", "Agua"), 0.5 },
+                { ("Fuego", "Agua"), 0.5 },
+                { ("Hielo", "Agua"), 0.5 },
+                { ("Fuego", "Bicho"), 2 },
+                { ("Roca", "Bicho"), 2 },
+                { ("Volador", "Bicho"), 2 },
+                { ("Veneno", "Bicho"), 2 },
+                { ("Lucha", "Bicho"), 0.5 },
+                { ("Planta", "Bicho"), 0.5 },
+                { ("Tierra", "Bicho"), 0.5 },
+                { ("Dragón", "Dragón"), 2 },
+                { ("Hielo", "Dragón"), 2 },
+                { ("Agua", "Dragón"), 0.5 },
+                { ("Eléctrico", "Dragón"), 0.5 },
+                { ("Fuego", "Dragón"), 0.5 },
+                { ("Planta", "Dragón"), 0.5 },
+                { ("Tierra", "Eléctrico"), 2 },
+                { ("Volador", "Eléctrico"), 0.5 },
+                { ("Eléctrico", "Eléctrico"), 0 },
+                { ("Fantasma", "Fantasma"), 2 },
+                { ("Veneno", "Fantasma"), 0.5 },
+                { ("Lucha", "Fantasma"), 0.5 },
+                { ("Normal", "Fantasma"), 0.5 },
+                { ("Agua", "Fuego"), 2 },
+                { ("Roca", "Fuego"), 2 },
+                { ("Tierra", "Fuego"), 2 },
+                { ("Bicho", "Fuego"), 0.5 },
+                { ("Fuego", "Fuego"), 0.5 },
+                { ("Planta", "Fuego"), 0.5 },
+                { ("Fuego", "Hielo"), 2 },
+                { ("Lucha", "Hielo"), 2 },
+                { ("Roca", "Hielo"), 2 },
+                { ("Hielo", "Hielo"), 0.5 },
+                { ("Psíquico", "Lucha"), 2 },
+                { ("Volador", "Lucha"), 2 },
+                { ("Bicho", "Lucha"), 2 },
+                { ("Roca", "Lucha"), 2 },
+                { ("Lucha", "Normal"), 2 },
+                { ("Fantasma", "Normal"), 0 },
+                { ("Bicho", "Planta"), 2 },
+                { ("Fuego", "Planta"), 2 },
+                { ("Hielo", "Planta"), 2 },
+                { ("Veneno", "Planta"), 2 },
+                { ("Volador", "Planta"), 2 },
+                { ("Agua", "Planta"), 0.5 },
+                { ("Eléctrico", "Planta"), 0.5 },
+                { ("Planta", "Planta"), 0.5 },
+                { ("Tierra", "Planta"), 0.5 },
+                { ("Bicho", "Psíquico"), 2 },
+                { ("Lucha", "Psíquico"), 2 },
+                { ("Fantasma", "Psíquico"), 2 },
+                { ("Agua", "Roca"), 2 },
+                { ("Lucha", "Roca"), 2 },
+                { ("Planta", "Roca"), 2 },
+                { ("Tierra", "Roca"), 2 },
+                { ("Fuego", "Roca"), 0.5 },
+                { ("Normal", "Roca"), 0.5 },
+                { ("Veneno", "Roca"), 0.5 },
+                { ("Volador", "Roca"), 0.5 },
+                { ("Agua", "Tierra"), 2 },
+                { ("Hielo", "Tierra"), 2 },
+                { ("Planta", "Tierra"), 2 },
+                { ("Roca", "Tierra"), 2 },
+                { ("Veneno", "Tierra"), 2 },
+                { ("Eléctrico", "Tierra"), 0.5 },
+                { ("Bicho", "Veneno"), 2 },
+                { ("Psíquico", "Veneno"), 2 },
+                { ("Tierra", "Veneno"), 2 },
+                { ("Lucha", "Veneno"), 2 },
+                { ("Planta", "Veneno"), 0.5 },
+                { ("Veneno", "Veneno"), 0.5 },
+                { ("Eléctrico", "Volador"), 2 },
+                { ("Hielo", "Volador"), 2 },
+                { ("Roca", "Volador"), 2 },
+                { ("Bicho", "Volador"), 0.5 },
+                { ("Lucha", "Volador"), 0.5 },
+                { ("Planta", "Volador"), 0.5 },
+                { ("Tierra", "Volador"), 0.5 }
+            };
+
+        /// <summary>
+        /// Método para obtener la bonificación de tipo
+        /// </summary>
+        /// <param name="tipoMovimiento"></param>
+        /// <param name="tipoPokemonDefensor"></param>
+        /// <returns></returns>
+        public static double bonificacionTipos(string tipoMovimiento, string tipoPokemonDefensor)
         {
-            if (tipoMovimiento == "Fuego")
+            if (bonificacionesTipos.TryGetValue((tipoMovimiento, tipoPokemonDefensor), out double bonificacion))
             {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
+                Console.WriteLine(bonificacion == 2 ? "Es muy eficaz" : bonificacion == 0.5 ? "No es muy eficaz" : "No le afecta ese ataque");
+                return bonificacion;
             }
-            if (tipoMovimiento == "Lucha")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Roca")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Hielo")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
+
+            return 1; /// Si no hay bonificación específica, el daño es normal
         }
-        
-        if (tipoPokemonDefensor == "Lucha")
-        {
-            if (tipoMovimiento == "Psíquico")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Volador")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Bicho")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Roca")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-        }
-        
-        if (tipoPokemonDefensor == "Normal")
-        {
-            if (tipoMovimiento == "Lucha")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Fantasma")
-            {
-                Console.WriteLine("No le afecta ese ataque");
-                return 0;
-            }
-        }
-        
-        if (tipoPokemonDefensor == "Planta")
-        {
-            if (tipoMovimiento == "Bicho")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Fuego")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Hielo")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Veneno")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Volador")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Agua")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-            if (tipoMovimiento == "Eléctrico")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-            if (tipoMovimiento == "Planta")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-            if (tipoMovimiento == "Tierra")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-        }
-        
-        if (tipoPokemonDefensor == "Psíquico")
-        {
-            if (tipoMovimiento == "Bicho")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Lucha")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Fantasma")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-        }
-        
-        if (tipoPokemonDefensor == "Roca")
-        {
-            if (tipoMovimiento == "Agua")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Lucha")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Planta")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Tierra")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Fuego")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-            if (tipoMovimiento == "Normal")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-            if (tipoMovimiento == "Veneno")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-            if (tipoMovimiento == "Volador")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-        }
-        
-        if (tipoPokemonDefensor == "Tierra")
-        {
-            if (tipoMovimiento == "Agua")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Hielo")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Planta")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Roca")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Veneno")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Eléctrico")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-        }
-        
-        if (tipoPokemonDefensor == "Veneno")
-        {
-            if (tipoMovimiento == "Bicho")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Psíquico")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Tierra")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Lucha")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Planta")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-            if (tipoMovimiento == "Veneno")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-        }
-        
-        if (tipoPokemonDefensor == "Volador")
-        {
-            if (tipoMovimiento == "Eléctrico")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Hielo")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Roca")
-            {
-                Console.WriteLine("Es muy eficaz");
-                return 2;
-            }
-            if (tipoMovimiento == "Bicho")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-            if (tipoMovimiento == "Lucha")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-            if (tipoMovimiento == "Planta")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-            if (tipoMovimiento == "Tierra")
-            {
-                Console.WriteLine("No es muy eficaz");
-                return 0.5;
-            }
-            
-        }
-        
-        return 1;
     }
-    
 }

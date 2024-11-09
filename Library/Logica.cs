@@ -1,159 +1,148 @@
-using System.Linq.Expressions;
-using System.Reflection.Metadata;
-using Library.Moves;
+using System;
+using System.Collections.Generic;
 
-namespace Library;
-
-public class Logica
+namespace Library
 {
-    public List<Pokemon> listaPokemon = new ();
-    
-    
-    public Logica()
+    public class Combate
     {
-        CreadorDePokemonYMovimiento creadorDePokemonYMovimiento = new CreadorDePokemonYMovimiento();
-        listaPokemon = creadorDePokemonYMovimiento.listaPokemon;
-    }
-    
-    
-    public void EscogerEquipo(Jugador j)
-    {
-        bool bandera = true;
-    
-        while (bandera)
+        public void MostrarCatalogo(List<Pokemon> listaPokemon)
         {
-            bool pokemonEncontrado = false; // Variable para verificar si el pokemon fue encontrado
-            try
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("\n📜 Catálogo de Pokémon disponibles:");
+            Console.ResetColor();
+
+            foreach (Pokemon pokemon in listaPokemon)
             {
-                Console.WriteLine($"{j.Nombre}, ingrese el nombre del pokemon que desea elegir:");
-                string pokeIngresado = Console.ReadLine();
+                Console.WriteLine($"- {pokemon.Nombre}");
+            }
+        }
 
-                if (string.IsNullOrWhiteSpace(pokeIngresado))
-                {
-                    throw new ArgumentException("Entrada erronea, hagalo nuevamente");
-                }
+        public void BuclePrincipal(Jugador j1, Jugador j2)
+        {
+            Logica logica = new Logica();
+            CreadorDePokemonYMovimiento creadorDePokemonYMovimiento = new CreadorDePokemonYMovimiento();
+            MostrarCatalogo(creadorDePokemonYMovimiento.listaPokemon);
+            
+            for (int i = 0; i < 2; i++)
+            {
+                logica.EscogerEquipo(j1);
+                logica.EscogerEquipo(j2);
+            }
+            
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\n✅ Equipos seleccionados:");
+            Console.ResetColor();
+            j1.mostrarEquipo();
+            j2.mostrarEquipo();
 
-                foreach (Pokemon pokemon in listaPokemon)
+            bool bandera = true;
+            bool banderaGlobal = true;
+
+            while (banderaGlobal)
+            {
+                // Turno del jugador 1
+                while (bandera)
                 {
-                    if (pokeIngresado == pokemon.Nombre)
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine($"\n🎮 Turno de {j1.Nombre}. ¿Qué deseas hacer?");
+                    Console.ResetColor();
+
+                    Console.WriteLine("1️⃣ Ver las habilidades de tu Pokémon (No consume turno)");
+                    Console.WriteLine("2️⃣ Ver la salud de tu Pokémon (No consume turno)");
+                    Console.WriteLine("3️⃣ Atacar (Consume un turno)");
+                    Console.WriteLine("4️⃣ Cambiar de Pokémon (Consume un turno)");
+
+                    int opcion = Convert.ToInt32(Console.ReadLine());
+
+                    switch (opcion)
                     {
-                        pokemonEncontrado = true; // Marcamos que el pokemon fue encontrado
-
-                        if (!j.equipoPokemon.Contains(pokemon))
-                        {
-                            j.agregarPokemon(pokemon.Clonar());
-                            Console.WriteLine($"{pokemon.Nombre} ha sido agregado a tu equipo");
-                            bandera = false; // Salimos del bucle después de agregar el Pokémon
-                        }
-                        else
-                        {
-                            Console.WriteLine("El pokemon ya esta en el equipo, elija otro pokemon");
-                        }
-                        break; // Salimos del foreach ya que encontramos el pokemon
+                        case 1:
+                            j1.verMovimientos();
+                            break;
+                        case 2:
+                            j1.verSalud();
+                            break;
+                        case 3:
+                            logica.Ataque(j1, j2);
+                            if (logica.ChequeoVictoria(j1, j2))
+                            {
+                                Console.ForegroundColor = ConsoleColor.Green;
+                                Console.WriteLine($"\n🎉 {j1.Nombre} es el ganador!");
+                                Console.ResetColor();
+                                banderaGlobal = false;
+                            }
+                            bandera = false;
+                            break;
+                        case 4:
+                            logica.CambiarPokemon(j1);
+                            bandera = false;
+                            break;
+                        default:
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("❌ Opción no válida, intenta de nuevo.");
+                            Console.ResetColor();
+                            break;
                     }
+                    if (!bandera) break;
                 }
 
-                if (!pokemonEncontrado)
+                if (!banderaGlobal)
                 {
-                    Console.WriteLine("Pokemon no encontrado, hagalo nuevamente");
+                    bandera = false;
                 }
-            }
-            catch (ArgumentException ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Ocurrio un error inesperado: " + ex.Message);
-            }
-        }
-    }
-
-    
-    public void CambiarPokemon(Jugador j)
-    {
-        bool pokemonValido = true;
-        while (pokemonValido)
-        {
-            Console.WriteLine("Escoge el pokemon a cambiar:");
-            string pokeIngresado = Console.ReadLine();
-
-            for (int i = 0; i < j.equipoPokemon.Count; i++)
-            {
-                if (pokeIngresado == j.equipoPokemon[i].Nombre)
+                else
                 {
-                    j.cambiarPokemon(j.equipoPokemon[i]);
-                    pokemonValido = false;
+                    bandera = true;
                 }
-            }
-            if (pokemonValido)
-            {
-                Console.WriteLine("Pokemon no encontrado, elija nuevamente.");
-            }
-        }
-    }
-    
-    
-    public Movimiento EscogerMovimiento(Jugador j)
-    {
-        bool bandera = true;
-        while (bandera)
-        {
-            Console.WriteLine($"{j.Nombre}. ingrese el nombre del movimiento desee usar");
-            string movimiento = Console.ReadLine();
-            foreach (Movimiento mov in j.pokemonEnCancha().listaMovimientos)
-            {
-                if (movimiento == mov.Nombre)
+
+                // Turno del jugador 2
+                while (bandera)
                 {
-                    return mov;
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine($"\n🎮 Turno de {j2.Nombre}. ¿Qué deseas hacer?");
+                    Console.ResetColor();
+
+                    Console.WriteLine("1️⃣ Ver las habilidades de tu Pokémon (No consume turno)");
+                    Console.WriteLine("2️⃣ Ver la salud de tu Pokémon (No consume turno)");
+                    Console.WriteLine("3️⃣ Atacar (Consume un turno)");
+                    Console.WriteLine("4️⃣ Cambiar de Pokémon (Consume un turno)");
+
+                    int opcion = Convert.ToInt32(Console.ReadLine());
+
+                    switch (opcion)
+                    {
+                        case 1:
+                            j2.verMovimientos();
+                            break;
+                        case 2:
+                            j2.verSalud();
+                            break;
+                        case 3:
+                            logica.Ataque(j2, j1);
+                            if (logica.ChequeoVictoria(j2, j1))
+                            {
+                                Console.ForegroundColor = ConsoleColor.Green;
+                                Console.WriteLine($"\n🎉 {j2.Nombre} es el ganador!");
+                                Console.ResetColor();
+                                banderaGlobal = false;
+                            }
+                            bandera = false;
+                            break;
+                        case 4:
+                            logica.CambiarPokemon(j2);
+                            bandera = false;
+                            break;
+                        default:
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("❌ Opción no válida, intenta de nuevo.");
+                            Console.ResetColor();
+                            break;
+                    }
+                    if (!bandera) break;
                 }
-            }
-            Console.WriteLine("Error");
-        }
-        return null;
-    }
-    
-    
-    public int Ataque(Jugador jugador, Jugador jEnemigo)
-    {
-        Movimiento movimiento = EscogerMovimiento(jugador);
-        jugador.atacar(jEnemigo, movimiento);
-        if (jugador.pokemonEnCancha().puedeAtacar())
-        {
-            jugador.atacar(jEnemigo, movimiento);
-            jEnemigo.pokemonEnCancha().aplicarDañoRecurrente();
-        }
 
-        if (movimiento.EsEspecial && jEnemigo.pokemonEnCancha().Estado == "Normal")
-        {
-            movimiento.AplicarAtaquesEspeciales(jEnemigo.pokemonEnCancha());
-            Console.WriteLine($"{jEnemigo.pokemonEnCancha().Nombre} ahora está bajo efecto del ataque {movimiento.Nombre}");
-            jEnemigo.pokemonEnCancha().aplicarDañoRecurrente();
-        }
-        
-        if (jEnemigo.pokemonEnCancha().VidaActual <= 0)
-        {
-            Console.WriteLine($"{jEnemigo.Nombre}, tu {jEnemigo.pokemonEnCancha().Nombre} fue derrotado");
-            jEnemigo.equipoPokemon.Remove(jEnemigo.pokemonEnCancha());
-            if (ChequeoVictoria(jugador, jEnemigo) == false)
-            {
-                CambiarPokemon(jEnemigo);
+                bandera = true;
             }
         }
-        else
-        {
-            Console.WriteLine($"La vida del {jEnemigo.pokemonEnCancha().Nombre} es: {jEnemigo.pokemonEnCancha().VidaActual}");
-        }
-        return 0;
-    }
-
-    
-    public bool ChequeoVictoria(Jugador jugador, Jugador jEnemigo)
-    {
-        if (jEnemigo.equipoPokemon.Count() == 0)
-        {
-            return true;
-        }
-        return false;
     }
 }
