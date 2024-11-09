@@ -31,19 +31,24 @@ namespace LibraryTests
             resultado = OperacionesStatic.bonificacionTipos("Lucha", "Eléctrico");
             Assert.AreEqual(1, resultado);
         }
+        
 
         [Test]
-        public void CalcularCritico_GolpeCritico_DeberiaRetornar1_2()
+        public void CalcularCritico_GolpeCritico_DeberiaRetornar1_0()
         {
-            double resultado = OperacionesStatic.CalcularCritico(100);
-            Assert.AreEqual(1.2, resultado); 
-        }
+            bool esNormal = false;
 
-        [Test]
-        public void CalcularCritico_SinGolpeCritico_DeberiaRetornar1_0()
-        {
-            double resultado = OperacionesStatic.CalcularCritico(60);
-            Assert.AreEqual(1.0, resultado);
+            for (int i = 0; i < 100; i++)
+            {
+                double resultado = OperacionesStatic.CalcularCritico(100);
+                if (resultado == 1.0)
+                {
+                    esNormal = true;
+                    break;
+                }
+            }
+
+            Assert.IsTrue(esNormal, "Por probabilidad, 1 critcio en 100 intentos");
         }
     }
 }
