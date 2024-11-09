@@ -17,7 +17,7 @@ public class Logica
     /// Este metodo despliega el menu de opciones de cada jugador, decidimos ponerlo aqui, por uno de los patrones GRASP
     /// llamado bajo acomplamiento, con la intencion de que logica interactue con jugador de una manera mas cercana que combate
     /// </summary>
-    public bool switchCase(Jugador j1, Jugador j2)
+    public bool MenuDeJugador(Jugador j1, Jugador j2)
     {
         bool bandera = true;
         while (bandera)
