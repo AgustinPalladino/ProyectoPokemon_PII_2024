@@ -36,7 +36,7 @@ namespace LibraryTests
         public void CalcularCritico_GolpeCritico_DeberiaRetornar1_2()
         {
             double resultado = OperacionesStatic.CalcularCritico(100);
-            Assert.AreEqual(1.2, resultado, 0.1); 
+            Assert.AreEqual(1.2, resultado); 
         }
 
         [Test]
