@@ -296,6 +296,7 @@ public class Logica
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine($"{jEnemigo.Nombre}, tu {jEnemigo.pokemonEnCancha().Nombre} fue derrotado.");
                 Console.ResetColor();
+                jEnemigo.equipoPokemonDerrotados.Add(jEnemigo.pokemonEnCancha());
                 jEnemigo.equipoPokemon[0] = null;
                 if (!ChequeoVictoria(jugador, jEnemigo))
                 {

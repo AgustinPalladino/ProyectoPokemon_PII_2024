@@ -30,9 +30,6 @@ namespace Library
             {
                 Console.WriteLine($"{pokemon.Nombre} No puedes restaurar mas vida ya que ya esta al maximo.");
             }
-            else {
-                Console.WriteLine($"{pokemon.Nombre} No tiene vida para restaurar.");
-            }
         }
     }
 }
