@@ -121,7 +121,7 @@ namespace Library
 
             if (int.TryParse(Console.ReadLine(), out int seleccion) && seleccion > 0 && seleccion <= jugador.Mochila.Count)
             {
-                Iitem itemSeleccionado = jugador.Mochila[seleccion - 1];
+                IItem itemSeleccionado = jugador.Mochila[seleccion - 1];
                 itemSeleccionado.Usar(jugador);
 
                 Console.ForegroundColor = ConsoleColor.Green;

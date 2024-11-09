@@ -5,7 +5,7 @@ namespace Library
     /// <summary>
     /// Esta clase como las demas, estaran heredando mi interfaz de Iitems, con su metodo con diferente funcionalidad
     /// </summary>
-    public class Revivir : Iitem
+    public class Revivir : IItem
     {
         public  void Usar(Jugador j)
         {

@@ -2,7 +2,7 @@ using System;
 
 namespace Library
 {
-    public class SuperPocion : Iitem
+    public class SuperPocion : IItem
     {
         public void Usar(Jugador j)
         {
