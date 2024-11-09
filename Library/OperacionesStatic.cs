@@ -7,7 +7,8 @@ public static class OperacionesStatic
         Random random = new Random();
         return random.Next(minimo, maximo);
     }
-    private static double CalcularCritico(string tipoMovimiento, string tipoPokemonDefensor)
+
+    public static double CalcularCritico(string tipoMovimiento, string tipoPokemonDefensor)
     {
            
         int probabilidad = numeroAleatorio(1, 101); //Numero entre 1 y 100

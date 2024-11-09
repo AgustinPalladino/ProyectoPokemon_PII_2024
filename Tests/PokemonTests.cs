@@ -27,7 +27,7 @@ namespace LibraryTests
         public void AgregarMovimiento_AgregaMovimientoALaLista_Venusaur()
         {
             var pokemon = new Pokemon("Venusaur", "Planta", 120, 40, 60);
-            var movimiento = new Movimiento("Lluevehojas", 20);
+            var movimiento = new Movimiento("Lluevehojas", 20,"Acuatico", false);
 
             pokemon.agregarMovimiento(movimiento);
 
@@ -39,8 +39,8 @@ namespace LibraryTests
         {
             var pokemon = new Pokemon("Venusaur", "Planta", 120, 40, 60);
             {
-                Estado = "Envenenado";
-                PorcentajeDañoPorTurno = 0.1 ; // 10% de daño por turno
+                pokemon.Estado = "Envenenado";
+                pokemon.PorcentajeDañoPorTurno = 0.1 ; // 10% de daño por turno
             };
 
             pokemon.aplicarDañoRecurrente();
@@ -53,8 +53,8 @@ namespace LibraryTests
         {
             var pokemon = new Pokemon("Charizard", "Fuego", 100, 60, 40);
             {
-                Estado = "Quemado";
-                PorcentajeDañoPorTurno = 0.2 ; // 20% de daño por turno
+                pokemon.Estado = "Quemado";
+                pokemon.PorcentajeDañoPorTurno = 0.2 ; // 20% de daño por turno
             };
 
             pokemon.aplicarDañoRecurrente();
@@ -75,8 +75,8 @@ namespace LibraryTests
         {
             var pokemon = new Pokemon("Charizard", "Fuego", 100, 60, 40);
             {
-                Estado = "Dormido";
-                TurnosDormido = 2;
+                pokemon.Estado = "Dormido";
+                pokemon.TurnosDormido = 2;
             };
 
             bool resultado = pokemon.puedeAtacar();
@@ -90,8 +90,8 @@ namespace LibraryTests
         {
             var pokemon = new Pokemon("Venusaur", "Planta", 120, 40, 60);
             {
-                Estado = "Dormido";
-                TurnosDormido = 1;
+                pokemon.Estado = "Dormido";
+                pokemon.TurnosDormido = 1;
             };
 
             pokemon.puedeAtacar(); // Turno final de sueño
@@ -106,7 +106,7 @@ namespace LibraryTests
         {
             var pokemon = new Pokemon("Blastoise", "Agua", 110, 50, 50);
             {
-                Estado = "Paralizado";
+                pokemon.Estado = "Paralizado";
             };
 
             bool puedeAtacar = pokemon.puedeAtacar();

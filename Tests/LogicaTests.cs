@@ -45,7 +45,7 @@ namespace LibraryTests
         [Test]
         public void LogicaCambiarPokemon_DeberiaCambiarPokemonEnCancha()
         {
-            var pokemon1 = new Pokemon("Blastoise", "Agua", 100, 100, 80);  // Asegúrate de pasar todos los parámetros
+            var pokemon1 = new Pokemon("Blastoise", "Agua", 100, 100, 80);  
             var pokemon2 = new Pokemon("Charizard", "Fuego", 100, 100, 85);
 
             jugador.agregarPokemon(pokemon1);
@@ -59,8 +59,8 @@ namespace LibraryTests
         [Test]
         public void LogicaEscogerMovimiento_DeberiaSeleccionarMovimientoCorrectamente()
         {
-            var pokemon = new Pokemon("Blastoise", "Agua", 100, 100, 80);  // Asegúrate de pasar todos los parámetros
-            var movimiento = new Movimiento("Hidrocañon");
+            var pokemon = new Pokemon("Blastoise", "Agua", 100, 100, 80);  
+            var movimiento = new Movimiento("Hidrocañon", 5,"Acuatico", false);
             pokemon.listaMovimientos.Add(movimiento);
             jugador.agregarPokemon(pokemon);
 
@@ -72,9 +72,9 @@ namespace LibraryTests
         [Test]
         public void LogicaAtacar_DeberiaAplicarDanioCorrectamente()
         {
-            var pokemonAliado = new Pokemon("Blastoise", "Agua", 100, 100, 80);  // Asegúrate de pasar todos los parámetros
+            var pokemonAliado = new Pokemon("Blastoise", "Agua", 100, 100, 80);  
             var pokemonEnemigo = new Pokemon("Charizard", "Fuego", 100, 100, 85);
-            var movimiento = new Movimiento("Hidrocañon");
+            var movimiento = new Movimiento("Lanzallama", 14,"Fuego",false);
 
             jugador.agregarPokemon(pokemonAliado);
             enemigo.agregarPokemon(pokemonEnemigo);
@@ -98,7 +98,7 @@ namespace LibraryTests
         [Test]
         public void ChequeoVictoria_DeberiaDevolverFalseSiQuedanPokemon()
         {
-            enemigo.agregarPokemon(new Pokemon("Charizard", "Fuego", 100, 100, 85));  // Asegúrate de pasar todos los parámetros
+            enemigo.agregarPokemon(new Pokemon("Charizard", "Fuego", 100, 100, 85));  
 
             var resultado = logica.chequeoVictoria(enemigo);
 
@@ -106,3 +106,6 @@ namespace LibraryTests
         }
     }
 }
+
+
+
