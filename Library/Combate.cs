@@ -17,17 +17,18 @@ namespace Library
         public void EscogerEquipo(Jugador j)
         {
             bool bandera = true;
-
             while (bandera)
             {
                 bool pokemonEncontrado = false;
                 try
                 {
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine($"\n🔹 {j.Nombre}, ingrese el nombre del pokemon que desea elegir:");
+                    Console.WriteLine($"\n🔹 {j.Nombre}, ingrese el nombre del pokemon que desea elegir o 0 para ir hacia atrás:");
                     Console.ResetColor();
 
                     string pokeIngresado = Console.ReadLine();
+                    if (pokeIngresado == "0") return; // Opción para regresar
+
                     if (string.IsNullOrWhiteSpace(pokeIngresado))
                     {
                         throw new ArgumentException("⚠️ Entrada errónea, por favor intente nuevamente.");
@@ -84,9 +85,11 @@ namespace Library
             while (pokemonValido)
             {
                 Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.WriteLine("\n🔄 Escoge el pokemon a cambiar:");
+                Console.WriteLine("\n🔄 Escoge el pokemon a cambiar o 0 para ir hacia atrás:");
                 Console.ResetColor();
                 string pokeIngresado = Console.ReadLine();
+                
+                if (pokeIngresado == "0") return; // Opción para regresar
 
                 bool encontrado = false;
                 for (int i = 0; i < j.equipoPokemon.Count; i++)
@@ -114,10 +117,12 @@ namespace Library
             while (bandera)
             {
                 Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.WriteLine($"\n🔹 {j.Nombre}, ingrese el nombre del movimiento que desea usar:");
+                Console.WriteLine($"\n🔹 {j.Nombre}, ingrese el nombre del movimiento que desea usar o 0 para ir hacia atrás:");
                 Console.ResetColor();
 
                 string movimiento = Console.ReadLine();
+                if (movimiento == "0") return null; // Opción para regresar
+
                 foreach (Movimiento mov in j.pokemonEnCancha().listaMovimientos)
                 {
                     if (movimiento == mov.Nombre)

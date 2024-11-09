@@ -6,15 +6,18 @@ namespace Library
     {
         public void Usar(Jugador j)
         {
-            //VariableLocal
+            ///Variable local
             var pokemon = j.pokemonEnCancha();
+            if(pokemon.Estado=="Normal") {
+                Console.WriteLine("No puedes usar el item ya que el pokemon esta en estado normal");
+            }
 
             if (pokemon.VidaActual > 0)
             {
-                // Restablecer el estado del Pokémon a "Normal"
+                /// Restablecer el estado del Pokémon a "Normal"
                 pokemon.Estado = "Normal";
 
-                // Mensaje de confirmación
+                /// Mensaje de confirmación
                 Console.WriteLine($"{pokemon.Nombre} se ha curado de todos sus estados.");
             }
             else

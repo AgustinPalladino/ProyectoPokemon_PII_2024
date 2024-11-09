@@ -31,6 +31,7 @@ public class Jugador
             Console.WriteLine($"-{pokemon.Nombre}");
         }
     }
+    
 
     
     public void verMovimientos()
@@ -72,4 +73,5 @@ public class Jugador
         int danio = (2 * this.pokemonEnCancha().Ataque) * movimiento.Ataque / (jEnemigo.pokemonEnCancha().Defensa) + 2;
         jEnemigo.pokemonEnCancha().VidaActual -= (int)(danio * OperacionesStatic.bonificacionTipos(movimiento.Tipo, jEnemigo.pokemonEnCancha().Tipo));
     }
+    
 }

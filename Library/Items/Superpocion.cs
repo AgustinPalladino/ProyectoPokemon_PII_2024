@@ -19,9 +19,12 @@ namespace Library
                 
                 Console.WriteLine($"{pokemon.Nombre} se ha restaurado 70 puntos de vida.");
             }
-            else
+            if(pokemon.VidaActual==100)
             {
-                Console.WriteLine($"{pokemon.Nombre} no puede ser restaurado porque está incapacitado.");
+                Console.WriteLine($"{pokemon.Nombre} No puedes restaurar mas vida ya que ya esta al maximo.");
+            }
+            else {
+                Console.WriteLine($"{pokemon.Nombre} No tiene vida para restaurar.");
             }
         }
     }

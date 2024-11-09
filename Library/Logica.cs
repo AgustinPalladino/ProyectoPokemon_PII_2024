@@ -17,18 +17,23 @@ namespace Library
             }
         }
 
+        public void VerMochila(Jugador jugador, CreadorDePokemonYMovimiento creadorDePokemonYMovimiento)
+        {
+            creadorDePokemonYMovimiento.VerMochila(jugador);
+        }
+
         public void BuclePrincipal(Jugador j1, Jugador j2)
         {
             Logica logica = new Logica();
             CreadorDePokemonYMovimiento creadorDePokemonYMovimiento = new CreadorDePokemonYMovimiento();
             MostrarCatalogo(creadorDePokemonYMovimiento.listaPokemon);
-            
+
             for (int i = 0; i < 2; i++)
             {
                 logica.EscogerEquipo(j1);
                 logica.EscogerEquipo(j2);
             }
-            
+
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\n✅ Equipos seleccionados:");
             Console.ResetColor();
@@ -51,6 +56,7 @@ namespace Library
                     Console.WriteLine("2️⃣ Ver la salud de tu Pokémon (No consume turno)");
                     Console.WriteLine("3️⃣ Atacar (Consume un turno)");
                     Console.WriteLine("4️⃣ Cambiar de Pokémon (Consume un turno)");
+                    Console.WriteLine("5️⃣ Ver Mochila (No consume turno)");
 
                     int opcion = Convert.ToInt32(Console.ReadLine());
 
@@ -76,6 +82,9 @@ namespace Library
                         case 4:
                             logica.CambiarPokemon(j1);
                             bandera = false;
+                            break;
+                        case 5:
+                            VerMochila(j1, creadorDePokemonYMovimiento);
                             break;
                         default:
                             Console.ForegroundColor = ConsoleColor.Red;
@@ -106,6 +115,7 @@ namespace Library
                     Console.WriteLine("2️⃣ Ver la salud de tu Pokémon (No consume turno)");
                     Console.WriteLine("3️⃣ Atacar (Consume un turno)");
                     Console.WriteLine("4️⃣ Cambiar de Pokémon (Consume un turno)");
+                    Console.WriteLine("5️⃣ Ver Mochila (No consume turno)");
 
                     int opcion = Convert.ToInt32(Console.ReadLine());
 
@@ -131,6 +141,9 @@ namespace Library
                         case 4:
                             logica.CambiarPokemon(j2);
                             bandera = false;
+                            break;
+                        case 5:
+                            VerMochila(j2, creadorDePokemonYMovimiento);
                             break;
                         default:
                             Console.ForegroundColor = ConsoleColor.Red;
