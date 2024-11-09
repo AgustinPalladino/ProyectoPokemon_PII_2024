@@ -44,7 +44,7 @@ namespace LibraryTests
                 new Pokemon("Charizard", "Fuego", 120, 80, 100)
             };
 
-            combate.mostrarCatalogo(pokemonList);
+            combate.MostrarCatalogo(pokemonList);
 
             Assert.AreEqual(pokemonList[0].Nombre, "Blastoise");
             Assert.AreEqual(pokemonList[1].Nombre, "Charizard");

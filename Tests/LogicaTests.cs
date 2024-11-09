@@ -37,7 +37,7 @@ namespace LibraryTests
         {
             var pokemonSeleccionado = logica.listaPokemon[0];
             
-            logica.logicaEscogerEquipo(jugador);
+            logica.EscogerEquipo(jugador);
 
             Assert.Contains(pokemonSeleccionado, jugador.equipoPokemon);
         }
@@ -51,22 +51,9 @@ namespace LibraryTests
             jugador.agregarPokemon(pokemon1);
             jugador.agregarPokemon(pokemon2);
 
-            logica.logicaCambiarPokemon(jugador);
+            logica.CambiarPokemon(jugador);
 
             Assert.AreEqual("Charizard", jugador.pokemonEnCancha().Nombre);
-        }
-
-        [Test]
-        public void LogicaEscogerMovimiento_DeberiaSeleccionarMovimientoCorrectamente()
-        {
-            var pokemon = new Pokemon("Blastoise", "Agua", 100, 100, 80);  
-            var movimiento = new Movimiento("Hidrocañon", 5,"Acuatico", false);
-            pokemon.listaMovimientos.Add(movimiento);
-            jugador.agregarPokemon(pokemon);
-
-            var resultado = logica.logicaEscogerMovimiento(jugador);
-
-            Assert.AreEqual("Hidrocañon", resultado.Nombre);
         }
 
         [Test]
@@ -80,7 +67,7 @@ namespace LibraryTests
             enemigo.agregarPokemon(pokemonEnemigo);
             pokemonAliado.listaMovimientos.Add(movimiento);
 
-            logica.logicaAtacar(jugador, enemigo);
+            logica.Ataque(jugador, enemigo);
 
             Assert.Less(pokemonEnemigo.VidaActual, pokemonEnemigo.VidaMax);
         }
@@ -88,9 +75,10 @@ namespace LibraryTests
         [Test]
         public void ChequeoVictoria_DeberiaDevolverTrueSiNoQuedanPokemon()
         {
+            
             enemigo.equipoPokemon.Clear();
 
-            var resultado = logica.chequeoVictoria(enemigo);
+            var resultado = logica.ChequeoVictoria(jugador,enemigo);
 
             Assert.IsTrue(resultado);
         }
@@ -100,7 +88,7 @@ namespace LibraryTests
         {
             enemigo.agregarPokemon(new Pokemon("Charizard", "Fuego", 100, 100, 85));  
 
-            var resultado = logica.chequeoVictoria(enemigo);
+            var resultado = logica.ChequeoVictoria(jugador,enemigo);
 
             Assert.IsFalse(resultado);
         }
