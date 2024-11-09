@@ -25,9 +25,9 @@ public class Jugador
     public void mostrarEquipo()
     {
         Console.WriteLine($"El equipo del {this.Nombre} equipo es: ");
-        foreach (Pokemon pokemon in this.equipoPokemon)
+        for (int i = 0; i < this.equipoPokemon.Count; i++)
         {
-            Console.WriteLine($"-{pokemon.Nombre}");
+            Console.WriteLine($"-{equipoPokemon[i].Nombre}");
         }
     }
     
@@ -72,7 +72,7 @@ public class Jugador
         int danio = (2 * this.pokemonEnCancha().Ataque) * movimiento.Ataque / (jEnemigo.pokemonEnCancha().Defensa) + 2;
         jEnemigo.pokemonEnCancha().VidaActual -= (int)(danio * OperacionesStatic.bonificacionTipos(movimiento.Tipo, jEnemigo.pokemonEnCancha().Tipo));
     }
-    
+
     public void UsarMochila(IItem item)
     {
         item.Usar(this);
