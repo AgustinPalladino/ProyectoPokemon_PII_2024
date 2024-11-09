@@ -8,15 +8,15 @@ namespace Library
             return random.Next(minimo, maximo);
         }
 
-        public static double CalcularCritico(string tipoMovimiento, string tipoPokemonDefensor)
+        public static double CalcularCritico(int precisionMovimiento)
         {
-            int probabilidad = numeroAleatorio(1, 101); // Número entre 1 y 100
-            if (probabilidad <= 10) // 10% de probabilidad de golpe crítico
+            int probabilidad = numeroAleatorio(0, precisionMovimiento);
+            if (probabilidad <= precisionMovimiento / 10) // Calculo de que la cantidad sea golpe critico
             {
                 Console.WriteLine("¡Golpe crítico!");
-                return 1.2; // Multiplicador de 20% más de daño
+                return 1.2; // Multiplicador de 20% mas de daño
             }
-            return 1.0; // Sin crítico, el daño es normal
+            return 1.0; // Sino es critico, pega lo mismo
         }
 
         /// Diccionario para definir bonificaciones de tipo

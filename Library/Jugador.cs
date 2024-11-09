@@ -106,7 +106,7 @@ public class Jugador
     public void atacar(Jugador jEnemigo, Movimiento movimiento)
     {
         int danio = (2 * this.pokemonEnCancha().Ataque) * movimiento.Ataque / (jEnemigo.pokemonEnCancha().Defensa) + 2;
-        jEnemigo.pokemonEnCancha().VidaActual -= (int)(danio * OperacionesStatic.bonificacionTipos(movimiento.Tipo, jEnemigo.pokemonEnCancha().Tipo));
+        jEnemigo.pokemonEnCancha().VidaActual -= (int)(danio * OperacionesStatic.bonificacionTipos(movimiento.Tipo, jEnemigo.pokemonEnCancha().Tipo) * OperacionesStatic.CalcularCritico(movimiento.Precision));
     }
 
     /// <summary>
