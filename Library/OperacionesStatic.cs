@@ -7,17 +7,17 @@ public static class OperacionesStatic
         Random random = new Random();
         return random.Next(minimo, maximo);
     }
-           private static double CalcularCritico(string tipoMovimiento, string tipoPokemonDefensor)
+    private static double CalcularCritico(string tipoMovimiento, string tipoPokemonDefensor)
+    {
+           
+        int probabilidad = numeroAleatorio(1, 101); //Numero entre 1 y 100
+        if (probabilidad <= 10) // 10% de probabilidad d golpe critico
         {
-            int probabilidad = random.Next(1, 101); //Numero entre 1 y 100
-            if (probabilidad <= 10) // 10% de probabilidad d golpe critico
-            {
-                Console.WriteLine("¡Golpe crítico!");
-                return 1.2; // Multiplicador de 20% más de daño
-            }
-            return 1.0; // Sin crítico, el daño es normal
-            
+            Console.WriteLine("¡Golpe crítico!");
+            return 1.2; // Multiplicador de 20% más de daño
         }
+        return 1.0; // Sin crítico, el daño es normal
+    }
     
     //A continuación se crea bonificacionTipos el cual es un multiplicador al valor del ataque, dependiendo si hay efectividad de tipo o no.
     //Discutir que se podría hacer envez de muchos ifs
