@@ -10,8 +10,11 @@ public class Logica
     {
         CreadorDePokemonYMovimiento creadorDePokemonYMovimiento = new CreadorDePokemonYMovimiento();
         listaPokemon = creadorDePokemonYMovimiento.listaPokemon;
+        //Al instanciarse logica se copian la lista de pokemon en su propia lista
     }
-
+    
+    
+    //Este metodo despliega el menu de opciones de cada jugador
     public bool switchCase(Jugador j1, Jugador j2)
     {
         bool bandera = true;
@@ -19,6 +22,7 @@ public class Logica
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine($"\nTurno de {j1.Nombre}. ¿Qué deseas hacer?");
+            Console.WriteLine($"Su pokemon en el combate es: {j1.pokemonEnCancha().Nombre}");
             Console.ResetColor();
 
             Console.WriteLine("1- Ver las habilidades de tu Pokémon (No consume turno)");
@@ -26,7 +30,6 @@ public class Logica
             Console.WriteLine("3- Mochila (Solo usar objeto consume un turno)");
             Console.WriteLine("4- Atacar (Consume un turno)");
             Console.WriteLine("5- Cambiar de Pokémon (Consume un turno)");
-
             int opcion = Convert.ToInt32(Console.ReadLine());
 
             switch (opcion)
@@ -51,6 +54,9 @@ public class Logica
                     {
                         if (ChequeoVictoria(j1, j2))
                         {
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            Console.WriteLine($"Felicidades {j1.Nombre}! Has ganado la batalla.");
+                            Console.ResetColor();
                             return false; // Retorna falso porque la pelea termino
                         }
                         return true; // Si ataco pero nadie perdio termino su turno
@@ -64,9 +70,9 @@ public class Logica
                     }
                     break; //Si volvio para atras vuelve al bucle
                     
-                default:
+                default: // Si ingresa una opcion mala, vuelve al bucle
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Opción no válida, intenta de nuevo");
+                    Console.WriteLine("Opcion erronea, intenta de nuevo");
                     Console.ResetColor();
                     break;
             }
@@ -84,7 +90,7 @@ public class Logica
             try
             {
                 Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.WriteLine($"\n{j.Nombre}, ingrese el nombre del pokemon que desea elegir");
+                Console.WriteLine($"{j.Nombre}, ingrese el nombre del pokemon que desea elegir");
                 Console.ResetColor();
                 string pokeIngresado = Console.ReadLine();
 
@@ -93,7 +99,7 @@ public class Logica
                     if (pokeIngresado == pokemon.Nombre)
                     {
                         pokemonEncontrado = true;
-                        if (!j.equipoPokemon.Contains(pokemon))
+                        if (!j.equipoPokemon.Contains(pokemon)) // Añade al pokemon si no estaba en el equipo
                         {
                             j.agregarPokemon(pokemon.Clonar());
                             Console.ForegroundColor = ConsoleColor.Green;
@@ -110,7 +116,7 @@ public class Logica
                         break;
                     }
                 }
-                
+                //Si el pokemon nunca se encontro, vuelve a pedirlo
                 if (!pokemonEncontrado)
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
@@ -118,14 +124,10 @@ public class Logica
                     Console.ResetColor();
                 }
             }
-            catch (ArgumentException ex)
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine(ex.Message);
-                Console.ResetColor();
-            }
+            // Captura cualquier tipo de error extra y muestra un mensaje
             catch (Exception ex)
             {
+                // Captura cualquier excepción y muestra un mensaje
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Ocurrio un error inesperado: " + ex.Message);
                 Console.ResetColor();
@@ -144,6 +146,8 @@ public class Logica
             {
                 if (j.equipoPokemon[0] == null)
                 {
+                    j.equipoPokemon.Remove(j.equipoPokemon[0]);
+                    j.mostrarEquipo();
                     Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.WriteLine("\nEscoge el siguiente pokemon para pelear");
                     Console.ResetColor();
@@ -151,6 +155,7 @@ public class Logica
                 }
                 else
                 {
+                    j.mostrarEquipo();
                     Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.WriteLine("\nEscoge el pokemon a cambiar o 0 para ir hacia atrás:");
                     Console.ResetColor();
@@ -162,22 +167,19 @@ public class Logica
                         return false;
                     }
                 }
-
+                
+                // Cambia al pokemon si el nombre de este coincide
                 for (int i = 0; i < j.equipoPokemon.Count; i++)
                 {
                     if (pokeIngresado == j.equipoPokemon[i]?.Nombre) // Usar '?' para evitar NullReferenceException
                     {
-                        if (j.equipoPokemon.Contains(null))
-                        {
-                            j.equipoPokemon.Remove(j.equipoPokemon[0]);
-                            j.cambiarPokemon(j.equipoPokemon[i]);
-                        }
-
-                        return true;
+                        j.cambiarPokemon(j.equipoPokemon[i]);
                     }
+                    return true;
                 }
             }
-            catch (Exception ex)
+            // Maneja errores inesperados
+            catch (Exception)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Error");
@@ -189,6 +191,7 @@ public class Logica
     }
     
 
+    //Metodo que comprueba si el item recibido esta bien
     public bool Mochila(Jugador j)
     {
         bool bandera = true;
@@ -207,6 +210,7 @@ public class Logica
                 string item = Console.ReadLine();
                 for (int i = 0; i < j.Mochila.Count; i++)
                 {
+                    // Usa el objeto si el nombre coincide
                     if (j.Mochila[i].Nombre == item)
                     {
                         j.UsarMochila(j.Mochila[i]);
@@ -234,6 +238,7 @@ public class Logica
     }
     
     
+    // Metodo para seleccionar un ataque
     public bool Ataque(Jugador j, Jugador jEnemigo)
     {
         bool bandera = true;
@@ -268,14 +273,13 @@ public class Logica
     {
         if (movimiento != null)
         {
-            jugador.atacar(jEnemigo, movimiento);
-
             if (jugador.pokemonEnCancha().puedeAtacar())
             {
                 jugador.atacar(jEnemigo, movimiento);
                 jEnemigo.pokemonEnCancha().aplicarDañoRecurrente();
             }
 
+            // Aplica ataques especiales si corresponde
             if (movimiento.EsEspecial && jEnemigo.pokemonEnCancha().Estado == "Normal")
             {
                 movimiento.AplicarAtaquesEspeciales(jEnemigo.pokemonEnCancha());
@@ -309,11 +313,8 @@ public class Logica
     
     public bool ChequeoVictoria(Jugador jugador, Jugador jEnemigo)
     {
-        if (jEnemigo.equipoPokemon.Count == 0)
+        if (jEnemigo.equipoPokemon.Count == 1 && jEnemigo.equipoPokemon[0] == null)
         {
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"Felicidades {jugador.Nombre}! Has ganado la batalla.");
-            Console.ResetColor();
             return true;
         }
         return false;

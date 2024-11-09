@@ -14,13 +14,18 @@ public class Combate
         }
     }
 
+    
     public void BuclePrincipal(Jugador j1, Jugador j2)
     {
         Logica logica = new Logica();
         CreadorDePokemonYMovimiento creadorDePokemonYMovimiento = new CreadorDePokemonYMovimiento();
-        MostrarCatalogo(creadorDePokemonYMovimiento.listaPokemon);
+        MostrarCatalogo(creadorDePokemonYMovimiento.listaPokemon); // Le pasa por parametro la lista de todos los pokemon agregados
 
-        for (int i = 0; i < 2; i++)
+        Console.ForegroundColor = ConsoleColor.Cyan;
+        Console.WriteLine("\nSu primer pokemon elejido sera con el que empieze la batalla");
+        Console.ResetColor();
+        
+        for (int i = 0; i < 6; i++) // Los jugadores escogen sus 6 pokemon
         {
             logica.EscogerEquipo(j1);
             logica.EscogerEquipo(j2);
@@ -38,7 +43,8 @@ public class Combate
         while (banderaGlobal)
         {
             // Turno del jugador 1
-            banderaGlobal = logica.switchCase(j1, j2);
+            banderaGlobal = logica.switchCase(j1, j2); 
+            // Si la bandera global toma el valor de falso, significa que termino el combate
 
             if (banderaGlobal)
             {
