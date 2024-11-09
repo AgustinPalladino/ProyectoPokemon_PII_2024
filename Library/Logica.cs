@@ -159,6 +159,7 @@ public class Logica
         }
     }
 
+    
     private Movimiento SeleccionarAtaquePorLetra(Jugador j, string seleccion)
     {
         var pokemon = j.pokemonEnCancha();  
@@ -179,6 +180,60 @@ public class Logica
         return null; // Si la selección es inválida, retornar null
     }
 
+    public void Mochila(Jugador j)
+    {
+        bool bandera = true;
+        while (bandera)
+        {
+            if (j.Mochila.Count == 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("⚠️ Tu mochila esta vacia");
+                Console.ResetColor();
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine("\n📦 Mochila:");
+                Console.ResetColor();
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine("Seleccione el nombre del item para usarlo, o '0' para salir");
+                Console.ResetColor();
+                for (int i = 0; i < j.Mochila.Count; i++)
+                {
+                    Console.WriteLine($"{i + 1}. {j.Mochila[i].Nombre}");
+                }
+            }
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine($"\n🔹 {j.Nombre}, elige el movimiento que deseas usar (a, b, c...) o 0 para ir hacia atrás:");
+            Console.ResetColor();
+
+            // Mostrar los movimientos disponibles con letras
+            MostrarAtaquesDisponibles(j);
+
+            string seleccion = Console.ReadLine()?.ToLower();
+
+            if (seleccion == "0") return null; // Opción para regresar
+
+            Movimiento ataqueSeleccionado = SeleccionarAtaquePorLetra(j, seleccion);
+            
+            if (ataqueSeleccionado != null)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine($"✔️ Movimiento {ataqueSeleccionado.Nombre} seleccionado.");
+                Console.ResetColor();
+                return ataqueSeleccionado;
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("❌ Selección inválida, intente nuevamente.");
+                Console.ResetColor();
+            }
+        }
+        return null;
+    }
+    
     public int Ataque(Jugador jugador, Jugador jEnemigo)
     {
         Movimiento movimiento = EscogerMovimiento(jugador);

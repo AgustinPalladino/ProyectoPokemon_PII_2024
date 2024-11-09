@@ -94,6 +94,7 @@ public class Jugador
             Console.WriteLine($"{i + 1}. {this.Mochila[i].Nombre}");
         }
         string opcion = Console.ReadLine();
+        OperacionesStatic.ajustarPalabra(opcion);
         for (int i = 0; i < this.Mochila.Count; i++)
         {
             if (Mochila[i].Nombre == opcion)

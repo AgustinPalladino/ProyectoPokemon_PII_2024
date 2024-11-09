@@ -121,5 +121,12 @@ namespace Library
 
             return 1; /// Si no hay bonificación específica, el daño es normal
         }
+
+        public static string ajustarPalabra(string palabra)
+        {
+            palabra = palabra.ToLower();
+            palabra = palabra.Trim();
+            return palabra;
+        }
     }
 }
