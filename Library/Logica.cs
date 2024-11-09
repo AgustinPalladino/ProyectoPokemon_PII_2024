@@ -93,12 +93,6 @@ public class Logica
                 Console.WriteLine($"{j.Nombre}, ingrese el nombre del pokemon que desea elegir");
                 Console.ResetColor();
                 string pokeIngresado = Console.ReadLine();
-                if (pokeIngresado == "0") return; // Opción para regresar
-
-                if (string.IsNullOrWhiteSpace(pokeIngresado))
-                {
-                    throw new ArgumentException("⚠️ Entrada errónea, por favor intente nuevamente.");
-                }
 
                 foreach (Pokemon pokemon in listaPokemon)
                 {
@@ -277,12 +271,8 @@ public class Logica
     
     public int CalculoAtaque(Jugador jugador, Jugador jEnemigo, Movimiento movimiento)
     {
-        Movimiento movimiento = EscogerMovimiento(jugador);
-
         if (movimiento != null)
         {
-            jugador.atacar(jEnemigo, movimiento);
-
             if (jugador.pokemonEnCancha().puedeAtacar())
             {
                 jugador.atacar(jEnemigo, movimiento);
