@@ -117,27 +117,68 @@ namespace Library
             while (bandera)
             {
                 Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.WriteLine($"\n🔹 {j.Nombre}, ingrese el nombre del movimiento que desea usar o 0 para ir hacia atrás:");
+                Console.WriteLine($"\n🔹 {j.Nombre}, elige el movimiento que deseas usar (a, b, c...) o 0 para ir hacia atrás:");
                 Console.ResetColor();
 
-                string movimiento = Console.ReadLine();
-                if (movimiento == "0") return null; // Opción para regresar
+                // Mostrar los movimientos disponibles con letras
+                MostrarAtaquesDisponibles(j);
 
-                foreach (Movimiento mov in j.pokemonEnCancha().listaMovimientos)
+                string seleccion = Console.ReadLine()?.ToLower();
+
+                if (seleccion == "0") return null; // Opción para regresar
+
+                Movimiento ataqueSeleccionado = SeleccionarAtaquePorLetra(j, seleccion);
+                
+                if (ataqueSeleccionado != null)
                 {
-                    if (movimiento == mov.Nombre)
-                    {
-                        Console.ForegroundColor = ConsoleColor.Green;
-                        Console.WriteLine($"✔️ Movimiento {mov.Nombre} seleccionado.");
-                        Console.ResetColor();
-                        return mov;
-                    }
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine($"✔️ Movimiento {ataqueSeleccionado.Nombre} seleccionado.");
+                    Console.ResetColor();
+                    return ataqueSeleccionado;
                 }
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("❌ Movimiento no encontrado, intente nuevamente.");
-                Console.ResetColor();
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("❌ Selección inválida, intente nuevamente.");
+                    Console.ResetColor();
+                }
             }
             return null;
+        }
+
+        private void MostrarAtaquesDisponibles(Jugador j)
+        {
+            var pokemon = j.pokemonEnCancha();  // Obtener el Pokémon en cancha
+            var movimientos = pokemon.listaMovimientos;
+
+            // Mostrar los ataques con letras
+            for (int i = 0; i < movimientos.Count; i++)
+            {
+                char letra = (char)('a' + i); // Asignar letras a los movimientos
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine($"{letra}. {movimientos[i].Nombre}");
+                Console.ResetColor();
+            }
+        }
+
+        private Movimiento SeleccionarAtaquePorLetra(Jugador j, string seleccion)
+        {
+            var pokemon = j.pokemonEnCancha();  
+            var movimientos = pokemon.listaMovimientos;
+
+            //Valido la letra seleccionada y ejecuto mi ataque seleccionado
+            if (seleccion.Length == 1 && char.IsLetter(seleccion[0]))
+            {
+                char letra = char.ToLower(seleccion[0]);
+                int indice = letra - 'a'; //convierto las letras en indices
+
+                if (indice >= 0 && indice < movimientos.Count)
+                {
+                    return movimientos[indice]; //retorno mi ataque
+                }
+            }
+
+            return null; // Si la selección es inválida, retornar null
         }
 
         public int Ataque(Jugador jugador, Jugador jEnemigo)

@@ -57,6 +57,8 @@ namespace Library
                     Console.WriteLine("3️⃣ Atacar (Consume un turno)");
                     Console.WriteLine("4️⃣ Cambiar de Pokémon (Consume un turno)");
                     Console.WriteLine("5️⃣ Ver Mochila (No consume turno)");
+                    Console.WriteLine("6️⃣ Salir Del juego)");
+
 
                     int opcion = Convert.ToInt32(Console.ReadLine());
 
@@ -81,10 +83,14 @@ namespace Library
                             break;
                         case 4:
                             logica.CambiarPokemon(j1);
-                            bandera = false;
+                            banderaGlobal = false;
                             break;
                         case 5:
                             VerMochila(j1, creadorDePokemonYMovimiento);
+                            break;
+                        case 6:
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Environment.Exit(0);//acabo con al ejecucion de forma bruta
                             break;
                         default:
                             Console.ForegroundColor = ConsoleColor.Red;
