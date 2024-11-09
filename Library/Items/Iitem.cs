@@ -5,5 +5,6 @@ namespace Library;
 /// </summary>
 public interface IItem
 {
+    public string Nombre { get; }
     void Usar(Jugador j);
 }

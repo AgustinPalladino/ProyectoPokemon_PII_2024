@@ -7,6 +7,12 @@ namespace Library
     /// </summary>
     public class CuraTotal : IItem
     {
+        private string nombre;
+
+        public string Nombre
+        {
+            get { return this.nombre = "curatotal"; }
+        }
         public void Usar(Jugador j)
         {
             //Utilizo mi variable local

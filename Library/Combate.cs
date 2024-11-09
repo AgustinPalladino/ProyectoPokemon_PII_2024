@@ -14,11 +14,6 @@ public class Combate
         }
     }
 
-    public void VerMochila(Jugador jugador, CreadorDePokemonYMovimiento creadorDePokemonYMovimiento)
-    {
-        creadorDePokemonYMovimiento.VerMochila(jugador);
-    }
-
     public void BuclePrincipal(Jugador j1, Jugador j2)
     {
         Logica logica = new Logica();
@@ -83,7 +78,7 @@ public class Combate
                         banderaGlobal = false;
                         break;
                     case 5:
-                        VerMochila(j1, creadorDePokemonYMovimiento);
+                        j1.UsarMochila();
                         break;
                     case 6:
                         Console.ForegroundColor = ConsoleColor.Red;
@@ -146,7 +141,7 @@ public class Combate
                         bandera = false;
                         break;
                     case 5:
-                        VerMochila(j2, creadorDePokemonYMovimiento);
+                        j2.UsarMochila();
                         break;
                     default:
                         Console.ForegroundColor = ConsoleColor.Red;

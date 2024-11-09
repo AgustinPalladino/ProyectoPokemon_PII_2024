@@ -95,43 +95,5 @@ namespace Library
             listaPokemon.Add(muk);
             listaPokemon.Add(snorlax);
         }
-
-        public void VerMochila(Jugador jugador)
-        {
-            if (jugador.Mochila.Count == 0)
-            {
-                Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("⚠️ Tu mochila está vacía.");
-                Console.ResetColor();
-                return;
-            }
-
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("\n📦 Mochila:");
-            Console.ResetColor();
-
-            for (int i = 0; i < jugador.Mochila.Count; i++)
-            {
-                Console.WriteLine($"{i + 1}. {jugador.Mochila[i].GetType().Name}");
-            }
-
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("Seleccione el número del ítem para usarlo, o '0' para salir.");
-            Console.ResetColor();
-
-            if (int.TryParse(Console.ReadLine(), out int seleccion) && seleccion > 0 && seleccion <= jugador.Mochila.Count)
-            {
-                IItem itemSeleccionado = jugador.Mochila[seleccion - 1];
-                itemSeleccionado.Usar(jugador);
-
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine($"✔️ {itemSeleccionado.GetType().Name} usado correctamente.");
-                Console.ResetColor();
-            }
-            else
-            {
-                Console.WriteLine("❌ Selección inválida. Saliendo de la mochila.");
-            }
-        }
     }
 }

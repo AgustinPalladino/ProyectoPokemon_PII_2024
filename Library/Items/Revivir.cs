@@ -7,6 +7,12 @@ namespace Library
     /// </summary>
     public class Revivir : IItem
     {
+        private string nombre;
+
+        public string Nombre
+        {
+            get { return this.nombre = "revivir"; }
+        }
         public  void Usar(Jugador j)
         {
             var pokemon = j.pokemonEnCancha();
