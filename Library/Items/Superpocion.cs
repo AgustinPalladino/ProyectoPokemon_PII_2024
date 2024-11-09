@@ -8,7 +8,7 @@ namespace Library
 
         public string Nombre
         {
-            get { return this.nombre = "superpocion"; }
+            get { return this.nombre = "Superpocion"; }
         }
         
         public void Usar(Jugador j)

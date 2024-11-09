@@ -11,7 +11,7 @@ namespace Library
 
         public string Nombre
         {
-            get { return this.nombre = "revivir"; }
+            get { return this.nombre = "Revivir"; }
         }
         public  void Usar(Jugador j)
         {

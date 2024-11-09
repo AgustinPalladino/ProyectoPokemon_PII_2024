@@ -31,9 +31,19 @@ public class Jugador
     public void mostrarEquipo()
     {
         Console.WriteLine($"El equipo del {this.Nombre} equipo es: ");
-        foreach (Pokemon pokemon in this.equipoPokemon)
+        if (this.equipoPokemon[0] != null)
         {
-            Console.WriteLine($"-{pokemon.Nombre}");
+            for (int i = 0; i < this.equipoPokemon.Count; i++)
+            {
+                Console.WriteLine($"-{equipoPokemon[i].Nombre}");
+            }
+        }
+        else
+        {
+            for (int i = 1; i < this.equipoPokemon.Count; i++)
+            {
+                Console.WriteLine($"-{equipoPokemon[i].Nombre}");
+            }
         }
     }
     
@@ -96,35 +106,14 @@ public class Jugador
         int danio = (2 * this.pokemonEnCancha().Ataque) * movimiento.Ataque / (jEnemigo.pokemonEnCancha().Defensa) + 2;
         jEnemigo.pokemonEnCancha().VidaActual -= (int)(danio * OperacionesStatic.bonificacionTipos(movimiento.Tipo, jEnemigo.pokemonEnCancha().Tipo));
     }
-    
+
     /// <summary>
     /// Método usar Mochila
     /// </summary>
     /// <returns></returns>
-    public bool UsarMochila()
+    public void UsarMochila(IItem item)
     {
-        if (this.Mochila.Count == 0)
-        {
-            Console.WriteLine(" Tu mochila esta vacia");
-            return false;
-        }
-        
-        Console.WriteLine("\n Mochila:");
-        Console.WriteLine("Seleccione el nombre del item para usarlo, o '0' para salir");
-        for (int i = 0; i < this.Mochila.Count; i++)
-        {
-            Console.WriteLine($"{i + 1}. {this.Mochila[i].Nombre}");
-        }
-        string opcion = Console.ReadLine();
-        for (int i = 0; i < this.Mochila.Count; i++)
-        {
-            if (Mochila[i].Nombre == opcion)
-            {
-                Mochila[i].Usar(this);
-                Mochila.Remove(Mochila[i]);
-                return true;
-            }
-        }
-        return false;
+        item.Usar(this);
+        Mochila.Remove(item);
     }
 }
