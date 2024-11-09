@@ -78,7 +78,7 @@ public class Combate
                         banderaGlobal = false;
                         break;
                     case 5:
-                        j1.UsarMochila();
+                        logica.Mochila(j1);
                         break;
                     case 6:
                         Console.ForegroundColor = ConsoleColor.Red;
@@ -141,7 +141,7 @@ public class Combate
                         bandera = false;
                         break;
                     case 5:
-                        j2.UsarMochila();
+                        logica.Mochila(j2);
                         break;
                     default:
                         Console.ForegroundColor = ConsoleColor.Red;

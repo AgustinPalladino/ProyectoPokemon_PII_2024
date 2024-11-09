@@ -73,37 +73,9 @@ public class Jugador
         jEnemigo.pokemonEnCancha().VidaActual -= (int)(danio * OperacionesStatic.bonificacionTipos(movimiento.Tipo, jEnemigo.pokemonEnCancha().Tipo));
     }
     
-    public bool UsarMochila()
+    public void UsarMochila(IItem item)
     {
-        if (this.Mochila.Count == 0)
-        {
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("⚠️ Tu mochila esta vacia");
-            Console.ResetColor();
-            return false;
-        }
-
-        Console.ForegroundColor = ConsoleColor.Cyan;
-        Console.WriteLine("\n📦 Mochila:");
-        Console.ResetColor();
-        Console.ForegroundColor = ConsoleColor.Cyan;
-        Console.WriteLine("Seleccione el nombre del item para usarlo, o '0' para salir");
-        Console.ResetColor();
-        for (int i = 0; i < this.Mochila.Count; i++)
-        {
-            Console.WriteLine($"{i + 1}. {this.Mochila[i].Nombre}");
-        }
-        string opcion = Console.ReadLine();
-        OperacionesStatic.ajustarPalabra(opcion);
-        for (int i = 0; i < this.Mochila.Count; i++)
-        {
-            if (Mochila[i].Nombre == opcion)
-            {
-                Mochila[i].Usar(this);
-                Mochila.Remove(Mochila[i]);
-                return true;
-            }
-        }
-        return false;
+        item.Usar(this);
+        Mochila.Remove(item);
     }
 }

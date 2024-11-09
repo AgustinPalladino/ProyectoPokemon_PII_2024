@@ -117,9 +117,7 @@ public class Logica
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine($"\n🔹 {j.Nombre}, elige el movimiento que deseas usar (a, b, c...) o 0 para ir hacia atrás:");
             Console.ResetColor();
-
-            // Mostrar los movimientos disponibles con letras
-            MostrarAtaquesDisponibles(j);
+            
 
             string seleccion = Console.ReadLine()?.ToLower();
 
@@ -143,44 +141,9 @@ public class Logica
         }
         return null;
     }
-
-    private void MostrarAtaquesDisponibles(Jugador j)
-    {
-        var pokemon = j.pokemonEnCancha();  // Obtener el Pokémon en cancha
-        var movimientos = pokemon.listaMovimientos;
-
-        // Mostrar los ataques con letras
-        for (int i = 0; i < movimientos.Count; i++)
-        {
-            char letra = (char)('a' + i); // Asignar letras a los movimientos
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine($"{letra}. {movimientos[i].Nombre}");
-            Console.ResetColor();
-        }
-    }
-
     
-    private Movimiento SeleccionarAtaquePorLetra(Jugador j, string seleccion)
-    {
-        var pokemon = j.pokemonEnCancha();  
-        var movimientos = pokemon.listaMovimientos;
 
-        //Valido la letra seleccionada y ejecuto mi ataque seleccionado
-        if (seleccion.Length == 1 && char.IsLetter(seleccion[0]))
-        {
-            char letra = char.ToLower(seleccion[0]);
-            int indice = letra - 'a'; //convierto las letras en indices
-
-            if (indice >= 0 && indice < movimientos.Count)
-            {
-                return movimientos[indice]; //retorno mi ataque
-            }
-        }
-
-        return null; // Si la selección es inválida, retornar null
-    }
-
-    public void Mochila(Jugador j)
+    public bool Mochila(Jugador j)
     {
         bool bandera = true;
         while (bandera)
@@ -190,48 +153,31 @@ public class Logica
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("⚠️ Tu mochila esta vacia");
                 Console.ResetColor();
+                return false;
             }
             else
             {
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("\n📦 Mochila:");
                 Console.ResetColor();
-                Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.WriteLine("Seleccione el nombre del item para usarlo, o '0' para salir");
-                Console.ResetColor();
                 for (int i = 0; i < j.Mochila.Count; i++)
                 {
                     Console.WriteLine($"{i + 1}. {j.Mochila[i].Nombre}");
                 }
-            }
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine($"\n🔹 {j.Nombre}, elige el movimiento que deseas usar (a, b, c...) o 0 para ir hacia atrás:");
-            Console.ResetColor();
-
-            // Mostrar los movimientos disponibles con letras
-            MostrarAtaquesDisponibles(j);
-
-            string seleccion = Console.ReadLine()?.ToLower();
-
-            if (seleccion == "0") return null; // Opción para regresar
-
-            Movimiento ataqueSeleccionado = SeleccionarAtaquePorLetra(j, seleccion);
-            
-            if (ataqueSeleccionado != null)
-            {
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine($"✔️ Movimiento {ataqueSeleccionado.Nombre} seleccionado.");
-                Console.ResetColor();
-                return ataqueSeleccionado;
-            }
-            else
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("❌ Selección inválida, intente nuevamente.");
-                Console.ResetColor();
+                
+                Console.WriteLine("Seleccione el nombre del item para usarlo");
+                string opcion = Console.ReadLine();
+                for (int i = 0; i < j.Mochila.Count; i++)
+                {
+                    if (j.Mochila[i].Nombre == opcion)
+                    {
+                        j.UsarMochila(j.Mochila[i]);
+                        return true;
+                    }
+                }
             }
         }
-        return null;
+        return false;
     }
     
     public int Ataque(Jugador jugador, Jugador jEnemigo)
