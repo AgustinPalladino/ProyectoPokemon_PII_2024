@@ -2,9 +2,9 @@ using System;
 
 namespace Library
 {
-    public class CuraTotal : Item
+    public class CuraTotal : Iitem
     {
-        public override void Usar(Jugador j)
+        public void Usar(Jugador j)
         {
             //VariableLocal
             var pokemon = j.pokemonEnCancha();

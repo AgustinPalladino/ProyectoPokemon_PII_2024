@@ -2,9 +2,9 @@ using System;
 
 namespace Library
 {
-    public class Revivir : Item
+    public class Revivir : Iitem
     {
-        public override void Usar(Jugador j)
+        public  void Usar(Jugador j)
         {
             var pokemon = j.pokemonEnCancha();
             
