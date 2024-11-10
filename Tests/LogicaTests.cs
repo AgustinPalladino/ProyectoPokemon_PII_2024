@@ -78,7 +78,7 @@ namespace LibraryTests
             
             enemigo.equipoPokemon.Clear();
 
-            var resultado = logica.ChequeoVictoria(jugador,enemigo);
+            var resultado = logica.ChequeoVictoria(enemigo);
 
             Assert.IsTrue(resultado);
         }
@@ -88,7 +88,7 @@ namespace LibraryTests
         {
             enemigo.agregarPokemon(new Pokemon("Charizard", "Fuego", 100, 100, 85));  
 
-            var resultado = logica.ChequeoVictoria(jugador,enemigo);
+            var resultado = logica.ChequeoVictoria(enemigo);
 
             Assert.IsFalse(resultado);
         }
