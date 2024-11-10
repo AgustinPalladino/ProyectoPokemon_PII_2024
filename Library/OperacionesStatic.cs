@@ -26,7 +26,7 @@ namespace Library
         public static double CalcularCritico(int precisionMovimiento)
         {
             int probabilidad = numeroAleatorio(0, precisionMovimiento);
-            int probabilidadCritico = precisionMovimiento / 10;
+            double probabilidadCritico = precisionMovimiento / 10;
             if (probabilidad <= probabilidadCritico) // Calculo de que la cantidad sea golpe critico
             {
                 Console.WriteLine("¡Golpe crítico!");

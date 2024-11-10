@@ -46,31 +46,31 @@ namespace Library
             Pokemon moltres = new Pokemon("Moltres", "Fuego", 130, 100, 70);
             
             //Ataques
-            Movimiento Arañazo = new Movimiento("Arañazo", 5, 0.8,"Fuego", false);
-            Movimiento Lanzallamas = new Movimiento("Lanzallamas", 20, 0.8,"Fuego", false);
-            Movimiento Lluevehojas = new Movimiento("Lluevehojas", 20, 1,"Planta", false);
-            Movimiento Hidrocañon = new Movimiento("Hidrocañon", 20, 0.6,"Agua", false);
-            Movimiento Puñofuego = new Movimiento("Puñofuego", 20, 0.6,"Fuego", false);
-            Movimiento Electrocañon = new Movimiento("Electrocañon", 20, 0.4,"Eléctrico", false);
-            Movimiento Aéreo = new Movimiento("Aéreo", 15, 0.8,"Volador", false);
-            Movimiento Colmilloveneno = new Movimiento("Colmillo venenoso", 15,0.6, "Veneno", false);
-            Movimiento Puñodinámico = new Movimiento("Puño dinámico", 25, 1,"Lucha", false);
-            Movimiento GarraDragon = new Movimiento("GarraDragon", 30, 0.2,"Lucha", false);
-            Movimiento Confusion = new Movimiento("Confusion",50,0.2,"Psiquico",false);
-            Movimiento LanzaRocas = new Movimiento("LanzaRocas", 20, 0.6,"Tierra", false);
-            Movimiento Dormir = new Movimiento("Dormir", 0, 1,"Psiquico", true);
-            Movimiento Envenenar = new Movimiento("Envenenar", 0, 1,"Veneno", true);
-            Movimiento Quemar = new Movimiento("Quemar", 0, 1,"Fuego", true);
-            Movimiento Paralizar = new Movimiento("Paralizar", 0,1, "Electrico", true);
-            Movimiento PuñoHielo = new Movimiento("PuñoHielo", 20, 0.8,"Hielo", false);
-            Movimiento Aguacero = new Movimiento("Aguacero", 20, 0.6,"Agua", false);
-            Movimiento PuñoElectrico = new Movimiento("PuñoEléctrico", 20, 0.4,"Eléctrico", false);
-            Movimiento PuñoAereo = new Movimiento("PuñoAéreo", 15, 0.8,"Volador", false);
-            Movimiento HojaAfilada = new Movimiento("Hoja Afilada", 25, 0.6,"Planta", false);
-            Movimiento ColaLarga = new Movimiento("Cola Larga", 25, 0.6,"Dragón", false);
-            Movimiento PuñoLucha = new Movimiento("Puño Lucha", 25, 0.6,"Lucha", false);
-            Movimiento PuñoFuego = new Movimiento("Puño Fuego", 20, 0.6,"Fuego", false);
-            Movimiento Rayo = new Movimiento("Rayo", 20, 0.8,"Electrico", false);
+            Movimiento Arañazo = new Movimiento("Arañazo", 5, 80,"Fuego", false);
+            Movimiento Lanzallamas = new Movimiento("Lanzallamas", 20, 80,"Fuego", false);
+            Movimiento Lluevehojas = new Movimiento("Lluevehojas", 20, 100,"Planta", false);
+            Movimiento Hidrocañon = new Movimiento("Hidrocañon", 20, 60,"Agua", false);
+            Movimiento Puñofuego = new Movimiento("Puñofuego", 20, 60,"Fuego", false);
+            Movimiento Electrocañon = new Movimiento("Electrocañon", 100, 40,"Eléctrico", false);
+            Movimiento Aéreo = new Movimiento("Aéreo", 15, 60,"Volador", false);
+            Movimiento Colmilloveneno = new Movimiento("Colmillo venenoso", 15,60, "Veneno", false);
+            Movimiento Puñodinámico = new Movimiento("Puño dinámico", 25, 100,"Lucha", false);
+            Movimiento GarraDragon = new Movimiento("GarraDragon", 30, 60,"Lucha", false);
+            Movimiento Confusion = new Movimiento("Confusion",50,60,"Psiquico",false);
+            Movimiento LanzaRocas = new Movimiento("LanzaRocas", 20, 80,"Tierra", false);
+            Movimiento Dormir = new Movimiento("Dormir", 0, 100,"Psiquico", true);
+            Movimiento Envenenar = new Movimiento("Envenenar", 0, 100,"Veneno", true);
+            Movimiento Quemar = new Movimiento("Quemar", 0, 100,"Fuego", true);
+            Movimiento Paralizar = new Movimiento("Paralizar", 0,100, "Electrico", true);
+            Movimiento PuñoHielo = new Movimiento("PuñoHielo", 20, 80,"Hielo", false);
+            Movimiento Aguacero = new Movimiento("Aguacero", 20, 60,"Agua", false);
+            Movimiento PuñoElectrico = new Movimiento("PuñoEléctrico", 20, 60,"Eléctrico", false);
+            Movimiento PuñoAereo = new Movimiento("PuñoAéreo", 15, 80,"Volador", false);
+            Movimiento HojaAfilada = new Movimiento("Hoja Afilada", 25, 60,"Planta", false);
+            Movimiento ColaLarga = new Movimiento("Cola Larga", 25, 60,"Dragón", false);
+            Movimiento PuñoLucha = new Movimiento("Puño Lucha", 25, 60,"Lucha", false);
+            Movimiento PuñoFuego = new Movimiento("Puño Fuego", 20, 80,"Fuego", false);
+            Movimiento Rayo = new Movimiento("Rayo", 20, 100,"Electrico", false);
             
             // Agregar movimientos a los pokemons
             venusaur.agregarMovimiento(Arañazo);

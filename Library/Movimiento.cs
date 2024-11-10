@@ -9,7 +9,7 @@ public class Movimiento
     public int Ataque { get; }
     public string Tipo { get; }
     
-    public double Precision { get; }
+    public int Precision { get; }
     public bool EsEspecial { get; set; }
 
     /// <summary>
@@ -19,7 +19,7 @@ public class Movimiento
     /// <param name="ataque"></param>
     /// <param name="tipo"></param>
     /// <param name="esEspecial"></param>
-    public  Movimiento (string nombre, int ataque,double precision, string tipo, bool esEspecial)
+    public  Movimiento (string nombre, int ataque,int precision, string tipo, bool esEspecial)
     {
         this.Nombre = nombre;
         this.Ataque = ataque;
