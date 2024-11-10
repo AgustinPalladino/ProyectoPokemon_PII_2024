@@ -52,7 +52,7 @@ public class Logica
                 case 4:
                     if (Ataque(j1, j2))
                     {
-                        if (ChequeoVictoria(j1, j2))
+                        if (ChequeoVictoria(j2))
                         {
                             Console.WriteLine($"Felicidades {j1.Nombre}! Has ganado la batalla.");
                             Console.ResetColor();
@@ -256,7 +256,7 @@ public class Logica
                 Console.WriteLine($"{jEnemigo.Nombre}, tu {jEnemigo.pokemonEnCancha().Nombre} fue derrotado.");
                 jEnemigo.equipoPokemonDerrotados.Add(jEnemigo.pokemonEnCancha());
                 jEnemigo.equipoPokemon[0] = null;
-                if (!ChequeoVictoria(jugador, jEnemigo))
+                if (!ChequeoVictoria(jEnemigo))
                 {
                     CambiarPokemon(jEnemigo);
                 }
@@ -270,7 +270,7 @@ public class Logica
     }
 
     
-    public bool ChequeoVictoria(Jugador jugador, Jugador jEnemigo)
+    public bool ChequeoVictoria(Jugador jEnemigo)
     {
         if (jEnemigo.equipoPokemon.Count == 1 && jEnemigo.equipoPokemon[0] == null)
         {
