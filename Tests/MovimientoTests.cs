@@ -20,7 +20,7 @@ namespace LibraryTests
         [Test]
         public void AplicarAtaquesEspeciales_DeberiaAplicarDormirCorrectamente()
         {
-            var movimientoDormir = new Movimiento("Dormir", 0, "Psíquico", true);
+            var movimientoDormir = new Movimiento("Dormir", 0, 1,"Psíquico", true);
             
             movimientoDormir.AplicarAtaquesEspeciales(pokemonEnemigo);
 
@@ -31,7 +31,7 @@ namespace LibraryTests
         [Test]
         public void AplicarAtaquesEspeciales_DeberiaAplicarQuemarCorrectamente()
         {
-            var movimientoQuemar = new Movimiento("Quemar", 0, "Fuego", true);
+            var movimientoQuemar = new Movimiento("Quemar", 0,1, "Fuego", true);
             
             movimientoQuemar.AplicarAtaquesEspeciales(pokemonEnemigo);
 
@@ -41,7 +41,7 @@ namespace LibraryTests
         [Test]
         public void AplicarAtaquesEspeciales_DeberiaAplicarParalizarCorrectamente()
         {
-            var movimientoParalizar = new Movimiento("Paralizar", 0, "Eléctrico", true);
+            var movimientoParalizar = new Movimiento("Paralizar", 0, 1,"Eléctrico", true);
             
             movimientoParalizar.AplicarAtaquesEspeciales(pokemonEnemigo);
 
@@ -51,7 +51,7 @@ namespace LibraryTests
         [Test]
         public void AplicarAtaquesEspeciales_DeberiaAplicarEnvenenarCorrectamente()
         {
-            var movimientoEnvenenar = new Movimiento("Envenenar", 0, "Veneno", true);
+            var movimientoEnvenenar = new Movimiento("Envenenar", 0, 1,"Veneno", true);
             
             movimientoEnvenenar.AplicarAtaquesEspeciales(pokemonEnemigo);
 
@@ -61,7 +61,7 @@ namespace LibraryTests
         [Test]
         public void AplicarAtaquesEspeciales_DeberiaNoAplicarEfectoSiNoEsEspecial()
         {
-            var movimientoNormal = new Movimiento("Lanzallamas", 20, "Fuego", false);
+            var movimientoNormal = new Movimiento("Lanzallamas", 20, 0.6,"Fuego", false);
             
             movimientoNormal.AplicarAtaquesEspeciales(pokemonEnemigo);
 
@@ -71,7 +71,7 @@ namespace LibraryTests
         [Test]
         public void AplicarAtaquesEspeciales_DeberiaNoAplicarEfectoSiEstadoYaEstaAplicado()
         {
-            var movimientoQuemar = new Movimiento("Quemar", 0, "Fuego", true);
+            var movimientoQuemar = new Movimiento("Quemar", 0, 1,"Fuego", true);
             pokemonEnemigo.Estado = "Quemado";
             
             movimientoQuemar.AplicarAtaquesEspeciales(pokemonEnemigo);

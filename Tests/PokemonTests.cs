@@ -27,7 +27,7 @@ namespace LibraryTests
         public void AgregarMovimiento_AgregaMovimientoALaLista_Venusaur()
         {
             var pokemon = new Pokemon("Venusaur", "Planta", 120, 40, 60);
-            var movimiento = new Movimiento("Lluevehojas", 20,"Acuatico", false);
+            var movimiento = new Movimiento("Lluevehojas", 20,0.6,"Acuatico", false);
 
             pokemon.agregarMovimiento(movimiento);
 

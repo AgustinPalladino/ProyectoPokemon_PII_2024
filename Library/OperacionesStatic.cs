@@ -8,6 +8,21 @@ namespace Library
             return random.Next(minimo, maximo + 1);
         }
 
+        private static Random randomDouble = new Random();
+
+        public static double Precision(double precision, int ataqueBase)
+        {
+            double probabilidad = randomDouble.NextDouble(); /// Devuelve valor entre 0 y 1
+            if (probabilidad <= precision)
+            {
+                return ataqueBase;
+            }
+            else
+            {
+                Console.WriteLine("El ataque falló");
+                return 0;
+            }
+        }
         public static double CalcularCritico(int precisionMovimiento)
         {
             int probabilidad = numeroAleatorio(0, precisionMovimiento);

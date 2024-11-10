@@ -4,9 +4,7 @@ public class Combate
 {
     public void MostrarCatalogo(List<Pokemon> listaPokemon)
     {
-        Console.ForegroundColor = ConsoleColor.Cyan;
         Console.WriteLine("\n Catálogo de Pokémon disponibles:");
-        Console.ResetColor();
 
         foreach (Pokemon pokemon in listaPokemon)
         {
@@ -20,20 +18,16 @@ public class Combate
         Logica logica = new Logica();
         CreadorDePokemonYMovimiento creadorDePokemonYMovimiento = new CreadorDePokemonYMovimiento();
         MostrarCatalogo(creadorDePokemonYMovimiento.listaPokemon); // Le pasa por parametro la lista de todos los pokemon agregados
-
-        Console.ForegroundColor = ConsoleColor.Cyan;
+        
         Console.WriteLine("\nSu primer pokemon elejido sera con el que empieze la batalla");
-        Console.ResetColor();
         
         for (int i = 0; i < 6; i++) // Los jugadores escogen sus 6 pokemon
         {
             logica.EscogerEquipo(j1);
             logica.EscogerEquipo(j2);
         }
-
-        Console.ForegroundColor = ConsoleColor.Green;
+        
         Console.WriteLine("\n Equipos seleccionados:");
-        Console.ResetColor();
         j1.mostrarEquipo();
         j2.mostrarEquipo();
         

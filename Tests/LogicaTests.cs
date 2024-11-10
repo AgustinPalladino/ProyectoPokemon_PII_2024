@@ -61,7 +61,7 @@ namespace LibraryTests
         {
             var pokemonAliado = new Pokemon("Blastoise", "Agua", 100, 100, 80);  
             var pokemonEnemigo = new Pokemon("Charizard", "Fuego", 100, 100, 85);
-            var movimiento = new Movimiento("Lanzallama", 14,"Fuego",false);
+            var movimiento = new Movimiento("Lanzallama", 14,0.4,"Fuego",false);
 
             jugador.agregarPokemon(pokemonAliado);
             enemigo.agregarPokemon(pokemonEnemigo);

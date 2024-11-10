@@ -8,6 +8,8 @@ public class Movimiento
     public string Nombre { get; }
     public int Ataque { get; }
     public string Tipo { get; }
+    
+    public double Precision { get; }
     public bool EsEspecial { get; set; }
 
     /// <summary>
@@ -17,11 +19,12 @@ public class Movimiento
     /// <param name="ataque"></param>
     /// <param name="tipo"></param>
     /// <param name="esEspecial"></param>
-    public  Movimiento (string nombre, int ataque, string tipo, bool esEspecial)
+    public  Movimiento (string nombre, int ataque,double precision, string tipo, bool esEspecial)
     {
         this.Nombre = nombre;
         this.Ataque = ataque;
         this.Tipo = tipo;
+        this.Precision = precision;
         this.EsEspecial = esEspecial;
     }
 
@@ -29,7 +32,7 @@ public class Movimiento
     public Movimiento Clonar()
     {
         // Crea una nueva instancia con los mismos atributos
-        return new Movimiento(this.Nombre, this.Ataque, this.Tipo, this.EsEspecial);
+        return new Movimiento(this.Nombre, this.Ataque, this.Precision,this.Tipo, this.EsEspecial);
     }
     
     /// <summary>

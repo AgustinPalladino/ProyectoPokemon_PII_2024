@@ -22,10 +22,8 @@ public class Logica
         bool bandera = true;
         while (bandera)
         {
-            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine($"\nTurno de {j1.Nombre}. ¿Qué deseas hacer? Seleccione un numero porfavor.");
             Console.WriteLine($"Su pokemon en el combate es: {j1.pokemonEnCancha().Nombre}");
-            Console.ResetColor();
 
             Console.WriteLine("1- Ver las habilidades de tu Pokémon (No consume turno)");
             Console.WriteLine("2- Ver la salud de tu Pokémon (No consume turno)");
@@ -56,7 +54,6 @@ public class Logica
                     {
                         if (ChequeoVictoria(j1, j2))
                         {
-                            Console.ForegroundColor = ConsoleColor.Green;
                             Console.WriteLine($"Felicidades {j1.Nombre}! Has ganado la batalla.");
                             Console.ResetColor();
                             return false; // Retorna falso porque la pelea termino
@@ -73,9 +70,7 @@ public class Logica
                     break; //Si volvio para atras vuelve al bucle
                     
                 default: // Si ingresa una opcion mala, vuelve al bucle
-                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Opcion erronea, intenta de nuevo");
-                    Console.ResetColor();
                     break;
             }
         }
@@ -89,9 +84,7 @@ public class Logica
         while (bandera)
         {
             bool pokemonEncontrado = false;
-            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine($"{j.Nombre}, ingrese el nombre del pokemon que desea elegir");
-            Console.ResetColor();
             string pokeIngresado = Console.ReadLine();
 
             foreach (Pokemon pokemon in listaPokemon)
@@ -103,16 +96,12 @@ public class Logica
                     {
                         j.nombreCheck.Add(pokeIngresado);
                         j.agregarPokemon(pokemon.Clonar());
-                        Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine($"{pokemon.Nombre} ha sido agregado a tu equipo.");
-                        Console.ResetColor();
                         bandera = false;
                     }
                     else
                     {
-                        Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.WriteLine("El pokemon ya está en el equipo, elija otro pokemon.");
-                        Console.ResetColor();
                     }
                     break;
                 }
@@ -120,9 +109,7 @@ public class Logica
             //Si el pokemon nunca se encontro, vuelve a pedirlo
             if (!pokemonEncontrado)
             {
-                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Pokemon no encontrado, intente nuevamente.");
-                Console.ResetColor();
             }
         }
     }
@@ -140,17 +127,13 @@ public class Logica
                 {
                     j.equipoPokemon.Remove(j.equipoPokemon[0]);
                     j.mostrarEquipo();
-                    Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.WriteLine("\nEscoge el siguiente pokemon para pelear");
-                    Console.ResetColor();
                     pokeIngresado = Console.ReadLine();
                 }
                 else
                 {
                     j.mostrarEquipo();
-                    Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.WriteLine("\nEscoge el pokemon a cambiar o 0 para ir hacia atrás:");
-                    Console.ResetColor();
                     pokeIngresado = Console.ReadLine();
 
                     if (pokeIngresado == "0")
@@ -173,9 +156,7 @@ public class Logica
             // Maneja errores inesperados
             catch (Exception)
             {
-                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Error");
-                Console.ResetColor();
                 return false;
             }
         }
@@ -191,9 +172,7 @@ public class Logica
         {
             if (j.Mochila.Count != 0)
             {
-                Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("\nMochila:");
-                Console.ResetColor();
                 for (int i = 0; i < j.Mochila.Count; i++)
                 {
                     Console.WriteLine($"- {j.Mochila[i].Nombre}");
@@ -214,15 +193,11 @@ public class Logica
                     Console.WriteLine("Usted regreso hacia atras \n");
                     return false;
                 }
-                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Error");
-                Console.ResetColor();
             }
             else
             {
-                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("Tu mochila esta vacia");
-                Console.ResetColor();
                 return false;
             }
         }
@@ -236,9 +211,7 @@ public class Logica
         bool bandera = true;
         while (bandera)
         {
-            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine($"\n{j.Nombre}. ingrese el nombre del movimiento desee usar o 0 para salir");
-            Console.ResetColor();
             string movimiento = Console.ReadLine();
             foreach (Movimiento mov in j.pokemonEnCancha().listaMovimientos)
             {
@@ -253,9 +226,7 @@ public class Logica
                 Console.WriteLine("Usted regreso hacia atras");
                 return false;
             }
-            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Error");
-            Console.ResetColor();
         }
         return false;
     }
@@ -265,6 +236,7 @@ public class Logica
     {
         if (movimiento != null)
         {
+            
             if (jugador.pokemonEnCancha().puedeAtacar())
             {
                 jugador.atacar(jEnemigo, movimiento);
@@ -275,17 +247,13 @@ public class Logica
             if (movimiento.EsEspecial && jEnemigo.pokemonEnCancha().Estado == "Normal")
             {
                 movimiento.AplicarAtaquesEspeciales(jEnemigo.pokemonEnCancha());
-                Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine($"{jEnemigo.pokemonEnCancha().Nombre} ahora está bajo efecto del ataque {movimiento.Nombre}.");
-                Console.ResetColor();
                 jEnemigo.pokemonEnCancha().aplicarDañoRecurrente();
             }
 
             if (jEnemigo.pokemonEnCancha().VidaActual <= 0)
             {
-                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine($"{jEnemigo.Nombre}, tu {jEnemigo.pokemonEnCancha().Nombre} fue derrotado.");
-                Console.ResetColor();
                 jEnemigo.equipoPokemonDerrotados.Add(jEnemigo.pokemonEnCancha());
                 jEnemigo.equipoPokemon[0] = null;
                 if (!ChequeoVictoria(jugador, jEnemigo))
@@ -295,9 +263,7 @@ public class Logica
             }
             else
             {
-                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine($"La vida del {jEnemigo.pokemonEnCancha().Nombre} es: {jEnemigo.pokemonEnCancha().VidaActual}");
-                Console.ResetColor();
             }
         }
         return 0;
