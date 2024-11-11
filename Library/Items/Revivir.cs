@@ -37,6 +37,7 @@ public class Revivir : IItem
                         j.equipoPokemonDerrotados[i].VidaActual = j.equipoPokemonDerrotados[i].VidaMax / 2; // Revive con el 50% de su vida máxima
                         j.equipoPokemonDerrotados[i].Estado = "Normal";
                         Console.WriteLine($"{j.equipoPokemonDerrotados[i].Nombre} ha sido revivido con {j.equipoPokemonDerrotados[i].VidaActual} puntos de vida.");
+                        j.equipoPokemonDerrotados.Remove(j.equipoPokemonDerrotados[i]);
                         j.equipoPokemon.Add(j.equipoPokemonDerrotados[i]);
                         bandera = false;
                     }
