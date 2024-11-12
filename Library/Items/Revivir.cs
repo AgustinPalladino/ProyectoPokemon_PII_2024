@@ -38,6 +38,7 @@ public class Revivir : IItem
                         j.equipoPokemonDerrotados[i].Estado = "Normal";
                         Console.WriteLine($"{j.equipoPokemonDerrotados[i].Nombre} ha sido revivido con {j.equipoPokemonDerrotados[i].VidaActual} puntos de vida.");
                         j.equipoPokemon.Add(j.equipoPokemonDerrotados[i]);
+                        j.equipoPokemonDerrotados.Remove(j.equipoPokemonDerrotados[i]);
                         bandera = false;
                     }
                 }
