@@ -7,6 +7,7 @@ public class Jugador
     public string Nombre;
     public List<Pokemon> equipoPokemon = new();
     public List<Pokemon> equipoPokemonDerrotados = new();
+    public List<string> nombreCheck = new();
     public List<IItem> Mochila = new();
     
     

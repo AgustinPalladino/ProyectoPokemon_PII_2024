@@ -92,8 +92,9 @@ public class Logica
                 if (pokeIngresado == pokemon.Nombre)
                 {
                     pokemonEncontrado = true;
-                    if (!j.equipoPokemon.Contains(pokemon)) // Añade al pokemon si no estaba en el equipo
+                    if (!j.nombreCheck.Contains(pokeIngresado)) // Añade al pokemon si no estaba en el equipo
                     {
+                        j.nombreCheck.Add(pokeIngresado);
                         j.agregarPokemon(pokemon.Clonar());
                         Console.WriteLine($"{pokemon.Nombre} ha sido agregado a tu equipo.");
                         bandera = false;
