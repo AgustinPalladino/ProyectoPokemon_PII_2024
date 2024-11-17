@@ -5,16 +5,11 @@ namespace Library;
 /// <summary>
 /// Esta clase como las demas, estaran heredando mi interfaz de Iitems, con su metodo con diferente funcionalidad
 /// </summary>
-public class Revivir : IItem
+public class Revivir : Item
 {
-    private string nombre;
+    public override string Nombre => "Revivir";
 
-    public string Nombre
-    {
-        get { return this.nombre = "Revivir"; }
-    }
-
-    public void Usar(Jugador j)
+    public override void Usar(Jugador j)
     {
         bool bandera = true;
         while (bandera)

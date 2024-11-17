@@ -3,34 +3,38 @@ using System;
 namespace Library
 {
     /// <summary>
-    /// Esta clase como las demas, estaran heredando mi interfaz de Iitems, con su metodo con diferente funcionalidad
+    /// Representa el ítem "CuraTotal", que elimina estados alterados del Pokémon en batalla.
     /// </summary>
-    public class CuraTotal : IItem
+    public class CuraTotal : Item
     {
-        private string nombre;
+        // Implementación de la propiedad abstracta Nombre
+        public override string Nombre => "CuraTotal";
 
-        public string Nombre
+        // Implementación del método abstracto Usar
+        public override void Usar(Jugador j)
         {
-            get { return this.nombre = "CuraTotal"; }
-        }
-        public void Usar(Jugador j)
-        {
-            //Utilizo mi variable local
+            // Obtener el Pokémon en cancha
             var pokemon = j.pokemonEnCancha();
-            if(pokemon.Estado=="Normal") {
-                Console.WriteLine("No puedes usar el item ya que el pokemon esta en estado normal");
+
+            // Verificar si el Pokémon ya está en estado "Normal"
+            if (pokemon.Estado == "Normal")
+            {
+                Console.WriteLine("No puedes usar el ítem ya que el Pokémon está en estado normal.");
+                return;
             }
 
+            // Verificar si el Pokémon tiene vida actual
             if (pokemon.VidaActual > 0)
             {
-                /// Restablecer el estado del Pokémon a "Normal"
+                // Restablecer el estado del Pokémon
                 pokemon.Estado = "Normal";
 
-                /// Mensaje de confirmación
+                // Mensaje de confirmación
                 Console.WriteLine($"{pokemon.Nombre} se ha curado de todos sus estados.");
             }
             else
             {
+                // Mensaje si el Pokémon está debilitado
                 Console.WriteLine($"{pokemon.Nombre} no tiene puntos de salud y no puede ser curado.");
             }
         }
