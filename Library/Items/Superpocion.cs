@@ -2,16 +2,11 @@ using System;
 
 namespace Library
 {
-    public class SuperPocion : IItem
+    public class SuperPocion : Item
     {
-        private string nombre;
+        public override string Nombre => "SuperPocion";
 
-        public string Nombre
-        {
-            get { return this.nombre = "Superpocion"; }
-        }
-        
-        public void Usar(Jugador j)
+        public override void Usar(Jugador j)
         {
             var pokemon = j.pokemonEnCancha();
             
