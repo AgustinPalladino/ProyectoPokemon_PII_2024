@@ -8,7 +8,7 @@ public class Jugador
     public List<Pokemon> equipoPokemon = new();
     public List<Pokemon> equipoPokemonDerrotados = new();
     public List<string> nombreCheck = new();
-    public List<IItem> Mochila = new();
+    public List<Item> Mochila = new();
     
     
     /// <summary>
@@ -114,7 +114,7 @@ public class Jugador
     /// Método usar Mochila
     /// </summary>
     /// <returns></returns>
-    public void UsarMochila(IItem item)
+    public void UsarMochila(Item item)
     {
         item.Usar(this);
         Mochila.Remove(item);
