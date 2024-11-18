@@ -6,10 +6,10 @@ namespace Library
     /// </summary>
     public abstract class Item
     {
-        // Propiedad abstracta que debe ser implementada por las subclases
+        // Propiedad abstracta 
         public abstract string Nombre { get; }
 
-        // Constructor protegido para permitir inicialización en subclases
+        // Constructor protegido
         protected Item() { }
 
         // Método abstracto que obliga a las subclases a definir cómo usar el ítem
