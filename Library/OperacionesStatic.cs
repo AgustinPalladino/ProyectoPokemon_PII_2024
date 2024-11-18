@@ -149,21 +149,30 @@ namespace Library
         public static Dictionary<string, Movimiento> DiccionarioMovimientos = new()
         {
             { "Arañazo", new Movimiento("Arañazo", 5, 80, "Fuego", false) },
-            { "Confusion", new Movimiento("Confusion", 50, 60, "Psiquico", false) },
-            { "Quemar", new Movimiento("Quemar", 0, 100, "Fuego", true) },
-            { "Dormir", new Movimiento("Dormir", 0, 100, "Psiquico", true) },
-            { "Envenenar", new Movimiento("Envenenar", 0, 100, "Veneno", true) },
-            { "LanzaRocas", new Movimiento("LanzaRocas", 20, 80, "Tierra", false) },
-            { "PuñoDinámico", new Movimiento("Puño Dinámico", 25, 100, "Lucha", false) },
-            { "Rayo", new Movimiento("Rayo", 20, 100, "Electrico", false) },
+            { "Lanzallamas", new Movimiento("Lanzallamas", 20, 80, "Fuego", false) },
+            { "Lluevehojas", new Movimiento("Lluevehojas", 20, 100, "Planta", false) },
             { "Hidrocañon", new Movimiento("Hidrocañon", 20, 60, "Agua", false) },
-            { "Aguacero", new Movimiento("Aguacero", 20, 60, "Agua", false) },
-            { "Electrocañon", new Movimiento("Electrocañon", 100, 40, "Electrico", false) },
-            { "HojaAfilada", new Movimiento("Hoja Afilada", 25, 60, "Planta", false) },
-            { "ColaLarga", new Movimiento("Cola Larga", 25, 60, "Dragón", false) },
-            { "PuñoHielo", new Movimiento("Puño Hielo", 20, 80, "Hielo", false) },
+            { "Puñofuego", new Movimiento("Puñofuego", 20, 60, "Fuego", false) },
+            { "Electrocañon", new Movimiento("Electrocañon", 100, 40, "Eléctrico", false) },
             { "Aéreo", new Movimiento("Aéreo", 15, 60, "Volador", false) },
-            { "GarraDragon", new Movimiento("Garra Dragon", 30, 60, "Lucha", false) }
+            { "Colmillo venenoso", new Movimiento("Colmillo venenoso", 15, 60, "Veneno", false) },
+            { "Puño dinámico", new Movimiento("Puño dinámico", 25, 100, "Lucha", false) },
+            { "GarraDragon", new Movimiento("GarraDragon", 30, 60, "Lucha", false) },
+            { "Confusion", new Movimiento("Confusion", 50, 60, "Psíquico", false) },
+            { "LanzaRocas", new Movimiento("LanzaRocas", 20, 80, "Tierra", false) },
+            { "Dormir", new Movimiento("Dormir", 0, 100, "Psíquico", true) },
+            { "Envenenar", new Movimiento("Envenenar", 0, 100, "Veneno", true) },
+            { "Quemar", new Movimiento("Quemar", 0, 100, "Fuego", true) },
+            { "Paralizar", new Movimiento("Paralizar", 0, 100, "Eléctrico", true) },
+            { "PuñoHielo", new Movimiento("PuñoHielo", 20, 80, "Hielo", false) },
+            { "Aguacero", new Movimiento("Aguacero", 20, 60, "Agua", false) },
+            { "PuñoEléctrico", new Movimiento("PuñoEléctrico", 20, 60, "Eléctrico", false) },
+            { "PuñoAéreo", new Movimiento("PuñoAéreo", 15, 80, "Volador", false) },
+            { "Hoja Afilada", new Movimiento("Hoja Afilada", 25, 60, "Planta", false) },
+            { "Cola Larga", new Movimiento("Cola Larga", 25, 60, "Dragón", false) },
+            { "Puño Lucha", new Movimiento("Puño Lucha", 25, 60, "Lucha", false) },
+            { "Puño Fuego", new Movimiento("Puño Fuego", 20, 80, "Fuego", false) },
+            { "Rayo", new Movimiento("Rayo", 20, 100, "Eléctrico", false) }
         };
         
         public static Dictionary<string, Pokemon> DiccionarioPokemon = new()
