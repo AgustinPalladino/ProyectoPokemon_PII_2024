@@ -6,7 +6,7 @@ public class Combate
     {
         Console.WriteLine("\n Catálogo de Pokémon disponibles:");
 
-        foreach (var pokemon in OperacionesStatic.DiccionarioPokemon)
+        foreach (var pokemon in DiccionariosYOperacionesStatic.DiccionarioPokemon)
         {
             Console.WriteLine($"- {pokemon.Value.Nombre}");
         }
@@ -31,7 +31,7 @@ public class Combate
         j2.mostrarEquipo();
         
         bool banderaGlobal = true;
-        int numeroRandom = OperacionesStatic.numeroAleatorio(1, 2);
+        int numeroRandom = DiccionariosYOperacionesStatic.numeroAleatorio(1, 2);
         while (banderaGlobal)
         {
             //Si el numero random es 1 empieza el jugador uno
