@@ -77,7 +77,7 @@ public class Logica
             Console.WriteLine($"{j.Nombre}, ingrese el nombre del pokemon que desea elegir");
             string pokeIngresado = Console.ReadLine();
 
-            foreach (var pokemon in OperacionesStatic.DiccionarioPokemon)
+            foreach (var pokemon in DiccionariosYOperacionesStatic.DiccionarioPokemon)
             {
                 if (pokeIngresado == pokemon.Key)
                 {

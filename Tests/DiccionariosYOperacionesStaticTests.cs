@@ -5,18 +5,18 @@ using System;
 namespace LibraryTests
 {
     [TestFixture]
-    public class OperacionesStaticTests
+    public class DiccionariosYOperacionesStaticTests
     {
         [Test]
         public void BonificacionTipos_ExistenBonificaciones_DeberiaRetornarMultiplicador()
         {
-            double resultado = OperacionesStatic.bonificacionTipos("Agua", "Fuego");
+            double resultado = DiccionariosYOperacionesStatic.bonificacionTipos("Agua", "Fuego");
             Assert.AreEqual(0.5, resultado);
 
-            resultado = OperacionesStatic.bonificacionTipos("Fuego", "Planta");
+            resultado = DiccionariosYOperacionesStatic.bonificacionTipos("Fuego", "Planta");
             Assert.AreEqual(0.5, resultado);
 
-            resultado = OperacionesStatic.bonificacionTipos("Veneno", "Psíquico");
+            resultado = DiccionariosYOperacionesStatic.bonificacionTipos("Veneno", "Psíquico");
             Assert.AreEqual(2, resultado);
         }
 
@@ -24,11 +24,11 @@ namespace LibraryTests
         public void BonificacionTipos_NoExistenBonificaciones_DeberiaRetornar1()
         {
             
-            double resultado = OperacionesStatic.bonificacionTipos("Hielo", "Fuego");
+            double resultado = DiccionariosYOperacionesStatic.bonificacionTipos("Hielo", "Fuego");
             Assert.AreEqual(1, resultado);
 
             
-            resultado = OperacionesStatic.bonificacionTipos("Lucha", "Eléctrico");
+            resultado = DiccionariosYOperacionesStatic.bonificacionTipos("Lucha", "Eléctrico");
             Assert.AreEqual(1, resultado);
         }
         
@@ -40,7 +40,7 @@ namespace LibraryTests
 
             for (int i = 0; i < 100; i++)
             {
-                double resultado = OperacionesStatic.CalcularCritico(100);
+                double resultado = DiccionariosYOperacionesStatic.CalcularCritico(100);
                 if (resultado == 1.0)
                 {
                     esNormal = true;

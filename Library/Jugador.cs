@@ -103,9 +103,9 @@ public class Jugador
     
     public void atacar(Jugador jEnemigo, Movimiento movimiento)
     {
-        double ataqueFinal = OperacionesStatic.Precision(movimiento.Precision, movimiento.Ataque);
+        double ataqueFinal = DiccionariosYOperacionesStatic.Precision(movimiento.Precision, movimiento.Ataque);
         double danio = (2 * this.pokemonEnCancha().Ataque)*ataqueFinal * movimiento.Ataque / (jEnemigo.pokemonEnCancha().Defensa) + 2;
-        jEnemigo.pokemonEnCancha().VidaActual -= (int)(danio * OperacionesStatic.bonificacionTipos(movimiento.Tipo, jEnemigo.pokemonEnCancha().Tipo) * OperacionesStatic.CalcularCritico(movimiento.Precision));
+        jEnemigo.pokemonEnCancha().VidaActual -= (int)(danio * DiccionariosYOperacionesStatic.bonificacionTipos(movimiento.Tipo, jEnemigo.pokemonEnCancha().Tipo) * DiccionariosYOperacionesStatic.CalcularCritico(movimiento.Precision));
     }
 
     /// <summary>

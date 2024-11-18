@@ -1,6 +1,6 @@
 namespace Library
 {
-    public static class OperacionesStatic
+    public static class DiccionariosYOperacionesStatic
     {
         public static int numeroAleatorio(int minimo, int maximo)
         {
