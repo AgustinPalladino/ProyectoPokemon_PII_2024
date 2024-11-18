@@ -2,13 +2,13 @@ namespace Library;
 
 public class Combate
 {
-    public void MostrarCatalogo(List<Pokemon> listaPokemon)
+    public void MostrarCatalogo()
     {
         Console.WriteLine("\n Catálogo de Pokémon disponibles:");
 
-        foreach (Pokemon pokemon in listaPokemon)
+        foreach (var pokemon in OperacionesStatic.DiccionarioPokemon)
         {
-            Console.WriteLine($"- {pokemon.Nombre}");
+            Console.WriteLine($"- {pokemon.Value.Nombre}");
         }
     }
 
@@ -16,8 +16,7 @@ public class Combate
     public void BuclePrincipal(Jugador j1, Jugador j2)
     {
         Logica logica = new Logica();
-        CreadorDePokemonYMovimiento creadorDePokemonYMovimiento = new CreadorDePokemonYMovimiento();
-        MostrarCatalogo(creadorDePokemonYMovimiento.listaPokemon); // Le pasa por parametro la lista de todos los pokemon agregados
+        MostrarCatalogo(); // Le pasa por parametro la lista de todos los pokemon agregados
         
         Console.WriteLine("\nSu primer pokemon elejido sera con el que empieze la batalla");
         

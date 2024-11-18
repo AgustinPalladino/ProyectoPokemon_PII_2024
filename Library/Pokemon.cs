@@ -1,5 +1,3 @@
-using Library.Moves;
-
 namespace Library;
 
 public class Pokemon
@@ -88,9 +86,11 @@ public class Pokemon
         get { return this.porcentajeDañoPorTurno; }
         set { this.porcentajeDañoPorTurno = value; }
     }
-    public void agregarMovimiento(Movimiento movimiento)
+
+    public Pokemon AgregarMovimientos(List<Movimiento> movimiento)
     {
-        listaMovimientos.Add(movimiento);
+        listaMovimientos.AddRange(movimiento);
+        return this;
     }
 
     public void aplicarDañoRecurrente()

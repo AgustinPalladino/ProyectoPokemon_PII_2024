@@ -1,17 +1,7 @@
-using Library.Moves;
-
 namespace Library;
 
 public class Logica
 {
-    public List<Pokemon> listaPokemon = new();
-
-    public Logica()
-    {
-        CreadorDePokemonYMovimiento creadorDePokemonYMovimiento = new CreadorDePokemonYMovimiento();
-        listaPokemon = creadorDePokemonYMovimiento.listaPokemon;
-        //Al instanciarse logica se copian la lista de pokemon en su propia lista
-    }
     
     /// <summary>
     /// Este metodo despliega el menu de opciones de cada jugador, decidimos ponerlo aqui, por uno de los patrones GRASP
@@ -87,16 +77,16 @@ public class Logica
             Console.WriteLine($"{j.Nombre}, ingrese el nombre del pokemon que desea elegir");
             string pokeIngresado = Console.ReadLine();
 
-            foreach (Pokemon pokemon in listaPokemon)
+            foreach (var pokemon in OperacionesStatic.DiccionarioPokemon)
             {
-                if (pokeIngresado == pokemon.Nombre)
+                if (pokeIngresado == pokemon.Key)
                 {
                     pokemonEncontrado = true;
-                    if (!j.nombreCheck.Contains(pokeIngresado)) // Añade al pokemon si no estaba en el equipo
+                    if (!j.nombreCheck.Contains(pokeIngresado))
                     {
                         j.nombreCheck.Add(pokeIngresado);
-                        j.agregarPokemon(pokemon.Clonar());
-                        Console.WriteLine($"{pokemon.Nombre} ha sido agregado a tu equipo.");
+                        j.agregarPokemon(pokemon.Value);
+                        Console.WriteLine($"{pokemon.Value.Nombre} ha sido agregado a tu equipo.");
                         bandera = false;
                     }
                     else

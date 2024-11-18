@@ -1,4 +1,4 @@
-namespace Library.Moves;
+namespace Library;
 
 /// <summary>
 /// Se crea clase Movimiento, con sus métodos, atributos y constructor.
