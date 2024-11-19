@@ -33,14 +33,14 @@ public class Logica
                     break;
                 
                 case 3:
-                    if (Mochila(j1, InteraccionConsola.ElegirItem(j1)))
+                    if (Mochila(j1, InteraccionConUsuario.ElegirItem(j1)))
                     {
                         return true; // Si uso el objeto sale del bucle
                     }
                     break; // Si regresa vuelve al bucle
                     
                 case 4:
-                    if (Ataque(j1, j2))
+                    if (SeleccionarAtaque(j1,j2))
                     {
                         if (ChequeoVictoria(j2))
                         {
@@ -188,12 +188,12 @@ public class Logica
     
     
     // Metodo para seleccionar un ataque
-    public bool Ataque(Jugador j, Jugador jEnemigo)
+    public bool SeleccionarAtaque(Jugador j, Jugador jEnemigo)
     {
         bool bandera = true;
         while (bandera)
         {
-            string movimiento = InteraccionConsola.ElegirMovimiento(j);
+            string movimiento = InteraccionConUsuario.ElegirMovimiento(j);
             foreach (Movimiento mov in j.pokemonEnCancha().listaMovimientos)
             {
                 if (movimiento == mov.Nombre)

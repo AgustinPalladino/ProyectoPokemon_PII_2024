@@ -1,6 +1,6 @@
 namespace Library;
 
-public static class InteraccionConsola
+public static class InteraccionConUsuario
 {
     public static string ElegirPokemon(Jugador j)
     {
