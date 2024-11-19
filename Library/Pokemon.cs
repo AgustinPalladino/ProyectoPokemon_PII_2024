@@ -11,7 +11,7 @@ public class Pokemon
     private string estado = "Normal";
     private double porcentajeDañoPorTurno;
     private int turnosDormido;
-    public List<Movimiento> listaMovimientos { get; set; }  = new List<Movimiento>();
+    public List<Movimiento> listaMovimientos { get; set; }  = new();
 
     public Pokemon(string nombre, string tipo, int vidaMax, int ataque, int defensa)
     {

@@ -19,11 +19,16 @@ public class Combate
         MostrarCatalogo(); // Le pasa por parametro la lista de todos los pokemon agregados
         
         Console.WriteLine("\nSu primer pokemon elejido sera con el que empieze la batalla");
-        
-        for (int i = 0; i < 6; i++) // Los jugadores escogen sus 6 pokemon
+        string opcion = Console.ReadLine();
+        for (int i = 0; i < 2; i++) // Los jugadores escogen sus 6 pokemon
         {
-            logica.EscogerEquipo(j1);
-            logica.EscogerEquipo(j2);
+            logica.EscogerEquipo(j1, opcion);
+            Console.Write("Seleccione su pokemon: ");
+            Console.ReadLine();
+            
+            logica.EscogerEquipo(j2, opcion);
+            Console.Write("Seleccione su pokemon: ");
+            Console.ReadLine();
         }
         
         Console.WriteLine("\n Equipos seleccionados:");
