@@ -5,8 +5,12 @@ public class Combate
     public void MostrarCatalogo()
     {
         Console.WriteLine("\n Catálogo de Pokémon disponibles:");
+        string rutaPokemon = @"../Pokemones.txt";
+        string rutaMovimientos = @"../Movimientos.txt";
 
-        foreach (var pokemon in DiccionariosYOperacionesStatic.DiccionarioPokemon)
+        // Cargar los archivos de Pokémon y movimientos
+        DiccionariosYOperacionesStatic.CargarMovimientosDesdeArchivo(rutaMovimientos);
+        foreach (var pokemon in DiccionariosYOperacionesStatic.CargarPokemonDesdeArchivo(rutaPokemon))
         {
             Console.WriteLine($"- {pokemon.Value.Nombre}");
         }

@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 
@@ -8,7 +9,7 @@ namespace Library
     {
         // Diccionarios para almacenar Pokémon y movimientos
         public static Dictionary<string, Pokemon> DiccionarioPokemon = new Dictionary<string, Pokemon>();
-        public static Dictionary<string, Movimiento> DiccionarioMovimientos = new Dictionary<string, Movimiento>();
+        public static List<Movimiento> ListaMovimiento = new List<Movimiento> ();
 
         private static Random randomDouble = new Random();
 
@@ -118,32 +119,51 @@ namespace Library
         }
 
         // Método para cargar Pokémon desde un archivo
-        public static void CargarPokemonDesdeArchivo(string rutaArchivo)
+public static Dictionary<string, Pokemon> CargarPokemonDesdeArchivo(string rutaArchivo)
+{
+    if (!File.Exists(rutaArchivo))
+    {
+        Console.WriteLine($"El archivo {rutaArchivo} no existe.");
+        return null;
+    }
+
+    var DiccionarioPokemon = new Dictionary<string, Pokemon>(); // Inicializar el diccionario
+    var lineas = File.ReadAllLines(rutaArchivo);
+
+    foreach (var linea in lineas)
+    {
+        var datos = linea.Split(';');
+        if (datos.Length < 9) // Verificación de formato
         {
-            if (!File.Exists(rutaArchivo))
-            {
-                Console.WriteLine($"El archivo {rutaArchivo} no existe.");
-                return;
-            }
+            Console.WriteLine($"Formato incorrecto en línea: {linea}");
+            continue;
+        }
 
-            var lineas = File.ReadAllLines(rutaArchivo);
-            foreach (var linea in lineas)
+        // Crear el objeto Pokemon con los primeros 5 datos
+        var pokemon = new Pokemon(datos[0], datos[1], int.Parse(datos[2]), int.Parse(datos[3]), int.Parse(datos[4]));
+        
+        DiccionarioPokemon[datos[0]] = pokemon; // Usar el nombre como clave
+        
+        // Iterar sobre los movimientos (empezando desde el índice 5)
+        for (int i = 5; i < datos.Length; i++)
+        {
+            foreach (Movimiento movimiento in ListaMovimiento)
             {
-                var datos = linea.Split(';');
-                if (datos.Length != 5)
+                if (datos[i] == movimiento.Nombre)
                 {
-                    Console.WriteLine($"Formato incorrecto en línea: {linea}");
-                    continue;
+                    pokemon.AgregarMovimientos(movimiento);
                 }
-
-                var pokemon = new Pokemon(datos[0], datos[1], int.Parse(datos[2]), int.Parse(datos[3]), int.Parse(datos[4]));
-                DiccionarioPokemon[datos[0]] = pokemon; // Usar el nombre como clave
             }
         }
+    }
+    
+    return DiccionarioPokemon; // Devolver después de procesar todas las líneas
+}
+
 
         // Método para cargar movimientos desde un archivo
         public static void CargarMovimientosDesdeArchivo(string rutaArchivo)
-        {
+        {      
             if (!File.Exists(rutaArchivo))
             {
                 Console.WriteLine($"El archivo {rutaArchivo} no existe.");
@@ -161,7 +181,7 @@ namespace Library
                 }
 
                 var movimiento = new Movimiento(datos[0], int.Parse(datos[1]), int.Parse(datos[2]), datos[3], bool.Parse(datos[4]));
-                DiccionarioMovimientos[datos[0]] = movimiento; // Usar el nombre como clave
+                ListaMovimiento.Add(movimiento);
             }
         }
 

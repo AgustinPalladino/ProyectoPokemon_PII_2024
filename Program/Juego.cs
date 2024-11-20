@@ -5,8 +5,8 @@ class Program
     static void Main(string[] args)
     {
         // Ruta correcta a los archivos
-        string rutaPokemon = @"C:\Users\rf4tc\Desktop\Proyecto p2\ProyectoPokemon_PII_2024\pokemones.txt";
-        string rutaMovimientos = @"C:\Users\rf4tc\Desktop\Proyecto p2\ProyectoPokemon_PII_2024\movimientos.txt";
+        string rutaPokemon = @"../Pokemones.txt";
+        string rutaMovimientos = @"../Movimientos.txt";
 
         // Cargar los archivos de Pokémon y movimientos
         DiccionariosYOperacionesStatic.CargarPokemonDesdeArchivo(rutaPokemon);
