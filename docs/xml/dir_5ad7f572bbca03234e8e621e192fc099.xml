@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="es">
+  <compounddef id="dir_5ad7f572bbca03234e8e621e192fc099" kind="dir">
+    <compoundname>C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library</compoundname>
+    <innerfile refid="_combate_8cs">Combate.cs</innerfile>
+    <innerfile refid="_diccionarios_y_operaciones_static_8cs">DiccionariosYOperacionesStatic.cs</innerfile>
+    <innerfile refid="_jugador_8cs">Jugador.cs</innerfile>
+    <innerfile refid="_logica_8cs">Logica.cs</innerfile>
+    <innerfile refid="_movimiento_8cs">Movimiento.cs</innerfile>
+    <innerfile refid="_pokemon_8cs">Pokemon.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/"/>
+  </compounddef>
+</doxygen>

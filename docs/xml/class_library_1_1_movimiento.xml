@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="es">
+  <compounddef id="class_library_1_1_movimiento" kind="class" language="C#" prot="public">
+    <compoundname>Library::Movimiento</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_library_1_1_movimiento_1ab87c205fd8828958835d9a815e3a8731" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Library.Movimiento.Nombre</definition>
+        <argsstring></argsstring>
+        <name>Nombre</name>
+        <qualifiedname>Library.Movimiento.Nombre</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Movimiento.cs" line="8" column="19" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Movimiento.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="property" id="class_library_1_1_movimiento_1a89d44179902fbc24d578c6929ce136e3" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Library.Movimiento.Ataque</definition>
+        <argsstring></argsstring>
+        <name>Ataque</name>
+        <qualifiedname>Library.Movimiento.Ataque</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Movimiento.cs" line="9" column="16" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Movimiento.cs" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="property" id="class_library_1_1_movimiento_1aa6be84eef69267b45a4ca816130f7b65" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Library.Movimiento.Tipo</definition>
+        <argsstring></argsstring>
+        <name>Tipo</name>
+        <qualifiedname>Library.Movimiento.Tipo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Movimiento.cs" line="10" column="19" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Movimiento.cs" bodystart="10" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="property" id="class_library_1_1_movimiento_1a8845f06af95a53cfd2a3cb84378e6c73" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Library.Movimiento.Precision</definition>
+        <argsstring></argsstring>
+        <name>Precision</name>
+        <qualifiedname>Library.Movimiento.Precision</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Movimiento.cs" line="12" column="16" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Movimiento.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="property" id="class_library_1_1_movimiento_1a7c5e13076c75f402115a2f5712daa11e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Library.Movimiento.EsEspecial</definition>
+        <argsstring></argsstring>
+        <name>EsEspecial</name>
+        <qualifiedname>Library.Movimiento.EsEspecial</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Movimiento.cs" line="13" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Movimiento.cs" bodystart="13" bodyend="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_library_1_1_movimiento_1ac5edfb3f89776af503093893c2e54e7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Library.Movimiento.Movimiento</definition>
+        <argsstring>(string nombre, int ataque, int precision, string tipo, bool esEspecial)</argsstring>
+        <name>Movimiento</name>
+        <qualifiedname>Library.Movimiento.Movimiento</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>nombre</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ataque</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>precision</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>tipo</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>esEspecial</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ataque</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tipo</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>esEspecial</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Movimiento.cs" line="22" column="13" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Movimiento.cs" bodystart="22" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_movimiento_1aaf04b359aa69b996e64b56a694954926" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref></type>
+        <definition>Movimiento Library.Movimiento.Clonar</definition>
+        <argsstring>()</argsstring>
+        <name>Clonar</name>
+        <qualifiedname>Library.Movimiento.Clonar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Movimiento.cs" line="32" column="23" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Movimiento.cs" bodystart="32" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_movimiento_1a2d7c259676f4c040f15ec7f8703ca2a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Library.Movimiento.AplicarAtaquesEspeciales</definition>
+        <argsstring>(Pokemon pokemonEnemigo)</argsstring>
+        <name>AplicarAtaquesEspeciales</name>
+        <qualifiedname>Library.Movimiento.AplicarAtaquesEspeciales</qualifiedname>
+        <param>
+          <type><ref refid="class_library_1_1_pokemon" kindref="compound">Pokemon</ref></type>
+          <declname>pokemonEnemigo</declname>
+        </param>
+        <briefdescription>
+<para>Método abstracto para aplicar el ataque especial. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pokemonEnemigo</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Con el ! implica que cuando es EsEspecial es falso, se ejecuta el return, saliendo del método.</para>
+<para>Se compara en minusculas, con el fin de evitar diferencias de mayusculas y minusculas</para>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Movimiento.cs" line="42" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Movimiento.cs" bodystart="42" bodyend="85"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Se crea clase Movimiento, con sus métodos, atributos y constructor. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Movimiento.cs" line="6" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Movimiento.cs" bodystart="7" bodyend="86"/>
+    <listofallmembers>
+      <member refid="class_library_1_1_movimiento_1a2d7c259676f4c040f15ec7f8703ca2a9" prot="public" virt="non-virtual"><scope>Library::Movimiento</scope><name>AplicarAtaquesEspeciales</name></member>
+      <member refid="class_library_1_1_movimiento_1a89d44179902fbc24d578c6929ce136e3" prot="public" virt="non-virtual"><scope>Library::Movimiento</scope><name>Ataque</name></member>
+      <member refid="class_library_1_1_movimiento_1aaf04b359aa69b996e64b56a694954926" prot="public" virt="non-virtual"><scope>Library::Movimiento</scope><name>Clonar</name></member>
+      <member refid="class_library_1_1_movimiento_1a7c5e13076c75f402115a2f5712daa11e" prot="public" virt="non-virtual"><scope>Library::Movimiento</scope><name>EsEspecial</name></member>
+      <member refid="class_library_1_1_movimiento_1ac5edfb3f89776af503093893c2e54e7e" prot="public" virt="non-virtual"><scope>Library::Movimiento</scope><name>Movimiento</name></member>
+      <member refid="class_library_1_1_movimiento_1ab87c205fd8828958835d9a815e3a8731" prot="public" virt="non-virtual"><scope>Library::Movimiento</scope><name>Nombre</name></member>
+      <member refid="class_library_1_1_movimiento_1a8845f06af95a53cfd2a3cb84378e6c73" prot="public" virt="non-virtual"><scope>Library::Movimiento</scope><name>Precision</name></member>
+      <member refid="class_library_1_1_movimiento_1aa6be84eef69267b45a4ca816130f7b65" prot="public" virt="non-virtual"><scope>Library::Movimiento</scope><name>Tipo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

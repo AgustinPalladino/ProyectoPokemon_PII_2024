@@ -1,0 +1,406 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="es">
+  <compounddef id="class_library_1_1_pokemon" kind="class" language="C#" prot="public">
+    <compoundname>Library::Pokemon</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_library_1_1_pokemon_1a188bbafd6cd0664e3989343f445f4ad5" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Library.Pokemon.nombre</definition>
+        <argsstring></argsstring>
+        <name>nombre</name>
+        <qualifiedname>Library.Pokemon.nombre</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" line="8" column="20" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_library_1_1_pokemon_1a3dc6798128d90457c02e49f1e9227efd" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Library.Pokemon.tipo</definition>
+        <argsstring></argsstring>
+        <name>tipo</name>
+        <qualifiedname>Library.Pokemon.tipo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" line="9" column="20" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_library_1_1_pokemon_1acffcbb652cae0b7baaf62fee03af4366" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Library.Pokemon.vidaMax</definition>
+        <argsstring></argsstring>
+        <name>vidaMax</name>
+        <qualifiedname>Library.Pokemon.vidaMax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" line="10" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_library_1_1_pokemon_1a60f0cf6b095a47eabd08d7eee8a9a3c1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Library.Pokemon.vidaActual</definition>
+        <argsstring></argsstring>
+        <name>vidaActual</name>
+        <qualifiedname>Library.Pokemon.vidaActual</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" line="11" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_library_1_1_pokemon_1addd66cb86b1daf059cc2c461a5d2c4b3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Library.Pokemon.ataque</definition>
+        <argsstring></argsstring>
+        <name>ataque</name>
+        <qualifiedname>Library.Pokemon.ataque</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" line="12" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_library_1_1_pokemon_1a14278ebd1980fa611cbcc7e03ac8b92d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Library.Pokemon.defensa</definition>
+        <argsstring></argsstring>
+        <name>defensa</name>
+        <qualifiedname>Library.Pokemon.defensa</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" line="13" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_library_1_1_pokemon_1a771999fe902fd0a035b74974aec8eae8" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Library.Pokemon.estado</definition>
+        <argsstring></argsstring>
+        <name>estado</name>
+        <qualifiedname>Library.Pokemon.estado</qualifiedname>
+        <initializer>= &quot;Normal&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" line="14" column="20" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_library_1_1_pokemon_1aa1b89a8415bbbd119109242c1571f0b5" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Library.Pokemon.porcentajeDañoPorTurno</definition>
+        <argsstring></argsstring>
+        <name>porcentajeDañoPorTurno</name>
+        <qualifiedname>Library.Pokemon.porcentajeDañoPorTurno</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" line="15" column="20" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_library_1_1_pokemon_1a3f930458a2222d6a75a69a3054dd31a9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Library.Pokemon.turnosDormido</definition>
+        <argsstring></argsstring>
+        <name>turnosDormido</name>
+        <qualifiedname>Library.Pokemon.turnosDormido</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" line="16" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_library_1_1_pokemon_1a903757c3c85fdc80d46e7611524458ce" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; <ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref> &gt;</type>
+        <definition>List&lt;Movimiento&gt; Library.Pokemon.listaMovimientos</definition>
+        <argsstring></argsstring>
+        <name>listaMovimientos</name>
+        <qualifiedname>Library.Pokemon.listaMovimientos</qualifiedname>
+        <initializer>= new List&lt;<ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" line="17" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="property" id="class_library_1_1_pokemon_1a00c426a1254382d5e08db41affef65db" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Library.Pokemon.Nombre</definition>
+        <argsstring></argsstring>
+        <name>Nombre</name>
+        <qualifiedname>Library.Pokemon.Nombre</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" line="29" column="19" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="property" id="class_library_1_1_pokemon_1adc4c1d2f1483875da479258d02b3f62c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Library.Pokemon.Tipo</definition>
+        <argsstring></argsstring>
+        <name>Tipo</name>
+        <qualifiedname>Library.Pokemon.Tipo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" line="35" column="19" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="property" id="class_library_1_1_pokemon_1aecce2ce5f15035382ebdb9eefa8ff36a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Library.Pokemon.VidaMax</definition>
+        <argsstring></argsstring>
+        <name>VidaMax</name>
+        <qualifiedname>Library.Pokemon.VidaMax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" line="41" column="16" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="property" id="class_library_1_1_pokemon_1ad063570f6afc90e852d252cf6759022b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Library.Pokemon.VidaActual</definition>
+        <argsstring></argsstring>
+        <name>VidaActual</name>
+        <qualifiedname>Library.Pokemon.VidaActual</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" line="47" column="16" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="property" id="class_library_1_1_pokemon_1a542ee69614d9b66b68537aca744f06f3" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Library.Pokemon.Ataque</definition>
+        <argsstring></argsstring>
+        <name>Ataque</name>
+        <qualifiedname>Library.Pokemon.Ataque</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" line="53" column="16" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" bodystart="54" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="property" id="class_library_1_1_pokemon_1aa43d7550bd97056db4a46c2478d86407" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Library.Pokemon.Defensa</definition>
+        <argsstring></argsstring>
+        <name>Defensa</name>
+        <qualifiedname>Library.Pokemon.Defensa</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" line="59" column="16" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="property" id="class_library_1_1_pokemon_1a943954bc0ac27d9f01cc919443cacb4f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Library.Pokemon.Estado</definition>
+        <argsstring></argsstring>
+        <name>Estado</name>
+        <qualifiedname>Library.Pokemon.Estado</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" line="65" column="19" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="property" id="class_library_1_1_pokemon_1a113881a5368c0ab0088ecff3fb3290c3" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Library.Pokemon.TurnosDormido</definition>
+        <argsstring></argsstring>
+        <name>TurnosDormido</name>
+        <qualifiedname>Library.Pokemon.TurnosDormido</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" line="71" column="16" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="property" id="class_library_1_1_pokemon_1a3dfe1dea0d2f20a1e08e986d5d708e6b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double Library.Pokemon.PorcentajeDañoPorTurno</definition>
+        <argsstring></argsstring>
+        <name>PorcentajeDañoPorTurno</name>
+        <qualifiedname>Library.Pokemon.PorcentajeDañoPorTurno</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" line="87" column="19" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" bodystart="88" bodyend="91"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_library_1_1_pokemon_1acf1542b22f46837c5b9ccd2e0869d21f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Library.Pokemon.Pokemon</definition>
+        <argsstring>(string nombre, string tipo, int vidaMax, int ataque, int defensa)</argsstring>
+        <name>Pokemon</name>
+        <qualifiedname>Library.Pokemon.Pokemon</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>nombre</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>tipo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>vidaMax</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ataque</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>defensa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" line="19" column="12" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" bodystart="19" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_pokemon_1a4999e769ebe8a7d88cb6304154c2e2cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_library_1_1_pokemon" kindref="compound">Pokemon</ref></type>
+        <definition>Pokemon Library.Pokemon.Clonar</definition>
+        <argsstring>()</argsstring>
+        <name>Clonar</name>
+        <qualifiedname>Library.Pokemon.Clonar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" line="78" column="20" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" bodystart="78" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_pokemon_1a6796d49135550fbe77084bac91c56fd0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_library_1_1_pokemon" kindref="compound">Pokemon</ref></type>
+        <definition>Pokemon Library.Pokemon.AgregarMovimientos</definition>
+        <argsstring>(List&lt; Movimiento &gt; movimiento)</argsstring>
+        <name>AgregarMovimientos</name>
+        <qualifiedname>Library.Pokemon.AgregarMovimientos</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref> &gt;</type>
+          <declname>movimiento</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" line="93" column="20" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" bodystart="93" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_pokemon_1a8ccdd3056cd5da97a4931766f5a1cfd7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Library.Pokemon.aplicarDañoRecurrente</definition>
+        <argsstring>()</argsstring>
+        <name>aplicarDañoRecurrente</name>
+        <qualifiedname>Library.Pokemon.aplicarDañoRecurrente</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" line="99" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" bodystart="99" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_pokemon_1a1bb5ae9a91c6e08c9e365d8f87cf7be6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Library.Pokemon.puedeAtacar</definition>
+        <argsstring>()</argsstring>
+        <name>puedeAtacar</name>
+        <qualifiedname>Library.Pokemon.puedeAtacar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" line="108" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" bodystart="108" bodyend="134"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Se crea la clase &quot;Pokemon&quot; encargada de representar a un Pokémon con sus atributos básicos, habilidades y comportamientos en el juego. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" line="6" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Pokemon.cs" bodystart="7" bodyend="135"/>
+    <listofallmembers>
+      <member refid="class_library_1_1_pokemon_1a6796d49135550fbe77084bac91c56fd0" prot="public" virt="non-virtual"><scope>Library::Pokemon</scope><name>AgregarMovimientos</name></member>
+      <member refid="class_library_1_1_pokemon_1a8ccdd3056cd5da97a4931766f5a1cfd7" prot="public" virt="non-virtual"><scope>Library::Pokemon</scope><name>aplicarDañoRecurrente</name></member>
+      <member refid="class_library_1_1_pokemon_1addd66cb86b1daf059cc2c461a5d2c4b3" prot="private" virt="non-virtual"><scope>Library::Pokemon</scope><name>ataque</name></member>
+      <member refid="class_library_1_1_pokemon_1a542ee69614d9b66b68537aca744f06f3" prot="public" virt="non-virtual"><scope>Library::Pokemon</scope><name>Ataque</name></member>
+      <member refid="class_library_1_1_pokemon_1a4999e769ebe8a7d88cb6304154c2e2cc" prot="public" virt="non-virtual"><scope>Library::Pokemon</scope><name>Clonar</name></member>
+      <member refid="class_library_1_1_pokemon_1a14278ebd1980fa611cbcc7e03ac8b92d" prot="private" virt="non-virtual"><scope>Library::Pokemon</scope><name>defensa</name></member>
+      <member refid="class_library_1_1_pokemon_1aa43d7550bd97056db4a46c2478d86407" prot="public" virt="non-virtual"><scope>Library::Pokemon</scope><name>Defensa</name></member>
+      <member refid="class_library_1_1_pokemon_1a771999fe902fd0a035b74974aec8eae8" prot="private" virt="non-virtual"><scope>Library::Pokemon</scope><name>estado</name></member>
+      <member refid="class_library_1_1_pokemon_1a943954bc0ac27d9f01cc919443cacb4f" prot="public" virt="non-virtual"><scope>Library::Pokemon</scope><name>Estado</name></member>
+      <member refid="class_library_1_1_pokemon_1a903757c3c85fdc80d46e7611524458ce" prot="public" virt="non-virtual"><scope>Library::Pokemon</scope><name>listaMovimientos</name></member>
+      <member refid="class_library_1_1_pokemon_1a188bbafd6cd0664e3989343f445f4ad5" prot="private" virt="non-virtual"><scope>Library::Pokemon</scope><name>nombre</name></member>
+      <member refid="class_library_1_1_pokemon_1a00c426a1254382d5e08db41affef65db" prot="public" virt="non-virtual"><scope>Library::Pokemon</scope><name>Nombre</name></member>
+      <member refid="class_library_1_1_pokemon_1acf1542b22f46837c5b9ccd2e0869d21f" prot="public" virt="non-virtual"><scope>Library::Pokemon</scope><name>Pokemon</name></member>
+      <member refid="class_library_1_1_pokemon_1aa1b89a8415bbbd119109242c1571f0b5" prot="private" virt="non-virtual"><scope>Library::Pokemon</scope><name>porcentajeDañoPorTurno</name></member>
+      <member refid="class_library_1_1_pokemon_1a3dfe1dea0d2f20a1e08e986d5d708e6b" prot="public" virt="non-virtual"><scope>Library::Pokemon</scope><name>PorcentajeDañoPorTurno</name></member>
+      <member refid="class_library_1_1_pokemon_1a1bb5ae9a91c6e08c9e365d8f87cf7be6" prot="public" virt="non-virtual"><scope>Library::Pokemon</scope><name>puedeAtacar</name></member>
+      <member refid="class_library_1_1_pokemon_1a3dc6798128d90457c02e49f1e9227efd" prot="private" virt="non-virtual"><scope>Library::Pokemon</scope><name>tipo</name></member>
+      <member refid="class_library_1_1_pokemon_1adc4c1d2f1483875da479258d02b3f62c" prot="public" virt="non-virtual"><scope>Library::Pokemon</scope><name>Tipo</name></member>
+      <member refid="class_library_1_1_pokemon_1a3f930458a2222d6a75a69a3054dd31a9" prot="private" virt="non-virtual"><scope>Library::Pokemon</scope><name>turnosDormido</name></member>
+      <member refid="class_library_1_1_pokemon_1a113881a5368c0ab0088ecff3fb3290c3" prot="public" virt="non-virtual"><scope>Library::Pokemon</scope><name>TurnosDormido</name></member>
+      <member refid="class_library_1_1_pokemon_1a60f0cf6b095a47eabd08d7eee8a9a3c1" prot="private" virt="non-virtual"><scope>Library::Pokemon</scope><name>vidaActual</name></member>
+      <member refid="class_library_1_1_pokemon_1ad063570f6afc90e852d252cf6759022b" prot="public" virt="non-virtual"><scope>Library::Pokemon</scope><name>VidaActual</name></member>
+      <member refid="class_library_1_1_pokemon_1acffcbb652cae0b7baaf62fee03af4366" prot="private" virt="non-virtual"><scope>Library::Pokemon</scope><name>vidaMax</name></member>
+      <member refid="class_library_1_1_pokemon_1aecce2ce5f15035382ebdb9eefa8ff36a" prot="public" virt="non-virtual"><scope>Library::Pokemon</scope><name>VidaMax</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

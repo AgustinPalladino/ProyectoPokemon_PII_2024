@@ -1,7 +1,15 @@
 namespace Library;
 
+/// <summary>
+/// constructor de clase Combate
+/// Esta clase se ocupa de ejecutar y mantener el combate pokemon hasta llegar a un final
+/// </summary>
 public class Combate
 {
+    /// <summary>
+    /// Creacion de el metodo "Mostrarcatalogo"
+    /// El cual se ocupa de brindarle al usuario la informacion de los pókemons existentes
+    /// </summary>
     public void MostrarCatalogo()
     {
         Console.WriteLine("\n Catálogo de Pokémon disponibles:");
@@ -11,8 +19,13 @@ public class Combate
             Console.WriteLine($"- {pokemon.Value.Nombre}");
         }
     }
-
     
+    /// <summary>
+    /// Creacion del metodo "BuclePrincipal"
+    /// Este metodo se ocupa de llevar a cabo el bucle alternado de quien elige su pokemon y quien ataca 
+    /// </summary>
+    /// <param name="j1"></param>
+    /// <param name="j2"></param>
     public void BuclePrincipal(Jugador j1, Jugador j2)
     {
         Logica logica = new Logica();

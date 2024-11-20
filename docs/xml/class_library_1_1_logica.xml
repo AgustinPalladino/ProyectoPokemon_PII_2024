@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="es">
+  <compounddef id="class_library_1_1_logica" kind="class" language="C#" prot="public">
+    <compoundname>Library::Logica</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_library_1_1_logica_1a6e96d62994d79ad0d39bb6febd8c7b30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Library.Logica.MenuDeJugador</definition>
+        <argsstring>(Jugador j1, Jugador j2)</argsstring>
+        <name>MenuDeJugador</name>
+        <qualifiedname>Library.Logica.MenuDeJugador</qualifiedname>
+        <param>
+          <type><ref refid="class_library_1_1_jugador" kindref="compound">Jugador</ref></type>
+          <declname>j1</declname>
+        </param>
+        <param>
+          <type><ref refid="class_library_1_1_jugador" kindref="compound">Jugador</ref></type>
+          <declname>j2</declname>
+        </param>
+        <briefdescription>
+<para>Este metodo despliega el menu de opciones de cada jugador, decidimos ponerlo aqui, por uno de los patrones GRASP llamado bajo acomplamiento, con la intencion de que logica interactue con jugador de una manera mas cercana que combate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Logica.cs" line="10" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Logica.cs" bodystart="10" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_logica_1a4c20f0418365d410de9323f953da46ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Library.Logica.EscogerEquipo</definition>
+        <argsstring>(Jugador j)</argsstring>
+        <name>EscogerEquipo</name>
+        <qualifiedname>Library.Logica.EscogerEquipo</qualifiedname>
+        <param>
+          <type><ref refid="class_library_1_1_jugador" kindref="compound">Jugador</ref></type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Logica.cs" line="71" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Logica.cs" bodystart="71" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_logica_1a0e8d0ff01cb9b724e1805250f1d4c260" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Library.Logica.CambiarPokemon</definition>
+        <argsstring>(Jugador j)</argsstring>
+        <name>CambiarPokemon</name>
+        <qualifiedname>Library.Logica.CambiarPokemon</qualifiedname>
+        <param>
+          <type><ref refid="class_library_1_1_jugador" kindref="compound">Jugador</ref></type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Logica.cs" line="108" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Logica.cs" bodystart="108" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_logica_1a6fbd2e7de41141da76dce16edc3b6352" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Library.Logica.Mochila</definition>
+        <argsstring>(Jugador j)</argsstring>
+        <name>Mochila</name>
+        <qualifiedname>Library.Logica.Mochila</qualifiedname>
+        <param>
+          <type><ref refid="class_library_1_1_jugador" kindref="compound">Jugador</ref></type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Logica.cs" line="158" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Logica.cs" bodystart="158" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_logica_1a152a8b8b869469f439c84f012b9b6f4f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Library.Logica.Ataque</definition>
+        <argsstring>(Jugador j, Jugador jEnemigo)</argsstring>
+        <name>Ataque</name>
+        <qualifiedname>Library.Logica.Ataque</qualifiedname>
+        <param>
+          <type><ref refid="class_library_1_1_jugador" kindref="compound">Jugador</ref></type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type><ref refid="class_library_1_1_jugador" kindref="compound">Jugador</ref></type>
+          <declname>jEnemigo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Logica.cs" line="199" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Logica.cs" bodystart="199" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_logica_1a2a105a2477d09a8c50d58eff71eeb9ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Library.Logica.CalculoAtaque</definition>
+        <argsstring>(Jugador jugador, Jugador jEnemigo, Movimiento movimiento)</argsstring>
+        <name>CalculoAtaque</name>
+        <qualifiedname>Library.Logica.CalculoAtaque</qualifiedname>
+        <param>
+          <type><ref refid="class_library_1_1_jugador" kindref="compound">Jugador</ref></type>
+          <declname>jugador</declname>
+        </param>
+        <param>
+          <type><ref refid="class_library_1_1_jugador" kindref="compound">Jugador</ref></type>
+          <declname>jEnemigo</declname>
+        </param>
+        <param>
+          <type><ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref></type>
+          <declname>movimiento</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Logica.cs" line="225" column="16" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Logica.cs" bodystart="225" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_logica_1afec2cb67054f6e0a95bbc1d9235d6ef5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Library.Logica.ChequeoVictoria</definition>
+        <argsstring>(Jugador jEnemigo)</argsstring>
+        <name>ChequeoVictoria</name>
+        <qualifiedname>Library.Logica.ChequeoVictoria</qualifiedname>
+        <param>
+          <type><ref refid="class_library_1_1_jugador" kindref="compound">Jugador</ref></type>
+          <declname>jEnemigo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Logica.cs" line="263" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Logica.cs" bodystart="263" bodyend="270"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Logica.cs" line="3" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Logica.cs" bodystart="4" bodyend="271"/>
+    <listofallmembers>
+      <member refid="class_library_1_1_logica_1a152a8b8b869469f439c84f012b9b6f4f" prot="public" virt="non-virtual"><scope>Library::Logica</scope><name>Ataque</name></member>
+      <member refid="class_library_1_1_logica_1a2a105a2477d09a8c50d58eff71eeb9ba" prot="public" virt="non-virtual"><scope>Library::Logica</scope><name>CalculoAtaque</name></member>
+      <member refid="class_library_1_1_logica_1a0e8d0ff01cb9b724e1805250f1d4c260" prot="public" virt="non-virtual"><scope>Library::Logica</scope><name>CambiarPokemon</name></member>
+      <member refid="class_library_1_1_logica_1afec2cb67054f6e0a95bbc1d9235d6ef5" prot="public" virt="non-virtual"><scope>Library::Logica</scope><name>ChequeoVictoria</name></member>
+      <member refid="class_library_1_1_logica_1a4c20f0418365d410de9323f953da46ea" prot="public" virt="non-virtual"><scope>Library::Logica</scope><name>EscogerEquipo</name></member>
+      <member refid="class_library_1_1_logica_1a6e96d62994d79ad0d39bb6febd8c7b30" prot="public" virt="non-virtual"><scope>Library::Logica</scope><name>MenuDeJugador</name></member>
+      <member refid="class_library_1_1_logica_1a6fbd2e7de41141da76dce16edc3b6352" prot="public" virt="non-virtual"><scope>Library::Logica</scope><name>Mochila</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

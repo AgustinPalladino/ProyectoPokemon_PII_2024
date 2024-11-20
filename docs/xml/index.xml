@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.7" xml:lang="es">
+  <compound refid="class_library_1_1_combate" kind="class"><name>Library::Combate</name>
+    <member refid="class_library_1_1_combate_1a295749fc3bb768c006206a17df723741" kind="function"><name>MostrarCatalogo</name></member>
+    <member refid="class_library_1_1_combate_1ab09c5e3551b14908b133b2fd50bef439" kind="function"><name>BuclePrincipal</name></member>
+  </compound>
+  <compound refid="class_library_1_1_diccionarios_y_operaciones_static" kind="class"><name>Library::DiccionariosYOperacionesStatic</name>
+    <member refid="class_library_1_1_diccionarios_y_operaciones_static_1a0aa5c35d6fb230fbe39b551e74ebe467" kind="variable"><name>randomDouble</name></member>
+    <member refid="class_library_1_1_diccionarios_y_operaciones_static_1af0152e5c9c464fc39fa953f5d1683993" kind="variable"><name>bonificacionesTipos</name></member>
+    <member refid="class_library_1_1_diccionarios_y_operaciones_static_1a90d62414752c9af9d8367052048d0d58" kind="variable"><name>DiccionarioMovimientos</name></member>
+    <member refid="class_library_1_1_diccionarios_y_operaciones_static_1af5f88f91ce75311cf2b4fbeb768f8c97" kind="variable"><name>DiccionarioPokemon</name></member>
+    <member refid="class_library_1_1_diccionarios_y_operaciones_static_1ac3a23404514603db7cd7f1e619161673" kind="function"><name>numeroAleatorio</name></member>
+    <member refid="class_library_1_1_diccionarios_y_operaciones_static_1aaa88754b47a734285ea4fee9c8a93395" kind="function"><name>Precision</name></member>
+    <member refid="class_library_1_1_diccionarios_y_operaciones_static_1a93a9e1d02ee35dc1a3f2da6a0c294af2" kind="function"><name>CalcularCritico</name></member>
+    <member refid="class_library_1_1_diccionarios_y_operaciones_static_1a856d41387b8cdc0b2ccba343c6212fa1" kind="function"><name>bonificacionTipos</name></member>
+  </compound>
+  <compound refid="class_library_1_1_jugador" kind="class"><name>Library::Jugador</name>
+    <member refid="class_library_1_1_jugador_1a3aee044e8a7934efaf75a34d389fe828" kind="variable"><name>Nombre</name></member>
+    <member refid="class_library_1_1_jugador_1a19b116bd166a3159f19694fc1b96db2f" kind="variable"><name>equipoPokemon</name></member>
+    <member refid="class_library_1_1_jugador_1a034d88a2fc903b5e70b5178c0207db9c" kind="variable"><name>equipoPokemonDerrotados</name></member>
+    <member refid="class_library_1_1_jugador_1ad4e6ec7139f7996a7aead99d7408e01a" kind="variable"><name>nombreCheck</name></member>
+    <member refid="class_library_1_1_jugador_1a1930e21b9e402eb4cb23a4294580a239" kind="variable"><name>Mochila</name></member>
+    <member refid="class_library_1_1_jugador_1a2dd75dd0f76c9e6110cb3de3a4dcd97b" kind="function"><name>Jugador</name></member>
+    <member refid="class_library_1_1_jugador_1a09163db2c42f2ec726b8da0a6c8dbb0c" kind="function"><name>mostrarEquipo</name></member>
+    <member refid="class_library_1_1_jugador_1a0b1f390ba3e79b4da9f3fc3b39bc67ac" kind="function"><name>verMovimientos</name></member>
+    <member refid="class_library_1_1_jugador_1a8336655291022fe4c1818cc607941923" kind="function"><name>verSalud</name></member>
+    <member refid="class_library_1_1_jugador_1a186af6091ce39bfe7be618626fc2c936" kind="function"><name>agregarPokemon</name></member>
+    <member refid="class_library_1_1_jugador_1ab4b0562f3f131e5d68cba542e0385853" kind="function"><name>pokemonEnCancha</name></member>
+    <member refid="class_library_1_1_jugador_1a11f0d22d7391ffe7b62e33eaea39dc11" kind="function"><name>cambiarPokemon</name></member>
+    <member refid="class_library_1_1_jugador_1a260975ca72c2b5a0cdd770ac1187f891" kind="function"><name>atacar</name></member>
+    <member refid="class_library_1_1_jugador_1aa82ceada307d89dac4119da689cca908" kind="function"><name>UsarMochila</name></member>
+  </compound>
+  <compound refid="class_library_1_1_logica" kind="class"><name>Library::Logica</name>
+    <member refid="class_library_1_1_logica_1a6e96d62994d79ad0d39bb6febd8c7b30" kind="function"><name>MenuDeJugador</name></member>
+    <member refid="class_library_1_1_logica_1a4c20f0418365d410de9323f953da46ea" kind="function"><name>EscogerEquipo</name></member>
+    <member refid="class_library_1_1_logica_1a0e8d0ff01cb9b724e1805250f1d4c260" kind="function"><name>CambiarPokemon</name></member>
+    <member refid="class_library_1_1_logica_1a6fbd2e7de41141da76dce16edc3b6352" kind="function"><name>Mochila</name></member>
+    <member refid="class_library_1_1_logica_1a152a8b8b869469f439c84f012b9b6f4f" kind="function"><name>Ataque</name></member>
+    <member refid="class_library_1_1_logica_1a2a105a2477d09a8c50d58eff71eeb9ba" kind="function"><name>CalculoAtaque</name></member>
+    <member refid="class_library_1_1_logica_1afec2cb67054f6e0a95bbc1d9235d6ef5" kind="function"><name>ChequeoVictoria</name></member>
+  </compound>
+  <compound refid="class_library_1_1_movimiento" kind="class"><name>Library::Movimiento</name>
+    <member refid="class_library_1_1_movimiento_1ab87c205fd8828958835d9a815e3a8731" kind="property"><name>Nombre</name></member>
+    <member refid="class_library_1_1_movimiento_1a89d44179902fbc24d578c6929ce136e3" kind="property"><name>Ataque</name></member>
+    <member refid="class_library_1_1_movimiento_1aa6be84eef69267b45a4ca816130f7b65" kind="property"><name>Tipo</name></member>
+    <member refid="class_library_1_1_movimiento_1a8845f06af95a53cfd2a3cb84378e6c73" kind="property"><name>Precision</name></member>
+    <member refid="class_library_1_1_movimiento_1a7c5e13076c75f402115a2f5712daa11e" kind="property"><name>EsEspecial</name></member>
+    <member refid="class_library_1_1_movimiento_1ac5edfb3f89776af503093893c2e54e7e" kind="function"><name>Movimiento</name></member>
+    <member refid="class_library_1_1_movimiento_1aaf04b359aa69b996e64b56a694954926" kind="function"><name>Clonar</name></member>
+    <member refid="class_library_1_1_movimiento_1a2d7c259676f4c040f15ec7f8703ca2a9" kind="function"><name>AplicarAtaquesEspeciales</name></member>
+  </compound>
+  <compound refid="class_library_1_1_pokemon" kind="class"><name>Library::Pokemon</name>
+    <member refid="class_library_1_1_pokemon_1a188bbafd6cd0664e3989343f445f4ad5" kind="variable"><name>nombre</name></member>
+    <member refid="class_library_1_1_pokemon_1a3dc6798128d90457c02e49f1e9227efd" kind="variable"><name>tipo</name></member>
+    <member refid="class_library_1_1_pokemon_1acffcbb652cae0b7baaf62fee03af4366" kind="variable"><name>vidaMax</name></member>
+    <member refid="class_library_1_1_pokemon_1a60f0cf6b095a47eabd08d7eee8a9a3c1" kind="variable"><name>vidaActual</name></member>
+    <member refid="class_library_1_1_pokemon_1addd66cb86b1daf059cc2c461a5d2c4b3" kind="variable"><name>ataque</name></member>
+    <member refid="class_library_1_1_pokemon_1a14278ebd1980fa611cbcc7e03ac8b92d" kind="variable"><name>defensa</name></member>
+    <member refid="class_library_1_1_pokemon_1a771999fe902fd0a035b74974aec8eae8" kind="variable"><name>estado</name></member>
+    <member refid="class_library_1_1_pokemon_1aa1b89a8415bbbd119109242c1571f0b5" kind="variable"><name>porcentajeDañoPorTurno</name></member>
+    <member refid="class_library_1_1_pokemon_1a3f930458a2222d6a75a69a3054dd31a9" kind="variable"><name>turnosDormido</name></member>
+    <member refid="class_library_1_1_pokemon_1a903757c3c85fdc80d46e7611524458ce" kind="property"><name>listaMovimientos</name></member>
+    <member refid="class_library_1_1_pokemon_1a00c426a1254382d5e08db41affef65db" kind="property"><name>Nombre</name></member>
+    <member refid="class_library_1_1_pokemon_1adc4c1d2f1483875da479258d02b3f62c" kind="property"><name>Tipo</name></member>
+    <member refid="class_library_1_1_pokemon_1aecce2ce5f15035382ebdb9eefa8ff36a" kind="property"><name>VidaMax</name></member>
+    <member refid="class_library_1_1_pokemon_1ad063570f6afc90e852d252cf6759022b" kind="property"><name>VidaActual</name></member>
+    <member refid="class_library_1_1_pokemon_1a542ee69614d9b66b68537aca744f06f3" kind="property"><name>Ataque</name></member>
+    <member refid="class_library_1_1_pokemon_1aa43d7550bd97056db4a46c2478d86407" kind="property"><name>Defensa</name></member>
+    <member refid="class_library_1_1_pokemon_1a943954bc0ac27d9f01cc919443cacb4f" kind="property"><name>Estado</name></member>
+    <member refid="class_library_1_1_pokemon_1a113881a5368c0ab0088ecff3fb3290c3" kind="property"><name>TurnosDormido</name></member>
+    <member refid="class_library_1_1_pokemon_1a3dfe1dea0d2f20a1e08e986d5d708e6b" kind="property"><name>PorcentajeDañoPorTurno</name></member>
+    <member refid="class_library_1_1_pokemon_1acf1542b22f46837c5b9ccd2e0869d21f" kind="function"><name>Pokemon</name></member>
+    <member refid="class_library_1_1_pokemon_1a4999e769ebe8a7d88cb6304154c2e2cc" kind="function"><name>Clonar</name></member>
+    <member refid="class_library_1_1_pokemon_1a6796d49135550fbe77084bac91c56fd0" kind="function"><name>AgregarMovimientos</name></member>
+    <member refid="class_library_1_1_pokemon_1a8ccdd3056cd5da97a4931766f5a1cfd7" kind="function"><name>aplicarDañoRecurrente</name></member>
+    <member refid="class_library_1_1_pokemon_1a1bb5ae9a91c6e08c9e365d8f87cf7be6" kind="function"><name>puedeAtacar</name></member>
+  </compound>
+  <compound refid="namespace_library" kind="namespace"><name>Library</name>
+  </compound>
+  <compound refid="_combate_8cs" kind="file"><name>Combate.cs</name>
+  </compound>
+  <compound refid="_diccionarios_y_operaciones_static_8cs" kind="file"><name>DiccionariosYOperacionesStatic.cs</name>
+  </compound>
+  <compound refid="_jugador_8cs" kind="file"><name>Jugador.cs</name>
+  </compound>
+  <compound refid="_logica_8cs" kind="file"><name>Logica.cs</name>
+  </compound>
+  <compound refid="_movimiento_8cs" kind="file"><name>Movimiento.cs</name>
+  </compound>
+  <compound refid="_pokemon_8cs" kind="file"><name>Pokemon.cs</name>
+  </compound>
+  <compound refid="dir_5ad7f572bbca03234e8e621e192fc099" kind="dir"><name>C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library</name>
+  </compound>
+</doxygenindex>

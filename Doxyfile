@@ -300,6 +300,9 @@ ALIASES                =
 
 OPTIMIZE_OUTPUT_FOR_C  = NO
 
+OPTIMIZE_OUTPUT_FOR_CSHARP = YES
+
+
 # Set the OPTIMIZE_OUTPUT_JAVA tag to YES if your project consists of Java or
 # Python sources only. Doxygen will then generate output that is more tailored
 # for that language. For instance, namespaces will be presented as packages,
@@ -349,7 +352,7 @@ OPTIMIZE_OUTPUT_SLICE  = NO
 #
 # Note see also the list of default file extension mappings.
 
-EXTENSION_MAPPING      =
+EXTENSION_MAPPING = cs=Xml
 
 # If the MARKDOWN_SUPPORT tag is enabled then Doxygen pre-processes all comments
 # according to the Markdown format, which allows for more readable
@@ -966,7 +969,7 @@ WARN_LOGFILE           =
 # spaces. See also FILE_PATTERNS and EXTENSION_MAPPING
 # Note: If this tag is empty the current directory is searched.
 
-INPUT                  =C:/Users/rf4tc/Desktop/Proyecto-P2/ProyectoPokemon_PII_2024
+INPUT = C:\Users\Lucas\Desktop\Proyecto\ProyectoPokemon_PII_2024
 
 # This tag can be used to specify the character encoding of the source files
 # that Doxygen parses. Internally Doxygen uses the UTF-8 encoding. Doxygen uses
@@ -2573,7 +2576,7 @@ HIDE_UNDOC_RELATIONS   = YES
 # set to NO
 # The default value is: NO.
 
-HAVE_DOT               = NO
+HAVE_DOT               = YES
 
 # The DOT_NUM_THREADS specifies the number of dot invocations Doxygen is allowed
 # to run in parallel. When set to 0 Doxygen will base this on the number of

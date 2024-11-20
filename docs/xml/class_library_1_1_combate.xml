@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="es">
+  <compounddef id="class_library_1_1_combate" kind="class" language="C#" prot="public">
+    <compoundname>Library::Combate</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_library_1_1_combate_1a295749fc3bb768c006206a17df723741" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Library.Combate.MostrarCatalogo</definition>
+        <argsstring>()</argsstring>
+        <name>MostrarCatalogo</name>
+        <qualifiedname>Library.Combate.MostrarCatalogo</qualifiedname>
+        <briefdescription>
+<para>Creacion de el metodo &quot;Mostrarcatalogo&quot; El cual se ocupa de brindarle al usuario la informacion de los pókemons existentes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Combate.cs" line="13" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Combate.cs" bodystart="13" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_combate_1ab09c5e3551b14908b133b2fd50bef439" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Library.Combate.BuclePrincipal</definition>
+        <argsstring>(Jugador j1, Jugador j2)</argsstring>
+        <name>BuclePrincipal</name>
+        <qualifiedname>Library.Combate.BuclePrincipal</qualifiedname>
+        <param>
+          <type><ref refid="class_library_1_1_jugador" kindref="compound">Jugador</ref></type>
+          <declname>j1</declname>
+        </param>
+        <param>
+          <type><ref refid="class_library_1_1_jugador" kindref="compound">Jugador</ref></type>
+          <declname>j2</declname>
+        </param>
+        <briefdescription>
+<para>Creacion del metodo &quot;BuclePrincipal&quot; Este metodo se ocupa de llevar a cabo el bucle alternado de quien elige su pokemon y quien ataca. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j1</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j2</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Combate.cs" line="29" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Combate.cs" bodystart="29" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>constructor de clase Combate Esta clase se ocupa de ejecutar y mantener el combate pokemon hasta llegar a un final </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Combate.cs" line="7" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Combate.cs" bodystart="8" bodyend="78"/>
+    <listofallmembers>
+      <member refid="class_library_1_1_combate_1ab09c5e3551b14908b133b2fd50bef439" prot="public" virt="non-virtual"><scope>Library::Combate</scope><name>BuclePrincipal</name></member>
+      <member refid="class_library_1_1_combate_1a295749fc3bb768c006206a17df723741" prot="public" virt="non-virtual"><scope>Library::Combate</scope><name>MostrarCatalogo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

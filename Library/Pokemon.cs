@@ -1,5 +1,8 @@
 namespace Library;
-
+/// <summary>
+/// Se crea la clase "Pokemon" encargada de representar a un Pokémon con sus atributos básicos,
+/// habilidades y comportamientos en el juego.
+/// </summary>
 public class Pokemon
 {
     private string nombre;

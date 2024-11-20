@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['6_20como_20strong_20jugador_20strong_20quiero_20ganar_20la_20batalla_20cuando_20la_20vida_20de_20todos_20los_20pokémons_20oponente_20llegue_20a_20cero_0',['6. Como &lt;strong&gt;jugador&lt;/strong&gt;, quiero ganar la batalla cuando la vida de todos los Pokémons oponente llegue a cero.',['../md__r_e_a_d_m_e.html#autotoc_md14',1,'']]],
-  ['6_20pokémons_20del_20catálogo_20disponible_20para_20comenzar_20la_20batalla_1',['1. Como &lt;strong&gt;jugador&lt;/strong&gt;, quiero elegir 6 Pokémons del catálogo disponible para comenzar la batalla.',['../md__r_e_a_d_m_e.html#autotoc_md9',1,'']]]
+  ['menudejugador_0',['MenuDeJugador',['../class_library_1_1_logica.html#a6e96d62994d79ad0d39bb6febd8c7b30',1,'Library::Logica']]],
+  ['mostrarcatalogo_1',['MostrarCatalogo',['../class_library_1_1_combate.html#a295749fc3bb768c006206a17df723741',1,'Library::Combate']]],
+  ['mostrarequipo_2',['mostrarEquipo',['../class_library_1_1_jugador.html#a09163db2c42f2ec726b8da0a6c8dbb0c',1,'Library::Jugador']]],
+  ['movimiento_3',['Movimiento',['../class_library_1_1_movimiento.html',1,'Library.Movimiento'],['../class_library_1_1_movimiento.html#ac5edfb3f89776af503093893c2e54e7e',1,'Library.Movimiento.Movimiento()']]]
 ];

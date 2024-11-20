@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="es">
+  <compounddef id="class_library_1_1_diccionarios_y_operaciones_static" kind="class" language="C#" prot="public">
+    <compoundname>Library::DiccionariosYOperacionesStatic</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_library_1_1_diccionarios_y_operaciones_static_1a0aa5c35d6fb230fbe39b551e74ebe467" prot="private" static="yes" mutable="no">
+        <type>Random</type>
+        <definition>Random Library.DiccionariosYOperacionesStatic.randomDouble</definition>
+        <argsstring></argsstring>
+        <name>randomDouble</name>
+        <qualifiedname>Library.DiccionariosYOperacionesStatic.randomDouble</qualifiedname>
+        <initializer>= new Random()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/DiccionariosYOperacionesStatic.cs" line="27" column="31" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/DiccionariosYOperacionesStatic.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_library_1_1_diccionarios_y_operaciones_static_1af0152e5c9c464fc39fa953f5d1683993" prot="private" static="yes" mutable="no">
+        <type>readonly Dictionary&lt;(string tipoMovimiento, string tipoPokemonDefensor), double &gt;</type>
+        <definition>readonly Dictionary&lt;(string tipoMovimiento, string tipoPokemonDefensor), double&gt; Library.DiccionariosYOperacionesStatic.bonificacionesTipos</definition>
+        <argsstring></argsstring>
+        <name>bonificacionesTipos</name>
+        <qualifiedname>Library.DiccionariosYOperacionesStatic.bonificacionesTipos</qualifiedname>
+        <briefdescription>
+<para>Diccionario para definir bonificaciones de tipo. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/DiccionariosYOperacionesStatic.cs" line="78" column="13" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/DiccionariosYOperacionesStatic.cs" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_library_1_1_diccionarios_y_operaciones_static_1a90d62414752c9af9d8367052048d0d58" prot="public" static="yes" mutable="no">
+        <type>Dictionary&lt; string, <ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref> &gt;</type>
+        <definition>Dictionary&lt;string, Movimiento&gt; Library.DiccionariosYOperacionesStatic.DiccionarioMovimientos</definition>
+        <argsstring></argsstring>
+        <name>DiccionarioMovimientos</name>
+        <qualifiedname>Library.DiccionariosYOperacionesStatic.DiccionarioMovimientos</qualifiedname>
+        <initializer>= new()
+        {
+            { &quot;Arañazo&quot;, new <ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Arañazo&quot;, 5, 80, &quot;Fuego&quot;, false) },
+            { &quot;Lanzallamas&quot;, new <ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Lanzallamas&quot;, 20, 80, &quot;Fuego&quot;, false) },
+            { &quot;Lluevehojas&quot;, new <ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Lluevehojas&quot;, 20, 100, &quot;Planta&quot;, false) },
+            { &quot;Hidrocañon&quot;, new <ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Hidrocañon&quot;, 20, 60, &quot;Agua&quot;, false) },
+            { &quot;PuñoFuego&quot;, new <ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;PuñoFuego&quot;, 20, 60, &quot;Fuego&quot;, false) },
+            { &quot;Electrocañon&quot;, new <ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Electrocañon&quot;, 100, 40, &quot;Eléctrico&quot;, false) },
+            { &quot;Aéreo&quot;, new <ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Aéreo&quot;, 15, 60, &quot;Volador&quot;, false) },
+            { &quot;ColmilloVenenoso&quot;, new <ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;ColmilloVenenoso&quot;, 15, 60, &quot;Veneno&quot;, false) },
+            { &quot;PuñoDinámico&quot;, new <ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;PuñoDinámico&quot;, 25, 100, &quot;Lucha&quot;, false) },
+            { &quot;GarraDragon&quot;, new <ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;GarraDragon&quot;, 30, 60, &quot;Lucha&quot;, false) },
+            { &quot;Confusion&quot;, new <ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Confusion&quot;, 50, 60, &quot;Psíquico&quot;, false) },
+            { &quot;lanzarrocas&quot;, new <ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;lanzarrocas&quot;, 20, 80, &quot;Tierra&quot;, false) },
+            { &quot;Dormir&quot;, new <ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Dormir&quot;, 0, 100, &quot;Psíquico&quot;, true) },
+            { &quot;Envenenar&quot;, new <ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Envenenar&quot;, 0, 100, &quot;Veneno&quot;, true) },
+            { &quot;Quemar&quot;, new <ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Quemar&quot;, 0, 100, &quot;Fuego&quot;, true) },
+            { &quot;Paralizar&quot;, new <ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Paralizar&quot;, 0, 100, &quot;Eléctrico&quot;, true) },
+            { &quot;PuñoHielo&quot;, new <ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Puño Hielo&quot;, 20, 80, &quot;Hielo&quot;, false) },
+            { &quot;Aguacero&quot;, new <ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Aguacero&quot;, 20, 60, &quot;Agua&quot;, false) },
+            { &quot;PuñoEléctrico&quot;, new <ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;PuñoEléctrico&quot;, 20, 60, &quot;Eléctrico&quot;, false) },
+            { &quot;PuñoAéreo&quot;, new <ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;PuñoAéreo&quot;, 15, 80, &quot;Volador&quot;, false) },
+            { &quot;HojaAfilada&quot;, new <ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;HojaAfilada&quot;, 25, 60, &quot;Planta&quot;, false) },
+            { &quot;ColaLarga&quot;, new <ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;ColaLarga&quot;, 25, 60, &quot;Dragón&quot;, false) },
+            { &quot;PuñoLucha&quot;, new <ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;PuñoLucha&quot;, 25, 60, &quot;Lucha&quot;, false) },
+            { &quot;Rayo&quot;, new <ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Rayo&quot;, 20, 100, &quot;Eléctrico&quot;, false) }
+        }</initializer>
+        <briefdescription>
+<para>Se crean diccionarios no editables para los jugadores que &quot;configuran&quot; atributos de daño y tipo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/DiccionariosYOperacionesStatic.cs" line="188" column="34" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/DiccionariosYOperacionesStatic.cs" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_library_1_1_diccionarios_y_operaciones_static_1af5f88f91ce75311cf2b4fbeb768f8c97" prot="public" static="yes" mutable="no">
+        <type>Dictionary&lt; string, <ref refid="class_library_1_1_pokemon" kindref="compound">Pokemon</ref> &gt;</type>
+        <definition>Dictionary&lt;string, Pokemon&gt; Library.DiccionariosYOperacionesStatic.DiccionarioPokemon</definition>
+        <argsstring></argsstring>
+        <name>DiccionarioPokemon</name>
+        <qualifiedname>Library.DiccionariosYOperacionesStatic.DiccionarioPokemon</qualifiedname>
+        <briefdescription>
+<para>Se crea un diccionario pokemon que le da movimientos a los pokemons, daño, defensa, vida y tipo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/DiccionariosYOperacionesStatic.cs" line="221" column="34" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/DiccionariosYOperacionesStatic.cs" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_library_1_1_diccionarios_y_operaciones_static_1ac3a23404514603db7cd7f1e619161673" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int Library.DiccionariosYOperacionesStatic.numeroAleatorio</definition>
+        <argsstring>(int minimo, int maximo)</argsstring>
+        <name>numeroAleatorio</name>
+        <qualifiedname>Library.DiccionariosYOperacionesStatic.numeroAleatorio</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>minimo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maximo</declname>
+        </param>
+        <briefdescription>
+<para>Se crea el metodo &quot;NumeroAleatorio&quot; y se encarga de generar un numero random entre un minimo y un maximo posteriormente seteado. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>minimo</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maximo</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>minimo</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maximo</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/DiccionariosYOperacionesStatic.cs" line="21" column="27" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/DiccionariosYOperacionesStatic.cs" bodystart="21" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_diccionarios_y_operaciones_static_1aaa88754b47a734285ea4fee9c8a93395" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>static double Library.DiccionariosYOperacionesStatic.Precision</definition>
+        <argsstring>(double precision, int ataqueBase)</argsstring>
+        <name>Precision</name>
+        <qualifiedname>Library.DiccionariosYOperacionesStatic.Precision</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>precision</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ataqueBase</declname>
+        </param>
+        <briefdescription>
+<para>Se crea el metodo &quot;presición&quot; Este metodo busca poner una probabilidad de fallo de ataque. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>precision</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ataqueBase</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Devuelve valor entre 0 y 1</para>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/DiccionariosYOperacionesStatic.cs" line="38" column="30" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/DiccionariosYOperacionesStatic.cs" bodystart="38" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_diccionarios_y_operaciones_static_1a93a9e1d02ee35dc1a3f2da6a0c294af2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>static double Library.DiccionariosYOperacionesStatic.CalcularCritico</definition>
+        <argsstring>(int precisionMovimiento)</argsstring>
+        <name>CalcularCritico</name>
+        <qualifiedname>Library.DiccionariosYOperacionesStatic.CalcularCritico</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>precisionMovimiento</declname>
+        </param>
+        <briefdescription>
+<para>Se crea &quot;CalcularCritico&quot; la cual tiene como objetivo que a la hora de atacar pueda causar un daño extra teniendo en cuenta una probabilidad. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>precisionMovimiento</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>precisionMovimiento</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/DiccionariosYOperacionesStatic.cs" line="62" column="30" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/DiccionariosYOperacionesStatic.cs" bodystart="62" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_diccionarios_y_operaciones_static_1a856d41387b8cdc0b2ccba343c6212fa1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>static double Library.DiccionariosYOperacionesStatic.bonificacionTipos</definition>
+        <argsstring>(string tipoMovimiento, string tipoPokemonDefensor)</argsstring>
+        <name>bonificacionTipos</name>
+        <qualifiedname>Library.DiccionariosYOperacionesStatic.bonificacionTipos</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>tipoMovimiento</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>tipoPokemonDefensor</declname>
+        </param>
+        <briefdescription>
+<para>Método para obtener la bonificación de tipo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tipoMovimiento</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tipoPokemonDefensor</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Si no hay bonificación específica, el daño es normal</para>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/DiccionariosYOperacionesStatic.cs" line="171" column="30" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/DiccionariosYOperacionesStatic.cs" bodystart="171" bodyend="181"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Crea la clase estatica &quot;DiccionariosYOperacionesStatic&quot; Esta clase se ocupa de contener y guardar toda la informacion que NO necesita ser modificada, solo llamada. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/DiccionariosYOperacionesStatic.cs" line="7" column="19" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/DiccionariosYOperacionesStatic.cs" bodystart="8" bodyend="431"/>
+    <listofallmembers>
+      <member refid="class_library_1_1_diccionarios_y_operaciones_static_1af0152e5c9c464fc39fa953f5d1683993" prot="private" virt="non-virtual"><scope>Library::DiccionariosYOperacionesStatic</scope><name>bonificacionesTipos</name></member>
+      <member refid="class_library_1_1_diccionarios_y_operaciones_static_1a856d41387b8cdc0b2ccba343c6212fa1" prot="public" virt="non-virtual"><scope>Library::DiccionariosYOperacionesStatic</scope><name>bonificacionTipos</name></member>
+      <member refid="class_library_1_1_diccionarios_y_operaciones_static_1a93a9e1d02ee35dc1a3f2da6a0c294af2" prot="public" virt="non-virtual"><scope>Library::DiccionariosYOperacionesStatic</scope><name>CalcularCritico</name></member>
+      <member refid="class_library_1_1_diccionarios_y_operaciones_static_1a90d62414752c9af9d8367052048d0d58" prot="public" virt="non-virtual"><scope>Library::DiccionariosYOperacionesStatic</scope><name>DiccionarioMovimientos</name></member>
+      <member refid="class_library_1_1_diccionarios_y_operaciones_static_1af5f88f91ce75311cf2b4fbeb768f8c97" prot="public" virt="non-virtual"><scope>Library::DiccionariosYOperacionesStatic</scope><name>DiccionarioPokemon</name></member>
+      <member refid="class_library_1_1_diccionarios_y_operaciones_static_1ac3a23404514603db7cd7f1e619161673" prot="public" virt="non-virtual"><scope>Library::DiccionariosYOperacionesStatic</scope><name>numeroAleatorio</name></member>
+      <member refid="class_library_1_1_diccionarios_y_operaciones_static_1aaa88754b47a734285ea4fee9c8a93395" prot="public" virt="non-virtual"><scope>Library::DiccionariosYOperacionesStatic</scope><name>Precision</name></member>
+      <member refid="class_library_1_1_diccionarios_y_operaciones_static_1a0aa5c35d6fb230fbe39b551e74ebe467" prot="private" virt="non-virtual"><scope>Library::DiccionariosYOperacionesStatic</scope><name>randomDouble</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

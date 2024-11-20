@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="es">
+  <compounddef id="class_library_1_1_jugador" kind="class" language="C#" prot="public">
+    <compoundname>Library::Jugador</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_library_1_1_jugador_1a3aee044e8a7934efaf75a34d389fe828" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Library.Jugador.Nombre</definition>
+        <argsstring></argsstring>
+        <name>Nombre</name>
+        <qualifiedname>Library.Jugador.Nombre</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Jugador.cs" line="5" column="19" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Jugador.cs" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_library_1_1_jugador_1a19b116bd166a3159f19694fc1b96db2f" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_library_1_1_pokemon" kindref="compound">Pokemon</ref> &gt;</type>
+        <definition>List&lt;Pokemon&gt; Library.Jugador.equipoPokemon</definition>
+        <argsstring></argsstring>
+        <name>equipoPokemon</name>
+        <qualifiedname>Library.Jugador.equipoPokemon</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Jugador.cs" line="6" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Jugador.cs" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_library_1_1_jugador_1a034d88a2fc903b5e70b5178c0207db9c" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_library_1_1_pokemon" kindref="compound">Pokemon</ref> &gt;</type>
+        <definition>List&lt;Pokemon&gt; Library.Jugador.equipoPokemonDerrotados</definition>
+        <argsstring></argsstring>
+        <name>equipoPokemonDerrotados</name>
+        <qualifiedname>Library.Jugador.equipoPokemonDerrotados</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Jugador.cs" line="7" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Jugador.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_library_1_1_jugador_1ad4e6ec7139f7996a7aead99d7408e01a" prot="public" static="no" mutable="no">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt;string&gt; Library.Jugador.nombreCheck</definition>
+        <argsstring></argsstring>
+        <name>nombreCheck</name>
+        <qualifiedname>Library.Jugador.nombreCheck</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Jugador.cs" line="8" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Jugador.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_library_1_1_jugador_1a1930e21b9e402eb4cb23a4294580a239" prot="public" static="no" mutable="no">
+        <type>List&lt; Item &gt;</type>
+        <definition>List&lt;Item&gt; Library.Jugador.Mochila</definition>
+        <argsstring></argsstring>
+        <name>Mochila</name>
+        <qualifiedname>Library.Jugador.Mochila</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Jugador.cs" line="9" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Jugador.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_library_1_1_jugador_1a2dd75dd0f76c9e6110cb3de3a4dcd97b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Library.Jugador.Jugador</definition>
+        <argsstring>(string Nombre)</argsstring>
+        <name>Jugador</name>
+        <qualifiedname>Library.Jugador.Jugador</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>Nombre</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Jugador.cs" line="16" column="12" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Jugador.cs" bodystart="16" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_jugador_1a09163db2c42f2ec726b8da0a6c8dbb0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Library.Jugador.mostrarEquipo</definition>
+        <argsstring>()</argsstring>
+        <name>mostrarEquipo</name>
+        <qualifiedname>Library.Jugador.mostrarEquipo</qualifiedname>
+        <briefdescription>
+<para>Metodo para mostrar pokemones en el equipo. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Jugador.cs" line="31" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Jugador.cs" bodystart="31" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_jugador_1a0b1f390ba3e79b4da9f3fc3b39bc67ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Library.Jugador.verMovimientos</definition>
+        <argsstring>()</argsstring>
+        <name>verMovimientos</name>
+        <qualifiedname>Library.Jugador.verMovimientos</qualifiedname>
+        <briefdescription>
+<para>Método para ver ataques que tiene el pokemon. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Jugador.cs" line="54" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Jugador.cs" bodystart="54" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_jugador_1a8336655291022fe4c1818cc607941923" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Library.Jugador.verSalud</definition>
+        <argsstring>()</argsstring>
+        <name>verSalud</name>
+        <qualifiedname>Library.Jugador.verSalud</qualifiedname>
+        <briefdescription>
+<para>Metodo para ver la salud del pokemon. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Jugador.cs" line="65" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Jugador.cs" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_jugador_1a186af6091ce39bfe7be618626fc2c936" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Library.Jugador.agregarPokemon</definition>
+        <argsstring>(Pokemon pokemon)</argsstring>
+        <name>agregarPokemon</name>
+        <qualifiedname>Library.Jugador.agregarPokemon</qualifiedname>
+        <param>
+          <type><ref refid="class_library_1_1_pokemon" kindref="compound">Pokemon</ref></type>
+          <declname>pokemon</declname>
+        </param>
+        <briefdescription>
+<para>Método para agregar pokemon. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pokemon</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Jugador.cs" line="74" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Jugador.cs" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_jugador_1ab4b0562f3f131e5d68cba542e0385853" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_library_1_1_pokemon" kindref="compound">Pokemon</ref></type>
+        <definition>Pokemon Library.Jugador.pokemonEnCancha</definition>
+        <argsstring>()</argsstring>
+        <name>pokemonEnCancha</name>
+        <qualifiedname>Library.Jugador.pokemonEnCancha</qualifiedname>
+        <briefdescription>
+<para>Método que devuelvo el pokemon en cancha. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Jugador.cs" line="83" column="20" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Jugador.cs" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_jugador_1a11f0d22d7391ffe7b62e33eaea39dc11" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Library.Jugador.cambiarPokemon</definition>
+        <argsstring>(Pokemon pokemon)</argsstring>
+        <name>cambiarPokemon</name>
+        <qualifiedname>Library.Jugador.cambiarPokemon</qualifiedname>
+        <param>
+          <type><ref refid="class_library_1_1_pokemon" kindref="compound">Pokemon</ref></type>
+          <declname>pokemon</declname>
+        </param>
+        <briefdescription>
+<para>Método para cambiar de pokemon. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pokemon</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Jugador.cs" line="92" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Jugador.cs" bodystart="92" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_jugador_1a260975ca72c2b5a0cdd770ac1187f891" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Library.Jugador.atacar</definition>
+        <argsstring>(Jugador jEnemigo, Movimiento movimiento)</argsstring>
+        <name>atacar</name>
+        <qualifiedname>Library.Jugador.atacar</qualifiedname>
+        <param>
+          <type><ref refid="class_library_1_1_jugador" kindref="compound">Jugador</ref></type>
+          <declname>jEnemigo</declname>
+        </param>
+        <param>
+          <type><ref refid="class_library_1_1_movimiento" kindref="compound">Movimiento</ref></type>
+          <declname>movimiento</declname>
+        </param>
+        <briefdescription>
+<para>Método para atacar al enemigo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jEnemigo</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>movimiento</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Jugador.cs" line="104" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Jugador.cs" bodystart="104" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="class_library_1_1_jugador_1aa82ceada307d89dac4119da689cca908" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Library.Jugador.UsarMochila</definition>
+        <argsstring>(Item item)</argsstring>
+        <name>UsarMochila</name>
+        <qualifiedname>Library.Jugador.UsarMochila</qualifiedname>
+        <param>
+          <type>Item</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>Método usar Mochila. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Jugador.cs" line="115" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Jugador.cs" bodystart="115" bodyend="119"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Jugador.cs" line="3" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Jugador.cs" bodystart="4" bodyend="120"/>
+    <listofallmembers>
+      <member refid="class_library_1_1_jugador_1a186af6091ce39bfe7be618626fc2c936" prot="public" virt="non-virtual"><scope>Library::Jugador</scope><name>agregarPokemon</name></member>
+      <member refid="class_library_1_1_jugador_1a260975ca72c2b5a0cdd770ac1187f891" prot="public" virt="non-virtual"><scope>Library::Jugador</scope><name>atacar</name></member>
+      <member refid="class_library_1_1_jugador_1a11f0d22d7391ffe7b62e33eaea39dc11" prot="public" virt="non-virtual"><scope>Library::Jugador</scope><name>cambiarPokemon</name></member>
+      <member refid="class_library_1_1_jugador_1a19b116bd166a3159f19694fc1b96db2f" prot="public" virt="non-virtual"><scope>Library::Jugador</scope><name>equipoPokemon</name></member>
+      <member refid="class_library_1_1_jugador_1a034d88a2fc903b5e70b5178c0207db9c" prot="public" virt="non-virtual"><scope>Library::Jugador</scope><name>equipoPokemonDerrotados</name></member>
+      <member refid="class_library_1_1_jugador_1a2dd75dd0f76c9e6110cb3de3a4dcd97b" prot="public" virt="non-virtual"><scope>Library::Jugador</scope><name>Jugador</name></member>
+      <member refid="class_library_1_1_jugador_1a1930e21b9e402eb4cb23a4294580a239" prot="public" virt="non-virtual"><scope>Library::Jugador</scope><name>Mochila</name></member>
+      <member refid="class_library_1_1_jugador_1a09163db2c42f2ec726b8da0a6c8dbb0c" prot="public" virt="non-virtual"><scope>Library::Jugador</scope><name>mostrarEquipo</name></member>
+      <member refid="class_library_1_1_jugador_1a3aee044e8a7934efaf75a34d389fe828" prot="public" virt="non-virtual"><scope>Library::Jugador</scope><name>Nombre</name></member>
+      <member refid="class_library_1_1_jugador_1ad4e6ec7139f7996a7aead99d7408e01a" prot="public" virt="non-virtual"><scope>Library::Jugador</scope><name>nombreCheck</name></member>
+      <member refid="class_library_1_1_jugador_1ab4b0562f3f131e5d68cba542e0385853" prot="public" virt="non-virtual"><scope>Library::Jugador</scope><name>pokemonEnCancha</name></member>
+      <member refid="class_library_1_1_jugador_1aa82ceada307d89dac4119da689cca908" prot="public" virt="non-virtual"><scope>Library::Jugador</scope><name>UsarMochila</name></member>
+      <member refid="class_library_1_1_jugador_1a0b1f390ba3e79b4da9f3fc3b39bc67ac" prot="public" virt="non-virtual"><scope>Library::Jugador</scope><name>verMovimientos</name></member>
+      <member refid="class_library_1_1_jugador_1a8336655291022fe4c1818cc607941923" prot="public" virt="non-virtual"><scope>Library::Jugador</scope><name>verSalud</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

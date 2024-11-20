@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="es">
+  <compounddef id="namespace_library" kind="namespace" language="C#">
+    <compoundname>Library</compoundname>
+    <innerclass refid="class_library_1_1_combate" prot="public">Library::Combate</innerclass>
+    <innerclass refid="class_library_1_1_diccionarios_y_operaciones_static" prot="public">Library::DiccionariosYOperacionesStatic</innerclass>
+    <innerclass refid="class_library_1_1_jugador" prot="public">Library::Jugador</innerclass>
+    <innerclass refid="class_library_1_1_logica" prot="public">Library::Logica</innerclass>
+    <innerclass refid="class_library_1_1_movimiento" prot="public">Library::Movimiento</innerclass>
+    <innerclass refid="class_library_1_1_pokemon" prot="public">Library::Pokemon</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/Library/Combate.cs" line="1" column="1"/>
+  </compounddef>
+</doxygen>

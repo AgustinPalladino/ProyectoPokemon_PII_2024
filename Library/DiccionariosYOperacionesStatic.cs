@@ -1,7 +1,23 @@
 namespace Library
 {
+    /// <summary>
+    /// Crea la clase estatica "DiccionariosYOperacionesStatic"
+    /// Esta clase se ocupa de contener y guardar toda la informacion que NO necesita ser modificada, solo llamada.
+    /// </summary>
     public static class DiccionariosYOperacionesStatic
     {
+
+        /// <summary>
+        /// Se crea el metodo "NumeroAleatorio" y se encarga de generar un numero random entre un minimo y un maximo posteriormente seteado.
+        /// </summary>
+        /// <param name="minimo"></param>
+        /// <param name="maximo"></param>
+        /// <returns></returns> <summary>
+        /// 
+        /// </summary>
+        /// <param name="minimo"></param>
+        /// <param name="maximo"></param>
+        /// <returns></returns>
         public static int numeroAleatorio(int minimo, int maximo)
         {
             Random random = new Random();
@@ -9,6 +25,14 @@ namespace Library
         }
 
         private static Random randomDouble = new Random();
+
+        /// <summary>
+        /// Se crea el metodo "presición"
+        /// Este metodo busca poner una probabilidad de fallo de ataque
+        /// </summary>
+        /// <param name="precision"></param>
+        /// <param name="ataqueBase"></param>
+        /// <returns></returns>
 
 
         public static double Precision(double precision, int ataqueBase)
@@ -24,7 +48,16 @@ namespace Library
                 return 0;
             }
         }
-
+        /// <summary>
+        /// Se crea "CalcularCritico"
+        /// la cual tiene como objetivo que a la hora de atacar pueda causar un daño extra teniendo en cuenta una probabilidad.
+        /// </summary>
+        /// <param name="precisionMovimiento"></param>
+        /// <returns></returns> <summary>
+        /// 
+        /// </summary>
+        /// <param name="precisionMovimiento"></param>
+        /// <returns></returns>
 
         public static double CalcularCritico(int precisionMovimiento)
         {
@@ -134,6 +167,7 @@ namespace Library
         /// <param name="tipoMovimiento"></param>
         /// <param name="tipoPokemonDefensor"></param>
         /// <returns></returns>
+        /// <summary>
         public static double bonificacionTipos(string tipoMovimiento, string tipoPokemonDefensor)
         {
             if (bonificacionesTipos.TryGetValue((tipoMovimiento, tipoPokemonDefensor), out double bonificacion))
@@ -145,6 +179,11 @@ namespace Library
 
             return 1; /// Si no hay bonificación específica, el daño es normal
         }
+
+        /// <summary>
+        /// Se crean diccionarios no editables para los jugadores que "configuran" atributos de daño y tipo
+        /// </summary>
+        /// <returns></returns>
 
         public static Dictionary<string, Movimiento> DiccionarioMovimientos = new()
         {
@@ -173,6 +212,11 @@ namespace Library
             { "PuñoLucha", new Movimiento("PuñoLucha", 25, 60, "Lucha", false) },
             { "Rayo", new Movimiento("Rayo", 20, 100, "Eléctrico", false) }
         };
+        
+        /// <summary>
+        /// Se crea un diccionario pokemon que le da movimientos a los pokemons, daño, defensa, vida y tipo.
+        /// </summary>
+        /// <returns></returns>
         
         public static Dictionary<string, Pokemon> DiccionarioPokemon = new()
         {
