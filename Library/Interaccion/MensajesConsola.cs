@@ -12,7 +12,6 @@ public static class MensajesConsola
         Console.WriteLine($"-{movimiento.Nombre}");
     }
     
-    
     public static void Error()
     {
         Console.WriteLine("Error");

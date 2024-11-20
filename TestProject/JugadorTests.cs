@@ -10,7 +10,6 @@ public class JugadorTests
     }
 
     [Test]
-
     public void atacarTest()
     {
         var jugador1 = new Jugador("Jugador1");
@@ -27,8 +26,8 @@ public class JugadorTests
 
         Assert.Less(pokemon2.VidaActual, pokemon2.VidaMax); 
     }
-
-[Test]
+    
+    [Test]
     public void usarMochilaTest()
     {
         var jugador = new Jugador("Ash");
