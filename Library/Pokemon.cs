@@ -14,7 +14,7 @@ public class Pokemon
     private string estado = "Normal";
     private double porcentajeDañoPorTurno;
     private int turnosDormido;
-    public List<Movimiento> listaMovimientos { get; set; }  = new List<Movimiento>();
+    public List<Movimiento> listaMovimientos { get; set; }  = new();
 
     public Pokemon(string nombre, string tipo, int vidaMax, int ataque, int defensa)
     {
@@ -123,7 +123,7 @@ public class Pokemon
         }
         else if (Estado == "Paralizado")
         {
-            bool puedeAtacar = new Random().Next(3) == 0; // 33% de probabilidades
+            bool puedeAtacar = new Random().Next(1) == 0; // 100% de probabilidades
             if (!puedeAtacar)
             {
                 Console.WriteLine($"{Nombre} está paralizado y no puede atacar.");

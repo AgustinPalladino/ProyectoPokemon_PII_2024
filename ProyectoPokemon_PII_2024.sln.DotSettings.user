@@ -1,0 +1,156 @@
+﻿
+<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
+  &lt;Assembly Path="C:\Users\pepim\.nuget\packages\microsoft.extensions.logging\9.0.0\lib\net8.0\Microsoft.Extensions.Logging.dll" /&gt;&#xD;
+&lt;/AssemblyExplorer&gt;</s:String>
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\pepim\AppData\Local\JetBrains\Rider2024.1\resharper-host\temp\Rider\vAny\CoverageData\_ProyectoPokemon_PII_2024.-1496646999\Snapshot\snapshot.utdcvr</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=07216a47_002D87f2_002D4957_002D8156_002D1cd0800021e0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="LogicaTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::LibraryTests.LogicaTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=097b3cfb_002D542d_002D4f4d_002D97e8_002Da33bdd50ad1f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ItemTests #6" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::LibraryTests.ItemTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0fb8d4cd_002Dca26_002D46c1_002Dbfa0_002D009963be782b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Item" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::Tests.Item&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1e307b75_002D3244_002D43c5_002D9929_002D8067cfbf7f87/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Usar_DeberiaUsarElItemCorrectamente #6" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::LibraryTests.ItemTests.Usar_DeberiaUsarElItemCorrectamente&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=36b6d997_002D7134_002D441a_002D8b18_002Dc6af8565023b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="PruebaPokemon" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;ProjectFile&gt;4154E63D-BC3C-45DC-80B9-C27514F4561F/f:CombateTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;4154E63D-BC3C-45DC-80B9-C27514F4561F/f:CreadorDePokemonYMovimientoTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;4154E63D-BC3C-45DC-80B9-C27514F4561F/f:CuratotalTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;4154E63D-BC3C-45DC-80B9-C27514F4561F/f:HDeUsuario1.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;4154E63D-BC3C-45DC-80B9-C27514F4561F/f:ItemBaseTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;4154E63D-BC3C-45DC-80B9-C27514F4561F/f:jugadorTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;4154E63D-BC3C-45DC-80B9-C27514F4561F/f:LogicaTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;4154E63D-BC3C-45DC-80B9-C27514F4561F/f:MovimientoTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;4154E63D-BC3C-45DC-80B9-C27514F4561F/f:OperacionesStaticTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;4154E63D-BC3C-45DC-80B9-C27514F4561F/f:PokemonTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;4154E63D-BC3C-45DC-80B9-C27514F4561F/f:RevivirTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;4154E63D-BC3C-45DC-80B9-C27514F4561F/f:SuperpocionTests.cs&lt;/ProjectFile&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=396cee08_002D280a_002D431b_002D9f58_002D5f2b3b778454/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ItemTests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::Tests.ItemTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=399aae85_002D8446_002D4a9c_002D9d7c_002D29bf2991f0ca/@EntryIndexedValue">JetBrains.ReSharper.UnitTestFramework.Session.Serialization.SessionState</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4c060637_002D740c_002D4e5e_002D8386_002D28fe534f26de/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Usar_DeberiaUsarElItemCorrectamente #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::LibraryTests.ItemTests.Usar_DeberiaUsarElItemCorrectamente&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4e4b2a80_002Db81b_002D4219_002D93b8_002Dd7084ff938a6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Usar_DeberiaUsarElItemCorrectamente #5" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::LibraryTests.ItemTests.Usar_DeberiaUsarElItemCorrectamente&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=52cfc04c_002D48ca_002D4712_002D85cb_002D05e40a208059/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="LogicaCambiarPokemon_DeberiaCambiarPokemonEnCancha" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::LibraryTests.LogicaTests.LogicaCambiarPokemon_DeberiaCambiarPokemonEnCancha&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=71049606_002D19e7_002D4de6_002Dbf9c_002D04835ddfdce4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ItemTests #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::LibraryTests.ItemTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=83237dc7_002D2f3b_002D4e97_002Db0f6_002D261667ebb70a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="PruebaPokemon #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::Tests.PokemonTests.PruebaPokemon&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8b92ed87_002D61bd_002D4a3f_002D9584_002D9401d424988a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="MostrarCatalogo_DeberiaMostrarListaDePokemon" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::LibraryTests.LogicaTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=90a3c81d_002Dccba_002D4211_002D9196_002Dde7ebe52f5ac/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Usar_DeberiaUsarElItemCorrectamente #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::Tests.Item.Usar_DeberiaUsarElItemCorrectamente&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9103f837_002D74d9_002D4f6d_002D8511_002Dd298cd8180ac/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;ProjectFile&gt;1AED2349-D78E-475D-AFB1-6B94A0FC389D/f:CombateTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;1AED2349-D78E-475D-AFB1-6B94A0FC389D/f:DiccionariosyOpStaticTEST.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;1AED2349-D78E-475D-AFB1-6B94A0FC389D/f:Item.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;1AED2349-D78E-475D-AFB1-6B94A0FC389D/f:JugadorTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;1AED2349-D78E-475D-AFB1-6B94A0FC389D/f:LogicaTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;1AED2349-D78E-475D-AFB1-6B94A0FC389D/f:MovimientoTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;1AED2349-D78E-475D-AFB1-6B94A0FC389D/f:PokemonTest.cs&lt;/ProjectFile&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=94d204bb_002Dfa4e_002D48a6_002D8759_002Db20a831e2870/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Item #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::LibraryTests.Item&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a08423b4_002Df183_002D4367_002D8d76_002Dff37c5f1f779/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Item #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::Tests.Item&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a44e656f_002Db56e_002D4f5c_002D8611_002D72707f48091f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Usar_DeberiaUsarElItemCorrectamente" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::Tests.Item.Usar_DeberiaUsarElItemCorrectamente&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a82038fa_002De954_002D4492_002D8a31_002D285a7b6c94a5/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Usar_DeberiaUsarElItemCorrectamente #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::LibraryTests.ItemTests.Usar_DeberiaUsarElItemCorrectamente&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b3df7a00_002D937c_002D4592_002D9064_002D293ecaec5d54/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="LogicaAtacar_DeberiaAplicarDanioCorrectamente" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::LibraryTests.LogicaTests.LogicaAtacar_DeberiaAplicarDanioCorrectamente&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cda54621_002Dbee2_002D46f0_002Dabe6_002De1aa65998939/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Constructor_InicializaPokemonCorrectamente_Charizard #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::LibraryTests.PokemonTests.Constructor_InicializaPokemonCorrectamente_Charizard&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d2607e66_002D3cf2_002D4fef_002D8a43_002Dc019b54b8add/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ItemTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::LibraryTests.ItemTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d2dc434f_002D57d5_002D48cc_002Dbd75_002D81d55bfae07e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ItemTests #5" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::LibraryTests.ItemTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=db929d55_002Ddc82_002D47be_002Dac29_002D4ca47c98105b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="AgregarMovimiento_AgregaMovimientoALaLista_Venusaur" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::LibraryTests.PokemonTests.AgregarMovimiento_AgregaMovimientoALaLista_Venusaur&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e3039ceb_002D44cd_002D4793_002Db365_002D3214b121e856/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ItemTests #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::LibraryTests.ItemTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e577e356_002D0644_002D469b_002Db080_002D3001d9dee254/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ItemCuraTotal" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::Tests.Item.ItemCuraTotal&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fe80c891_002D9279_002D4041_002D81d1_002D989c9b369406/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Item #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::Tests.Item&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

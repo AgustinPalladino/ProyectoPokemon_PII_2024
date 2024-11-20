@@ -6,32 +6,10 @@ namespace Library;
 /// </summary>
 public class Combate
 {
-    /// <summary>
-    /// Creacion de el metodo "Mostrarcatalogo"
-    /// El cual se ocupa de brindarle al usuario la informacion de los pókemons existentes
-    /// </summary>
-    public void MostrarCatalogo()
-    {
-        Console.WriteLine("\n Catálogo de Pokémon disponibles:");
-
-        foreach (var pokemon in DiccionariosYOperacionesStatic.DiccionarioPokemon)
-        {
-            Console.WriteLine($"- {pokemon.Value.Nombre}");
-        }
-    }
-    
-    /// <summary>
-    /// Creacion del metodo "BuclePrincipal"
-    /// Este metodo se ocupa de llevar a cabo el bucle alternado de quien elige su pokemon y quien ataca 
-    /// </summary>
-    /// <param name="j1"></param>
-    /// <param name="j2"></param>
     public void BuclePrincipal(Jugador j1, Jugador j2)
     {
         Logica logica = new Logica();
-        MostrarCatalogo(); // Le pasa por parametro la lista de todos los pokemon agregados
-        
-        Console.WriteLine("\nSu primer pokemon elejido sera con el que empieze la batalla");
+        MensajesConsola.MostrarCatalogo(); // Le pasa por parametro la lista de todos los pokemon agregados
         
         for (int i = 0; i < 6; i++) // Los jugadores escogen sus 6 pokemon
         {
@@ -39,9 +17,8 @@ public class Combate
             logica.EscogerEquipo(j2);
         }
         
-        Console.WriteLine("\n Equipos seleccionados:");
-        j1.mostrarEquipo();
-        j2.mostrarEquipo();
+        MensajesConsola.MostrarEquipo(j1);
+        MensajesConsola.MostrarEquipo(j2);
         
         bool banderaGlobal = true;
         int numeroRandom = DiccionariosYOperacionesStatic.numeroAleatorio(1, 2);
