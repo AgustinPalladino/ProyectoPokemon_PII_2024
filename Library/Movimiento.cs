@@ -46,7 +46,7 @@ public class Movimiento
         switch (Nombre.ToLower()) /// Se compara en minusculas, con el fin de evitar diferencias de mayusculas y minusculas
         {
             case "dormir":
-                if (pokemonEnemigo.Estado == null)
+                if (pokemonEnemigo.Estado == "Normal")
                 {
                     pokemonEnemigo.Estado = "Dormido";
                     pokemonEnemigo.TurnosDormido = new Random().Next(1, 5);
@@ -55,7 +55,7 @@ public class Movimiento
                 break;
 
             case "quemar":
-                if (pokemonEnemigo.Estado == null)
+                if (pokemonEnemigo.Estado == "Normal")
                 {
                     pokemonEnemigo.Estado = "Quemado";
                     Console.WriteLine($"{pokemonEnemigo.Nombre} ha sido quemado y perderá un 10% de su HP por turno.");
@@ -63,7 +63,7 @@ public class Movimiento
                 break;
 
             case "paralizar":
-                if (pokemonEnemigo.Estado == null)
+                if (pokemonEnemigo.Estado == "Normal")
                 {
                     pokemonEnemigo.Estado = "Paralizado";
                     Console.WriteLine($"{pokemonEnemigo.Nombre} ha sido paralizado.");
@@ -71,7 +71,7 @@ public class Movimiento
                 break;
 
             case "envenenar":
-                if (pokemonEnemigo.Estado == null)
+                if (pokemonEnemigo.Estado == "Normal")
                 {
                     pokemonEnemigo.Estado = "Envenenado";
                     Console.WriteLine($"{pokemonEnemigo.Nombre} ha sido envenenado y perderá un 5% de su HP por turno.");
