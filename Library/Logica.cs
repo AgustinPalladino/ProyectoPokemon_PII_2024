@@ -85,7 +85,7 @@ public class Logica
                     if (!j.nombreCheck.Contains(pokeIngresado))
                     {
                         j.nombreCheck.Add(pokeIngresado);
-                        j.agregarPokemon(pokemon.Value);
+                        j.agregarPokemon(pokemon.Value.Clonar());
                         Console.WriteLine($"{pokemon.Value.Nombre} ha sido agregado a tu equipo.");
                         bandera = false;
                     }
@@ -231,29 +231,30 @@ public class Logica
             {
                 jugador.atacar(jEnemigo, movimiento);
                 jEnemigo.pokemonEnCancha().aplicarDañoRecurrente();
-            }
+            
 
-            // Aplica ataques especiales si corresponde
-            if (movimiento.EsEspecial && jEnemigo.pokemonEnCancha().Estado == "Normal")
-            {
-                movimiento.AplicarAtaquesEspeciales(jEnemigo.pokemonEnCancha());
-                Console.WriteLine($"{jEnemigo.pokemonEnCancha().Nombre} ahora está bajo efecto del ataque {movimiento.Nombre}.");
-                jEnemigo.pokemonEnCancha().aplicarDañoRecurrente();
-            }
-
-            if (jEnemigo.pokemonEnCancha().VidaActual <= 0)
-            {
-                Console.WriteLine($"{jEnemigo.Nombre}, tu {jEnemigo.pokemonEnCancha().Nombre} fue derrotado.");
-                jEnemigo.equipoPokemonDerrotados.Add(jEnemigo.pokemonEnCancha());
-                jEnemigo.equipoPokemon[0] = null;
-                if (!ChequeoVictoria(jEnemigo))
-                {
-                    CambiarPokemon(jEnemigo);
+                // Aplica ataques especiales si corresponde
+                if (movimiento.EsEspecial && jEnemigo.pokemonEnCancha().Estado == "Normal")
+                { 
+                    movimiento.AplicarAtaquesEspeciales(jEnemigo.pokemonEnCancha());
+                    Console.WriteLine($"{jEnemigo.pokemonEnCancha().Nombre} ahora está bajo efecto del ataque {movimiento.Nombre}.");
                 }
-            }
-            else
-            {
-                Console.WriteLine($"La vida del {jEnemigo.pokemonEnCancha().Nombre} es: {jEnemigo.pokemonEnCancha().VidaActual}");
+
+                if (jEnemigo.pokemonEnCancha().VidaActual <= 0)
+                {
+                    Console.WriteLine($"{jEnemigo.Nombre}, tu {jEnemigo.pokemonEnCancha().Nombre} fue derrotado.");
+                    jEnemigo.equipoPokemonDerrotados.Add(jEnemigo.pokemonEnCancha());
+                    jEnemigo.equipoPokemon[0] = null;
+                    if (!ChequeoVictoria(jEnemigo))
+                    {
+                        CambiarPokemon(jEnemigo);
+                    }
+                }
+                else
+                {
+                    Console.WriteLine($"La vida del {jEnemigo.pokemonEnCancha().Nombre} es: {jEnemigo.pokemonEnCancha().VidaActual}");
+                }
+            
             }
         }
         return 0;

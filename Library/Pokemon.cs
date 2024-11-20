@@ -120,7 +120,7 @@ public class Pokemon
         }
         else if (Estado == "Paralizado")
         {
-            bool puedeAtacar = new Random().Next(3) == 0; // 33% de probabilidades
+            bool puedeAtacar = new Random().Next(1) == 0; // 100% de probabilidades
             if (!puedeAtacar)
             {
                 Console.WriteLine($"{Nombre} está paralizado y no puede atacar.");
