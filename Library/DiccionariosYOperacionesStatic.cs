@@ -152,25 +152,25 @@ namespace Library
             { "Lanzallamas", new Movimiento("Lanzallamas", 20, 80, "Fuego", false) },
             { "Lluevehojas", new Movimiento("Lluevehojas", 20, 100, "Planta", false) },
             { "Hidrocañon", new Movimiento("Hidrocañon", 20, 60, "Agua", false) },
-            { "PuñoFuego", new Movimiento("PuñoFuego", 20, 60, "Fuego", false) },
+            { "Puño Fuego", new Movimiento("Puño Fuego", 20, 60, "Fuego", false) },
             { "Electrocañon", new Movimiento("Electrocañon", 100, 40, "Eléctrico", false) },
-            { "Aéreo", new Movimiento("Aéreo", 15, 60, "Volador", false) },
-            { "ColmilloVenenoso", new Movimiento("ColmilloVenenoso", 15, 60, "Veneno", false) },
-            { "PuñoDinámico", new Movimiento("PuñoDinámico", 25, 100, "Lucha", false) },
-            { "GarraDragon", new Movimiento("GarraDragon", 30, 60, "Lucha", false) },
+            { "Aereo", new Movimiento("Aereo", 15, 60, "Volador", false) },
+            { "Colmillo Venenoso", new Movimiento("Colmillo Venenoso", 15, 60, "Veneno", false) },
+            { "Puño Dinamico", new Movimiento("Puño Dinamico", 25, 100, "Lucha", false) },
+            { "Garra Dragon", new Movimiento("Garra Dragon", 30, 60, "Lucha", false) },
             { "Confusion", new Movimiento("Confusion", 50, 60, "Psíquico", false) },
             { "lanzarrocas", new Movimiento("lanzarrocas", 20, 80, "Tierra", false) },
             { "Dormir", new Movimiento("Dormir", 0, 100, "Psíquico", true) },
             { "Envenenar", new Movimiento("Envenenar", 0, 100, "Veneno", true) },
             { "Quemar", new Movimiento("Quemar", 0, 100, "Fuego", true) },
             { "Paralizar", new Movimiento("Paralizar", 0, 100, "Eléctrico", true) },
-            { "PuñoHielo", new Movimiento("Puño Hielo", 20, 80, "Hielo", false) },
+            { "Puño Hielo", new Movimiento("Puño Hielo", 20, 80, "Hielo", false) },
             { "Aguacero", new Movimiento("Aguacero", 20, 60, "Agua", false) },
-            { "PuñoEléctrico", new Movimiento("PuñoEléctrico", 20, 60, "Eléctrico", false) },
-            { "PuñoAéreo", new Movimiento("PuñoAéreo", 15, 80, "Volador", false) },
-            { "HojaAfilada", new Movimiento("HojaAfilada", 25, 60, "Planta", false) },
-            { "ColaLarga", new Movimiento("ColaLarga", 25, 60, "Dragón", false) },
-            { "PuñoLucha", new Movimiento("PuñoLucha", 25, 60, "Lucha", false) },
+            { "Puño Electrico", new Movimiento("Puño Electrico", 20, 60, "Eléctrico", false) },
+            { "Puño Aereo", new Movimiento("Puño Aereo", 15, 80, "Volador", false) },
+            { "Hoja Afilada", new Movimiento("Hoja Afilada", 25, 60, "Planta", false) },
+            { "Cola Larga", new Movimiento("Cola Larga", 25, 60, "Dragón", false) },
+            { "Puño Lucha", new Movimiento("Puño Lucha", 25, 60, "Lucha", false) },
             { "Rayo", new Movimiento("Rayo", 20, 100, "Eléctrico", false) }
         };
         
@@ -215,7 +215,7 @@ namespace Library
             {
                 "Pidgeot", new Pokemon("Pidgeot", "Volador", 85, 70, 50).AgregarMovimientos(new List<Movimiento>
                     {
-                        DiccionarioMovimientos["Aéreo"],
+                        DiccionarioMovimientos["Aereo"],
                         DiccionarioMovimientos["Arañazo"],
                         DiccionarioMovimientos["Dormir"],
                         DiccionarioMovimientos["Paralizar"]
@@ -224,8 +224,8 @@ namespace Library
             {
                 "Butterfree", new Pokemon("Butterfree", "Bicho", 60, 50, 40).AgregarMovimientos(new List<Movimiento>
                     {
-                        DiccionarioMovimientos["ColmilloVenenoso"],
-                        DiccionarioMovimientos["Aéreo"],
+                        DiccionarioMovimientos["Colmillo Venenoso"],
+                        DiccionarioMovimientos["Aereo"],
                         DiccionarioMovimientos["Quemar"],
                         DiccionarioMovimientos["Dormir"]
                     })
@@ -233,17 +233,17 @@ namespace Library
             {
                 "Dragonite", new Pokemon("Dragonite", "Dragón", 150, 80, 70).AgregarMovimientos(new List<Movimiento>
                     {
-                        DiccionarioMovimientos["PuñoFuego"],
-                        DiccionarioMovimientos["GarraDragon"],
+                        DiccionarioMovimientos["Puño Fuego"],
+                        DiccionarioMovimientos["Garra Dragon"],
                         DiccionarioMovimientos["Paralizar"],
-                        DiccionarioMovimientos["PuñoAéreo"]
+                        DiccionarioMovimientos["Puño Aereo"]
                     })
             },
             {
                 "Articuno", new Pokemon("Articuno", "Hielo", 120, 90, 70).AgregarMovimientos(new List<Movimiento>
                     {
                         DiccionarioMovimientos["Arañazo"],
-                        DiccionarioMovimientos["Aéreo"],
+                        DiccionarioMovimientos["Aereo"],
                         DiccionarioMovimientos["Dormir"],
                         DiccionarioMovimientos["Envenenar"]
                     })
@@ -251,8 +251,8 @@ namespace Library
             {
                 "Machamp", new Pokemon("Machamp", "Lucha", 130, 100, 60).AgregarMovimientos(new List<Movimiento>
                     {
-                        DiccionarioMovimientos["PuñoLucha"],
-                        DiccionarioMovimientos["PuñoDinámico"],
+                        DiccionarioMovimientos["Puño Lucha"],
+                        DiccionarioMovimientos["Puño Dinamico"],
                         DiccionarioMovimientos["Paralizar"],
                         DiccionarioMovimientos["Quemar"]
                     })
@@ -296,7 +296,7 @@ namespace Library
             {
                 "Muk", new Pokemon("Muk", "Veneno", 85, 70, 50).AgregarMovimientos(new List<Movimiento>
                     {
-                        DiccionarioMovimientos["ColmilloVenenoso"],
+                        DiccionarioMovimientos["Colmillo Venenoso"],
                         DiccionarioMovimientos["Confusion"],
                         DiccionarioMovimientos["Dormir"],
                         DiccionarioMovimientos["Quemar"]
@@ -306,7 +306,7 @@ namespace Library
                 "Snorlax", new Pokemon("Snorlax", "Normal", 160, 110, 75).AgregarMovimientos(new List<Movimiento>
                     {
                         DiccionarioMovimientos["Arañazo"],
-                        DiccionarioMovimientos["PuñoDinámico"],
+                        DiccionarioMovimientos["Puño Dinamico"],
                         DiccionarioMovimientos["Envenenar"],
                         DiccionarioMovimientos["Rayo"]
                     })
@@ -341,10 +341,10 @@ namespace Library
             {
                 "Roserade", new Pokemon("Roserade", "Planta", 80, 60, 50).AgregarMovimientos(new List<Movimiento>
                     {
-                        DiccionarioMovimientos["ColmilloVenenoso"],
+                        DiccionarioMovimientos["Colmillo Venenoso"],
                         DiccionarioMovimientos["Confusion"],
                         DiccionarioMovimientos["Quemar"],
-                        DiccionarioMovimientos["HojaAfilada"]
+                        DiccionarioMovimientos["Hoja Afilada"]
                     })
             },
             {
@@ -352,7 +352,7 @@ namespace Library
                     {
                         DiccionarioMovimientos["Arañazo"],
                         DiccionarioMovimientos["Electrocañon"],
-                        DiccionarioMovimientos["PuñoEléctrico"],
+                        DiccionarioMovimientos["Puño Electrico"],
                         DiccionarioMovimientos["Paralizar"]
                     })
             },
@@ -360,17 +360,17 @@ namespace Library
                 "Zapdos", new Pokemon("Zapdos", "Eléctrico", 120, 80, 70).AgregarMovimientos(new List<Movimiento>
                     {
                         DiccionarioMovimientos["Rayo"],
-                        DiccionarioMovimientos["Aéreo"],
-                        DiccionarioMovimientos["PuñoEléctrico"],
+                        DiccionarioMovimientos["Aereo"],
+                        DiccionarioMovimientos["Puño Electrico"],
                         DiccionarioMovimientos["Dormir"]
                     })
             },
             {
                 "Salamence", new Pokemon("Salamence", "Dragón", 130, 100, 70).AgregarMovimientos(new List<Movimiento>
                     {
-                        DiccionarioMovimientos["PuñoFuego"],
-                        DiccionarioMovimientos["GarraDragon"],
-                        DiccionarioMovimientos["ColaLarga"],
+                        DiccionarioMovimientos["Puño Fuego"],
+                        DiccionarioMovimientos["Garra Dragon"],
+                        DiccionarioMovimientos["Cola Larga"],
                         DiccionarioMovimientos["Dormir"]
                     })
             },
@@ -378,9 +378,9 @@ namespace Library
                 "Moltres", new Pokemon("Moltres", "Fuego", 125, 85, 75).AgregarMovimientos(new List<Movimiento>
                     {
                         DiccionarioMovimientos["Arañazo"],
-                        DiccionarioMovimientos["Aéreo"],
+                        DiccionarioMovimientos["Aereo"],
                         DiccionarioMovimientos["Quemar"],
-                        DiccionarioMovimientos["PuñoFuego"]
+                        DiccionarioMovimientos["Puño Fuego"]
                     })
             }
         };

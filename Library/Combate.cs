@@ -2,38 +2,19 @@ namespace Library;
 
 public class Combate
 {
-    public void MostrarCatalogo()
-    {
-        Console.WriteLine("\n Catálogo de Pokémon disponibles:");
-
-        foreach (var pokemon in DiccionariosYOperacionesStatic.DiccionarioPokemon)
-        {
-            Console.WriteLine($"- {pokemon.Value.Nombre}");
-        }
-    }
-
-    
     public void BuclePrincipal(Jugador j1, Jugador j2)
     {
         Logica logica = new Logica();
-        MostrarCatalogo(); // Le pasa por parametro la lista de todos los pokemon agregados
+        MensajesConsola.MostrarCatalogo(); // Le pasa por parametro la lista de todos los pokemon agregados
         
-        Console.WriteLine("\nSu primer pokemon elejido sera con el que empieze la batalla");
-        string opcion = Console.ReadLine();
-        for (int i = 0; i < 2; i++) // Los jugadores escogen sus 6 pokemon
+        for (int i = 0; i < 6; i++) // Los jugadores escogen sus 6 pokemon
         {
-            logica.EscogerEquipo(j1, opcion);
-            Console.Write("Seleccione su pokemon: ");
-            Console.ReadLine();
-            
-            logica.EscogerEquipo(j2, opcion);
-            Console.Write("Seleccione su pokemon: ");
-            Console.ReadLine();
+            logica.EscogerEquipo(j1);
+            logica.EscogerEquipo(j2);
         }
         
-        Console.WriteLine("\n Equipos seleccionados:");
-        j1.mostrarEquipo();
-        j2.mostrarEquipo();
+        MensajesConsola.MostrarEquipo(j1);
+        MensajesConsola.MostrarEquipo(j2);
         
         bool banderaGlobal = true;
         int numeroRandom = DiccionariosYOperacionesStatic.numeroAleatorio(1, 2);

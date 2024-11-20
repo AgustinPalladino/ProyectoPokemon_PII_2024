@@ -24,28 +24,6 @@ public class Jugador
         Mochila.Add(new CuraTotal()); 
         Mochila.Add(new CuraTotal()); 
     }
-
-    /// <summary>
-    /// Metodo para mostrar pokemones en el equipo
-    /// </summary>
-    public void mostrarEquipo()
-    {
-        Console.WriteLine($"El equipo del {this.Nombre} equipo es: ");
-        if (this.equipoPokemon[0] != null)
-        {
-            for (int i = 0; i < this.equipoPokemon.Count; i++)
-            {
-                Console.WriteLine($"-{equipoPokemon[i].Nombre}");
-            }
-        }
-        else
-        {
-            for (int i = 1; i < this.equipoPokemon.Count; i++)
-            {
-                Console.WriteLine($"-{equipoPokemon[i].Nombre}");
-            }
-        }
-    }
     
     /// <summary>
     /// Método para ver ataques que tiene el pokemon

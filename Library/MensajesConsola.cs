@@ -43,6 +43,35 @@ public static class MensajesConsola
     {
         Console.WriteLine($"{jEnemigo.Nombre}, tu {jEnemigo.pokemonEnCancha().Nombre} fue derrotado.");
     }
+
+    public static void MostrarEquipo(Jugador j)
+    {
+        Console.WriteLine($"El equipo del {j.Nombre} equipo es: ");
+        if (j.equipoPokemon[0] != null)
+        {
+            for (int i = 0; i < j.equipoPokemon.Count; i++)
+            {
+                Console.WriteLine($"-{j.equipoPokemon[i].Nombre}");
+            }
+        }
+        else
+        {
+            for (int i = 1; i < j.equipoPokemon.Count; i++)
+            {
+                Console.WriteLine($"-{j.equipoPokemon[i].Nombre}");
+            }
+        }
+    }
+    
+    public static void MostrarCatalogo()
+    {
+        Console.WriteLine("\n Catálogo de Pokémon disponibles:");
+
+        foreach (var pokemon in DiccionariosYOperacionesStatic.DiccionarioPokemon)
+        {
+            Console.WriteLine($"- {pokemon.Value.Nombre}");
+        }
+    }
     
     public static void MostrarMochila(Jugador j)
     {

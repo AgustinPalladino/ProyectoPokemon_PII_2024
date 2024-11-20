@@ -58,11 +58,12 @@ public class Logica
     }
     
     
-    public void EscogerEquipo(Jugador j, string pokeIngresado)
+    public void EscogerEquipo(Jugador j)
     {
         bool bandera = true;
         while (bandera)
         {
+            string pokeIngresado = InteraccionConUsuario.SeleccionarPokemon(j);
             bool pokemonEncontrado = false;
             foreach (var pokemon in DiccionariosYOperacionesStatic.DiccionarioPokemon)
             {
@@ -103,15 +104,13 @@ public class Logica
                 if (j.equipoPokemon[0] == null)
                 {
                     j.equipoPokemon.Remove(j.equipoPokemon[0]);
-                    j.mostrarEquipo();
-                    InteraccionConUsuario.ElegirPokemon(j);
-                    pokeIngresado = Console.ReadLine();
+                    MensajesConsola.MostrarEquipo(j);
+                    pokeIngresado = InteraccionConUsuario.CambiarPokemon(j);
                 }
                 else
                 {
-                    j.mostrarEquipo();
-                    InteraccionConUsuario.ElegirPokemon(j);
-                    pokeIngresado = Console.ReadLine();
+                    MensajesConsola.MostrarEquipo(j);
+                    pokeIngresado = InteraccionConUsuario.CambiarPokemon(j);
 
                     if (pokeIngresado == "0")
                     {

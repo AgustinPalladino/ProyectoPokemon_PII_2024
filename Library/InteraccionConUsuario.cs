@@ -20,8 +20,13 @@ public static class InteraccionConUsuario
         Console.WriteLine($"{jEnemigo.pokemonEnCancha().Nombre} ahora está bajo efecto del ataque {movimiento.Nombre}.");
     }
 
+    public static string SeleccionarPokemon(Jugador j)
+    {
+        Console.Write($"{j.Nombre}, seleccione su pokemon: ");
+        return Console.ReadLine();
+    }
     
-    public static string ElegirPokemon(Jugador j)
+    public static string CambiarPokemon(Jugador j)
     {
         Console.WriteLine($"{j.Nombre}, ingrese el nombre del pokemon que desea elegir o 0 para ir hacia atras");
         return Console.ReadLine();
