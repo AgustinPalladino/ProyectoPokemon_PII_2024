@@ -55,7 +55,7 @@ public class Jugador
     {
         foreach (Movimiento movimiento in this.pokemonEnCancha().listaMovimientos)
         {
-            Console.WriteLine($"-{movimiento.Nombre}");
+            MensajesConsola.ImprimirMovimientos(movimiento);
         }
     }
 
@@ -64,7 +64,7 @@ public class Jugador
     /// </summary>
     public void verSalud()
     {
-        Console.WriteLine($"{this.pokemonEnCancha().VidaActual}/{this.pokemonEnCancha().VidaMax}");
+        MensajesConsola.ImprimirSalud(this);
     }
     
     /// <summary>

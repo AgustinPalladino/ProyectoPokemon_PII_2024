@@ -2,6 +2,17 @@ namespace Library;
 
 public static class MensajesConsola
 {
+    public static void ImprimirSalud(Jugador j)
+    {
+        Console.WriteLine($"La vida del {j.pokemonEnCancha().Nombre} es: {j.pokemonEnCancha().VidaActual}/{j.pokemonEnCancha().VidaMax}");
+    }
+
+    public static void ImprimirMovimientos(Movimiento movimiento)
+    {
+        Console.WriteLine($"-{movimiento.Nombre}");
+    }
+    
+    
     public static void Error()
     {
         Console.WriteLine("Error");
@@ -22,6 +33,16 @@ public static class MensajesConsola
     {
         Console.WriteLine($"Felicidades {j.Nombre}! Has ganado la batalla.");
     }
+
+    public static void BienSeleccionado(Pokemon pokemon)
+    {
+        Console.WriteLine($"{pokemon.Nombre} ha sido agregado a tu equipo.");
+    }
+
+    public static void PokemonDerrotado(Jugador jEnemigo)
+    {
+        Console.WriteLine($"{jEnemigo.Nombre}, tu {jEnemigo.pokemonEnCancha().Nombre} fue derrotado.");
+    }
     
     public static void MostrarMochila(Jugador j)
     {
@@ -31,7 +52,7 @@ public static class MensajesConsola
             Console.WriteLine($"- {j.Mochila[i].Nombre}");
         }
     }
-
+    
     public static void MochilaVacia()
     {
         Console.WriteLine("Mochila vacia");

@@ -12,16 +12,7 @@ public class Logica
         bool bandera = true;
         while (bandera)
         {
-            Console.WriteLine($"\nTurno de {j1.Nombre}. ¿Qué deseas hacer? Seleccione un numero porfavor.");
-            Console.WriteLine($"Su pokemon en el combate es: {j1.pokemonEnCancha().Nombre}");
-
-            Console.WriteLine("1- Ver las habilidades de tu Pokémon (No consume turno)");
-            Console.WriteLine("2- Ver la salud de tu Pokémon (No consume turno)");
-            Console.WriteLine("3- Mochila (Solo usar objeto consume un turno)");
-            Console.WriteLine("4- Atacar (Consume un turno)");
-            Console.WriteLine("5- Cambiar de Pokémon (Consume un turno)");
-            int opcion = Convert.ToInt32(Console.ReadLine());
-
+            int opcion = InteraccionConUsuario.EscogerOpcion(j1);
             switch (opcion)
             {
                 case 1:
@@ -59,7 +50,7 @@ public class Logica
                     break; //Si volvio para atras vuelve al bucle
                     
                 default: // Si ingresa una opcion mala, vuelve al bucle
-                    Console.WriteLine("Opcion erronea, intenta de nuevo");
+                    MensajesConsola.Error();
                     break;
             }
         }
@@ -82,12 +73,12 @@ public class Logica
                     {
                         j.nombreCheck.Add(pokeIngresado);
                         j.agregarPokemon(pokemon.Value.Clonar());
-                        Console.WriteLine($"{pokemon.Value.Nombre} ha sido agregado a tu equipo.");
+                        MensajesConsola.BienSeleccionado(pokemon.Value);
                         bandera = false;
                     }
                     else
                     {
-                        Console.WriteLine("El pokemon ya está en el equipo, elija otro pokemon.");
+                        MensajesConsola.Error();
                     }
                     break;
                 }
@@ -113,13 +104,13 @@ public class Logica
                 {
                     j.equipoPokemon.Remove(j.equipoPokemon[0]);
                     j.mostrarEquipo();
-                    Console.WriteLine("\nEscoge el siguiente pokemon para pelear");
+                    InteraccionConUsuario.ElegirPokemon(j);
                     pokeIngresado = Console.ReadLine();
                 }
                 else
                 {
                     j.mostrarEquipo();
-                    Console.WriteLine("\nEscoge el pokemon a cambiar o 0 para ir hacia atrás:");
+                    InteraccionConUsuario.ElegirPokemon(j);
                     pokeIngresado = Console.ReadLine();
 
                     if (pokeIngresado == "0")
@@ -228,13 +219,13 @@ public class Logica
             if (movimiento.EsEspecial && jEnemigo.pokemonEnCancha().Estado == "Normal")
             {
                 movimiento.AplicarAtaquesEspeciales(jEnemigo.pokemonEnCancha());
-                Console.WriteLine($"{jEnemigo.pokemonEnCancha().Nombre} ahora está bajo efecto del ataque {movimiento.Nombre}.");
+                InteraccionConUsuario.AtaqueEfecto(jEnemigo, movimiento);
                 jEnemigo.pokemonEnCancha().aplicarDañoRecurrente();
             }
 
             if (jEnemigo.pokemonEnCancha().VidaActual <= 0)
             {
-                Console.WriteLine($"{jEnemigo.Nombre}, tu {jEnemigo.pokemonEnCancha().Nombre} fue derrotado.");
+                MensajesConsola.PokemonDerrotado(jEnemigo);
                 jEnemigo.equipoPokemonDerrotados.Add(jEnemigo.pokemonEnCancha());
                 jEnemigo.equipoPokemon[0] = null;
                 if (!ChequeoVictoria(jEnemigo))
@@ -244,7 +235,7 @@ public class Logica
             }
             else
             {
-                Console.WriteLine($"La vida del {jEnemigo.pokemonEnCancha().Nombre} es: {jEnemigo.pokemonEnCancha().VidaActual}");
+                MensajesConsola.ImprimirSalud(jEnemigo);
             }
         }
         return 0;
