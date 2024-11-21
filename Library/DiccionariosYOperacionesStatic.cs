@@ -104,7 +104,7 @@ namespace Library
         /// Método para obtener la bonificación de tipo
         /// </summary>
         /// <param name="tipoMovimiento"></param>
-        /// <param name="tipoPokemonDefensor"></param>
+        /// <param name="tipoPokemonDefensor">i</param>
         /// <returns></returns>
         public static double bonificacionTipos(string tipoMovimiento, string tipoPokemonDefensor)
         {
