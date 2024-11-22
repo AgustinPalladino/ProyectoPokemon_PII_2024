@@ -1,4 +1,5 @@
 using Library;
+using Library.Interaccion;
 
 namespace TestProject;
 
@@ -51,7 +52,7 @@ public class PokemonTest
 
         pokemon2.PorcentajeDañoPorTurno = 0.1;
         
-        jugador2.pokemonEnCancha().aplicarDañoRecurrente();
+        jugador2.pokemonEnCancha().aplicarDañoRecurrente(new InteraccionPorConsola());
         
         Assert.That(pokemon2.VidaActual,Is.EqualTo(108));
 
@@ -61,7 +62,7 @@ public class PokemonTest
         
         pokemon2.PorcentajeDañoPorTurno = 0.1;
         
-        jugador2.pokemonEnCancha().aplicarDañoRecurrente();
+        jugador2.pokemonEnCancha().aplicarDañoRecurrente(new InteraccionPorConsola());
         
         Assert.That(pokemon2.VidaActual,Is.EqualTo(88));
         
@@ -82,11 +83,11 @@ public class PokemonTest
 
         pokemon2.TurnosDormido = 3;
         
-        Assert.That(pokemon2.puedeAtacar,Is.EqualTo(false));
+        Assert.That(pokemon2.puedeAtacar(new InteraccionPorConsola()),Is.EqualTo(false));
         
         pokemon1.Estado = "Paralizado";
         
-        Assert.That(pokemon1.puedeAtacar,Is.EqualTo(true));    
+        Assert.That(pokemon1.puedeAtacar(new InteraccionPorConsola()),Is.EqualTo(true));    
         
         
     }

@@ -1,3 +1,5 @@
+using Library.Interaccion;
+
 namespace Library;
 /// <summary>
 /// Se crea la clase "Pokemon" encargada de representar a un Pokémon con sus atributos básicos,
@@ -96,29 +98,29 @@ public class Pokemon
         return this;
     }
 
-    public void aplicarDañoRecurrente()
+    public void aplicarDañoRecurrente(IInteraccionConUsuario interaccion)
     {
         if (Estado == "Envenenado" || Estado == "Quemado")
         {
             int danio = (int)(VidaMax * PorcentajeDañoPorTurno);
             VidaActual -= danio;
-            Console.WriteLine($"{Nombre} sufre {danio} puntos de daño por estar {Estado}. Vida restante: {VidaActual}");
+            interaccion.ImprimirMensaje($"{Nombre} sufre {danio} puntos de daño por estar {Estado}. Vida restante: {VidaActual}");
         }
     }
-    public bool puedeAtacar()
+    public bool puedeAtacar(IInteraccionConUsuario interaccion)
     {
         if (Estado == "Dormido")
         {
             if (TurnosDormido>0)
             {
                 TurnosDormido--;
-                Console.WriteLine($"{Nombre} está dormido y no puede atacar. Turnos restantes dormido: {TurnosDormido}");
+                interaccion.ImprimirMensaje($"{Nombre} está dormido y no puede atacar. Turnos restantes dormido: {TurnosDormido}");
                 return false;
             }
             else
             {
                 Estado = "Normal";
-                Console.WriteLine($"{Nombre} ha despertado.");
+                interaccion.ImprimirMensaje($"{Nombre} ha despertado.");
             }
         }
         else if (Estado == "Paralizado")
@@ -126,7 +128,7 @@ public class Pokemon
             bool puedeAtacar = new Random().Next(1) == 0; // 100% de probabilidades
             if (!puedeAtacar)
             {
-                Console.WriteLine($"{Nombre} está paralizado y no puede atacar.");
+                interaccion.ImprimirMensaje($"{Nombre} está paralizado y no puede atacar.");
             }
             return puedeAtacar;
         }
