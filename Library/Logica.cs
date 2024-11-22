@@ -1,7 +1,15 @@
+using Library.Interaccion;
+
 namespace Library;
 
 public class Logica
 {
+    private readonly IInteraccionConUsuario interaccion;
+
+    public Logica(IInteraccionConUsuario interaccion)
+    {
+        this.interaccion = interaccion;
+    }
     
     /// <summary>
     /// Este metodo despliega el menu de opciones de cada jugador, decidimos ponerlo aqui, por uno de los patrones GRASP
@@ -12,19 +20,25 @@ public class Logica
         bool bandera = true;
         while (bandera)
         {
-            int opcion = InteraccionConUsuario.EscogerOpcion(j1);
+            interaccion.ImprimirMensaje($"\nTurno de {j1.Nombre}. ¿Qué deseas hacer? Seleccione un numero porfavor.");
+            interaccion.ImprimirMensaje("1- Ver las habilidades de tu Pokémon (No consume turno)");
+            interaccion.ImprimirMensaje("2- Ver la salud de tu Pokémon (No consume turno)");
+            interaccion.ImprimirMensaje("3- Mochila (Solo usar objeto consume un turno)");
+            interaccion.ImprimirMensaje("4- Atacar (Consume un turno)");
+            interaccion.ImprimirMensaje("5- Cambiar de Pokémon (Consume un turno)");
+            int opcion = Convert.ToInt32(interaccion.LeerEntrada());
             switch (opcion)
             {
                 case 1:
-                    j1.verMovimientos(); // Ve los movimientos y vuelve al bucle
+                    j1.verMovimientos(interaccion); // Ve los movimientos y vuelve al bucle
                     break;
                 
                 case 2:
-                    j1.verSalud(); // Ve la salud y vuelve al bucle
+                    j1.verSalud(interaccion); // Ve la salud y vuelve al bucle
                     break;
                 
                 case 3:
-                    if (Mochila(j1, InteraccionConUsuario.ElegirItem(j1)))
+                    if (Mochila(j1))
                     {
                         return true; // Si uso el objeto sale del bucle
                     }
@@ -35,7 +49,7 @@ public class Logica
                     {
                         if (ChequeoVictoria(j2))
                         {
-                            MensajesConsola.Ganador(j1);
+                            interaccion.ImprimirMensaje($"Felicidades {j1.Nombre}! Has ganado la batalla.");
                             return false; // Retorna falso porque la pelea termino
                         }
                         return true; // Si ataco pero nadie perdio termino su turno
@@ -50,7 +64,7 @@ public class Logica
                     break; //Si volvio para atras vuelve al bucle
                     
                 default: // Si ingresa una opcion mala, vuelve al bucle
-                    MensajesConsola.Error();
+                    interaccion.ImprimirMensaje("Error, opcion incorrecta");
                     break;
             }
         }
@@ -63,7 +77,8 @@ public class Logica
         bool bandera = true;
         while (bandera)
         {
-            string pokeIngresado = InteraccionConUsuario.SeleccionarPokemon(j);
+            interaccion.ImprimirMensaje($"{j.Nombre}, seleccione su siguiente pokemon");
+            string pokeIngresado = interaccion.LeerEntrada();
             bool pokemonEncontrado = false;
             foreach (var pokemon in DiccionariosYOperacionesStatic.DiccionarioPokemon)
             {
@@ -74,12 +89,12 @@ public class Logica
                     {
                         j.nombreCheck.Add(pokeIngresado);
                         j.agregarPokemon(pokemon.Value.Clonar());
-                        MensajesConsola.BienSeleccionado(pokemon.Value);
+                        interaccion.ImprimirMensaje($"{pokeIngresado} se agrego a tu equipo");
                         bandera = false;
                     }
                     else
                     {
-                        MensajesConsola.Error();
+                        interaccion.ImprimirMensaje($"{pokeIngresado} ya se encuentra en el equipo");
                     }
                     break;
                 }
@@ -87,11 +102,11 @@ public class Logica
             //Si el pokemon nunca se encontro, vuelve a pedirlo
             if (!pokemonEncontrado)
             {
-                MensajesConsola.NoEncontrado();
+                interaccion.ImprimirMensaje($"{pokeIngresado}, no es correcto");
             }
         }
     }
-
+    
     
     public bool CambiarPokemon(Jugador j)
     {
@@ -104,17 +119,19 @@ public class Logica
                 if (j.equipoPokemon[0] == null)
                 {
                     j.equipoPokemon.Remove(j.equipoPokemon[0]);
-                    MensajesConsola.MostrarEquipo(j);
-                    pokeIngresado = InteraccionConUsuario.CambiarPokemon(j);
+                    j.MostrarEquipo(interaccion);
+                    interaccion.ImprimirMensaje("Ingrese el nombre del siguiente pokemon para que se una al combate");
+                    pokeIngresado = interaccion.LeerEntrada();
                 }
                 else
                 {
-                    MensajesConsola.MostrarEquipo(j);
-                    pokeIngresado = InteraccionConUsuario.CambiarPokemon(j);
+                    j.MostrarEquipo(interaccion);
+                    interaccion.ImprimirMensaje($"{j.Nombre}, ingrese el nombre del pokemon que desea elegir o 0 para ir hacia atras");
+                    pokeIngresado = interaccion.LeerEntrada();
 
                     if (pokeIngresado == "0")
                     {
-                        MensajesConsola.VolverAtras();
+                        interaccion.ImprimirMensaje("Usted regreso hacia atras");
                         return false;
                     }
                 }
@@ -132,7 +149,7 @@ public class Logica
             // Maneja errores inesperados
             catch (Exception)
             {
-                MensajesConsola.Error();
+                interaccion.ImprimirMensaje("");
                 return false;
             }
         }
@@ -141,14 +158,15 @@ public class Logica
     
 
     //Metodo que comprueba si el item recibido esta bien
-    public bool Mochila(Jugador j, string item)
+    public bool Mochila(Jugador j)
     {
         bool bandera = true;
         while (bandera)
         {
             if (j.Mochila.Count != 0)
             {
-                MensajesConsola.MostrarMochila(j);
+                interaccion.ImprimirMensaje("");
+                string item = interaccion.LeerEntrada();
                 
                 for (int i = 0; i < j.Mochila.Count; i++)
                 {
@@ -161,15 +179,15 @@ public class Logica
                 }
                 if (item == "0")
                 {
-                    MensajesConsola.VolverAtras();
+                    interaccion.ImprimirMensaje("Usted regreso hacia atras");
                     return false;
                 }
 
-                MensajesConsola.NoEncontrado();
+                interaccion.ImprimirMensaje("Item ingresado no encontrado");
             }
             else
             {
-                MensajesConsola.MochilaVacia();
+                interaccion.ImprimirMensaje("Su mochila se encuentra vacia");
                 return false;
             }
         }
@@ -183,7 +201,8 @@ public class Logica
         bool bandera = true;
         while (bandera)
         {
-            string movimiento = InteraccionConUsuario.ElegirMovimiento(j);
+            interaccion.ImprimirMensaje($"{j.Nombre}, ingrese el nombre del movimiento desee usar o 0 para salir");
+            string movimiento = interaccion.LeerEntrada();
             foreach (Movimiento mov in j.pokemonEnCancha().listaMovimientos)
             {
                 if (movimiento == mov.Nombre)
@@ -194,21 +213,21 @@ public class Logica
             }
             if (movimiento == "0")
             {
-                MensajesConsola.VolverAtras();
+                interaccion.ImprimirMensaje("Usted regreso hacia atras");
                 return false;
             }
-            MensajesConsola.Error();
+            interaccion.ImprimirMensaje("Error, movimiento no encontrado");
         }
         return false;
     }
     
     
-    public int CalculoAtaque(Jugador jugador, Jugador jEnemigo, Movimiento movimiento)
+    public void CalculoAtaque(Jugador jugador, Jugador jEnemigo, Movimiento movimiento)
     {
         if (movimiento != null)
         {
             
-            if (jugador.pokemonEnCancha().puedeAtacar())
+            if (jugador.pokemonEnCancha().puedeAtacar() && !movimiento.EsEspecial)
             {
                 jugador.atacar(jEnemigo, movimiento);
                 jEnemigo.pokemonEnCancha().aplicarDañoRecurrente();
@@ -218,13 +237,13 @@ public class Logica
             if (movimiento.EsEspecial && jEnemigo.pokemonEnCancha().Estado == "Normal")
             {
                 movimiento.AplicarAtaquesEspeciales(jEnemigo.pokemonEnCancha());
-                InteraccionConUsuario.AtaqueEfecto(jEnemigo, movimiento);
                 jEnemigo.pokemonEnCancha().aplicarDañoRecurrente();
+                jEnemigo.verSalud(interaccion);
             }
 
             if (jEnemigo.pokemonEnCancha().VidaActual <= 0)
             {
-                MensajesConsola.PokemonDerrotado(jEnemigo);
+                interaccion.ImprimirMensaje($"{jEnemigo.Nombre}, tu {jEnemigo.pokemonEnCancha().Nombre} fue derrotado");
                 jEnemigo.equipoPokemonDerrotados.Add(jEnemigo.pokemonEnCancha());
                 jEnemigo.equipoPokemon[0] = null;
                 if (!ChequeoVictoria(jEnemigo))
@@ -234,10 +253,9 @@ public class Logica
             }
             else
             {
-                MensajesConsola.ImprimirSalud(jEnemigo);
+               jEnemigo.verSalud(interaccion);
             }
         }
-        return 0;
     }
 
     

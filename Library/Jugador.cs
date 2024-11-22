@@ -1,3 +1,5 @@
+using Library.Interaccion;
+
 namespace Library;
 
 public class Jugador
@@ -25,24 +27,44 @@ public class Jugador
         Mochila.Add(new CuraTotal()); 
     }
     
+    public void MostrarEquipo(IInteraccionConUsuario interaccion)
+    {
+        Console.WriteLine($"El equipo del {this.Nombre} equipo es: ");
+        if (this.equipoPokemon[0] != null)
+        {
+            for (int i = 0; i < this.equipoPokemon.Count; i++)
+            {
+                interaccion.ImprimirMensaje($"-{this.equipoPokemon[i].Nombre}");
+            }
+        }
+        else
+        {
+            for (int i = 1; i < this.equipoPokemon.Count; i++)
+            {
+                interaccion.ImprimirMensaje($"-{this.equipoPokemon[i].Nombre}");
+            }
+        }
+    }
+    
+    
     /// <summary>
     /// Método para ver ataques que tiene el pokemon
     /// </summary>
     
-    public void verMovimientos()
+    public void verMovimientos(IInteraccionConUsuario interaccion)
     {
         foreach (Movimiento movimiento in this.pokemonEnCancha().listaMovimientos)
         {
-            MensajesConsola.ImprimirMovimientos(movimiento);
+            interaccion.ImprimirMensaje($"-{movimiento.Nombre}");
         }
     }
 
     /// <summary>
     /// Metodo para ver la salud del pokemon
     /// </summary>
-    public void verSalud()
+    public void verSalud(IInteraccionConUsuario interaccion)
     {
-        MensajesConsola.ImprimirSalud(this);
+        interaccion.ImprimirMensaje($"La vida del {this.pokemonEnCancha().Nombre} es: {this.pokemonEnCancha().VidaActual}/{this.pokemonEnCancha().VidaMax}");
     }
     
     /// <summary>

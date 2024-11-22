@@ -1,4 +1,5 @@
 using Library;
+using Library.Interaccion;
 
 namespace TestProject;
 
@@ -39,7 +40,7 @@ public class MovimientoTest
     [Test]
     public void movEspecialesTest()
     {
-        var logica = new Logica();
+        var logica = new Logica(new InteraccionPorConsola());
         var jugador1 = new Jugador("Jugador1");
         var jugador2 = new Jugador("Jugador2");
         var pokemon1 = new Pokemon("Blastoise", "Agua", 100, 100, 80); // Se pasa el tipo y las estadísticas
