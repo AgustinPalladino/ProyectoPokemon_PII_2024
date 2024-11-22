@@ -21,14 +21,14 @@ public class Revivir : Item
             }
             else
             {
-                interaccion.ImprimirMensaje("¿A cual pokemon desea usar el revivir?");
-
                 // Muestra los nombres de los pokemon derrotados
                 for (int i = 0; i < j.equipoPokemonDerrotados.Count; i++)
                 {
                     interaccion.ImprimirMensaje($"-{j.equipoPokemonDerrotados[i].Nombre}");
                 }
-                string pokeIngresado = Console.ReadLine();
+                
+                interaccion.ImprimirMensaje("Ingrese el nombre del pokemon que desea revivir o 0 para salir");
+                string pokeIngresado = interaccion.LeerEntrada();
             
                 for (int i = 0; i < j.equipoPokemonDerrotados.Count; i++)
                 {
@@ -43,6 +43,11 @@ public class Revivir : Item
                             j.equipoPokemonDerrotados.Remove(j.equipoPokemonDerrotados[i]);
                             bandera = false;
                         }
+                    }
+
+                    if (pokeIngresado == "0")
+                    {
+                        bandera = false;
                     }
                 }
 
