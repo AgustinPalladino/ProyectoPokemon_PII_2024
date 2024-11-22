@@ -9,12 +9,12 @@ public class Revivir : Item
 {
     public override string Nombre => "Revivir";
 
-    public override void Usar(Jugador j, IInteraccionConUsuario interaccion)
+    public override void Usar(Jugador jugador, IInteraccionConUsuario interaccion)
     {
         bool bandera = true;
         while (bandera)
         {
-            if (j.equipoPokemonDerrotados.Count() == 0)
+            if (jugador.equipoPokemonDerrotados.Count() == 0)
             {
                 interaccion.ImprimirMensaje("No tiene ningun pokemon derrotado");
                 bandera = false;
@@ -22,25 +22,21 @@ public class Revivir : Item
             else
             {
                 // Muestra los nombres de los pokemon derrotados
-                for (int i = 0; i < j.equipoPokemonDerrotados.Count; i++)
+                for (int i = 0; i < jugador.equipoPokemonDerrotados.Count; i++)
                 {
-                    interaccion.ImprimirMensaje($"-{j.equipoPokemonDerrotados[i].Nombre}");
+                    interaccion.ImprimirMensaje($"-{jugador.equipoPokemonDerrotados[i].Nombre}");
                 }
                 
                 interaccion.ImprimirMensaje("Ingrese el nombre del pokemon que desea revivir o 0 para salir");
                 string pokeIngresado = interaccion.LeerEntrada();
             
-                for (int i = 0; i < j.equipoPokemonDerrotados.Count; i++)
+                for (int i = 0; i < jugador.equipoPokemonDerrotados.Count; i++)
                 {
-                    if (pokeIngresado == j.equipoPokemonDerrotados[i].Nombre)
+                    if (pokeIngresado == jugador.equipoPokemonDerrotados[i].Nombre)
                     {
-                        if (j.equipoPokemonDerrotados[i].VidaActual <= 0)
+                        if (jugador.equipoPokemonDerrotados[i].VidaActual <= 0)
                         {
-                            j.equipoPokemonDerrotados[i].VidaActual = j.equipoPokemonDerrotados[i].VidaMax / 2; // Revive con el 50% de su vida máxima
-                            j.equipoPokemonDerrotados[i].Estado = "Normal";
-                            interaccion.ImprimirMensaje($"{j.equipoPokemonDerrotados[i].Nombre} ha sido revivido con {j.equipoPokemonDerrotados[i].VidaActual} puntos de vida.");
-                            j.equipoPokemon.Add(j.equipoPokemonDerrotados[i]);
-                            j.equipoPokemonDerrotados.Remove(j.equipoPokemonDerrotados[i]);
+                            RevivirPokemon(jugador, jugador.equipoPokemonDerrotados[i], interaccion);
                             bandera = false;
                         }
                     }
@@ -57,5 +53,15 @@ public class Revivir : Item
                 }
             }
         }
+    }
+    
+    private void RevivirPokemon(Jugador jugador, Pokemon pokemon, IInteraccionConUsuario interaccion)
+    {
+        pokemon.VidaActual = pokemon.VidaMax / 2; // Revive con el 50% de su vida máxima
+        pokemon.Estado = "Normal";
+        interaccion.ImprimirMensaje($"{pokemon.Nombre} ha sido revivido con {pokemon.VidaActual} puntos de vida.");
+
+        jugador.equipoPokemon.Add(pokemon);
+        jugador.equipoPokemonDerrotados.Remove(pokemon);
     }
 }

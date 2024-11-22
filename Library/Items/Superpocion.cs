@@ -6,9 +6,9 @@ namespace Library
     {
         public override string Nombre => "SuperPocion";
 
-        public override void Usar(Jugador j, IInteraccionConUsuario interaccion)
+        public override void Usar(Jugador jugador, IInteraccionConUsuario interaccion)
         {
-            Pokemon pokemon = j.pokemonEnCancha();
+            Pokemon pokemon = jugador.pokemonEnCancha();
             
             if (pokemon.VidaActual > 0)
             {

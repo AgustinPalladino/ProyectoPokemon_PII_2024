@@ -101,11 +101,11 @@ public class Jugador
     /// <param name="jEnemigo"></param>
     /// <param name="movimiento"></param>
     
-    public void atacar(Jugador jEnemigo, Movimiento movimiento, IInteraccionConUsuario interaccion)
+    public void atacar(Jugador jugadorEnemigo, Movimiento movimiento, IInteraccionConUsuario interaccion)
     {
         double ataqueFinal = DiccionariosYOperacionesStatic.Precision(movimiento.Precision, movimiento.Ataque, interaccion);
-        double danio = (this.pokemonEnCancha().Ataque)*ataqueFinal * movimiento.Ataque / (jEnemigo.pokemonEnCancha().Defensa);
-        jEnemigo.pokemonEnCancha().VidaActual -= (int)(danio * DiccionariosYOperacionesStatic.bonificacionTipos(movimiento.Tipo, jEnemigo.pokemonEnCancha().Tipo, interaccion) * DiccionariosYOperacionesStatic.CalcularCritico(movimiento.Precision, interaccion));
+        double danio = (this.pokemonEnCancha().Ataque)*ataqueFinal * movimiento.Ataque / (jugadorEnemigo.pokemonEnCancha().Defensa);
+        jugadorEnemigo.pokemonEnCancha().VidaActual -= (int)(danio * DiccionariosYOperacionesStatic.bonificacionTipos(movimiento.Tipo, jugadorEnemigo.pokemonEnCancha().Tipo, interaccion) * DiccionariosYOperacionesStatic.CalcularCritico(movimiento.Precision, interaccion));
     }
 
     /// <summary>

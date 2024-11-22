@@ -11,10 +11,10 @@ namespace Library
         public override string Nombre => "CuraTotal";
 
         // Implementación del método abstracto Usar
-        public override void Usar(Jugador j, IInteraccionConUsuario interaccion)
+        public override void Usar(Jugador jugador, IInteraccionConUsuario interaccion)
         {
             // Obtener el pokemon en cancha
-            Pokemon pokemon = j.pokemonEnCancha();
+            Pokemon pokemon = jugador.pokemonEnCancha();
 
             // Verificar si el pokemon ya está en estado "Normal"
             if (pokemon.Estado == "Normal")
