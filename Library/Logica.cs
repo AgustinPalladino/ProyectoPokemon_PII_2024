@@ -165,7 +165,12 @@ public class Logica
         {
             if (j.Mochila.Count != 0)
             {
-                interaccion.ImprimirMensaje("");
+                Console.WriteLine("\nMochila:");
+                for (int i = 0; i < j.Mochila.Count; i++)
+                {
+                    interaccion.ImprimirMensaje($"- {j.Mochila[i].Nombre}");
+                }
+                interaccion.ImprimirMensaje("¿Que item desea usar?");
                 string item = interaccion.LeerEntrada();
                 
                 for (int i = 0; i < j.Mochila.Count; i++)
@@ -173,7 +178,7 @@ public class Logica
                     // Usa el objeto si el nombre coincide
                     if (j.Mochila[i].Nombre == item)
                     {
-                        j.UsarMochila(j.Mochila[i]);
+                        j.UsarMochila(j.Mochila[i], interaccion);
                         return true;
                     }
                 }
@@ -229,8 +234,9 @@ public class Logica
             
             if (jugador.pokemonEnCancha().puedeAtacar() && !movimiento.EsEspecial)
             {
-                jugador.atacar(jEnemigo, movimiento);
+                jugador.atacar(jEnemigo, movimiento, interaccion);
                 jEnemigo.pokemonEnCancha().aplicarDañoRecurrente();
+                jEnemigo.verSalud(interaccion);
             }
 
             // Aplica ataques especiales si corresponde
@@ -253,7 +259,7 @@ public class Logica
             }
             else
             {
-               jEnemigo.verSalud(interaccion);
+                jEnemigo.verSalud(interaccion);
             }
         }
     }

@@ -1,4 +1,5 @@
 using Library;
+using Library.Interaccion;
 
 namespace TestProject;
 
@@ -19,7 +20,7 @@ public class Item
         var curaTotal = new CuraTotal();
         charizard.Estado = "Quemado";
         
-        curaTotal.Usar(jugador);
+        curaTotal.Usar(jugador, new InteraccionPorConsola());
         Assert.That(curaTotal.Nombre, Is.EqualTo("CuraTotal"));
         Assert.That(charizard.Estado, Is.EqualTo("Normal"));
     }
@@ -49,7 +50,7 @@ public class Item
         var sPocion = new SuperPocion();
         charizard.VidaActual = 40;
         
-        sPocion.Usar(jugador); 
+        sPocion.Usar(jugador, new InteraccionPorConsola()); 
         Assert.That(sPocion.Nombre, Is.EqualTo("SuperPocion"));
         Assert.That(charizard.VidaActual, Is.EqualTo(100));
     }

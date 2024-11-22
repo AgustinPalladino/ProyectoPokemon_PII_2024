@@ -18,7 +18,7 @@ public class Combate
     
     public void MostrarCatalogo()
     {
-        Console.WriteLine("\n Catálogo de Pokémon disponibles:");
+        interaccion.ImprimirMensaje("\n Catálogo de Pokémon disponibles:");
 
         foreach (var pokemon in DiccionariosYOperacionesStatic.DiccionarioPokemon)
         {
@@ -29,10 +29,10 @@ public class Combate
     
     public void BuclePrincipal(Jugador j1, Jugador j2)
     {
-        Logica logica = new Logica(new InteraccionPorConsola());
-        MostrarCatalogo(); // Le pasa por parametro la lista de todos los pokemon agregados
+        Logica logica = new Logica(interaccion);
+        MostrarCatalogo(); 
         
-        for (int i = 0; i < 6; i++) // Los jugadores escogen sus 6 pokemon
+        for (int i = 0; i < 2; i++) // Los jugadores escogen sus 6 pokemon
         {
             logica.EscogerEquipo(j1);
             logica.EscogerEquipo(j2);

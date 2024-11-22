@@ -101,20 +101,20 @@ public class Jugador
     /// <param name="jEnemigo"></param>
     /// <param name="movimiento"></param>
     
-    public void atacar(Jugador jEnemigo, Movimiento movimiento)
+    public void atacar(Jugador jEnemigo, Movimiento movimiento, IInteraccionConUsuario interaccion)
     {
-        double ataqueFinal = DiccionariosYOperacionesStatic.Precision(movimiento.Precision, movimiento.Ataque);
+        double ataqueFinal = DiccionariosYOperacionesStatic.Precision(movimiento.Precision, movimiento.Ataque, interaccion);
         double danio = (this.pokemonEnCancha().Ataque)*ataqueFinal * movimiento.Ataque / (jEnemigo.pokemonEnCancha().Defensa);
-        jEnemigo.pokemonEnCancha().VidaActual -= (int)(danio * DiccionariosYOperacionesStatic.bonificacionTipos(movimiento.Tipo, jEnemigo.pokemonEnCancha().Tipo) * DiccionariosYOperacionesStatic.CalcularCritico(movimiento.Precision));
+        jEnemigo.pokemonEnCancha().VidaActual -= (int)(danio * DiccionariosYOperacionesStatic.bonificacionTipos(movimiento.Tipo, jEnemigo.pokemonEnCancha().Tipo, interaccion) * DiccionariosYOperacionesStatic.CalcularCritico(movimiento.Precision, interaccion));
     }
 
     /// <summary>
     /// Método usar Mochila
     /// </summary>
     /// <returns></returns>
-    public void UsarMochila(Item item)
+    public void UsarMochila(Item item, IInteraccionConUsuario interaccion)
     {
-        item.Usar(this);
+        item.Usar(this, interaccion);
         Mochila.Remove(item);
     }
 }

@@ -1,4 +1,5 @@
 using Library;
+using Library.Interaccion;
 
 namespace TestProject;
 
@@ -22,7 +23,7 @@ public class JugadorTests
         jugador2.agregarPokemon(pokemon2);
         pokemon1.listaMovimientos.Add(movimiento);
 
-        jugador1.atacar(jugador2, movimiento);
+        jugador1.atacar(jugador2, movimiento, new InteraccionPorConsola());
 
         Assert.Less(pokemon2.VidaActual, pokemon2.VidaMax); 
     }
@@ -42,7 +43,7 @@ public class JugadorTests
         
         Assert.That(item.Nombre, Is.EqualTo("SuperPocion"));
         
-        jugador.UsarMochila(item);
+        jugador.UsarMochila(item, new InteraccionPorConsola());
         
         Assert.That(jugador.Mochila.Count, Is.EqualTo(6)); 
         

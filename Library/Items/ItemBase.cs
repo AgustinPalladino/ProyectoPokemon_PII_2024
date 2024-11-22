@@ -1,3 +1,5 @@
+using Library.Interaccion;
+
 namespace Library
 {
     /// <summary>
@@ -13,6 +15,6 @@ namespace Library
         protected Item() { }
 
         // Método abstracto que obliga a las subclases a definir cómo usar el ítem
-        public abstract void Usar(Jugador j);
+        public abstract void Usar(Jugador j, IInteraccionConUsuario interaccion);
     }
 }

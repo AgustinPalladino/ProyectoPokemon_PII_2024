@@ -1,4 +1,4 @@
-using System;
+using Library.Interaccion;
 
 namespace Library
 {
@@ -6,9 +6,9 @@ namespace Library
     {
         public override string Nombre => "SuperPocion";
 
-        public override void Usar(Jugador j)
+        public override void Usar(Jugador j, IInteraccionConUsuario interaccion)
         {
-            var pokemon = j.pokemonEnCancha();
+            Pokemon pokemon = j.pokemonEnCancha();
             
             if (pokemon.VidaActual > 0)
             {
@@ -19,11 +19,11 @@ namespace Library
                     pokemon.VidaActual = pokemon.VidaMax;
                 }
                 
-                Console.WriteLine($"{pokemon.Nombre} se ha restaurado 70 puntos de vida.");
+                interaccion.ImprimirMensaje($"{pokemon.Nombre} se ha restaurado 70 puntos de vida.");
             }
             if(pokemon.VidaActual==100)
             {
-                Console.WriteLine($"{pokemon.Nombre} No puedes restaurar mas vida ya que ya esta al maximo.");
+                interaccion.ImprimirMensaje($"{pokemon.Nombre} No puedes restaurar mas vida ya que ya esta al maximo.");
             }
         }
     }
