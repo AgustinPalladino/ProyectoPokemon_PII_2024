@@ -164,8 +164,8 @@ public class Logica
         while (bandera)
         {
             if (j.Mochila.Count != 0)
-            {
-                Console.WriteLine("\nMochila:");
+            { 
+                interaccion.ImprimirMensaje("\nMochila:");
                 for (int i = 0; i < j.Mochila.Count; i++)
                 {
                     interaccion.ImprimirMensaje($"- {j.Mochila[i].Nombre}");
@@ -232,18 +232,18 @@ public class Logica
         if (movimiento != null)
         {
             
-            if (jugador.pokemonEnCancha().puedeAtacar() && !movimiento.EsEspecial)
+            if (jugador.pokemonEnCancha().puedeAtacar(interaccion) && !movimiento.EsEspecial)
             {
                 jugador.atacar(jEnemigo, movimiento, interaccion);
-                jEnemigo.pokemonEnCancha().aplicarDañoRecurrente();
+                jEnemigo.pokemonEnCancha().aplicarDañoRecurrente(interaccion);
                 jEnemigo.verSalud(interaccion);
             }
 
             // Aplica ataques especiales si corresponde
             if (movimiento.EsEspecial && jEnemigo.pokemonEnCancha().Estado == "Normal")
             {
-                movimiento.AplicarAtaquesEspeciales(jEnemigo.pokemonEnCancha());
-                jEnemigo.pokemonEnCancha().aplicarDañoRecurrente();
+                movimiento.AplicarAtaquesEspeciales(jEnemigo.pokemonEnCancha(), interaccion);
+                jEnemigo.pokemonEnCancha().aplicarDañoRecurrente(interaccion);
                 jEnemigo.verSalud(interaccion);
             }
 
