@@ -7,9 +7,10 @@ public static class MensajesConsola
         Console.WriteLine($"La vida del {j.pokemonEnCancha().Nombre} es: {j.pokemonEnCancha().VidaActual}/{j.pokemonEnCancha().VidaMax}");
     }
 
-    public static void ImprimirMovimientos(Movimiento movimiento)
+    public static string ImprimirMovimientos(string pepito)
     {
-        Console.WriteLine($"-{movimiento.Nombre}");
+        Console.WriteLine(pepito);
+        return Console.ReadLine();
     }
     
     

@@ -132,7 +132,7 @@ public class Logica
             // Maneja errores inesperados
             catch (Exception)
             {
-                MensajesConsola.Error();
+                MensajesConsola.ImprimirMovimientos("Error");
                 return false;
             }
         }
