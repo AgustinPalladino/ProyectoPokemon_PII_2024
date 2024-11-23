@@ -1,4 +1,4 @@
-using System;
+using Library.Interaccion;
 
 namespace Library
 {
@@ -11,15 +11,15 @@ namespace Library
         public override string Nombre => "CuraTotal";
 
         // Implementación del método abstracto Usar
-        public override void Usar(Jugador j)
+        public override void Usar(Jugador jugador, IInteraccionConUsuario interaccion)
         {
-            // Obtener el Pokémon en cancha
-            var pokemon = j.pokemonEnCancha();
+            // Obtener el pokemon en cancha
+            Pokemon pokemon = jugador.pokemonEnCancha();
 
-            // Verificar si el Pokémon ya está en estado "Normal"
+            // Verificar si el pokemon ya está en estado "Normal"
             if (pokemon.Estado == "Normal")
             {
-                Console.WriteLine("No puedes usar el ítem ya que el Pokémon está en estado normal.");
+                interaccion.ImprimirMensaje("No puedes usar el ítem ya que el Pokémon está en estado normal.");
                 return;
             }
 
@@ -30,12 +30,12 @@ namespace Library
                 pokemon.Estado = "Normal";
 
                 // Mensaje de confirmación
-                Console.WriteLine($"{pokemon.Nombre} se ha curado de todos sus estados.");
+                interaccion.ImprimirMensaje($"{pokemon.Nombre} se ha curado de todos sus estados.");
             }
             else
             {
                 // Mensaje si el Pokémon está debilitado
-                Console.WriteLine($"{pokemon.Nombre} no tiene puntos de salud y no puede ser curado.");
+                interaccion.ImprimirMensaje($"{pokemon.Nombre} no tiene puntos de salud y no puede ser curado.");
             }
         }
     }

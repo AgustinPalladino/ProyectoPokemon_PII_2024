@@ -1,4 +1,5 @@
 using Library;
+using Library.Interaccion;
 
 namespace TestProject;
 
@@ -11,7 +12,7 @@ public class DiccionariosyOpStaticTEST
         [Test]
         public void BonificacionTipos_ExistenBonificaciones_DeberiaRetornarMultiplicador()
         {
-            double resultado = DiccionariosYOperacionesStatic.bonificacionTipos("Agua", "Fuego");
+            double resultado = DiccionariosYOperacionesStatic.bonificacionTipos("Agua", "Fuego", new InteraccionPorConsola());
             Assert.That(2.0, Is.EqualTo(resultado));
 
         }
@@ -20,11 +21,11 @@ public class DiccionariosyOpStaticTEST
         public void BonificacionTipos_NoExistenBonificaciones_DeberiaRetornar1()
         {
             
-            double resultado = DiccionariosYOperacionesStatic.bonificacionTipos("Hielo", "Fuego");
+            double resultado = DiccionariosYOperacionesStatic.bonificacionTipos("Hielo", "Fuego", new InteraccionPorConsola());
             Assert.AreEqual(1, resultado);
 
             
-            resultado = DiccionariosYOperacionesStatic.bonificacionTipos("Lucha", "Eléctrico");
+            resultado = DiccionariosYOperacionesStatic.bonificacionTipos("Lucha", "Eléctrico", new InteraccionPorConsola());
             Assert.AreEqual(1, resultado);
         }
         
@@ -36,7 +37,7 @@ public class DiccionariosyOpStaticTEST
 
             for (int i = 0; i < 100; i++)
             {
-                double resultado = DiccionariosYOperacionesStatic.CalcularCritico(100);
+                double resultado = DiccionariosYOperacionesStatic.CalcularCritico(100, new InteraccionPorConsola());
                 if (resultado == 1.0)
                 {
                     esNormal = true;
@@ -54,7 +55,7 @@ public class DiccionariosyOpStaticTEST
             var ataque = new Movimiento("Lanzallamas", 20, 1, "fuego", false);
             for (int i = 0; i < 100; i++)
             {
-                double resultado = DiccionariosYOperacionesStatic.Precision(ataque.Precision, ataque.Ataque);
+                double resultado = DiccionariosYOperacionesStatic.Precision(ataque.Precision, ataque.Ataque, new InteraccionPorConsola());
                 if (resultado == 20.0)
                 {
                     esNormal = true;

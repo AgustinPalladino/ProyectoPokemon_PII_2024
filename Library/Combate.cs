@@ -1,3 +1,5 @@
+using Library.Interaccion;
+
 namespace Library;
 
 /// <summary>
@@ -6,19 +8,38 @@ namespace Library;
 /// </summary>
 public class Combate
 {
+    private readonly IInteraccionConUsuario interaccion;
+
+    public Combate(IInteraccionConUsuario interaccion)
+    {
+        this.interaccion = interaccion;
+    }
+    
+    
+    public void MostrarCatalogo()
+    {
+        interaccion.ImprimirMensaje("\n Catálogo de Pokémon disponibles:");
+
+        foreach (var pokemon in DiccionariosYOperacionesStatic.DiccionarioPokemon)
+        {
+            interaccion.ImprimirMensaje($"-{pokemon.Value.Nombre}");
+        }
+    }
+    
+    
     public void BuclePrincipal(Jugador j1, Jugador j2)
     {
-        Logica logica = new Logica();
-        MensajesConsola.MostrarCatalogo(); // Le pasa por parametro la lista de todos los pokemon agregados
+        Logica logica = new Logica(interaccion);
+        MostrarCatalogo(); 
         
-        for (int i = 0; i < 6; i++) // Los jugadores escogen sus 6 pokemon
+        for (int i = 0; i < 2; i++) // Los jugadores escogen sus 6 pokemon
         {
             logica.EscogerEquipo(j1);
             logica.EscogerEquipo(j2);
         }
         
-        MensajesConsola.MostrarEquipo(j1);
-        MensajesConsola.MostrarEquipo(j2);
+        j1.MostrarEquipo(interaccion);
+        j2.MostrarEquipo(interaccion);
         
         bool banderaGlobal = true;
         int numeroRandom = DiccionariosYOperacionesStatic.numeroAleatorio(1, 2);

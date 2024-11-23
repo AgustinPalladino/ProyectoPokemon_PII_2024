@@ -1,3 +1,5 @@
+using Library.Interaccion;
+
 namespace Library;
 
 public class Jugador
@@ -25,24 +27,44 @@ public class Jugador
         Mochila.Add(new CuraTotal()); 
     }
     
+    public void MostrarEquipo(IInteraccionConUsuario interaccion)
+    {
+        Console.WriteLine($"El equipo del {this.Nombre} equipo es: ");
+        if (this.equipoPokemon[0] != null)
+        {
+            for (int i = 0; i < this.equipoPokemon.Count; i++)
+            {
+                interaccion.ImprimirMensaje($"-{this.equipoPokemon[i].Nombre}");
+            }
+        }
+        else
+        {
+            for (int i = 1; i < this.equipoPokemon.Count; i++)
+            {
+                interaccion.ImprimirMensaje($"-{this.equipoPokemon[i].Nombre}");
+            }
+        }
+    }
+    
+    
     /// <summary>
     /// Método para ver ataques que tiene el pokemon
     /// </summary>
     
-    public void verMovimientos()
+    public void verMovimientos(IInteraccionConUsuario interaccion)
     {
         foreach (Movimiento movimiento in this.pokemonEnCancha().listaMovimientos)
         {
-            MensajesConsola.ImprimirMovimientos(movimiento);
+            interaccion.ImprimirMensaje($"-{movimiento.Nombre}");
         }
     }
 
     /// <summary>
     /// Metodo para ver la salud del pokemon
     /// </summary>
-    public void verSalud()
+    public void verSalud(IInteraccionConUsuario interaccion)
     {
-        MensajesConsola.ImprimirSalud(this);
+        interaccion.ImprimirMensaje($"La vida del {this.pokemonEnCancha().Nombre} es: {this.pokemonEnCancha().VidaActual}/{this.pokemonEnCancha().VidaMax}");
     }
     
     /// <summary>
@@ -79,20 +101,20 @@ public class Jugador
     /// <param name="jEnemigo"></param>
     /// <param name="movimiento"></param>
     
-    public void atacar(Jugador jEnemigo, Movimiento movimiento)
+    public void atacar(Jugador jugadorEnemigo, Movimiento movimiento, IInteraccionConUsuario interaccion)
     {
-        double ataqueFinal = DiccionariosYOperacionesStatic.Precision(movimiento.Precision, movimiento.Ataque);
-        double danio = (this.pokemonEnCancha().Ataque)*ataqueFinal * movimiento.Ataque / (jEnemigo.pokemonEnCancha().Defensa);
-        jEnemigo.pokemonEnCancha().VidaActual -= (int)(danio * DiccionariosYOperacionesStatic.bonificacionTipos(movimiento.Tipo, jEnemigo.pokemonEnCancha().Tipo) * DiccionariosYOperacionesStatic.CalcularCritico(movimiento.Precision));
+        double ataqueFinal = DiccionariosYOperacionesStatic.Precision(movimiento.Precision, movimiento.Ataque, interaccion);
+        double danio = (this.pokemonEnCancha().Ataque)*ataqueFinal * movimiento.Ataque / (jugadorEnemigo.pokemonEnCancha().Defensa);
+        jugadorEnemigo.pokemonEnCancha().VidaActual -= (int)(danio * DiccionariosYOperacionesStatic.bonificacionTipos(movimiento.Tipo, jugadorEnemigo.pokemonEnCancha().Tipo, interaccion) * DiccionariosYOperacionesStatic.CalcularCritico(movimiento.Precision, interaccion));
     }
 
     /// <summary>
     /// Método usar Mochila
     /// </summary>
     /// <returns></returns>
-    public void UsarMochila(Item item)
+    public void UsarMochila(Item item, IInteraccionConUsuario interaccion)
     {
-        item.Usar(this);
+        item.Usar(this, interaccion);
         Mochila.Remove(item);
     }
 }

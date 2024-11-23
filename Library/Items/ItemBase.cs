@@ -1,3 +1,5 @@
+using Library.Interaccion;
+
 namespace Library
 {
     /// <summary>
@@ -9,10 +11,7 @@ namespace Library
         // Propiedad abstracta 
         public abstract string Nombre { get; }
 
-        // Constructor protegido
-        protected Item() { }
-
         // Método abstracto que obliga a las subclases a definir cómo usar el ítem
-        public abstract void Usar(Jugador j);
+        public abstract void Usar(Jugador j, IInteraccionConUsuario interaccion);
     }
 }
