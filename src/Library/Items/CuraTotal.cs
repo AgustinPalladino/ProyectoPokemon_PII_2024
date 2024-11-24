@@ -13,29 +13,44 @@ public class CuraTotal : Item
     // Implementación del método abstracto Usar
     public override void Usar(Jugador jugador, IInteraccionConUsuario interaccion)
     {
-        // Obtener el pokemon en cancha
-        Pokemon pokemon = jugador.pokemonEnCancha();
-
-        // Verificar si el pokemon ya está en estado "Normal"
-        if (pokemon.Estado == "Normal")
+        bool bandera = true;
+        while (bandera)
         {
-            interaccion.ImprimirMensaje("No puedes usar el ítem ya que el Pokémon está en estado normal.");
-            return;
-        }
+            for (int i = 0; i < jugador.equipoPokemon.Count; i++)
+            {
+                interaccion.ImprimirMensaje($"-{jugador.equipoPokemon[i].Nombre}");
+            }
+            interaccion.ImprimirMensaje("Ingrese el nombre del pokemon que desea curar el estado o 0 para salir");
+            string pokeIngresado = interaccion.LeerEntrada();
 
-        // Verificar si el Pokémon tiene vida actual
-        if (pokemon.VidaActual > 0)
-        {
-            // Restablecer el estado del Pokémon
-            pokemon.Estado = "Normal";
-
-            // Mensaje de confirmación
-            interaccion.ImprimirMensaje($"{pokemon.Nombre} se ha curado de todos sus estados.");
+            for (int i = 0; i < jugador.equipoPokemonDerrotados.Count; i++)
+            {
+                if (pokeIngresado == jugador.equipoPokemonDerrotados[i].Nombre)
+                {
+                    if (jugador.equipoPokemon[i].Estado == "Normal")
+                    {
+                        interaccion.ImprimirMensaje("No puedes usar el ítem ya que el Pokémon está en estado normal.");
+                    }
+                    if (jugador.equipoPokemon[i].Estado != "Normal")
+                    {
+                        SacarEstadoPokemon(jugador, jugador.equipoPokemon[i], interaccion);
+                    }
+                }
+                if (pokeIngresado == "0")
+                {
+                    bandera = false;
+                }
+            }
+            if (bandera)
+            {
+                interaccion.ImprimirMensaje("Pokemon incorrecto, seleccione de nuevo");
+            }
         }
-        else
-        {
-            // Mensaje si el Pokémon está debilitado
-            interaccion.ImprimirMensaje($"{pokemon.Nombre} no tiene puntos de salud y no puede ser curado.");
-        }
+    }
+    
+    private void SacarEstadoPokemon(Jugador jugador, Pokemon pokemon, IInteraccionConUsuario interaccion)
+    {
+        pokemon.Estado = "Normal";
+        interaccion.ImprimirMensaje($"{pokemon.Nombre} se ha curado de todos sus estados.");
     }
 }

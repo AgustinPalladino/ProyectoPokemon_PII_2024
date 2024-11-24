@@ -34,11 +34,8 @@ public class Revivir : Item
                 {
                     if (pokeIngresado == jugador.equipoPokemonDerrotados[i].Nombre)
                     {
-                        if (jugador.equipoPokemonDerrotados[i].VidaActual <= 0)
-                        {
-                            RevivirPokemon(jugador, jugador.equipoPokemonDerrotados[i], interaccion);
-                            bandera = false;
-                        }
+                        RevivirPokemon(jugador, jugador.equipoPokemonDerrotados[i], interaccion);
+                        bandera = false;
                     }
 
                     if (pokeIngresado == "0")

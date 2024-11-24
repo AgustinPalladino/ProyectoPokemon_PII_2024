@@ -8,22 +8,43 @@ public class SuperPocion : Item
 
     public override void Usar(Jugador jugador, IInteraccionConUsuario interaccion)
     {
-        Pokemon pokemon = jugador.pokemonEnCancha();
-            
-        if (pokemon.VidaActual > 0)
+        bool bandera = true;
+        while (bandera)
         {
-            pokemon.VidaActual += 70;
-                
-            if (pokemon.VidaActual > pokemon.VidaMax)
+            for (int i = 0; i < jugador.equipoPokemon.Count; i++)
             {
-                pokemon.VidaActual = pokemon.VidaMax;
+                interaccion.ImprimirMensaje($"-{jugador.equipoPokemon[i].Nombre}");
             }
-                
-            interaccion.ImprimirMensaje($"{pokemon.Nombre} se ha restaurado 70 puntos de vida.");
+            interaccion.ImprimirMensaje("Ingrese el nombre del pokemon que desea curar 70 puntos de vida o 0 para salir");
+            string pokeIngresado = interaccion.LeerEntrada();
+
+            for (int i = 0; i < jugador.equipoPokemon.Count; i++)
+            {
+                if (pokeIngresado == jugador.equipoPokemon[i].Nombre)
+                {
+                    if (jugador.equipoPokemon[i].VidaActual == jugador.equipoPokemon[i].VidaMax)
+                    {
+                        interaccion.ImprimirMensaje(
+                            $"{jugador.equipoPokemon[i].Nombre} No puedes restaurar mas vida ya que ya esta al maximo.");
+                    }
+                    else
+                    {
+                        CurarPokemon(jugador, jugador.equipoPokemon[i], interaccion);
+                    }
+                }
+            }
         }
-        if(pokemon.VidaActual==100)
+    }
+
+    public void CurarPokemon(Jugador jugador, Pokemon pokemon, IInteraccionConUsuario interaccion)
+    {
+        pokemon.VidaActual += 70;
+                
+        if (pokemon.VidaActual > pokemon.VidaMax)
         {
-            interaccion.ImprimirMensaje($"{pokemon.Nombre} No puedes restaurar mas vida ya que ya esta al maximo.");
+            pokemon.VidaActual = pokemon.VidaMax;
+            interaccion.ImprimirMensaje($"{pokemon.Nombre} se ha restaurado 70 puntos de vida.");
+            interaccion.ImprimirMensaje($"{pokemon.Nombre} tiene {pokemon.VidaActual}/{pokemon.VidaMax} puntos de vida");
         }
     }
 }
