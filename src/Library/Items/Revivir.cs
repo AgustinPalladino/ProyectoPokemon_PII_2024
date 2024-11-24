@@ -29,7 +29,7 @@ public class Revivir : Item
                 
                 interaccion.ImprimirMensaje("Ingrese el nombre del pokemon que desea revivir o 0 para salir");
                 string pokeIngresado = interaccion.LeerEntrada();
-            
+
                 for (int i = 0; i < jugador.equipoPokemonDerrotados.Count; i++)
                 {
                     if (pokeIngresado == jugador.equipoPokemonDerrotados[i].Nombre)
@@ -37,13 +37,14 @@ public class Revivir : Item
                         RevivirPokemon(jugador, jugador.equipoPokemonDerrotados[i], interaccion);
                         bandera = false;
                     }
-
-                    if (pokeIngresado == "0")
-                    {
-                        bandera = false;
-                    }
                 }
 
+                if (pokeIngresado == "0")
+                {
+                    interaccion.ImprimirMensaje("Usted volvio hacia atras");
+                    bandera = false;
+                }
+                
                 if (bandera)
                 {
                     interaccion.ImprimirMensaje("Pokemon incorrecto, seleccione de nuevo");

@@ -15,7 +15,9 @@ public class SuperPocion : Item
             {
                 interaccion.ImprimirMensaje($"-{jugador.equipoPokemon[i].Nombre}");
             }
-            interaccion.ImprimirMensaje("Ingrese el nombre del pokemon que desea curar 70 puntos de vida o 0 para salir");
+
+            interaccion.ImprimirMensaje(
+                "Ingrese el nombre del pokemon que desea curar 70 puntos de vida o 0 para salir");
             string pokeIngresado = interaccion.LeerEntrada();
 
             for (int i = 0; i < jugador.equipoPokemon.Count; i++)
@@ -30,8 +32,20 @@ public class SuperPocion : Item
                     else
                     {
                         CurarPokemon(jugador, jugador.equipoPokemon[i], interaccion);
+                        bandera = false;
                     }
                 }
+            }
+
+            if (pokeIngresado == "0")
+            {
+                interaccion.ImprimirMensaje("Usted volvio hacia atras");
+                bandera = false;
+            }
+
+            if (bandera)
+            {
+                interaccion.ImprimirMensaje("Pokemon incorrecto, seleccione de nuevo");
             }
         }
     }

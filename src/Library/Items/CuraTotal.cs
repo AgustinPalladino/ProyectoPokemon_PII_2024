@@ -20,6 +20,7 @@ public class CuraTotal : Item
             {
                 interaccion.ImprimirMensaje($"-{jugador.equipoPokemon[i].Nombre}");
             }
+
             interaccion.ImprimirMensaje("Ingrese el nombre del pokemon que desea curar el estado o 0 para salir");
             string pokeIngresado = interaccion.LeerEntrada();
 
@@ -31,16 +32,21 @@ public class CuraTotal : Item
                     {
                         interaccion.ImprimirMensaje("No puedes usar el ítem ya que el Pokémon está en estado normal.");
                     }
+
                     if (jugador.equipoPokemon[i].Estado != "Normal")
                     {
                         SacarEstadoPokemon(jugador, jugador.equipoPokemon[i], interaccion);
+                        bandera = false;
                     }
                 }
-                if (pokeIngresado == "0")
-                {
-                    bandera = false;
-                }
             }
+
+            if (pokeIngresado == "0")
+            {
+                interaccion.ImprimirMensaje("Usted volvio hacia atras");
+                bandera = false;
+            }
+
             if (bandera)
             {
                 interaccion.ImprimirMensaje("Pokemon incorrecto, seleccione de nuevo");
