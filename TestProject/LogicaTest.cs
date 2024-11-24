@@ -29,7 +29,7 @@ public class LogicaTest
 
         logica.CalculoAtaque(jugador1, jugador2, movimiento);
         
-        Assert.Less(pokemon2.VidaActual, pokemon2.VidaMax);
+        Assert.That(pokemon2.VidaActual, Is.LessThan(pokemon2.VidaMax));
 
         var movimientoEspecial = new Movimiento("dormir", 0, 100, "Psíquico", true);
         

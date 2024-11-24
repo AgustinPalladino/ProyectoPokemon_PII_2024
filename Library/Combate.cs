@@ -9,6 +9,9 @@ namespace Library;
 public class Combate
 {
     private readonly IInteraccionConUsuario interaccion;
+    
+    public Jugador JugadorActual { get; private set; }
+    public int numActual { get; private set; }
 
     public Combate(IInteraccionConUsuario interaccion)
     {
@@ -48,13 +51,17 @@ public class Combate
             //Si el numero random es 1 empieza el jugador uno
             if (numeroRandom == 1)
             {
+                numActual = numeroRandom;
                 // Turno del jugador 1
+                JugadorActual = j1;
                 banderaGlobal = logica.MenuDeJugador(j1, j2); 
                 // Si la bandera global toma el valor de falso, significa que termino el combate
 
                 if (banderaGlobal)
                 {
+                    numActual = numeroRandom;
                     // Turno del jugador 2
+                    JugadorActual = j2;
                     banderaGlobal = logica.MenuDeJugador(j2, j1);
                 }
             }
