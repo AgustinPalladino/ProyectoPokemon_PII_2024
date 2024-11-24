@@ -1,9 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
-using System.Threading.Tasks;
 
-
-
-namespace Library.Services;
+namespace Library.BotServices;
 
 /// <summary>
 /// La interfaz del Bot de Discord para usar con inyección de dependencias.
