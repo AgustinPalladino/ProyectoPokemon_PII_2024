@@ -1,4 +1,6 @@
-﻿using Ucu.Poo.DiscordBot.Domain;
+﻿using Ucu.Poo.DiscordBot;
+using Ucu.Poo.DiscordBot.Domain;
+using Ucu.Poo.DiscordBot.Interaccion;
 using Ucu.Poo.DiscordBot.Services;
 
 namespace Program;
@@ -6,13 +8,20 @@ namespace Program;
 /// <summary>
 /// Un programa que implementa un bot de Discord.
 /// </summary>
-internal static class Program
+internal static class Juego
 {
     /// <summary>
     /// Punto de entrada al programa.
     /// </summary>
     private static void Main()
     {
+        //Anterior Program:
+        //Jugador j1 = new Jugador("Jugador 1");
+        //Jugador j2 = new Jugador("Jugador 2");
+        //Combate combate = new Combate(new InteraccionPorConsola());
+        //combate.BuclePrincipal(j1, j2);
+        
+        
         // DemoFacade();
         DemoBot();
     }
