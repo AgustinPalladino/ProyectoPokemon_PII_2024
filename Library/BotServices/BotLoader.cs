@@ -2,7 +2,8 @@ using System.Reflection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-namespace Library.Services;
+
+namespace Library.BotServices;
 
 /// <summary>
 /// Esta clase ejecuta el bot de Discord hasta que en la terminal donde se
