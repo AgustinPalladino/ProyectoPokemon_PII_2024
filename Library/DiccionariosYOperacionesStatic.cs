@@ -1,3 +1,5 @@
+using Library.Interaccion;
+
 namespace Library
 {
     /// <summary>
@@ -35,7 +37,7 @@ namespace Library
         /// <returns></returns>
 
 
-        public static double Precision(double precision, int ataqueBase)
+        public static double Precision(double precision, int ataqueBase, IInteraccionConUsuario interaccion)
         {
             double probabilidad = randomDouble.NextDouble(); /// Devuelve valor entre 0 y 1
             if (probabilidad <= precision)
@@ -44,7 +46,7 @@ namespace Library
             }
             else
             {
-                Console.WriteLine("El ataque falló");
+                interaccion.ImprimirMensaje("El ataque falló");
                 return 0;
             }
         }
@@ -59,13 +61,13 @@ namespace Library
         /// <param name="precisionMovimiento"></param>
         /// <returns></returns>
 
-        public static double CalcularCritico(int precisionMovimiento)
+        public static double CalcularCritico(int precisionMovimiento, IInteraccionConUsuario interaccion)
         {
             int probabilidad = numeroAleatorio(0, precisionMovimiento);
             double probabilidadCritico = precisionMovimiento / 10;
             if (probabilidad <= probabilidadCritico) // Calculo de que la cantidad sea golpe critico
             {
-                Console.WriteLine("¡Golpe crítico!");
+                interaccion.ImprimirMensaje("¡Golpe crítico!");
                 return 1.2; // Multiplicador de 20% mas de daño
             }
 
@@ -168,11 +170,11 @@ namespace Library
         /// <param name="tipoPokemonDefensor"></param>
         /// <returns></returns>
         /// <summary>
-        public static double bonificacionTipos(string tipoMovimiento, string tipoPokemonDefensor)
+        public static double bonificacionTipos(string tipoMovimiento, string tipoPokemonDefensor, IInteraccionConUsuario interaccion)
         {
             if (bonificacionesTipos.TryGetValue((tipoMovimiento, tipoPokemonDefensor), out double bonificacion))
             {
-                Console.WriteLine(bonificacion == 2 ? "Es muy eficaz" :
+                interaccion.ImprimirMensaje(bonificacion == 2 ? "Es muy eficaz" :
                     bonificacion == 0.5 ? "No es muy eficaz" : "No le afecta ese ataque");
                 return bonificacion;
             }

@@ -1,3 +1,5 @@
+using Library.Interaccion;
+
 namespace Library;
 
 /// <summary>
@@ -39,7 +41,7 @@ public class Movimiento
     /// Método abstracto para aplicar el ataque especial
     /// </summary>
     /// <param name="pokemonEnemigo"></param>
-    public void AplicarAtaquesEspeciales(Pokemon pokemonEnemigo)
+    public void AplicarAtaquesEspeciales(Pokemon pokemonEnemigo, IInteraccionConUsuario interaccion)
     {
         if (!EsEspecial) return; /// Con el ! implica que cuando es EsEspecial es falso, se ejecuta el return, saliendo del método. 
 
@@ -50,7 +52,7 @@ public class Movimiento
                 {
                     pokemonEnemigo.Estado = "Dormido";
                     pokemonEnemigo.TurnosDormido = new Random().Next(1, 5);
-                    Console.WriteLine($"{pokemonEnemigo.Nombre} ha sido dormido por {pokemonEnemigo.TurnosDormido} turnos.");
+                    interaccion.ImprimirMensaje($"{pokemonEnemigo.Nombre} ha sido dormido por {pokemonEnemigo.TurnosDormido} turnos.");
                 }
                 break;
 
@@ -58,7 +60,7 @@ public class Movimiento
                 if (pokemonEnemigo.Estado == "Normal")
                 {
                     pokemonEnemigo.Estado = "Quemado";
-                    Console.WriteLine($"{pokemonEnemigo.Nombre} ha sido quemado y perderá un 10% de su HP por turno.");
+                    interaccion.ImprimirMensaje($"{pokemonEnemigo.Nombre} ha sido quemado y perderá un 10% de su HP por turno.");
                 }
                 break;
 
@@ -66,7 +68,7 @@ public class Movimiento
                 if (pokemonEnemigo.Estado == "Normal")
                 {
                     pokemonEnemigo.Estado = "Paralizado";
-                    Console.WriteLine($"{pokemonEnemigo.Nombre} ha sido paralizado.");
+                    interaccion.ImprimirMensaje($"{pokemonEnemigo.Nombre} ha sido paralizado.");
                 }
                 break;
 
@@ -74,12 +76,12 @@ public class Movimiento
                 if (pokemonEnemigo.Estado == "Normal")
                 {
                     pokemonEnemigo.Estado = "Envenenado";
-                    Console.WriteLine($"{pokemonEnemigo.Nombre} ha sido envenenado y perderá un 5% de su HP por turno.");
+                    interaccion.ImprimirMensaje($"{pokemonEnemigo.Nombre} ha sido envenenado y perderá un 5% de su HP por turno.");
                 }
                 break;
 
             default:
-                Console.WriteLine($"{Nombre} no tiene un efecto especial definido.");
+                interaccion.ImprimirMensaje($"{Nombre} no tiene un efecto especial definido.");
                 break;
         }
     }

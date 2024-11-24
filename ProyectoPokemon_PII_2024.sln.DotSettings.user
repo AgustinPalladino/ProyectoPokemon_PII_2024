@@ -3,11 +3,19 @@
 	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
   &lt;Assembly Path="C:\Users\pepim\.nuget\packages\microsoft.extensions.logging\9.0.0\lib\net8.0\Microsoft.Extensions.Logging.dll" /&gt;&#xD;
 &lt;/AssemblyExplorer&gt;</s:String>
-	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\pepim\AppData\Local\JetBrains\Rider2024.1\resharper-host\temp\Rider\vAny\CoverageData\_ProyectoPokemon_PII_2024.-1496646999\Snapshot\snapshot.utdcvr</s:String>
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\apall\AppData\Local\JetBrains\Rider2024.1\resharper-host\temp\Rider\vAny\CoverageData\_ProyectoPokemon_PII_2024.-116218710\Snapshot\snapshot.utdcvr</s:String>
+	
+	
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=07216a47_002D87f2_002D4957_002D8156_002D1cd0800021e0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="LogicaTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::LibraryTests.LogicaTests&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;ProjectFile&gt;1AED2349-D78E-475D-AFB1-6B94A0FC389D/f:PokemonTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;1AED2349-D78E-475D-AFB1-6B94A0FC389D/f:MovimientoTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;1AED2349-D78E-475D-AFB1-6B94A0FC389D/f:LogicaTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;1AED2349-D78E-475D-AFB1-6B94A0FC389D/f:JugadorTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;1AED2349-D78E-475D-AFB1-6B94A0FC389D/f:Item.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;1AED2349-D78E-475D-AFB1-6B94A0FC389D/f:DiccionariosyOpStaticTEST.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;1AED2349-D78E-475D-AFB1-6B94A0FC389D/f:CombateTest.cs&lt;/ProjectFile&gt;&#xD;
+  &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=097b3cfb_002D542d_002D4f4d_002D97e8_002Da33bdd50ad1f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ItemTests #6" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
@@ -46,7 +54,7 @@
     &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::Tests.ItemTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=399aae85_002D8446_002D4a9c_002D9d7c_002D29bf2991f0ca/@EntryIndexedValue">JetBrains.ReSharper.UnitTestFramework.Session.Serialization.SessionState</s:String>
+	
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4c060637_002D740c_002D4e5e_002D8386_002D28fe534f26de/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Usar_DeberiaUsarElItemCorrectamente #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::LibraryTests.ItemTests.Usar_DeberiaUsarElItemCorrectamente&lt;/TestId&gt;&#xD;
@@ -150,7 +158,5 @@
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fe80c891_002D9279_002D4041_002D81d1_002D989c9b369406/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Item #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::Tests.Item&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+  &lt;Project Location="C:\repositorio\ProyectoPokemon_PII_2024\TestProject" Presentation="&amp;lt;test&amp;gt;\&amp;lt;TestProject&amp;gt;" /&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
