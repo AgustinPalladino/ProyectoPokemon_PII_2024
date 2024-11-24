@@ -15,6 +15,12 @@
     &lt;ProjectFile&gt;1AED2349-D78E-475D-AFB1-6B94A0FC389D/f:Item.cs&lt;/ProjectFile&gt;&#xD;
     &lt;ProjectFile&gt;1AED2349-D78E-475D-AFB1-6B94A0FC389D/f:DiccionariosyOpStaticTEST.cs&lt;/ProjectFile&gt;&#xD;
     &lt;ProjectFile&gt;1AED2349-D78E-475D-AFB1-6B94A0FC389D/f:CombateTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::1AED2349-D78E-475D-AFB1-6B94A0FC389D::net8.0::TestProject.HistoriaUsuario2Test&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::1AED2349-D78E-475D-AFB1-6B94A0FC389D::net8.0::TestProject.HistoriaUsuario3Test&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::1AED2349-D78E-475D-AFB1-6B94A0FC389D::net8.0::TestProject.HistoriaUsuario4Test&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::1AED2349-D78E-475D-AFB1-6B94A0FC389D::net8.0::TestProject.HistoriaUsuario5Test&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
   &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=097b3cfb_002D542d_002D4f4d_002D97e8_002Da33bdd50ad1f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ItemTests #6" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
@@ -31,6 +37,21 @@
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::LibraryTests.ItemTests.Usar_DeberiaUsarElItemCorrectamente&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1f5e09e1_002D7545_002D43fd_002Da5da_002D0c7d28480865/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="HistoriaUsuario5Test #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;Not&gt;&#xD;
+      &lt;TestAncestor&gt;&#xD;
+        &lt;TestId&gt;NUnit3x::1AED2349-D78E-475D-AFB1-6B94A0FC389D::net8.0::TestProject.HistoriaUsuario5Test&lt;/TestId&gt;&#xD;
+        &lt;TestId&gt;NUnit3x::1AED2349-D78E-475D-AFB1-6B94A0FC389D::net8.0::TestProject.HistoriaUsuario6Test&lt;/TestId&gt;&#xD;
+      &lt;/TestAncestor&gt;&#xD;
+    &lt;/Not&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::1AED2349-D78E-475D-AFB1-6B94A0FC389D::net8.0::TestProject.HistoriaUsuario6Test.FinalizarBatalla_DeclaraGanadorCuandoTodosLosPokemonsDelOponenteSonDerrotados&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::1AED2349-D78E-475D-AFB1-6B94A0FC389D::net8.0::TestProject.HistoriaUsuario6Test&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::1AED2349-D78E-475D-AFB1-6B94A0FC389D::net8.0::TestProject.HistoriaUsuario5Test&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+  &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=36b6d997_002D7134_002D441a_002D8b18_002Dc6af8565023b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="PruebaPokemon" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
@@ -68,6 +89,11 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=52cfc04c_002D48ca_002D4712_002D85cb_002D05e40a208059/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="LogicaCambiarPokemon_DeberiaCambiarPokemonEnCancha" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::LibraryTests.LogicaTests.LogicaCambiarPokemon_DeberiaCambiarPokemonEnCancha&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6d5b4863_002D5504_002D473f_002Db206_002D18897d94dad2/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="HistoriaUsuario5Test" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::1AED2349-D78E-475D-AFB1-6B94A0FC389D::net8.0::TestProject.HistoriaUsuario5Test&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=71049606_002D19e7_002D4de6_002Dbf9c_002D04835ddfdce4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ItemTests #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
@@ -157,6 +183,8 @@
     &lt;TestId&gt;NUnit3x::4154E63D-BC3C-45DC-80B9-C27514F4561F::net8.0::Tests.Item.ItemCuraTotal&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fe80c891_002D9279_002D4041_002D81d1_002D989c9b369406/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Item #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;Project Location="C:\repositorio\ProyectoPokemon_PII_2024\TestProject" Presentation="&amp;lt;test&amp;gt;\&amp;lt;TestProject&amp;gt;" /&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fe80c891_002D9279_002D4041_002D81d1_002D989c9b369406/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Item #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::1AED2349-D78E-475D-AFB1-6B94A0FC389D::net8.0::TestProject.HistoriaUsuario6Test.FinalizarBatalla_DeclaraGanadorCuandoTodosLosPokemonsDelOponenteSonDerrotados&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

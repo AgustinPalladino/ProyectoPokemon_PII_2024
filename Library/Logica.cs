@@ -49,7 +49,6 @@ public class Logica
                     {
                         if (ChequeoVictoria(j2))
                         {
-                            interaccion.ImprimirMensaje($"Felicidades {j1.Nombre}! Has ganado la batalla.");
                             return false; // Retorna falso porque la pelea termino
                         }
                         return true; // Si ataco pero nadie perdio termino su turno
@@ -267,8 +266,9 @@ public class Logica
     
     public bool ChequeoVictoria(Jugador jugadorEnemigo)
     {
-        if (jugadorEnemigo.equipoPokemon.Count == 1 && jugadorEnemigo.equipoPokemon[0] == null)
+        if (jugadorEnemigo.equipoPokemon.Count == 1 && jugadorEnemigo.equipoPokemon[0].VidaActual <= 0)
         {
+            interaccion.ImprimirMensaje($"Felicidades, a {jugadorEnemigo.Nombre} no le quedan mas pokemones! Has ganado la batalla.");
             return true;
         }
         return false;
