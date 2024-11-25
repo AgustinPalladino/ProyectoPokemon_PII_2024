@@ -1,48 +1,58 @@
-﻿using Discord.WebSocket;
+﻿using Discord;
+using Discord.Commands;
+using Discord.WebSocket;
+using Ucu.Poo.DiscordBot.Domain;
 
-namespace Ucu.Poo.DiscordBot.Interaccion;
+namespace Ucu.Poo.DiscordBot.Commands;
 
-public class InteraccionPorBot : IInteraccionConUsuario
+/// <summary>
+/// Esta clase implementa el comando 'battle' del bot. Este comando une al
+/// jugador que envía el mensaje con el oponente que se recibe como parámetro,
+/// si lo hubiera, en una batalla; si no se recibe un oponente, lo une con
+/// cualquiera que esté esperando para jugar.
+/// </summary>
+// ReSharper disable once UnusedType.Global
+public class InteraccionPorBot : ModuleBase<SocketCommandContext>
 {
-    private readonly DiscordSocketClient client;
-    private readonly SocketTextChannel channel;
-    private IInteraccionConUsuario _interaccionConUsuarioImplementation;
-
-    public InteraccionPorBot(DiscordSocketClient client, SocketTextChannel channel)
+    /// <summary>
+    /// Implementa el comando 'battle'. Este comando une al jugador que envía el
+    /// mensaje a la lista de jugadores esperando para jugar.
+    /// </summary>
+    [Command("battle")]
+    [Summary(
+        """
+        Une al jugador que envía el mensaje con el oponente que se recibe
+        como parámetro, si lo hubiera, en una batalla; si no se recibe un
+        oponente, lo une con cualquiera que esté esperando para jugar.
+        """)]
+    // ReSharper disable once UnusedMember.Global
+    public async Task ExecuteAsync(
+        [Remainder]
+        [Summary("Display name del oponente, opcional")]
+        string? opponentDisplayName = null)
     {
-        this.client = client;
-        this.channel = channel;
-    }
-
-    public void ImprimirMensaje(string mensaje)
-    {
-        this.channel.SendMessageAsync(mensaje).Wait();
-    }
-
-    public string LeerEntrada()
-    {
-        return EsperarRespuestaAsync().Result;
-    }
-
-    private async Task<string> EsperarRespuestaAsync()
-    {
-        var tcs = new TaskCompletionSource<string>();
+        string displayName = CommandHelper.GetDisplayName(Context);
         
-        Task MessageHandler(SocketMessage message)
+        SocketGuildUser? opponentUser = CommandHelper.GetUser(
+            Context, opponentDisplayName);
+
+        string result;
+        if (opponentUser != null)
         {
-            if (message.Channel.Id == this.channel.Id && !message.Author.IsBot)
+            result = Facade.Instance.StartBattle(displayName, opponentUser.DisplayName);
+            await Context.Message.Author.SendMessageAsync(result);
+            await Context.Message.Author.SendMessageAsync("\n Catálogo de Pokémon disponibles:");
+            foreach (var pokemon in DiccionariosYOperacionesStatic.DiccionarioPokemon)
             {
-                tcs.SetResult(message.Content);
+                await Context.Message.Author.SendMessageAsync($"-{pokemon.Value.Nombre}");
             }
-            return Task.CompletedTask;
+            await opponentUser.SendMessageAsync(result);
         }
-        
-        this.client.MessageReceived += MessageHandler;
-        
-        var result = await tcs.Task;
-        
-        this.client.MessageReceived -= MessageHandler;
+        else
+        {
+            result = $"No hay un usuario {opponentDisplayName}";
+        }
 
-        return result;
+        await ReplyAsync(result);
     }
 }

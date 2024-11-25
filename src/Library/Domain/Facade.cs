@@ -183,5 +183,10 @@ public class Facade
         {
             return opponent != null;
         }
+
+        Trainer? GetJugador(string displayName)
+        {
+            return this.WaitingList.FindTrainerByDisplayName(displayName);
+        }
     }
 }
