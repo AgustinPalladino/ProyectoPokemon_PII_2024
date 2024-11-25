@@ -1,4 +1,5 @@
-﻿using Ucu.Poo.DiscordBot.Interaccion;
+﻿using Ucu.Poo.DiscordBot.Commands;
+using Ucu.Poo.DiscordBot.Interaccion;
 
 namespace Ucu.Poo.DiscordBot;
 
@@ -36,9 +37,10 @@ public class Combate
     {
         Logica logica = new Logica(interaccion);
         interaccion.ImprimirMensaje(MostrarCatalogo());
-        bool bandera = true;
+        string opcion;
         for (int i = 0; i < 2; i++) // Los jugadores escogen sus 6 pokemon
         {
+            bool bandera = true;
             while (bandera)
             {
                 if (logica.EscogerEquipo(j1) != "Error")
@@ -51,12 +53,12 @@ public class Combate
             
             while (bandera)
             {
-                if (logica.EscogerEquipo(j2) != "Error")
+                opcion = logica.EscogerEquipo(j2);
+                if (opcion != "Error")
                 {
                     bandera = false;
                 }
             }
-
         }
         
         interaccion.ImprimirMensaje(j1.MostrarEquipo());
