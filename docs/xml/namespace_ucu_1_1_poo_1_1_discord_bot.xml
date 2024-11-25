@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespace_ucu_1_1_poo_1_1_discord_bot" kind="namespace" language="C#">
+    <compoundname>Ucu::Poo::DiscordBot</compoundname>
+    <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_combate" prot="public">Ucu::Poo::DiscordBot::Combate</innerclass>
+    <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_diccionarios_y_operaciones_static" prot="public">Ucu::Poo::DiscordBot::DiccionariosYOperacionesStatic</innerclass>
+    <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador" prot="public">Ucu::Poo::DiscordBot::Jugador</innerclass>
+    <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica" prot="public">Ucu::Poo::DiscordBot::Logica</innerclass>
+    <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento" prot="public">Ucu::Poo::DiscordBot::Movimiento</innerclass>
+    <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon" prot="public">Ucu::Poo::DiscordBot::Pokemon</innerclass>
+    <innernamespace refid="namespace_ucu_1_1_poo_1_1_discord_bot_1_1_commands">Ucu::Poo::DiscordBot::Commands</innernamespace>
+    <innernamespace refid="namespace_ucu_1_1_poo_1_1_discord_bot_1_1_domain">Ucu::Poo::DiscordBot::Domain</innernamespace>
+    <innernamespace refid="namespace_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion">Ucu::Poo::DiscordBot::Interaccion</innernamespace>
+    <innernamespace refid="namespace_ucu_1_1_poo_1_1_discord_bot_1_1_items">Ucu::Poo::DiscordBot::Items</innernamespace>
+    <innernamespace refid="namespace_ucu_1_1_poo_1_1_discord_bot_1_1_services">Ucu::Poo::DiscordBot::Services</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Combate.cs" line="3" column="1"/>
+  </compounddef>
+</doxygen>

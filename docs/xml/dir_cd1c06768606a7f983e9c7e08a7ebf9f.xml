@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_cd1c06768606a7f983e9c7e08a7ebf9f" kind="dir">
+    <compoundname>C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Interaccion</compoundname>
+    <innerfile refid="_i_interaccion_con_usuario_8cs">IInteraccionConUsuario.cs</innerfile>
+    <innerfile refid="_imprimir_bot_8cs">ImprimirBot.cs</innerfile>
+    <innerfile refid="_interaccion_por_bot_8cs">InteraccionPorBot.cs</innerfile>
+    <innerfile refid="_interaccion_por_consola_8cs">InteraccionPorConsola.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Interaccion/"/>
+  </compounddef>
+</doxygen>

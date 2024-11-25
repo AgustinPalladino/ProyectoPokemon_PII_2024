@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_interaccion_por_consola" kind="class" language="C#" prot="public">
+    <compoundname>Ucu::Poo::DiscordBot::Interaccion::InteraccionPorConsola</compoundname>
+    <basecompoundref refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_i_interaccion_con_usuario" prot="public" virt="non-virtual">Ucu.Poo.DiscordBot.Interaccion.IInteraccionConUsuario</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_interaccion_por_consola_1a9cfa12c59e015770a0ae0428e8106572" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Interaccion.InteraccionPorConsola.ImprimirMensaje</definition>
+        <argsstring>(string mensaje)</argsstring>
+        <name>ImprimirMensaje</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Interaccion.InteraccionPorConsola.ImprimirMensaje</qualifiedname>
+        <reimplements refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_i_interaccion_con_usuario_1a0565ef32c98630a579b9d53b1c441646">ImprimirMensaje</reimplements>
+        <param>
+          <type>string</type>
+          <declname>mensaje</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Interaccion/InteraccionPorConsola.cs" line="5" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Interaccion/InteraccionPorConsola.cs" bodystart="5" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_interaccion_por_consola_1a0312abc776625ef9e105867780eac7d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Ucu.Poo.DiscordBot.Interaccion.InteraccionPorConsola.LeerEntrada</definition>
+        <argsstring>()</argsstring>
+        <name>LeerEntrada</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Interaccion.InteraccionPorConsola.LeerEntrada</qualifiedname>
+        <reimplements refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_i_interaccion_con_usuario_1a664dcd149cf940b99cbc7f57f84bfeac">LeerEntrada</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Interaccion/InteraccionPorConsola.cs" line="10" column="19" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Interaccion/InteraccionPorConsola.cs" bodystart="10" bodyend="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IInteraccionConUsuario</label>
+        <link refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_i_interaccion_con_usuario"/>
+      </node>
+      <node id="1">
+        <label>Ucu.Poo.DiscordBot.Interaccion.InteraccionPorConsola</label>
+        <link refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_interaccion_por_consola"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IInteraccionConUsuario</label>
+        <link refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_i_interaccion_con_usuario"/>
+      </node>
+      <node id="1">
+        <label>Ucu.Poo.DiscordBot.Interaccion.InteraccionPorConsola</label>
+        <link refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_interaccion_por_consola"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Interaccion/InteraccionPorConsola.cs" line="3" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Interaccion/InteraccionPorConsola.cs" bodystart="4" bodyend="14"/>
+    <listofallmembers>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_interaccion_por_consola_1a9cfa12c59e015770a0ae0428e8106572" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Interaccion::InteraccionPorConsola</scope><name>ImprimirMensaje</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_interaccion_por_consola_1a0312abc776625ef9e105867780eac7d7" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Interaccion::InteraccionPorConsola</scope><name>LeerEntrada</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_jugador_test" kind="class" language="C#" prot="public">
+    <compoundname>Ucu::Poo::DiscordBot::Domain::Tests::JugadorTest</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_jugador_test_1accaf31e91f9e3b21d3dbb85befa0b79c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.JugadorTest.Setup</definition>
+        <argsstring>()</argsstring>
+        <name>Setup</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.JugadorTest.Setup</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/JugadorTest.cs" line="8" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/JugadorTest.cs" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_jugador_test_1a9848d6aded9bdd2086dacd21793e58e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.JugadorTest.atacarTest</definition>
+        <argsstring>()</argsstring>
+        <name>atacarTest</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.JugadorTest.atacarTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/JugadorTest.cs" line="13" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/JugadorTest.cs" bodystart="13" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_jugador_test_1ae1e482ba4748ea7b3685fb52c485b983" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.JugadorTest.usarMochilaTest</definition>
+        <argsstring>()</argsstring>
+        <name>usarMochilaTest</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.JugadorTest.usarMochilaTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/JugadorTest.cs" line="31" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/JugadorTest.cs" bodystart="31" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_jugador_test_1a38b1bdab51a1ead6e34bc882462c2012" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.JugadorTest.cambiarPoscionPokeTest</definition>
+        <argsstring>()</argsstring>
+        <name>cambiarPoscionPokeTest</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.JugadorTest.cambiarPoscionPokeTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/JugadorTest.cs" line="51" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/JugadorTest.cs" bodystart="51" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_jugador_test_1a81718f9bc315c8f7fd4fa6909b4ba5a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.JugadorTest.pokeEnCanchaTest</definition>
+        <argsstring>()</argsstring>
+        <name>pokeEnCanchaTest</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.JugadorTest.pokeEnCanchaTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/JugadorTest.cs" line="72" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/JugadorTest.cs" bodystart="72" bodyend="87"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/JugadorTest.cs" line="5" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/JugadorTest.cs" bodystart="6" bodyend="90"/>
+    <listofallmembers>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_jugador_test_1a9848d6aded9bdd2086dacd21793e58e4" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::JugadorTest</scope><name>atacarTest</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_jugador_test_1a38b1bdab51a1ead6e34bc882462c2012" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::JugadorTest</scope><name>cambiarPoscionPokeTest</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_jugador_test_1a81718f9bc315c8f7fd4fa6909b4ba5a3" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::JugadorTest</scope><name>pokeEnCanchaTest</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_jugador_test_1accaf31e91f9e3b21d3dbb85befa0b79c" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::JugadorTest</scope><name>Setup</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_jugador_test_1ae1e482ba4748ea7b3685fb52c485b983" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::JugadorTest</scope><name>usarMochilaTest</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

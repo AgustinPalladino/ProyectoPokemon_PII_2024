@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_c008c50350ae5a8ff46a2d72b681473c" kind="dir">
+    <compoundname>C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands</compoundname>
+    <innerfile refid="_battle_command_8cs">BattleCommand.cs</innerfile>
+    <innerfile refid="_command_helper_8cs">CommandHelper.cs</innerfile>
+    <innerfile refid="_join_command_8cs">JoinCommand.cs</innerfile>
+    <innerfile refid="_leave_command_8cs">LeaveCommand.cs</innerfile>
+    <innerfile refid="_pokemon_name_command_8cs">PokemonNameCommand.cs</innerfile>
+    <innerfile refid="_user_info_command_8cs">UserInfoCommand.cs</innerfile>
+    <innerfile refid="_waiting_command_8cs">WaitingCommand.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests" kind="class" language="C#" prot="public">
+    <compoundname>Ucu::Poo::DiscordBot::Domain::Tests::FacadeTests</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests_1a0d9b34c24f14cd6b1546db3c99efe9d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.FacadeTests.TearDown</definition>
+        <argsstring>()</argsstring>
+        <name>TearDown</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.FacadeTests.TearDown</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/FacadeTests.cs" line="6" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/FacadeTests.cs" bodystart="6" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests_1a190b817ae5b3d1de6bfcc488d947c28c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.FacadeTests.AddTrainerToWaitingList_WhenTrainerWasNotAdded_ReturnsAdded</definition>
+        <argsstring>()</argsstring>
+        <name>AddTrainerToWaitingList_WhenTrainerWasNotAdded_ReturnsAdded</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.FacadeTests.AddTrainerToWaitingList_WhenTrainerWasNotAdded_ReturnsAdded</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/FacadeTests.cs" line="12" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/FacadeTests.cs" bodystart="12" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests_1a49cf93a67297c56a78a4002f09b8b9ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.FacadeTests.AddTrainerToWaitingList_WhenTrainerWasAdded_ReturnsExisting</definition>
+        <argsstring>()</argsstring>
+        <name>AddTrainerToWaitingList_WhenTrainerWasAdded_ReturnsExisting</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.FacadeTests.AddTrainerToWaitingList_WhenTrainerWasAdded_ReturnsExisting</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/FacadeTests.cs" line="20" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/FacadeTests.cs" bodystart="20" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests_1ae9d0d4c1a66087a2247857d74c27a336" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.FacadeTests.RemoveTrainerFromWaitingList_WhenTrainerWasAdded_ReturnsRemoved</definition>
+        <argsstring>()</argsstring>
+        <name>RemoveTrainerFromWaitingList_WhenTrainerWasAdded_ReturnsRemoved</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.FacadeTests.RemoveTrainerFromWaitingList_WhenTrainerWasAdded_ReturnsRemoved</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/FacadeTests.cs" line="30" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/FacadeTests.cs" bodystart="30" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests_1af1dd05e12ef16b43937905d0a38b0a13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.FacadeTests.RemoveTrainerFromWaitingList_WhenTrainerWasNotAdded_ReturnsNotAdded</definition>
+        <argsstring>()</argsstring>
+        <name>RemoveTrainerFromWaitingList_WhenTrainerWasNotAdded_ReturnsNotAdded</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.FacadeTests.RemoveTrainerFromWaitingList_WhenTrainerWasNotAdded_ReturnsNotAdded</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/FacadeTests.cs" line="40" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/FacadeTests.cs" bodystart="40" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests_1aaa7d33140620adbd08daa4a4a6c01e5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.FacadeTests.TrainerIsWaiting_WhenNotAdded_ReturnsNotWaiting</definition>
+        <argsstring>()</argsstring>
+        <name>TrainerIsWaiting_WhenNotAdded_ReturnsNotWaiting</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.FacadeTests.TrainerIsWaiting_WhenNotAdded_ReturnsNotWaiting</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/FacadeTests.cs" line="48" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/FacadeTests.cs" bodystart="48" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests_1af9da00e0da8c66c69b69e2a573158383" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.FacadeTests.TrainerIsWaiting_WhenAdded_ReturnsWaiting</definition>
+        <argsstring>()</argsstring>
+        <name>TrainerIsWaiting_WhenAdded_ReturnsWaiting</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.FacadeTests.TrainerIsWaiting_WhenAdded_ReturnsWaiting</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/FacadeTests.cs" line="56" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/FacadeTests.cs" bodystart="56" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests_1a341294238ca1b5861d88838733ce3a45" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.FacadeTests.GetAllTrainersWaiting_WhenNobodyIsWaiting_ReturnsNobodyIsWaiting</definition>
+        <argsstring>()</argsstring>
+        <name>GetAllTrainersWaiting_WhenNobodyIsWaiting_ReturnsNobodyIsWaiting</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.FacadeTests.GetAllTrainersWaiting_WhenNobodyIsWaiting_ReturnsNobodyIsWaiting</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/FacadeTests.cs" line="66" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/FacadeTests.cs" bodystart="66" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests_1a127901cc9a171b3e40337433f577fe05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.FacadeTests.GetAllTrainersWaiting_WhenSomebodyIsWaiting_ReturnsSomebody</definition>
+        <argsstring>()</argsstring>
+        <name>GetAllTrainersWaiting_WhenSomebodyIsWaiting_ReturnsSomebody</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.FacadeTests.GetAllTrainersWaiting_WhenSomebodyIsWaiting_ReturnsSomebody</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/FacadeTests.cs" line="74" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/FacadeTests.cs" bodystart="74" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests_1a23f118a7d73391aa7adb9f40c4dac3e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.FacadeTests.StartBattle_WhenNoOpponentAndNobodyIsWaiting_ReturnsNobodyIsWaiting</definition>
+        <argsstring>()</argsstring>
+        <name>StartBattle_WhenNoOpponentAndNobodyIsWaiting_ReturnsNobodyIsWaiting</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.FacadeTests.StartBattle_WhenNoOpponentAndNobodyIsWaiting_ReturnsNobodyIsWaiting</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/FacadeTests.cs" line="84" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/FacadeTests.cs" bodystart="84" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests_1ac54b4277dc18627cc21c93904a4bbac2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.FacadeTests.StartBattle_WhenOpponentButIsNotWaiting_ReturnsNotWaiting</definition>
+        <argsstring>()</argsstring>
+        <name>StartBattle_WhenOpponentButIsNotWaiting_ReturnsNotWaiting</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.FacadeTests.StartBattle_WhenOpponentButIsNotWaiting_ReturnsNotWaiting</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/FacadeTests.cs" line="92" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/FacadeTests.cs" bodystart="92" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests_1a7e4e9589f58c2ab49f0c68333128788d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.FacadeTests.StartBattle_WhenNoOpponentButOneWaiting_ReturnsBattleWithWaiting</definition>
+        <argsstring>()</argsstring>
+        <name>StartBattle_WhenNoOpponentButOneWaiting_ReturnsBattleWithWaiting</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.FacadeTests.StartBattle_WhenNoOpponentButOneWaiting_ReturnsBattleWithWaiting</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/FacadeTests.cs" line="100" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/FacadeTests.cs" bodystart="100" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests_1ae1497e98529c89f55f21e5473458f5b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.FacadeTests.StartBattle_WhenOpponentWaiting_ReturnsBattleWithOpponent</definition>
+        <argsstring>()</argsstring>
+        <name>StartBattle_WhenOpponentWaiting_ReturnsBattleWithOpponent</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.FacadeTests.StartBattle_WhenOpponentWaiting_ReturnsBattleWithOpponent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/FacadeTests.cs" line="110" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/FacadeTests.cs" bodystart="110" bodyend="117"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/FacadeTests.cs" line="3" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/FacadeTests.cs" bodystart="4" bodyend="118"/>
+    <listofallmembers>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests_1a49cf93a67297c56a78a4002f09b8b9ed" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::FacadeTests</scope><name>AddTrainerToWaitingList_WhenTrainerWasAdded_ReturnsExisting</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests_1a190b817ae5b3d1de6bfcc488d947c28c" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::FacadeTests</scope><name>AddTrainerToWaitingList_WhenTrainerWasNotAdded_ReturnsAdded</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests_1a341294238ca1b5861d88838733ce3a45" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::FacadeTests</scope><name>GetAllTrainersWaiting_WhenNobodyIsWaiting_ReturnsNobodyIsWaiting</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests_1a127901cc9a171b3e40337433f577fe05" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::FacadeTests</scope><name>GetAllTrainersWaiting_WhenSomebodyIsWaiting_ReturnsSomebody</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests_1ae9d0d4c1a66087a2247857d74c27a336" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::FacadeTests</scope><name>RemoveTrainerFromWaitingList_WhenTrainerWasAdded_ReturnsRemoved</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests_1af1dd05e12ef16b43937905d0a38b0a13" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::FacadeTests</scope><name>RemoveTrainerFromWaitingList_WhenTrainerWasNotAdded_ReturnsNotAdded</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests_1a23f118a7d73391aa7adb9f40c4dac3e7" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::FacadeTests</scope><name>StartBattle_WhenNoOpponentAndNobodyIsWaiting_ReturnsNobodyIsWaiting</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests_1a7e4e9589f58c2ab49f0c68333128788d" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::FacadeTests</scope><name>StartBattle_WhenNoOpponentButOneWaiting_ReturnsBattleWithWaiting</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests_1ac54b4277dc18627cc21c93904a4bbac2" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::FacadeTests</scope><name>StartBattle_WhenOpponentButIsNotWaiting_ReturnsNotWaiting</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests_1ae1497e98529c89f55f21e5473458f5b8" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::FacadeTests</scope><name>StartBattle_WhenOpponentWaiting_ReturnsBattleWithOpponent</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests_1a0d9b34c24f14cd6b1546db3c99efe9d5" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::FacadeTests</scope><name>TearDown</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests_1af9da00e0da8c66c69b69e2a573158383" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::FacadeTests</scope><name>TrainerIsWaiting_WhenAdded_ReturnsWaiting</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests_1aaa7d33140620adbd08daa4a4a6c01e5e" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::FacadeTests</scope><name>TrainerIsWaiting_WhenNotAdded_ReturnsNotWaiting</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

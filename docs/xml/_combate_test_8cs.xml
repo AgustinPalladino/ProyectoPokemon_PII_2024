@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="_combate_test_8cs" kind="file" language="C#">
+    <compoundname>CombateTest.cs</compoundname>
+    <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_combate_test" prot="public">Ucu::Poo::DiscordBot::Domain::Tests::CombateTest</innerclass>
+    <innernamespace refid="namespace_ucu">Ucu</innernamespace>
+    <innernamespace refid="namespace_ucu_1_1_poo">Ucu::Poo</innernamespace>
+    <innernamespace refid="namespace_ucu_1_1_poo_1_1_discord_bot">Ucu::Poo::DiscordBot</innernamespace>
+    <innernamespace refid="namespace_ucu_1_1_poo_1_1_discord_bot_1_1_domain">Ucu::Poo::DiscordBot::Domain</innernamespace>
+    <innernamespace refid="namespace_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests">Ucu::Poo::DiscordBot::Domain::Tests</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespace_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests" refkind="compound"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests" kindref="compound">Ucu.Poo.DiscordBot.Domain.Tests</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_combate_test" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_combate_test" kindref="compound">CombateTest</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>[Test]</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mostrarCatalogo()</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>expectedPokemonNames<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>List&lt;string&gt;<sp/>{<sp/></highlight><highlight class="stringliteral">&quot;Blastoise&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Charizard&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Venusaur&quot;</highlight><highlight class="normal"><sp/>};</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>listaPokemon<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>List&lt;Pokemon&gt;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon" kindref="compound">Pokemon</ref>(</highlight><highlight class="stringliteral">&quot;Blastoise&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Agua&quot;</highlight><highlight class="normal">,<sp/>100,<sp/>100,<sp/>80),</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon" kindref="compound">Pokemon</ref>(</highlight><highlight class="stringliteral">&quot;Charizard&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Fuego&quot;</highlight><highlight class="normal">,<sp/>120,<sp/>80,<sp/>100),</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon" kindref="compound">Pokemon</ref>(</highlight><highlight class="stringliteral">&quot;Venusaur&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Planta&quot;</highlight><highlight class="normal">,<sp/>90,<sp/>85,<sp/>80)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal"><sp/>(var<sp/>pokemon<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>listaPokemon)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Assert.Contains(pokemon.Nombre,<sp/>expectedPokemonNames);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Assert.That(listaPokemon[0].Nombre,<sp/>Is.EqualTo(</highlight><highlight class="stringliteral">&quot;Blastoise&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Assert.That(listaPokemon[1].Nombre,<sp/>Is.EqualTo(</highlight><highlight class="stringliteral">&quot;Charizard&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/CombateTest.cs"/>
+  </compounddef>
+</doxygen>

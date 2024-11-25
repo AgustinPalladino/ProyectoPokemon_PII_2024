@@ -1,0 +1,105 @@
+\doxysection{Ucu.\+Poo.\+Discord\+Bot.\+Domain.\+Waiting\+List Class Reference}
+\hypertarget{class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list}{}\label{class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list}\index{Ucu.Poo.DiscordBot.Domain.WaitingList@{Ucu.Poo.DiscordBot.Domain.WaitingList}}
+
+
+Esta clase representa la lista de jugadores esperando para jugar.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list_a0efa610c3eb068a4036c8261780a58f5}\label{class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list_a0efa610c3eb068a4036c8261780a58f5} 
+Read\+Only\+Collection$<$ \mbox{\hyperlink{class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_trainer}{Trainer}} $>$ {\bfseries Get\+All\+Waiting} ()
+\item 
+bool \mbox{\hyperlink{class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list_ae678a5933c810f3bf198ba5fdf22509b}{Add\+Trainer}} (string display\+Name)
+\begin{DoxyCompactList}\small\item\em Agrega un jugador a la lista de espera. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list_ad818a340d93c88620709d05b930db946}{Remove\+Trainer}} (string display\+Name)
+\begin{DoxyCompactList}\small\item\em Remueve un jugador de la lista de espera. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_trainer}{Trainer}}? \mbox{\hyperlink{class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list_acc2e4a01aae29f639187155b8cb61cc2}{Find\+Trainer\+By\+Display\+Name}} (string display\+Name)
+\begin{DoxyCompactList}\small\item\em Busca un jugador por el nombre de usuario de Discord en el servidor del bot. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_trainer}{Trainer}}? \mbox{\hyperlink{class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list_af24b84ca7b9189022ad6c4114d515e6e}{Get\+Anyone\+Waiting}} ()
+\begin{DoxyCompactList}\small\item\em Retorna un jugador cualquiera esperando para jugar. En esta implementación provista no es cualquiera, sino el primero. En la implementación definitiva, debería ser uno aleatorio. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list_affd9b32e70958900a121579b8e007a0a}\label{class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list_affd9b32e70958900a121579b8e007a0a} 
+int {\bfseries Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Esta clase representa la lista de jugadores esperando para jugar. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list_ae678a5933c810f3bf198ba5fdf22509b}\label{class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list_ae678a5933c810f3bf198ba5fdf22509b} 
+\index{Ucu.Poo.DiscordBot.Domain.WaitingList@{Ucu.Poo.DiscordBot.Domain.WaitingList}!AddTrainer@{AddTrainer}}
+\index{AddTrainer@{AddTrainer}!Ucu.Poo.DiscordBot.Domain.WaitingList@{Ucu.Poo.DiscordBot.Domain.WaitingList}}
+\doxysubsubsection{\texorpdfstring{AddTrainer()}{AddTrainer()}}
+{\footnotesize\ttfamily bool Ucu.\+Poo.\+Discord\+Bot.\+Domain.\+Waiting\+List.\+Add\+Trainer (\begin{DoxyParamCaption}\item[{string}]{display\+Name }\end{DoxyParamCaption})}
+
+
+
+Agrega un jugador a la lista de espera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em display\+Name} & El nombre de usuario de Discord en el servidor del bot a agregar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} si se agrega el usuario; {\ttfamily false} en caso contrario.
+\end{DoxyReturn}
+\Hypertarget{class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list_acc2e4a01aae29f639187155b8cb61cc2}\label{class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list_acc2e4a01aae29f639187155b8cb61cc2} 
+\index{Ucu.Poo.DiscordBot.Domain.WaitingList@{Ucu.Poo.DiscordBot.Domain.WaitingList}!FindTrainerByDisplayName@{FindTrainerByDisplayName}}
+\index{FindTrainerByDisplayName@{FindTrainerByDisplayName}!Ucu.Poo.DiscordBot.Domain.WaitingList@{Ucu.Poo.DiscordBot.Domain.WaitingList}}
+\doxysubsubsection{\texorpdfstring{FindTrainerByDisplayName()}{FindTrainerByDisplayName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_trainer}{Trainer}}? Ucu.\+Poo.\+Discord\+Bot.\+Domain.\+Waiting\+List.\+Find\+Trainer\+By\+Display\+Name (\begin{DoxyParamCaption}\item[{string}]{display\+Name }\end{DoxyParamCaption})}
+
+
+
+Busca un jugador por el nombre de usuario de Discord en el servidor del bot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em display\+Name} & El nombre de usuario de Discord en el servidor del bot a buscar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+El jugador encontrado o {\ttfamily null} en caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list_af24b84ca7b9189022ad6c4114d515e6e}\label{class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list_af24b84ca7b9189022ad6c4114d515e6e} 
+\index{Ucu.Poo.DiscordBot.Domain.WaitingList@{Ucu.Poo.DiscordBot.Domain.WaitingList}!GetAnyoneWaiting@{GetAnyoneWaiting}}
+\index{GetAnyoneWaiting@{GetAnyoneWaiting}!Ucu.Poo.DiscordBot.Domain.WaitingList@{Ucu.Poo.DiscordBot.Domain.WaitingList}}
+\doxysubsubsection{\texorpdfstring{GetAnyoneWaiting()}{GetAnyoneWaiting()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_trainer}{Trainer}}? Ucu.\+Poo.\+Discord\+Bot.\+Domain.\+Waiting\+List.\+Get\+Anyone\+Waiting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna un jugador cualquiera esperando para jugar. En esta implementación provista no es cualquiera, sino el primero. En la implementación definitiva, debería ser uno aleatorio. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list_ad818a340d93c88620709d05b930db946}\label{class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list_ad818a340d93c88620709d05b930db946} 
+\index{Ucu.Poo.DiscordBot.Domain.WaitingList@{Ucu.Poo.DiscordBot.Domain.WaitingList}!RemoveTrainer@{RemoveTrainer}}
+\index{RemoveTrainer@{RemoveTrainer}!Ucu.Poo.DiscordBot.Domain.WaitingList@{Ucu.Poo.DiscordBot.Domain.WaitingList}}
+\doxysubsubsection{\texorpdfstring{RemoveTrainer()}{RemoveTrainer()}}
+{\footnotesize\ttfamily bool Ucu.\+Poo.\+Discord\+Bot.\+Domain.\+Waiting\+List.\+Remove\+Trainer (\begin{DoxyParamCaption}\item[{string}]{display\+Name }\end{DoxyParamCaption})}
+
+
+
+Remueve un jugador de la lista de espera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em display\+Name} & El nombre de usuario de Discord en el servidor del bot a remover. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} si se remueve el usuario; {\ttfamily false} en caso contrario.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Lucas/\+Desktop/\+Proyecto/\+Proyecto\+Pokemon\+\_\+\+PII\+\_\+2024/src/\+Library/\+Domain/Waiting\+List.\+cs\end{DoxyCompactItemize}

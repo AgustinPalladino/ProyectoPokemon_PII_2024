@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_loader" kind="class" language="C#" prot="public">
+    <compoundname>Ucu::Poo::DiscordBot::Services::BotLoader</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_loader_1ab05b0968a432322f96f64c1e9942effb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>static async Task Ucu.Poo.DiscordBot.Services.BotLoader.LoadAsync</definition>
+        <argsstring>()</argsstring>
+        <name>LoadAsync</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Services.BotLoader.LoadAsync</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/BotLoader.cs" line="14" column="30" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/BotLoader.cs" bodystart="14" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Esta clase ejecuta el bot de Discord hasta que en la terminal donde se ejecuta el bot se oprime la tecla &apos;Q&apos;. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/BotLoader.cs" line="12" column="15" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/BotLoader.cs" bodystart="13" bodyend="56"/>
+    <listofallmembers>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_loader_1ab05b0968a432322f96f64c1e9942effb" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Services::BotLoader</scope><name>LoadAsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

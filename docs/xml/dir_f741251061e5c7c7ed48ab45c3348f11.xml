@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_f741251061e5c7c7ed48ab45c3348f11" kind="dir">
+    <compoundname>C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library</compoundname>
+    <innerdir refid="dir_c008c50350ae5a8ff46a2d72b681473c">C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands</innerdir>
+    <innerdir refid="dir_1aa3de2ac0d80960014a3e5d4b1c4e69">C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Domain</innerdir>
+    <innerdir refid="dir_cd1c06768606a7f983e9c7e08a7ebf9f">C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Interaccion</innerdir>
+    <innerdir refid="dir_1c1461016cddc2c197f0f375b953c7e8">C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items</innerdir>
+    <innerdir refid="dir_489a34f874ee199237b4241587f8b6f5">C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/obj</innerdir>
+    <innerdir refid="dir_f34ccfc2e84e060712e8a2693295cc54">C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services</innerdir>
+    <innerfile refid="_combate_8cs">Combate.cs</innerfile>
+    <innerfile refid="_diccionarios_y_operaciones_static_8cs">DiccionariosYOperacionesStatic.cs</innerfile>
+    <innerfile refid="_jugador_8cs">Jugador.cs</innerfile>
+    <innerfile refid="_logica_8cs">Logica.cs</innerfile>
+    <innerfile refid="_movimiento_8cs">Movimiento.cs</innerfile>
+    <innerfile refid="_pokemon_8cs">Pokemon.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/"/>
+  </compounddef>
+</doxygen>

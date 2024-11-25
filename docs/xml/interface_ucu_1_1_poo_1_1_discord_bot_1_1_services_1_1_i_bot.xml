@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="interface_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_i_bot" kind="interface" language="C#" prot="public">
+    <compoundname>Ucu::Poo::DiscordBot::Services::IBot</compoundname>
+    <derivedcompoundref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot" prot="public" virt="non-virtual">Ucu.Poo.DiscordBot.Services.Bot</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_i_bot_1ae4e76de690ac3a0ce601af36f544c50a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task</type>
+        <definition>Task Ucu.Poo.DiscordBot.Services.IBot.StartAsync</definition>
+        <argsstring>(ServiceProvider services)</argsstring>
+        <name>StartAsync</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Services.IBot.StartAsync</qualifiedname>
+        <reimplementedby refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_1a15bf4ff03e727a6a00ae9b3f0daf5c63">StartAsync</reimplementedby>
+        <param>
+          <type>ServiceProvider</type>
+          <declname>services</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/IBot.cs" line="10" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_i_bot_1a84a892069cb085257d10b5925c9e7079" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task</type>
+        <definition>Task Ucu.Poo.DiscordBot.Services.IBot.StopAsync</definition>
+        <argsstring>()</argsstring>
+        <name>StopAsync</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Services.IBot.StopAsync</qualifiedname>
+        <reimplementedby refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_1a0b583be7dd7f5af98e9a1a8fedeae5c0">StopAsync</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/IBot.cs" line="12" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>La interfaz del Bot de Discord para usar con inyección de dependencias. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Ucu.Poo.DiscordBot.Services.IBot</label>
+        <link refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_i_bot"/>
+      </node>
+      <node id="2">
+        <label>Ucu.Poo.DiscordBot.Services.Bot</label>
+        <link refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/IBot.cs" line="8" column="18" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/IBot.cs" bodystart="9" bodyend="13"/>
+    <listofallmembers>
+      <member refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_i_bot_1ae4e76de690ac3a0ce601af36f544c50a" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Services::IBot</scope><name>StartAsync</name></member>
+      <member refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_i_bot_1a84a892069cb085257d10b5925c9e7079" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Services::IBot</scope><name>StopAsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['cambiarpokemon_0',['cambiarPokemon',['../class_library_1_1_jugador.html#a11f0d22d7391ffe7b62e33eaea39dc11',1,'Library::Jugador']]]
+  ['cambiarpokemon_0',['cambiarPokemon',['../class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador.html#a9c5b54019893f9ace03108552340b8d4',1,'Ucu::Poo::DiscordBot::Jugador']]]
 ];

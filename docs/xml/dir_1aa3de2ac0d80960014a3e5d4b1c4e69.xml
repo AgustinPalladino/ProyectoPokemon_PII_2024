@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_1aa3de2ac0d80960014a3e5d4b1c4e69" kind="dir">
+    <compoundname>C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Domain</compoundname>
+    <innerfile refid="_battle_8cs">Battle.cs</innerfile>
+    <innerfile refid="_battles_list_8cs">BattlesList.cs</innerfile>
+    <innerfile refid="_facade_8cs">Facade.cs</innerfile>
+    <innerfile refid="_trainer_8cs">Trainer.cs</innerfile>
+    <innerfile refid="_waiting_list_8cs">WaitingList.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Domain/"/>
+  </compounddef>
+</doxygen>

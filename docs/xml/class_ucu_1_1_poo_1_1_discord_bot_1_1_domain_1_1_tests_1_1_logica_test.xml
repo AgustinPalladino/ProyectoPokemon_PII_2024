@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_logica_test" kind="class" language="C#" prot="public">
+    <compoundname>Ucu::Poo::DiscordBot::Domain::Tests::LogicaTest</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_logica_test_1a133f3f2eb8ec0226cd814d73e180f76b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.LogicaTest.calculoAtaqueTest</definition>
+        <argsstring>()</argsstring>
+        <name>calculoAtaqueTest</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.LogicaTest.calculoAtaqueTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/LogicaTest.cs" line="8" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/LogicaTest.cs" bodystart="8" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_logica_test_1a837c2b18f32e21cf2b5287e1ea10260e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.LogicaTest.chequeoNoVictoriaTest</definition>
+        <argsstring>()</argsstring>
+        <name>chequeoNoVictoriaTest</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.LogicaTest.chequeoNoVictoriaTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/LogicaTest.cs" line="43" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/LogicaTest.cs" bodystart="43" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/LogicaTest.cs" line="5" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/LogicaTest.cs" bodystart="6" bodyend="61"/>
+    <listofallmembers>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_logica_test_1a133f3f2eb8ec0226cd814d73e180f76b" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::LogicaTest</scope><name>calculoAtaqueTest</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_logica_test_1a837c2b18f32e21cf2b5287e1ea10260e" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::LogicaTest</scope><name>chequeoNoVictoriaTest</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

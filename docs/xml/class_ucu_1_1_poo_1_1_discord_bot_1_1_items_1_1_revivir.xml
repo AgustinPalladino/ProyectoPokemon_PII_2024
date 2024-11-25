@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_revivir" kind="class" language="C#" prot="public">
+    <compoundname>Ucu::Poo::DiscordBot::Items::Revivir</compoundname>
+    <basecompoundref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_item" prot="public" virt="non-virtual">Ucu.Poo.DiscordBot.Items.Item</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_revivir_1af2aa36ed21e2a0219597bdbf6f876aba" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>override string</type>
+        <definition>override string Ucu.Poo.DiscordBot.Items.Revivir.Nombre</definition>
+        <argsstring></argsstring>
+        <name>Nombre</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Items.Revivir.Nombre</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items/Revivir.cs" line="10" column="28" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items/Revivir.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_revivir_1a790f92e9364e823248b2f32c61d328d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Ucu.Poo.DiscordBot.Items.Revivir.Usar</definition>
+        <argsstring>(Jugador jugador, IInteraccionConUsuario interaccion)</argsstring>
+        <name>Usar</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Items.Revivir.Usar</qualifiedname>
+        <reimplements refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_item_1a834028a760360375cb2c2a7740c3c363">Usar</reimplements>
+        <param>
+          <type><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador" kindref="compound">Jugador</ref></type>
+          <declname>jugador</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_i_interaccion_con_usuario" kindref="compound">IInteraccionConUsuario</ref></type>
+          <declname>interaccion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items/Revivir.cs" line="12" column="26" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items/Revivir.cs" bodystart="12" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_revivir_1a760bfe327c517821c2ee1cf510835e6a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Items.Revivir.RevivirPokemon</definition>
+        <argsstring>(Jugador jugador, Pokemon pokemon, IInteraccionConUsuario interaccion)</argsstring>
+        <name>RevivirPokemon</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Items.Revivir.RevivirPokemon</qualifiedname>
+        <param>
+          <type><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador" kindref="compound">Jugador</ref></type>
+          <declname>jugador</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon" kindref="compound">Pokemon</ref></type>
+          <declname>pokemon</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_i_interaccion_con_usuario" kindref="compound">IInteraccionConUsuario</ref></type>
+          <declname>interaccion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items/Revivir.cs" line="56" column="18" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items/Revivir.cs" bodystart="56" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Esta clase como las demas, estaran heredando mi interfaz de Iitems, con su metodo con diferente funcionalidad. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Item</label>
+        <link refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_item"/>
+      </node>
+      <node id="1">
+        <label>Ucu.Poo.DiscordBot.Items.Revivir</label>
+        <link refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_revivir"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Item</label>
+        <link refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_item"/>
+      </node>
+      <node id="1">
+        <label>Ucu.Poo.DiscordBot.Items.Revivir</label>
+        <link refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_revivir"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items/Revivir.cs" line="8" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items/Revivir.cs" bodystart="9" bodyend="65"/>
+    <listofallmembers>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_revivir_1af2aa36ed21e2a0219597bdbf6f876aba" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Items::Revivir</scope><name>Nombre</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_revivir_1a760bfe327c517821c2ee1cf510835e6a" prot="private" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Items::Revivir</scope><name>RevivirPokemon</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_revivir_1a790f92e9364e823248b2f32c61d328d1" prot="public" virt="virtual"><scope>Ucu::Poo::DiscordBot::Items::Revivir</scope><name>Usar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

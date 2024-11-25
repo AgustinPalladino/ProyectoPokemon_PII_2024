@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_item" kind="class" language="C#" prot="public" abstract="yes">
+    <compoundname>Ucu::Poo::DiscordBot::Items::Item</compoundname>
+    <derivedcompoundref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_cura_total" prot="public" virt="non-virtual">Ucu.Poo.DiscordBot.Items.CuraTotal</derivedcompoundref>
+    <derivedcompoundref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_revivir" prot="public" virt="non-virtual">Ucu.Poo.DiscordBot.Items.Revivir</derivedcompoundref>
+    <derivedcompoundref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_super_pocion" prot="public" virt="non-virtual">Ucu.Poo.DiscordBot.Items.SuperPocion</derivedcompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_item_1a1bc9e7d8b3e7715cd938239432ed2795" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>abstract string</type>
+        <definition>abstract string Ucu.Poo.DiscordBot.Items.Item.Nombre</definition>
+        <argsstring></argsstring>
+        <name>Nombre</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Items.Item.Nombre</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items/ItemBase.cs" line="12" column="28" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items/ItemBase.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_item_1a834028a760360375cb2c2a7740c3c363" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void Ucu.Poo.DiscordBot.Items.Item.Usar</definition>
+        <argsstring>(Jugador j, IInteraccionConUsuario interaccion)</argsstring>
+        <name>Usar</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Items.Item.Usar</qualifiedname>
+        <reimplementedby refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_cura_total_1af0bd11b64680bb61d8cd0c8c1815f198">Usar</reimplementedby>
+        <reimplementedby refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_revivir_1a790f92e9364e823248b2f32c61d328d1">Usar</reimplementedby>
+        <reimplementedby refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_super_pocion_1a6dc8b54f38ce36af7d85505a1e5d7d5f">Usar</reimplementedby>
+        <param>
+          <type><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador" kindref="compound">Jugador</ref></type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_i_interaccion_con_usuario" kindref="compound">IInteraccionConUsuario</ref></type>
+          <declname>interaccion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items/ItemBase.cs" line="15" column="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Clase base abstracta para representar un ítem. Sigue el principio de inversión de dependencias (DIP) porque las dependencias estarán en la clase base, no en implementaciones concretas. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Ucu.Poo.DiscordBot.Items.Item</label>
+        <link refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_item"/>
+      </node>
+      <node id="2">
+        <label>Ucu.Poo.DiscordBot.Items.CuraTotal</label>
+        <link refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_cura_total"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Ucu.Poo.DiscordBot.Items.Revivir</label>
+        <link refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_revivir"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Ucu.Poo.DiscordBot.Items.SuperPocion</label>
+        <link refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_super_pocion"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items/ItemBase.cs" line="9" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items/ItemBase.cs" bodystart="10" bodyend="16"/>
+    <listofallmembers>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_item_1a1bc9e7d8b3e7715cd938239432ed2795" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Items::Item</scope><name>Nombre</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_item_1a834028a760360375cb2c2a7740c3c363" prot="public" virt="pure-virtual"><scope>Ucu::Poo::DiscordBot::Items::Item</scope><name>Usar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
