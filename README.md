@@ -13,7 +13,8 @@ codigo del Programa. Esto nos ayudo a asegurarnos de que al agregar nuevos metod
 
 ## ¿Qué recursos (páginas web, libros, foros, etc) encontraron que les fueron valiosos para sortear los desafíos que encontraron?
 
-- 
+- Un recurso que nos ayudo a lo largo del curso para poder remodelar nuestros conocimientos acerca de como perfeccionar nuestra forma de programar en c# fueron las librerias de microsoft.
+Estas nos proporcionan todo tipo de información sobre las herramientas que podemos utilizar dentro de c#.
 
 ## ¿Qué desafios de la entrega fueron los más difíciles?
 
