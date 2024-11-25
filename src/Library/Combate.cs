@@ -19,30 +19,48 @@ public class Combate
     }
     
     
-    public void MostrarCatalogo()
+    public string MostrarCatalogo()
     {
-        interaccion.ImprimirMensaje("\n Catálogo de Pokémon disponibles:");
+        string mensaje = "\nCatálogo de Pokémon disponibles:";
 
         foreach (var pokemon in DiccionariosYOperacionesStatic.DiccionarioPokemon)
         {
-            interaccion.ImprimirMensaje($"-{pokemon.Value.Nombre}");
+            mensaje += $"\n-{pokemon.Value.Nombre}";
         }
+
+        return mensaje;
     }
     
     
     public void BuclePrincipal(Jugador j1, Jugador j2)
     {
         Logica logica = new Logica(interaccion);
-        MostrarCatalogo(); 
-        
+        interaccion.ImprimirMensaje(MostrarCatalogo());
+        bool bandera = true;
         for (int i = 0; i < 2; i++) // Los jugadores escogen sus 6 pokemon
         {
-            logica.EscogerEquipo(j1);
-            logica.EscogerEquipo(j2);
+            while (bandera)
+            {
+                if (logica.EscogerEquipo(j1) != "Error")
+                {
+                    bandera = false;
+                }
+            }
+
+            bandera = true;
+            
+            while (bandera)
+            {
+                if (logica.EscogerEquipo(j2) != "Error")
+                {
+                    bandera = false;
+                }
+            }
+
         }
         
-        j1.MostrarEquipo(interaccion);
-        j2.MostrarEquipo(interaccion);
+        interaccion.ImprimirMensaje(j1.MostrarEquipo());
+        interaccion.ImprimirMensaje(j2.MostrarEquipo());
         
         bool banderaGlobal = true;
         int numeroRandom = DiccionariosYOperacionesStatic.numeroAleatorio(1, 2);

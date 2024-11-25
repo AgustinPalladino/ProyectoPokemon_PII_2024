@@ -8,9 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e804c097-b6aa-4b95-a455-d56cf5311d8b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Library/Interaccion/ImprimirBot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Library/Interaccion/InteraccionPorBot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library/Interaccion/InteraccionPorBot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Library/Combate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library/Combate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Library/Jugador.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library/Jugador.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Library/Logica.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library/Logica.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Program/Juego.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program/Juego.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +22,11 @@
     <option name="autoShow" value="false" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="cambiarMetodos" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -48,7 +54,7 @@
   "keyToString": {
     ".NET Project.Program.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "cambiarBool",
     "last_opened_file_path": "C:/Users/agust/Desktop/ProyectoPokemon_PII_2024",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",

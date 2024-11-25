@@ -28,23 +28,25 @@ public class Jugador
         Mochila.Add(new CuraTotal()); 
     }
     
-    public void MostrarEquipo(IInteraccionConUsuario interaccion)
+    public string MostrarEquipo()
     {
-        Console.WriteLine($"El equipo del {this.Nombre} equipo es: ");
+        string mensaje = $"El equipo del {this.Nombre} equipo es: ";
         if (this.equipoPokemon[0] != null)
         {
             for (int i = 0; i < this.equipoPokemon.Count; i++)
             {
-                interaccion.ImprimirMensaje($"-{this.equipoPokemon[i].Nombre}");
+                mensaje += $"-{this.equipoPokemon[i].Nombre}";
             }
         }
         else
         {
             for (int i = 1; i < this.equipoPokemon.Count; i++)
             {
-                interaccion.ImprimirMensaje($"-{this.equipoPokemon[i].Nombre}");
+                mensaje += $"-{this.equipoPokemon[i].Nombre}";
             }
         }
+
+        return mensaje;
     }
     
     
@@ -52,20 +54,23 @@ public class Jugador
     /// Método para ver ataques que tiene el pokemon
     /// </summary>
     
-    public void verMovimientos(IInteraccionConUsuario interaccion)
+    public string verMovimientos()
     {
+        string mov = "";
         foreach (Movimiento movimiento in this.pokemonEnCancha().listaMovimientos)
         {
-            interaccion.ImprimirMensaje($"-{movimiento.Nombre}");
+            mov += $"-{movimiento.Nombre}";
         }
+
+        return mov;
     }
 
     /// <summary>
     /// Metodo para ver la salud del pokemon
     /// </summary>
-    public void verSalud(IInteraccionConUsuario interaccion)
+    public string verSalud()
     {
-        interaccion.ImprimirMensaje($"La vida del {this.pokemonEnCancha().Nombre} es: {this.pokemonEnCancha().VidaActual}/{this.pokemonEnCancha().VidaMax}");
+        return $"La vida del {this.pokemonEnCancha().Nombre} es: {this.pokemonEnCancha().VidaActual}/{this.pokemonEnCancha().VidaMax}";
     }
     
     /// <summary>
