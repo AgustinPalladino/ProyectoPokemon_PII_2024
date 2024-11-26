@@ -71,39 +71,27 @@ public class Logica
     }
     
     
-    public void EscogerEquipo(Jugador jugador)
+    public static string EscogerEquipo(Jugador jugador, string pokemonIngresado)
     {
-        bool bandera = true;
-        while (bandera)
+        //interaccion.ImprimirMensaje($"{jugador.Nombre}, seleccione su siguiente pokemon");
+        foreach (var pokemon in DiccionariosYOperacionesStatic.DiccionarioPokemon)
         {
-            interaccion.ImprimirMensaje($"{jugador.Nombre}, seleccione su siguiente pokemon");
-            string pokeIngresado = interaccion.LeerEntrada();
-            bool pokemonEncontrado = false;
-            foreach (var pokemon in DiccionariosYOperacionesStatic.DiccionarioPokemon)
+            if (pokemonIngresado == pokemon.Key)
             {
-                if (pokeIngresado == pokemon.Key)
+                if (!jugador.nombreCheck.Contains(pokemonIngresado))
                 {
-                    pokemonEncontrado = true;
-                    if (!jugador.nombreCheck.Contains(pokeIngresado))
-                    {
-                        jugador.nombreCheck.Add(pokeIngresado);
-                        jugador.agregarPokemon(pokemon.Value.Clonar());
-                        interaccion.ImprimirMensaje($"{pokeIngresado} se agrego a tu equipo");
-                        bandera = false;
-                    }
-                    else
-                    {
-                        interaccion.ImprimirMensaje($"{pokeIngresado} ya se encuentra en el equipo");
-                    }
-                    break;
+                    jugador.nombreCheck.Add(pokemonIngresado);
+                    jugador.agregarPokemon(pokemon.Value.Clonar());
+                    return $"{pokemonIngresado} se agrego a tu equipo";
+                }
+                else
+                {
+                    return $"{pokemonIngresado} ya se encuentra en el equipo";
                 }
             }
-            //Si el pokemon nunca se encontro, vuelve a pedirlo
-            if (!pokemonEncontrado)
-            {
-                interaccion.ImprimirMensaje($"{pokeIngresado}, no es correcto");
-            }
         }
+        //Si el pokemon nunca se encontro, vuelve a pedirlo
+        return $"{pokemonIngresado}, no es correcto";
     }
     
     

@@ -19,14 +19,15 @@ public class Combate
     }
     
     
-    public void MostrarCatalogo()
+    public static string MostrarCatalogo()
     {
-        interaccion.ImprimirMensaje("\n Catálogo de Pokémon disponibles:");
-
+        string mostrarCatalogo = "\n Catálogo de Pokémon disponibles:";
         foreach (var pokemon in DiccionariosYOperacionesStatic.DiccionarioPokemon)
         {
-            interaccion.ImprimirMensaje($"-{pokemon.Value.Nombre}");
+            mostrarCatalogo += $"\n-{pokemon.Value.Nombre}";
         }
+
+        return mostrarCatalogo;
     }
     
     
@@ -37,8 +38,8 @@ public class Combate
         
         for (int i = 0; i < 6; i++) // Los jugadores escogen sus 6 pokemon
         {
-            logica.EscogerEquipo(j1);
-            logica.EscogerEquipo(j2);
+           // logica.EscogerEquipo(j1);
+           // logica.EscogerEquipo(j2);
         }
         
         j1.MostrarEquipo(interaccion);

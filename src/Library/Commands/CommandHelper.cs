@@ -1,5 +1,6 @@
 using Discord.Commands;
 using Discord.WebSocket;
+using Ucu.Poo.DiscordBot.Domain;
 
 namespace Ucu.Poo.DiscordBot.Commands;
 
@@ -27,7 +28,7 @@ public static class CommandHelper
 
         return name;
     }
-
+    
     public static SocketGuildUser? GetUser(
         SocketCommandContext context,
         string? name)

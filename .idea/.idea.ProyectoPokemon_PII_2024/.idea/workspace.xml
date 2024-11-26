@@ -7,6 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="e804c097-b6aa-4b95-a455-d56cf5311d8b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Library/Commands/HiCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Library/Interaccion/InteraccionPorBot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library/Interaccion/InteraccionPorBot.cs" afterDir="false" />
+    </list>
     <list default="true" id="e804c097-b6aa-4b95-a455-d56cf5311d8b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +38,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/AgustinPalladino/ProyectoPokemon_PII_2024.git&quot;,
-    &quot;accountId&quot;: &quot;843cdfe2-0c13-4674-9f67-25b33e1d4d75&quot;
+    &quot;accountId&quot;: &quot;9168b09f-e050-4441-9be1-2eaf534ff90b&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{

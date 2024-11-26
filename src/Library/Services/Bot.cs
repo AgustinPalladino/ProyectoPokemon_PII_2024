@@ -5,6 +5,7 @@ using Microsoft.Extensions.Logging;
 using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
+using Ucu.Poo.DiscordBot.Commands;
 
 namespace Ucu.Poo.DiscordBot.Services;
 
@@ -46,7 +47,15 @@ public class Bot : IBot
         serviceProvider = services;
 
         await commands.AddModulesAsync(Assembly.GetExecutingAssembly(), serviceProvider);
-
+        await commands.AddModulesAsync(Assembly.GetEntryAssembly(), serviceProvider);
+        await commands.AddModulesAsync(Assembly.GetAssembly(typeof(AddPokemonCommand)), serviceProvider);
+        await commands.AddModulesAsync(Assembly.GetAssembly(typeof(HealthCommand)), serviceProvider);
+        await commands.AddModulesAsync(Assembly.GetAssembly(typeof(MochilaCommand)), serviceProvider);
+        await commands.AddModulesAsync(Assembly.GetAssembly(typeof(AttackComand)), serviceProvider);
+        await commands.AddModulesAsync(Assembly.GetAssembly(typeof(MovesCommand)), serviceProvider);
+        await commands.AddModulesAsync(Assembly.GetAssembly(typeof(CambiarPokemon)), serviceProvider);
+        await commands.AddModulesAsync(Assembly.GetAssembly(typeof(MenuCommand)), serviceProvider);
+        
         await client.LoginAsync(TokenType.Bot, discordToken);
         await client.StartAsync();
 
