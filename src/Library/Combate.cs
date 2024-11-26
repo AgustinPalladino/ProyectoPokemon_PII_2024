@@ -8,10 +8,7 @@ namespace Ucu.Poo.DiscordBot;
 /// </summary>
 public class Combate
 {
-    private readonly IInteraccionConUsuario interaccion;
-    
-    public Jugador JugadorActual { get; private set; }
-    public int numActual { get; private set; }
+    public readonly IInteraccionConUsuario interaccion;
 
     public Combate(IInteraccionConUsuario interaccion)
     {
@@ -21,11 +18,11 @@ public class Combate
     
     public string MostrarCatalogo()
     {
-        string mensaje = "\n Catálogo de Pokémon disponibles:";
+        string mensaje = "\nCatálogo de Pokémon disponibles:";
 
         foreach (var pokemon in DiccionariosYOperacionesStatic.DiccionarioPokemon)
         {
-            mensaje += $"-{pokemon.Value.Nombre}";
+            mensaje += $"\n-{pokemon.Value.Nombre}";
         }
 
         return mensaje;
@@ -35,14 +32,31 @@ public class Combate
     public void BuclePrincipal(Jugador j1, Jugador j2)
     {
         Logica logica = new Logica(interaccion);
-        MostrarCatalogo(); 
         
-        for (int i = 0; i < 6; i++) // Los jugadores escogen sus 6 pokemon
+        interaccion.ImprimirMensaje(MostrarCatalogo()); 
+        
+        for (int i = 0; i < 2; i++) // Los jugadores escogen sus 6 pokemon
         {
-            logica.EscogerEquipo(j1);
-            logica.EscogerEquipo(j2);
+            bool bandera = true;
+            while (bandera)
+            {
+                if (logica.EscogerEquipo(j1))
+                {
+                    bandera = false;
+                }
+            }
+
+            bandera = true;
+            
+            while (bandera)
+            {
+                if (logica.EscogerEquipo(j2))
+                {
+                    bandera = false;
+                }
+            }
+            
         }
-        
         interaccion.ImprimirMensaje(j1.MostrarEquipo());
         interaccion.ImprimirMensaje(j2.MostrarEquipo());
         
@@ -53,21 +67,17 @@ public class Combate
             //Si el numero random es 1 empieza el jugador uno
             if (numeroRandom == 1)
             {
-                numActual = numeroRandom;
                 // Turno del jugador 1
-                JugadorActual = j1;
                 banderaGlobal = logica.MenuDeJugador(j1, j2); 
                 // Si la bandera global toma el valor de falso, significa que termino el combate
 
                 if (banderaGlobal)
                 {
-                    numActual = numeroRandom;
                     // Turno del jugador 2
-                    JugadorActual = j2;
                     banderaGlobal = logica.MenuDeJugador(j2, j1);
                 }
             }
-            //Si el numero random es el 2 empieza el jugador dos
+            //Si random es el 2 empieza el jugador dos
             else
             {
                 // Turno del jugador 2

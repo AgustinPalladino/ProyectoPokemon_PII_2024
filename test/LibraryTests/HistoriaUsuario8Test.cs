@@ -33,14 +33,12 @@ public class HistoriaUsuario8Test
         
         // Simula el uso de la mochila
         var logica = new Logica(mockInteraccion);
-        bool turnoConsumido = logica.Mochila(jugador1);
+        logica.Mochila(jugador1, "Pikachu");
 
         // Verifica que el ítem fue utilizado y su efecto aplicado
         Assert.That(pokemon.VidaActual, Is.EqualTo(100) ); // La vida debería estar completamente curada
         Assert.That(jugador1.Mochila.Count, Is.LessThan(mochilaInicial)); // El ítem debe haberse removido
-
-        // Verifica que el uso del ítem consumió el turno
-        Assert.IsTrue(turnoConsumido);
+        
 
         // Verifica que se muestra el mensaje de curación
         mockInteraccion.Received(1).ImprimirMensaje($"{pokemon.Nombre} se ha restaurado 70 puntos de vida.");

@@ -7,7 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e804c097-b6aa-4b95-a455-d56cf5311d8b" name="Changes" comment="" />
+    <list default="true" id="e804c097-b6aa-4b95-a455-d56cf5311d8b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Library/Combate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library/Combate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Library/Logica.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library/Logica.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/LibraryTests/HistoriaUsuario2Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/test/LibraryTests/HistoriaUsuario2Test.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/LibraryTests/HistoriaUsuario8Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/test/LibraryTests/HistoriaUsuario8Test.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +55,7 @@
   "keyToString": {
     ".NET Project.Program.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "cambiarBool",
     "last_opened_file_path": "C:/Users/agust/Desktop/ProyectoPokemon_PII_2024",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",

@@ -27,6 +27,8 @@ public class Logica
             interaccion.ImprimirMensaje("4- Atacar (Consume un turno)");
             interaccion.ImprimirMensaje("5- Cambiar de Pokémon (Consume un turno)");
             int opcion = Convert.ToInt32(interaccion.LeerEntrada());
+
+            string mensaje;
             switch (opcion)
             {
                 case 1:
@@ -38,30 +40,38 @@ public class Logica
                     break;
                 
                 case 3:
-                    if (Mochila(j1) == "Usted uso correctamente el item")
+                    mensaje = Mochila(j1);
+                    if (mensaje == "Usted uso correctamente el item")
                     {
+                        interaccion.ImprimirMensaje(mensaje);
                         return true; // Si uso el objeto sale del bucle
                     }
+                    interaccion.ImprimirMensaje(mensaje);
                     break; // Si regresa vuelve al bucle
                     
                 case 4:
-                    interaccion.ImprimirMensaje(SeleccionarAtaque(j1,j2));
-                    if (SeleccionarAtaque(j1,j2) == j2.verSalud())
+                    mensaje = SeleccionarAtaque(j1,j2);
+                    if (mensaje == j2.verSalud())
                     {
                         if (ChequeoVictoria(j2))
                         {
+                            interaccion.ImprimirMensaje(mensaje);
                             return false; // Retorna falso porque la pelea termino
                         }
+                        interaccion.ImprimirMensaje(mensaje);
                         return true; // Si ataco pero nadie perdio termino su turno
                     }
+                    interaccion.ImprimirMensaje(mensaje);
                     break; // Si se retiro vuelve al bucle
 
                 case 5:
-                    interaccion.ImprimirMensaje(CambiarPokemon(j1));
-                    if (CambiarPokemon(j1) == "El pokemon cambio correctamente")
+                    mensaje = SeleccionarPokemonDeCambio(j1);
+                    if (mensaje == "El pokemon cambio correctamente")
                     {
+                        interaccion.ImprimirMensaje(mensaje);
                         return true; // Si cambio de pokemon termino su turno
                     }
+                    interaccion.ImprimirMensaje(mensaje);
                     break; //Si volvio para atras vuelve al bucle
                     
                 default: // Si ingresa una opcion mala, vuelve al bucle
@@ -73,7 +83,7 @@ public class Logica
     }
     
     
-    public string EscogerEquipo(Jugador jugador)
+    public bool EscogerEquipo(Jugador jugador)
     {
         interaccion.ImprimirMensaje($"{jugador.Nombre}, seleccione su siguiente pokemon");
         string pokeIngresado = interaccion.LeerEntrada();
@@ -85,20 +95,24 @@ public class Logica
                 {
                     jugador.nombreCheck.Add(pokeIngresado);
                     jugador.agregarPokemon(pokemon.Value.Clonar());
-                    return $"{pokeIngresado} se agrego a tu equipo";
+                    interaccion.ImprimirMensaje($"{pokemon.Value.Nombre} se agrego a tu equipo");
+                    return true;
                 }
                 else
                 {
-                    return $"{pokeIngresado} ya se encuentra en el equipo";
+                    interaccion.ImprimirMensaje($"{pokeIngresado} ya se encuentra en el equipo");
+                    return false;
                 }
             }
         }
         //Si el pokemon nunca se encontro
-        return $"{pokeIngresado}, no es correcto";
+        
+        interaccion.ImprimirMensaje($"{pokeIngresado}, no es correcto");
+        return false;
     }
     
     
-    public string CambiarPokemon(Jugador jugador)
+    public string SeleccionarPokemonDeCambio(Jugador jugador)
     {
         try
         {
@@ -198,8 +212,7 @@ public class Logica
             {
                 if (movimiento == mov.Nombre)
                 {
-                    return CalculoAtaque(jugador, jugadorEnemigo, mov);
-                    
+                    CalculoAtaque(jugador, jugadorEnemigo, mov);
                 }
             }
             if (movimiento == "0")
@@ -215,7 +228,7 @@ public class Logica
     }
     
     
-    public string CalculoAtaque(Jugador jugador, Jugador jugadorEnemigo, Movimiento movimiento)
+    public void CalculoAtaque(Jugador jugador, Jugador jugadorEnemigo, Movimiento movimiento)
     {
         if (movimiento != null)
         {
@@ -224,7 +237,6 @@ public class Logica
             {
                 jugador.atacar(jugadorEnemigo, movimiento, interaccion);
                 jugadorEnemigo.pokemonEnCancha().aplicarDañoRecurrente(interaccion);
-                return jugadorEnemigo.verSalud();
             }
 
             // Aplica ataques especiales si corresponde
@@ -232,7 +244,6 @@ public class Logica
             {
                 movimiento.AplicarAtaquesEspeciales(jugadorEnemigo.pokemonEnCancha(), interaccion);
                 jugadorEnemigo.pokemonEnCancha().aplicarDañoRecurrente(interaccion);
-                return jugadorEnemigo.verSalud();
             }
 
             if (jugadorEnemigo.pokemonEnCancha().VidaActual <= 0)
@@ -240,18 +251,17 @@ public class Logica
                 interaccion.ImprimirMensaje($"{jugadorEnemigo.Nombre}, tu {jugadorEnemigo.pokemonEnCancha().Nombre} fue derrotado");
                 jugadorEnemigo.equipoPokemonDerrotados.Add(jugadorEnemigo.pokemonEnCancha());
                 jugadorEnemigo.equipoPokemon[0] = null;
+                interaccion.ImprimirMensaje($"{jugadorEnemigo.pokemonEnCancha().Nombre} fue derrotado");
                 if (!ChequeoVictoria(jugadorEnemigo))
                 {
-                    CambiarPokemon(jugadorEnemigo);
+                    SeleccionarPokemonDeCambio(jugadorEnemigo);
                 }
             }
             else
             {
-                jugadorEnemigo.verSalud();
+                interaccion.ImprimirMensaje(jugadorEnemigo.verSalud());
             }
         }
-
-        return "";
     }
 
     

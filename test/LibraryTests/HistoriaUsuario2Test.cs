@@ -27,7 +27,7 @@ public class HistoriaUsuario2Test
         jugador1.agregarPokemon(pokemon);
 
         // Muestra los ataques.
-        jugador1.verMovimientos(mockInteraccion);
+        jugador1.verMovimientos();
 
         // Verifica que los mensajes correspondientes fueron enviados.
         mockInteraccion.Received(1).ImprimirMensaje("-Lanzallamas");
