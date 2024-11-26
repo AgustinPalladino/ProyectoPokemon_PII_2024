@@ -27,10 +27,9 @@ public class HistoriaUsuario2Test
         jugador1.agregarPokemon(pokemon);
 
         // Muestra los ataques.
-        jugador1.verMovimientos();
+       var movimiento = jugador1.verMovimientos();
 
         // Verifica que los mensajes correspondientes fueron enviados.
-        mockInteraccion.Received(1).ImprimirMensaje("-Lanzallamas");
-        mockInteraccion.Received(1).ImprimirMensaje("-Cola Dragón");
+        Assert.That(movimiento, Is.EqualTo("-Lanzallamas-Cola Dragón"));
     }
 }
