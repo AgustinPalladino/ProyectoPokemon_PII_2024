@@ -30,7 +30,7 @@ public class Jugador
     
     public void MostrarEquipo(IInteraccionConUsuario interaccion)
     {
-        Console.WriteLine($"El equipo del {this.Nombre} equipo es: ");
+        interaccion.ImprimirMensaje($"El equipo del {this.Nombre} equipo es: ");
         if (this.equipoPokemon[0] != null)
         {
             for (int i = 0; i < this.equipoPokemon.Count; i++)
