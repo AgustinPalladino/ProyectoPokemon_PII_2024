@@ -11,19 +11,19 @@ public class HistoriaUsuario6Test
     private Logica logica;
     
     [Test]
-    public void FinalizarBatalla_DeclaraGanadorCuandoTodosLosPokemonsDelOponenteSonDerrotados()
+    public void hdUsuario6Test()
     {
         
         mockInteraccion = Substitute.For<IInteraccionConUsuario>();
         jugador1 = new Jugador("Ash");
         jugador2 = new Jugador("Misty");
-        
+        // Simula el chequeo de victoria
+        var logica = new Logica(mockInteraccion);
         // Configuración de los jugadores y sus equipos
         var pokemonJugador = new Pokemon("Pikachu", "Eléctrico", 100, 50, 40);
         var pokemonOponente = new Pokemon("Charizard", "Fuego", 100, 60, 50);
         jugador1.agregarPokemon(pokemonJugador);
         jugador2.agregarPokemon(pokemonOponente);
-        Console.WriteLine($"{jugador2.pokemonEnCancha().VidaActual}");
 
         // Mock del ataque que derrota al Pokémon del oponente
         var ataque = new Movimiento("Rayo", 100, 100, "Eléctrico", false);
@@ -32,8 +32,7 @@ public class HistoriaUsuario6Test
         // Verifica que el HP del Pokémon oponente sea 0
         Assert.That(jugador2.pokemonEnCancha().VidaActual,Is.LessThanOrEqualTo(0) );
 
-        // Simula el chequeo de victoria
-        var logica = new Logica(mockInteraccion);
+        
         
         bool esVictoria = logica.ChequeoVictoria(jugador2);
         

@@ -31,11 +31,10 @@ public class HistoriaUsuario3Test
 
         // Verifica que la vida del Pokémon del oponente se actualiza tras el ataque
         Assert.That(jugador2.pokemonEnCancha().VidaActual, Is.EqualTo(pokemonOponente.VidaActual));
+        Assert.That(jugador2.pokemonEnCancha().VidaActual, Is.LessThan(jugador2.pokemonEnCancha().VidaMax));
 
         // Simula otra acción para mostrar la vida del Pokémon propio
-        jugador1.verSalud();
-        mockInteraccion.Received(1)
-            .ImprimirMensaje(
-                $"La vida del {pokemonJugador.Nombre} es: {pokemonJugador.VidaActual}/{pokemonJugador.VidaMax}");
+        var salud = jugador1.verSalud();
+        Assert.That(salud, Is.EqualTo($"La vida del {jugador1.pokemonEnCancha().Nombre} es: {jugador1.pokemonEnCancha().VidaActual}/{jugador1.pokemonEnCancha().VidaMax}"));
     }
 }
