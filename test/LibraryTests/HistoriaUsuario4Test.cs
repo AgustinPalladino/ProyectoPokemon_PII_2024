@@ -38,6 +38,6 @@ public class HistoriaUsuario4Test
         double critico = DiccionariosYOperacionesStatic.CalcularCritico(ataque.Precision, mockInteraccion);
         double dañoEsperado = (pokemonJugador.Ataque) * ataqueFinal * ataque.Ataque / pokemonOponente.Defensa;
         dañoEsperado *= bonificacionTipo * critico; // Aplicamos bonificación por tipo y crítico
-        Assert.That(pokemonOponente.VidaMax - (int)dañoEsperado, Is.EqualTo(jugador2.pokemonEnCancha().VidaActual));
+        Assert.That(pokemonOponente.VidaMax - (int)dañoEsperado, Is.EqualTo(jugador2.pokemonEnCancha().VidaActual));tc
     }
 }
