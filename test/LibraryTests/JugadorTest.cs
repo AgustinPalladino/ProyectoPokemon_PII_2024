@@ -42,7 +42,7 @@ public class JugadorTest
         
         Assert.That(item.Nombre, Is.EqualTo("SuperPocion"));
         
-        jugador.UsarMochila(item, new InteraccionPorConsola());
+        jugador.UsarMochila(item, "chari");
         
         Assert.That(jugador.Mochila.Count, Is.EqualTo(6)); 
         

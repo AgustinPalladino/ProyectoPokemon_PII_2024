@@ -15,7 +15,7 @@ public class ItemTest
         var curaTotal = new CuraTotal();
         charizard.Estado = "Quemado";
         
-        curaTotal.Usar(jugador, new InteraccionPorConsola());
+        curaTotal.Usar(jugador, "Charizard");
         Assert.That(curaTotal.Nombre, Is.EqualTo("CuraTotal"));
         Assert.That(charizard.Estado, Is.EqualTo("Normal"));
     }
@@ -43,9 +43,9 @@ public class ItemTest
         jugador.agregarPokemon(charizard);
 
         var sPocion = new SuperPocion();
-        charizard.VidaActual = 40;
+        charizard.VidaActual = 30;
         
-        sPocion.Usar(jugador, new InteraccionPorConsola()); 
+        sPocion.Usar(jugador, "Charizard"); 
         Assert.That(sPocion.Nombre, Is.EqualTo("SuperPocion"));
         Assert.That(charizard.VidaActual, Is.EqualTo(100));
     }

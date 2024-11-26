@@ -162,7 +162,9 @@ public class Logica
                     // Usa el objeto si el nombre coincide
                     if (jugador.Mochila[i].Nombre == item)
                     {
-                        jugador.UsarMochila(jugador.Mochila[i], interaccion);
+                        interaccion.ImprimirMensaje($"Con cual pokemon desea usar el {jugador.Mochila[i].Nombre}");
+                        string pokeIngresado = interaccion.LeerEntrada();
+                        interaccion.ImprimirMensaje(jugador.UsarMochila(jugador.Mochila[i], pokeIngresado));
                         return "Usted uso correctamente el item";
                     }
                 }

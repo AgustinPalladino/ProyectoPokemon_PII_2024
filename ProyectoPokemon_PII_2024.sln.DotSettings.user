@@ -1,4 +1,7 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5d42e482_002D03bb_002D4328_002D9af7_002De7979db4e5d5/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from ItemTest.cs #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:ItemTest.cs&lt;/ProjectFile&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5e71678f_002Df6c6_002D49c9_002D83bb_002D36cc6f8040a3/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Session" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Or&gt;&#xD;
     &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:ItemTest.cs&lt;/ProjectFile&gt;&#xD;
@@ -9,4 +12,10 @@
     &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:DiccionariosyOpStaticTest.cs&lt;/ProjectFile&gt;&#xD;
     &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:CombateTest.cs&lt;/ProjectFile&gt;&#xD;
   &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a2a480da_002Dbc54_002D4dac_002Db267_002D96ebcc210964/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from ItemTest.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:ItemTest.cs&lt;/ProjectFile&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c4a4acfc_002Dc1e2_002D4459_002D974a_002Dcf6ab497c3ae/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from JugadorTest.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:JugadorTest.cs&lt;/ProjectFile&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

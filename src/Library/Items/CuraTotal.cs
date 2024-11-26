@@ -11,52 +11,34 @@ public class CuraTotal : Item
     public override string Nombre => "CuraTotal";
 
     // Implementación del método abstracto Usar
-    public override void Usar(Jugador jugador, IInteraccionConUsuario interaccion)
+    public override string Usar(Jugador jugador, string pokeIngresado)
     {
-        bool bandera = true;
-        while (bandera)
+        for (int i = 0; i < jugador.equipoPokemonDerrotados.Count; i++)
         {
-            for (int i = 0; i < jugador.equipoPokemon.Count; i++)
+            if (pokeIngresado == jugador.equipoPokemonDerrotados[i].Nombre)
             {
-                interaccion.ImprimirMensaje($"-{jugador.equipoPokemon[i].Nombre}");
-            }
-
-            interaccion.ImprimirMensaje("Ingrese el nombre del pokemon que desea curar el estado o 0 para salir");
-            string pokeIngresado = interaccion.LeerEntrada();
-
-            for (int i = 0; i < jugador.equipoPokemonDerrotados.Count; i++)
-            {
-                if (pokeIngresado == jugador.equipoPokemonDerrotados[i].Nombre)
+                if (jugador.equipoPokemon[i].Estado == "Normal")
                 {
-                    if (jugador.equipoPokemon[i].Estado == "Normal")
-                    {
-                        interaccion.ImprimirMensaje("No puedes usar el ítem ya que el Pokémon está en estado normal.");
-                    }
+                    return "No puedes usar el ítem ya que el Pokémon está en estado normal.";
+                }
 
-                    if (jugador.equipoPokemon[i].Estado != "Normal")
-                    {
-                        SacarEstadoPokemon(jugador, jugador.equipoPokemon[i], interaccion);
-                        bandera = false;
-                    }
+                if (jugador.equipoPokemon[i].Estado != "Normal")
+                {
+                    return SacarEstadoPokemon(jugador.equipoPokemon[i]);
                 }
             }
-
-            if (pokeIngresado == "0")
-            {
-                interaccion.ImprimirMensaje("Usted volvio hacia atras");
-                bandera = false;
-            }
-
-            if (bandera)
-            {
-                interaccion.ImprimirMensaje("Pokemon incorrecto, seleccione de nuevo");
-            }
         }
+        if (pokeIngresado == "0")
+        {
+            return "Usted volvio hacia atras";
+        }
+        
+        return "Pokemon incorrecto, seleccione de nuevo";
     }
     
-    private void SacarEstadoPokemon(Jugador jugador, Pokemon pokemon, IInteraccionConUsuario interaccion)
+    private string SacarEstadoPokemon(Pokemon pokemon)
     {
         pokemon.Estado = "Normal";
-        interaccion.ImprimirMensaje($"{pokemon.Nombre} se ha curado de todos sus estados.");
+        return "Su pokemon se ha curado de todos sus estados";
     }
 }

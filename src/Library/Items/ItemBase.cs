@@ -12,5 +12,5 @@ public abstract class Item
     public abstract string Nombre { get; }
 
     // Método abstracto que obliga a las subclases a definir cómo usar el ítem
-    public abstract void Usar(Jugador j, IInteraccionConUsuario interaccion);
+    public abstract string Usar(Jugador j, string pokeIngresado);
 }

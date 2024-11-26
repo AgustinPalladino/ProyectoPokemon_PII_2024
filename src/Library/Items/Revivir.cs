@@ -9,57 +9,39 @@ public class Revivir : Item
 {
     public override string Nombre => "Revivir";
 
-    public override void Usar(Jugador jugador, IInteraccionConUsuario interaccion)
+    public override string Usar(Jugador jugador, string pokeIngresado)
     {
-        bool bandera = true;
-        while (bandera)
+        if (jugador.equipoPokemonDerrotados.Count() == 0)
         {
-            if (jugador.equipoPokemonDerrotados.Count() == 0)
+            return "No tiene ningun pokemon derrotado";
+        }
+        else
+        {
+            for (int i = 0; i < jugador.equipoPokemonDerrotados.Count; i++)
             {
-                interaccion.ImprimirMensaje("No tiene ningun pokemon derrotado");
-                bandera = false;
-            }
-            else
-            {
-                // Muestra los nombres de los pokemon derrotados
-                for (int i = 0; i < jugador.equipoPokemonDerrotados.Count; i++)
+                if (pokeIngresado == jugador.equipoPokemonDerrotados[i].Nombre)
                 {
-                    interaccion.ImprimirMensaje($"-{jugador.equipoPokemonDerrotados[i].Nombre}");
-                }
-                
-                interaccion.ImprimirMensaje("Ingrese el nombre del pokemon que desea revivir o 0 para salir");
-                string pokeIngresado = interaccion.LeerEntrada();
-
-                for (int i = 0; i < jugador.equipoPokemonDerrotados.Count; i++)
-                {
-                    if (pokeIngresado == jugador.equipoPokemonDerrotados[i].Nombre)
-                    {
-                        RevivirPokemon(jugador, jugador.equipoPokemonDerrotados[i], interaccion);
-                        bandera = false;
-                    }
-                }
-
-                if (pokeIngresado == "0")
-                {
-                    interaccion.ImprimirMensaje("Usted volvio hacia atras");
-                    bandera = false;
-                }
-                
-                if (bandera)
-                {
-                    interaccion.ImprimirMensaje("Pokemon incorrecto, seleccione de nuevo");
+                    return RevivirPokemon(jugador, jugador.equipoPokemonDerrotados[i]);
                 }
             }
+
+            if (pokeIngresado == "0")
+            {
+                return "Usted volvio hacia atras";
+            }
+            
+            return "Pokemon incorrecto, seleccione de nuevo";
         }
     }
     
-    private void RevivirPokemon(Jugador jugador, Pokemon pokemon, IInteraccionConUsuario interaccion)
+    private string RevivirPokemon(Jugador jugador, Pokemon pokemon)
     {
         pokemon.VidaActual = pokemon.VidaMax / 2; // Revive con el 50% de su vida máxima
         pokemon.Estado = "Normal";
-        interaccion.ImprimirMensaje($"{pokemon.Nombre} ha sido revivido con {pokemon.VidaActual} puntos de vida.");
 
         jugador.equipoPokemon.Add(pokemon);
         jugador.equipoPokemonDerrotados.Remove(pokemon);
+
+        return "Su pokemon ha sido revivido correctamente";
     }
 }

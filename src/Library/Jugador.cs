@@ -106,7 +106,6 @@ public class Jugador
     /// </summary>
     /// <param name="jEnemigo"></param>
     /// <param name="movimiento"></param>
-    
     public void atacar(Jugador jugadorEnemigo, Movimiento movimiento, IInteraccionConUsuario interaccion)
     {
         double ataqueFinal = DiccionariosYOperacionesStatic.Precision(movimiento.Precision, movimiento.Ataque, interaccion);
@@ -118,9 +117,10 @@ public class Jugador
     /// Método usar Mochila
     /// </summary>
     /// <returns></returns>
-    public void UsarMochila(Item item, IInteraccionConUsuario interaccion)
+    public string UsarMochila(Item item, string pokeIngresado)
     {
-        item.Usar(this, interaccion);
+        string mensaje = item.Usar(this, pokeIngresado);
         Mochila.Remove(item);
+        return mensaje;
     }
 }
