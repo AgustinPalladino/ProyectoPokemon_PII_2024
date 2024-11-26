@@ -29,23 +29,22 @@ public class HisotriaUsuario1Test
         // EL pokemon cambio correctamente
         bool resultado = logica.SeleccionarPokemonDeCambio(jugador);
         Assert.That(resultado, Is.True, "El Pokémon debería haber sido cambiado correctamente.");
-        mockInteraccion.Received(1).LeerEntrada(); // Verifica que se llamó al método LeerEntrada
-        Assert.That(resultado, Is.EqualTo(true),
-            "El Pokémon actual fue cambiado correctamente.");
+        mockInteraccion.Received(1).LeerEntrada(); // Verifica que llamo a leer entrada
+        Assert.That(resultado, Is.EqualTo(true));
 
         
         
         // Volvio hacia atras
         resultado = logica.SeleccionarPokemonDeCambio(jugador);
         Assert.That(resultado, Is.False, "Usted deberia haber vuelto hacia atras");
-        mockInteraccion.Received(2).LeerEntrada(); // Verifica que se llamó al método LeerEntrada
+        mockInteraccion.Received(2).LeerEntrada();
         Assert.That(resultado, Is.EqualTo(false), "Usted regreso hacia atras");
         
         // Error mal nombre
         resultado = logica.SeleccionarPokemonDeCambio(jugador);
         Assert.That(resultado, Is.False, "Sale un error");
-        mockInteraccion.Received(3).LeerEntrada(); // Verifica que se llamó al método LeerEntrada
-        Assert.That(resultado, Is.EqualTo(false), "Error inesperado");
+        mockInteraccion.Received(3).LeerEntrada();
+        Assert.That(resultado, Is.EqualTo(false));
 
         
         // El pokemon cambio correctamente
@@ -54,8 +53,7 @@ public class HisotriaUsuario1Test
         jugador.equipoPokemon.Add(pokemon2);
         resultado = logica.SeleccionarPokemonDeCambio(jugador);
         Assert.That(resultado, Is.True, "El Pokémon debería haber sido cambiado correctamente.");
-        mockInteraccion.Received(4).LeerEntrada(); // Verifica que se llamó al método LeerEntrada
-        Assert.That(resultado, Is.EqualTo(true),
-            "El Pokémon actual fue cambiado correctamente.");
+        mockInteraccion.Received(4).LeerEntrada();
+        Assert.That(resultado, Is.EqualTo(true));
     }
 }
