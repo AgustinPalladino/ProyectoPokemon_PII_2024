@@ -20,6 +20,7 @@ public class Logica
         bool bandera = true;
         while (bandera)
         {
+            //Si el otro jugador no gano la pelea sigue
             if (j1.pokemonEnCancha() == null)
             {
                 if (!ChequeoVictoria(j1))
@@ -28,7 +29,7 @@ public class Logica
                 }
                 else
                 {
-                    interaccion.ImprimirMensaje($"Felicidades, {j1.Nombre}, has derrotado todos los pokemon del {j2.Nombre} ! Has ganado la batalla.");
+                    interaccion.ImprimirMensaje($"Felicidades, {j2.Nombre}, has derrotado todos los pokemon del {j1.Nombre} ! Has ganado la batalla.");
                     return false;
                 }
             }
@@ -273,9 +274,8 @@ public class Logica
     
     public bool ChequeoVictoria(Jugador jugadorEnemigo)
     {
-        if (jugadorEnemigo.equipoPokemon.Count == 1 && jugadorEnemigo.equipoPokemon[0].VidaActual <= 0)
+        if (jugadorEnemigo.equipoPokemon.Count == 1 && jugadorEnemigo.equipoPokemon[0] == null)
         {
-            interaccion.ImprimirMensaje($"Felicidades, a {jugadorEnemigo.Nombre} no le quedan mas pokemones! Has ganado la batalla.");
             return true;
         }
         return false;

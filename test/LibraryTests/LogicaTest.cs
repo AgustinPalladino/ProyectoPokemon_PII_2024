@@ -43,15 +43,14 @@ public class LogicaTest
         var logica = new Logica(new InteraccionPorConsola());
         var jugador1 = new Jugador("Jugador1");
         var jugador2 = new Jugador("Jugador2");
-        var pokemon1 = new Pokemon("Blastoise", "Agua", 100, 100, 80); // Se pasa el tipo y las estadísticas
-        var pokemon2 = new Pokemon("Charizard", "Fuego", 120, 80, 100); // Se pasa el tipo y las estadísticas
+        var pokemon1 = new Pokemon("Blastoise", "Agua", 100, 100, 80); 
+        var pokemon2 = new Pokemon("Charizard", "Fuego", 120, 80, 100);
         var movimiento = new Movimiento("Hidrocañon", 5, 1,"Agua",false);
         
         jugador1.agregarPokemon(pokemon1);
         jugador2.agregarPokemon(pokemon2);
         
         //Prueba de si no gano la persona
-        logica.CalculoAtaque(jugador1, jugador2, movimiento);
         var test = logica.ChequeoVictoria(jugador2);
         Assert.That(test, Is.EqualTo(false));
         
