@@ -4,6 +4,8 @@ namespace Ucu.Poo.DiscordBot.Domain.Tests;
 
 public class JugadorTest
 {
+    
+    
     [Test]
     public void agregarPokemon()
     {
@@ -35,6 +37,7 @@ public class JugadorTest
 
     }
     
+    
     [Test]
     public void atacarTest()
     {
@@ -51,9 +54,12 @@ public class JugadorTest
 
         //Prueba de ataque
         jugador1.atacar(jugador2, movimiento, new InteraccionPorConsola());
-
         Assert.Less(pokemon2.VidaActual, pokemon2.VidaMax); 
+        
+        //prueba ver movimiento
+        Assert.That(jugador1.verMovimientos(), Is.EqualTo($"-{movimiento.Nombre}"));
     }
+    
     
     [Test]
     public void usarMochilaTest()
@@ -75,7 +81,9 @@ public class JugadorTest
         Assert.That(jugador.Mochila.Count, Is.EqualTo(6)); 
         
     }
-[Test]
+    
+
+    [Test]
     public void cambiarPoscionPokeTest()
     {
         Jugador jugador = new Jugador("Ash");
@@ -96,6 +104,7 @@ public class JugadorTest
         
     }
 
+    
     [Test]
     public void pokeEnCanchaTest()
     {
@@ -120,8 +129,27 @@ public class JugadorTest
     {
         Jugador jugador = new Jugador("Jugador");
         Pokemon pokemon = new Pokemon("Charizard", "Fuego", 120, 80, 100);
+        jugador.agregarPokemon(pokemon);
         string mensaje = $"El equipo del {jugador.Nombre} equipo es: ";
         mensaje += $"\n-{pokemon.Nombre}";
+        
+        //prueba si el primer pokemon no es null
         Assert.That(jugador.MostrarEquipo(), Is.EqualTo(mensaje));
+        
+        
+        //prueba si el primer pokemon es null
+        jugador.equipoPokemon[0] = null;
+        jugador.equipoPokemon.Add(pokemon);
+        Assert.That(jugador.MostrarEquipo(), Is.EqualTo(mensaje));
+    }
+
+    
+    [Test]
+    public void verSalud()
+    {
+        Jugador jugador = new Jugador("Jugador");
+        Pokemon pokemon = new Pokemon("Charizard", "Fuego", 120, 80, 100);
+        jugador.agregarPokemon(pokemon);
+        Assert.That(jugador.verSalud(), Is.EqualTo($"La vida del {pokemon.Nombre} es: {pokemon.VidaActual}/{pokemon.VidaMax}"));
     }
 }
