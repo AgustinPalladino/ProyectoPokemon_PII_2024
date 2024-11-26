@@ -37,14 +37,14 @@ public class Combate
         
         interaccion.ImprimirMensaje(MostrarCatalogo());
         string pokeIngresado;
-        while(j1.equipoPokemon.Count < 2) // Los jugadores escogen sus 6 pokemon
+        while(j1.equipoPokemon.Count < 6) // Los jugadores escogen sus 6 pokemon
         {
             interaccion.ImprimirMensaje($"{j1.Nombre}, seleccione su siguiente pokemon");
             pokeIngresado = interaccion.LeerEntrada();
             interaccion.ImprimirMensaje(Logica.CambiarPokeStringAPokemon(j1, pokeIngresado));
         }
 
-        while (j2.equipoPokemon.Count < 2)
+        while (j2.equipoPokemon.Count < 6)
         {
             interaccion.ImprimirMensaje($"{j2.Nombre}, seleccione su siguiente pokemon");
             pokeIngresado = interaccion.LeerEntrada();
