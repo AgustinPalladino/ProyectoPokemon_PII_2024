@@ -16,14 +16,14 @@ internal static class Juego
     private static void Main()
     {
         //Anterior Program:
-        //Jugador j1 = new Jugador("Jugador 1");
-        //Jugador j2 = new Jugador("Jugador 2");
-        //Combate combate = new Combate(new InteraccionPorConsola());
-        //combate.BuclePrincipal(j1, j2);
+        Jugador j1 = new Jugador("Jugador 1");
+        Jugador j2 = new Jugador("Jugador 2");
+        Combate combate = new Combate(new InteraccionPorConsola());
+        combate.BuclePrincipal(j1, j2);
         
         
         // DemoFacade();
-        DemoBot();
+        // DemoBot();
     }
 
     private static void DemoFacade()

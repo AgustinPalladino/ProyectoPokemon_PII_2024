@@ -184,7 +184,6 @@ public class Logica
                         interaccion.ImprimirMensaje($"Con cual pokemon desea usar el {jugador.Mochila[i].Nombre}");
                         string pokeIngresado = interaccion.LeerEntrada();
                         interaccion.ImprimirMensaje(jugador.UsarMochila(jugador.Mochila[i], pokeIngresado));
-                        interaccion.ImprimirMensaje($"Usaste correctamente {jugador.Mochila[i].Nombre}");
                         return true;
                     }
                 }
