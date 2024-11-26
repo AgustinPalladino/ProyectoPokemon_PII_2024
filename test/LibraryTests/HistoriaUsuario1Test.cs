@@ -30,7 +30,7 @@ public class HisotriaUsuario1Test
         // Simula entradas para seleccionar 6 Pokémons.
         
         mockInteraccion.LeerEntrada().Returns("Pikachu", "Charmander", "Squirtle", "Bulbasaur", "Jigglypuff", "Meowth");
-        logica.EscogerEquipo(jugador1);
+        Logica.CambiarPokeStringAPokemon(jugador1, "Pikachu");
         // Verifica que se hayan agregado exactamente 6 Pokémons.
         Assert.That(jugador1.equipoPokemon.Count, Is.EqualTo(6) );
 

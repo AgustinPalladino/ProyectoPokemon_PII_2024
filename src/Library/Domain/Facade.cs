@@ -83,14 +83,8 @@ public class Facade
         var player = GetOrCreatePlayer(playerDisplayName);
 
         // Busca el Pokémon en el diccionario
-        if (!DiccionariosYOperacionesStatic.DiccionarioPokemon.TryGetValue(pokemonName, out var pokemon))
-        {
-            return $"El Pokémon {pokemonName} no existe.";
-        }
-        
-
         // Agrega el Pokémon al equipo del jugador
-        return player.agregarPokemon(pokemon.Clonar());
+        return Logica.CambiarPokeStringAPokemon(player, pokemonName);
     }
 
 

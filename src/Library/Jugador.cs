@@ -8,7 +8,6 @@ public class Jugador
     public string Nombre;
     public List<Pokemon> equipoPokemon = new();
     public List<Pokemon> equipoPokemonDerrotados = new();
-    public List<string> nombreCheck = new();
     public List<Item> Mochila = new();
 
     private const int MaxPoke = 6;
@@ -91,7 +90,7 @@ public class Jugador
         
         this.equipoPokemon.Add(pokemon);
 
-        return $"{pokemon.Nombre} agregado al equipo de {Nombre}.";
+        return $"{pokemon.Nombre} agregado al equipo de {this.Nombre}.";
     }
     /// <summary>
     /// Método que devuelvo el pokemon en cancha

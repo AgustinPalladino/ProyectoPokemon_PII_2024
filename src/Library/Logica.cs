@@ -86,32 +86,17 @@ public class Logica
     }
     
     
-    public bool EscogerEquipo(Jugador jugador)
+    public static string CambiarPokeStringAPokemon(Jugador jugador, string pokeIngresado)
     {
-        interaccion.ImprimirMensaje($"{jugador.Nombre}, seleccione su siguiente pokemon");
-        string pokeIngresado = interaccion.LeerEntrada();
         foreach (var pokemon in DiccionariosYOperacionesStatic.DiccionarioPokemon)
         {
-            if (pokeIngresado == pokemon.Key)
+            if (pokeIngresado == pokemon.Value.Nombre)
             {
-                if (!jugador.nombreCheck.Contains(pokeIngresado))
-                {
-                    jugador.nombreCheck.Add(pokeIngresado);
-                    jugador.agregarPokemon(pokemon.Value.Clonar());
-                    interaccion.ImprimirMensaje($"{pokemon.Value.Nombre} se agrego a tu equipo");
-                    return true;
-                }
-                else
-                {
-                    interaccion.ImprimirMensaje($"{pokeIngresado} ya se encuentra en el equipo");
-                    return false;
-                }
+                return jugador.agregarPokemon(pokemon.Value.Clonar());
             }
         }
         //Si el pokemon nunca se encontro
-        
-        interaccion.ImprimirMensaje($"{pokeIngresado}, no es correcto");
-        return false;
+        return $"{pokeIngresado}, no es correcto";
     }
     
     
