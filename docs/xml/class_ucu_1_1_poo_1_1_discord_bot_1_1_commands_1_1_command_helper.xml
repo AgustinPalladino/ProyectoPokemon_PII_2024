@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_command_helper" kind="class" language="C#" prot="public">
+    <compoundname>Ucu::Poo::DiscordBot::Commands::CommandHelper</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_command_helper_1a9b872b89e76c27c80b794708a0a46b5f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Ucu.Poo.DiscordBot.Commands.CommandHelper.GetDisplayName</definition>
+        <argsstring>(SocketCommandContext context, string? name=null)</argsstring>
+        <name>GetDisplayName</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Commands.CommandHelper.GetDisplayName</qualifiedname>
+        <param>
+          <type>SocketCommandContext</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>string?</type>
+          <declname>name</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/CommandHelper.cs" line="8" column="26" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/CommandHelper.cs" bodystart="8" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_command_helper_1aa36fd618935d991df429650d5ceabb74" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>? SocketGuildUser</type>
+        <definition>static ? SocketGuildUser Ucu.Poo.DiscordBot.Commands.CommandHelper.GetUser</definition>
+        <argsstring>(SocketCommandContext context, string? name)</argsstring>
+        <name>GetUser</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Commands.CommandHelper.GetUser</qualifiedname>
+        <param>
+          <type>SocketCommandContext</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>string?</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/CommandHelper.cs" line="31" column="35" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/CommandHelper.cs" bodystart="31" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/CommandHelper.cs" line="6" column="15" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/CommandHelper.cs" bodystart="7" bodyend="53"/>
+    <listofallmembers>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_command_helper_1a9b872b89e76c27c80b794708a0a46b5f" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Commands::CommandHelper</scope><name>GetDisplayName</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_command_helper_1aa36fd618935d991df429650d5ceabb74" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Commands::CommandHelper</scope><name>GetUser</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

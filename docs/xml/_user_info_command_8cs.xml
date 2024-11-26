@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="_user_info_command_8cs" kind="file" language="C#">
+    <compoundname>UserInfoCommand.cs</compoundname>
+    <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_user_info_command" prot="public">Ucu::Poo::DiscordBot::Commands::UserInfoCommand</innerclass>
+    <innernamespace refid="namespace_ucu">Ucu</innernamespace>
+    <innernamespace refid="namespace_ucu_1_1_poo">Ucu::Poo</innernamespace>
+    <innernamespace refid="namespace_ucu_1_1_poo_1_1_discord_bot">Ucu::Poo::DiscordBot</innernamespace>
+    <innernamespace refid="namespace_ucu_1_1_poo_1_1_discord_bot_1_1_commands">Ucu::Poo::DiscordBot::Commands</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">Discord.Commands;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Discord.WebSocket;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_ucu_1_1_poo_1_1_discord_bot_1_1_domain" kindref="compound">Ucu.Poo.DiscordBot.Domain</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_ucu_1_1_poo_1_1_discord_bot_1_1_commands" kindref="compound">Ucu.Poo.DiscordBot.Commands</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment">//<sp/>ReSharper<sp/>disable<sp/>once<sp/>UnusedType.Global</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_user_info_command" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_user_info_command" kindref="compound">UserInfoCommand</ref><sp/>:<sp/>ModuleBase&lt;SocketCommandContext&gt;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>[Command(</highlight><highlight class="stringliteral">&quot;who&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>[Summary(</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="stringliteral">&quot;</highlight></codeline>
+<codeline lineno="22"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Devuelve<sp/>información<sp/>sobre<sp/>el<sp/>usuario<sp/>que<sp/>se<sp/>indica<sp/>como<sp/>parámetro<sp/>o</highlight></codeline>
+<codeline lineno="23"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sobre<sp/>el<sp/>usuario<sp/>que<sp/>envía<sp/>el<sp/>mensaje<sp/>si<sp/>no<sp/>se<sp/>indica<sp/>otro<sp/>usuario.</highlight></codeline>
+<codeline lineno="24"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ReSharper<sp/>disable<sp/>once<sp/>UnusedMember.Global</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>async<sp/>Task<sp/><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_user_info_command_1a5e581dd5e7b25f3ca326f4b8e838d1a5" kindref="member">ExecuteAsync</ref>(</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[Remainder][Summary(</highlight><highlight class="stringliteral">&quot;El<sp/>usuario<sp/>del<sp/>que<sp/>tener<sp/>información,<sp/>opcional&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">?<sp/>displayName<sp/>=<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(displayName<sp/>!=<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SocketGuildUser?<sp/>user<sp/>=<sp/>CommandHelper.GetUser(Context,<sp/>displayName);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(user<sp/>==<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>ReplyAsync($</highlight><highlight class="stringliteral">&quot;No<sp/>puedo<sp/>encontrar<sp/>{displayName}<sp/>en<sp/>este<sp/>servidor&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>userName<sp/>=<sp/>displayName<sp/>??<sp/>CommandHelper.GetDisplayName(Context);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>result<sp/>=<sp/><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_facade" kindref="compound">Facade</ref>.<ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_facade_1a5ba10a1da29b6141e13013a9b590699e" kindref="member">Instance</ref>.<ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_facade_1a5e0b1d9ca1347c92c36a3a336e902152" kindref="member">TrainerIsWaiting</ref>(userName);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>ReplyAsync(result);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/UserInfoCommand.cs"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_movimiento_test" kind="class" language="C#" prot="public">
+    <compoundname>Ucu::Poo::DiscordBot::Domain::Tests::MovimientoTest</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_movimiento_test_1ae0ceccb6d738406f65774d02a329979c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.MovimientoTest.constructorTest</definition>
+        <argsstring>()</argsstring>
+        <name>constructorTest</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.MovimientoTest.constructorTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/MovimientoTest.cs" line="8" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/MovimientoTest.cs" bodystart="8" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_movimiento_test_1a25a9b7907e669afd71ef591de1ef134c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.MovimientoTest.clonarTest</definition>
+        <argsstring>()</argsstring>
+        <name>clonarTest</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.MovimientoTest.clonarTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/MovimientoTest.cs" line="20" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/MovimientoTest.cs" bodystart="20" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_movimiento_test_1abf5ceafa669ddc9b2c73f9d8b301be9d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.MovimientoTest.movEspecialesTest</definition>
+        <argsstring>()</argsstring>
+        <name>movEspecialesTest</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.MovimientoTest.movEspecialesTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/MovimientoTest.cs" line="34" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/MovimientoTest.cs" bodystart="34" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/MovimientoTest.cs" line="5" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/MovimientoTest.cs" bodystart="6" bodyend="70"/>
+    <listofallmembers>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_movimiento_test_1a25a9b7907e669afd71ef591de1ef134c" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::MovimientoTest</scope><name>clonarTest</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_movimiento_test_1ae0ceccb6d738406f65774d02a329979c" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::MovimientoTest</scope><name>constructorTest</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_movimiento_test_1abf5ceafa669ddc9b2c73f9d8b301be9d" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::MovimientoTest</scope><name>movEspecialesTest</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

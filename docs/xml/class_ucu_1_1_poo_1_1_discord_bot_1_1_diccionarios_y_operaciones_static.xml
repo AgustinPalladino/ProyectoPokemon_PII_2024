@@ -1,0 +1,317 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_ucu_1_1_poo_1_1_discord_bot_1_1_diccionarios_y_operaciones_static" kind="class" language="C#" prot="public">
+    <compoundname>Ucu::Poo::DiscordBot::DiccionariosYOperacionesStatic</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_diccionarios_y_operaciones_static_1a9381d5e044260c108737b4add48d39b8" prot="private" static="yes" mutable="no">
+        <type>Random</type>
+        <definition>Random Ucu.Poo.DiscordBot.DiccionariosYOperacionesStatic.randomDouble</definition>
+        <argsstring></argsstring>
+        <name>randomDouble</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.DiccionariosYOperacionesStatic.randomDouble</qualifiedname>
+        <initializer>= new Random()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/DiccionariosYOperacionesStatic.cs" line="29" column="27" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/DiccionariosYOperacionesStatic.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_diccionarios_y_operaciones_static_1ac77c0f2408e042cf7bc931471523c7f2" prot="private" static="yes" mutable="no">
+        <type>readonly Dictionary&lt;(string tipoMovimiento, string tipoPokemonDefensor), double &gt;</type>
+        <definition>readonly Dictionary&lt;(string tipoMovimiento, string tipoPokemonDefensor), double&gt; Ucu.Poo.DiscordBot.DiccionariosYOperacionesStatic.bonificacionesTipos</definition>
+        <argsstring></argsstring>
+        <name>bonificacionesTipos</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.DiccionariosYOperacionesStatic.bonificacionesTipos</qualifiedname>
+        <briefdescription>
+<para>Diccionario para definir bonificaciones de tipo. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/DiccionariosYOperacionesStatic.cs" line="80" column="9" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/DiccionariosYOperacionesStatic.cs" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_diccionarios_y_operaciones_static_1a243917b5bef79e1ce93d6b52c71e375d" prot="public" static="yes" mutable="no">
+        <type>Dictionary&lt; string, <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento" kindref="compound">Movimiento</ref> &gt;</type>
+        <definition>Dictionary&lt;string, Movimiento&gt; Ucu.Poo.DiscordBot.DiccionariosYOperacionesStatic.DiccionarioMovimientos</definition>
+        <argsstring></argsstring>
+        <name>DiccionarioMovimientos</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.DiccionariosYOperacionesStatic.DiccionarioMovimientos</qualifiedname>
+        <initializer>= new()
+    {
+        { &quot;Arañazo&quot;, new <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Arañazo&quot;, 5, 80, &quot;Fuego&quot;, false) },
+        { &quot;Lanzallamas&quot;, new <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Lanzallamas&quot;, 20, 80, &quot;Fuego&quot;, false) },
+        { &quot;Lluevehojas&quot;, new <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Lluevehojas&quot;, 20, 100, &quot;Planta&quot;, false) },
+        { &quot;Hidrocañon&quot;, new <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Hidrocañon&quot;, 20, 60, &quot;Agua&quot;, false) },
+        { &quot;Puño Fuego&quot;, new <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Puño Fuego&quot;, 20, 60, &quot;Fuego&quot;, false) },
+        { &quot;Electrocañon&quot;, new <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Electrocañon&quot;, 100, 40, &quot;Eléctrico&quot;, false) },
+        { &quot;Aereo&quot;, new <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Aereo&quot;, 15, 60, &quot;Volador&quot;, false) },
+        { &quot;Colmillo Venenoso&quot;, new <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Colmillo Venenoso&quot;, 15, 60, &quot;Veneno&quot;, false) },
+        { &quot;Puño Dinamico&quot;, new <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Puño Dinamico&quot;, 25, 100, &quot;Lucha&quot;, false) },
+        { &quot;Garra Dragon&quot;, new <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Garra Dragon&quot;, 30, 60, &quot;Lucha&quot;, false) },
+        { &quot;Confusion&quot;, new <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Confusion&quot;, 50, 60, &quot;Psíquico&quot;, false) },
+        { &quot;lanzarrocas&quot;, new <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;lanzarrocas&quot;, 20, 80, &quot;Tierra&quot;, false) },
+        { &quot;Dormir&quot;, new <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Dormir&quot;, 0, 100, &quot;Psíquico&quot;, true) },
+        { &quot;Envenenar&quot;, new <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Envenenar&quot;, 0, 100, &quot;Veneno&quot;, true) },
+        { &quot;Quemar&quot;, new <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Quemar&quot;, 0, 100, &quot;Fuego&quot;, true) },
+        { &quot;Paralizar&quot;, new <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Paralizar&quot;, 0, 100, &quot;Eléctrico&quot;, true) },
+        { &quot;Puño Hielo&quot;, new <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Puño Hielo&quot;, 20, 80, &quot;Hielo&quot;, false) },
+        { &quot;Aguacero&quot;, new <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Aguacero&quot;, 20, 60, &quot;Agua&quot;, false) },
+        { &quot;Puño Electrico&quot;, new <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Puño Electrico&quot;, 20, 60, &quot;Eléctrico&quot;, false) },
+        { &quot;Puño Aereo&quot;, new <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Puño Aereo&quot;, 15, 80, &quot;Volador&quot;, false) },
+        { &quot;Hoja Afilada&quot;, new <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Hoja Afilada&quot;, 25, 60, &quot;Planta&quot;, false) },
+        { &quot;Cola Larga&quot;, new <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Cola Larga&quot;, 25, 60, &quot;Dragón&quot;, false) },
+        { &quot;Puño Lucha&quot;, new <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Puño Lucha&quot;, 25, 60, &quot;Lucha&quot;, false) },
+        { &quot;Rayo&quot;, new <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento" kindref="compound">Movimiento</ref>(&quot;Rayo&quot;, 20, 100, &quot;Eléctrico&quot;, false) }
+    }</initializer>
+        <briefdescription>
+<para>Se crean diccionarios no editables para los jugadores que &quot;configuran&quot; atributos de daño y tipo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/DiccionariosYOperacionesStatic.cs" line="190" column="30" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/DiccionariosYOperacionesStatic.cs" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_diccionarios_y_operaciones_static_1aa83a0730c8a3e890629be31c0bdf618f" prot="public" static="yes" mutable="no">
+        <type>Dictionary&lt; string, <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon" kindref="compound">Pokemon</ref> &gt;</type>
+        <definition>Dictionary&lt;string, Pokemon&gt; Ucu.Poo.DiscordBot.DiccionariosYOperacionesStatic.DiccionarioPokemon</definition>
+        <argsstring></argsstring>
+        <name>DiccionarioPokemon</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.DiccionariosYOperacionesStatic.DiccionarioPokemon</qualifiedname>
+        <briefdescription>
+<para>Se crea un diccionario pokemon que le da movimientos a los pokemons, daño, defensa, vida y tipo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/DiccionariosYOperacionesStatic.cs" line="223" column="30" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/DiccionariosYOperacionesStatic.cs" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_diccionarios_y_operaciones_static_1aaa94e277037ef5a36258dbbf762c2833" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int Ucu.Poo.DiscordBot.DiccionariosYOperacionesStatic.numeroAleatorio</definition>
+        <argsstring>(int minimo, int maximo)</argsstring>
+        <name>numeroAleatorio</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.DiccionariosYOperacionesStatic.numeroAleatorio</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>minimo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maximo</declname>
+        </param>
+        <briefdescription>
+<para>Se crea el metodo &quot;NumeroAleatorio&quot; y se encarga de generar un numero random entre un minimo y un maximo posteriormente seteado. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>minimo</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maximo</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>minimo</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maximo</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/DiccionariosYOperacionesStatic.cs" line="23" column="23" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/DiccionariosYOperacionesStatic.cs" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_diccionarios_y_operaciones_static_1ac9e693c7a06ef25b87792b5a62404256" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>static double Ucu.Poo.DiscordBot.DiccionariosYOperacionesStatic.Precision</definition>
+        <argsstring>(double precision, int ataqueBase, IInteraccionConUsuario interaccion)</argsstring>
+        <name>Precision</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.DiccionariosYOperacionesStatic.Precision</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>precision</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ataqueBase</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_i_interaccion_con_usuario" kindref="compound">IInteraccionConUsuario</ref></type>
+          <declname>interaccion</declname>
+        </param>
+        <briefdescription>
+<para>Se crea el metodo &quot;presición&quot; Este metodo busca poner una probabilidad de fallo de ataque. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>precision</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ataqueBase</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Devuelve valor entre 0 y 1</para>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/DiccionariosYOperacionesStatic.cs" line="40" column="26" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/DiccionariosYOperacionesStatic.cs" bodystart="40" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_diccionarios_y_operaciones_static_1a5575e14909b83f959264183912d5fcda" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>static double Ucu.Poo.DiscordBot.DiccionariosYOperacionesStatic.CalcularCritico</definition>
+        <argsstring>(int precisionMovimiento, IInteraccionConUsuario interaccion)</argsstring>
+        <name>CalcularCritico</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.DiccionariosYOperacionesStatic.CalcularCritico</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>precisionMovimiento</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_i_interaccion_con_usuario" kindref="compound">IInteraccionConUsuario</ref></type>
+          <declname>interaccion</declname>
+        </param>
+        <briefdescription>
+<para>Se crea &quot;CalcularCritico&quot; la cual tiene como objetivo que a la hora de atacar pueda causar un daño extra teniendo en cuenta una probabilidad. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>precisionMovimiento</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>precisionMovimiento</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/DiccionariosYOperacionesStatic.cs" line="64" column="26" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/DiccionariosYOperacionesStatic.cs" bodystart="64" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_diccionarios_y_operaciones_static_1a71e1da8d6967c23b25846536ca6244a4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>static double Ucu.Poo.DiscordBot.DiccionariosYOperacionesStatic.bonificacionTipos</definition>
+        <argsstring>(string tipoMovimiento, string tipoPokemonDefensor, IInteraccionConUsuario interaccion)</argsstring>
+        <name>bonificacionTipos</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.DiccionariosYOperacionesStatic.bonificacionTipos</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>tipoMovimiento</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>tipoPokemonDefensor</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_i_interaccion_con_usuario" kindref="compound">IInteraccionConUsuario</ref></type>
+          <declname>interaccion</declname>
+        </param>
+        <briefdescription>
+<para>Método para obtener la bonificación de tipo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tipoMovimiento</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tipoPokemonDefensor</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Si no hay bonificación específica, el daño es normal</para>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/DiccionariosYOperacionesStatic.cs" line="173" column="26" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/DiccionariosYOperacionesStatic.cs" bodystart="173" bodyend="183"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Crea la clase estatica &quot;DiccionariosYOperacionesStatic&quot; Esta clase se ocupa de contener y guardar toda la informacion que NO necesita ser modificada, solo llamada. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/DiccionariosYOperacionesStatic.cs" line="9" column="15" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/DiccionariosYOperacionesStatic.cs" bodystart="10" bodyend="433"/>
+    <listofallmembers>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_diccionarios_y_operaciones_static_1ac77c0f2408e042cf7bc931471523c7f2" prot="private" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::DiccionariosYOperacionesStatic</scope><name>bonificacionesTipos</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_diccionarios_y_operaciones_static_1a71e1da8d6967c23b25846536ca6244a4" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::DiccionariosYOperacionesStatic</scope><name>bonificacionTipos</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_diccionarios_y_operaciones_static_1a5575e14909b83f959264183912d5fcda" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::DiccionariosYOperacionesStatic</scope><name>CalcularCritico</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_diccionarios_y_operaciones_static_1a243917b5bef79e1ce93d6b52c71e375d" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::DiccionariosYOperacionesStatic</scope><name>DiccionarioMovimientos</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_diccionarios_y_operaciones_static_1aa83a0730c8a3e890629be31c0bdf618f" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::DiccionariosYOperacionesStatic</scope><name>DiccionarioPokemon</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_diccionarios_y_operaciones_static_1aaa94e277037ef5a36258dbbf762c2833" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::DiccionariosYOperacionesStatic</scope><name>numeroAleatorio</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_diccionarios_y_operaciones_static_1ac9e693c7a06ef25b87792b5a62404256" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::DiccionariosYOperacionesStatic</scope><name>Precision</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_diccionarios_y_operaciones_static_1a9381d5e044260c108737b4add48d39b8" prot="private" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::DiccionariosYOperacionesStatic</scope><name>randomDouble</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

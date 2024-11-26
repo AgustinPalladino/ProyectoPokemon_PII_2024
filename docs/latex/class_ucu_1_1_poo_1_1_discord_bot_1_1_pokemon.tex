@@ -1,0 +1,66 @@
+\doxysection{Ucu.\+Poo.\+Discord\+Bot.\+Pokemon Class Reference}
+\hypertarget{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon}{}\label{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon}\index{Ucu.Poo.DiscordBot.Pokemon@{Ucu.Poo.DiscordBot.Pokemon}}
+
+
+Se crea la clase \"{}\+Pokemon\"{} encargada de representar a un Pokémon con sus atributos básicos, habilidades y comportamientos en el juego.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_aa917194645f98142a3558ca3deebd5f4}\label{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_aa917194645f98142a3558ca3deebd5f4} 
+{\bfseries Pokemon} (string nombre, string tipo, int vida\+Max, int ataque, int defensa)
+\item 
+\Hypertarget{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_a04bddbb0b3442b4ec9e4b2f5fd7bd62f}\label{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_a04bddbb0b3442b4ec9e4b2f5fd7bd62f} 
+\mbox{\hyperlink{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon}{Pokemon}} {\bfseries Clonar} ()
+\item 
+\Hypertarget{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_ab702e2e25cb2cb519273c9ccee3395bb}\label{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_ab702e2e25cb2cb519273c9ccee3395bb} 
+\mbox{\hyperlink{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon}{Pokemon}} {\bfseries Agregar\+Movimientos} (List$<$ \mbox{\hyperlink{class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento}{Movimiento}} $>$ movimiento)
+\item 
+\Hypertarget{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_a87041e01db563ba96046dfd3d5b59f47}\label{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_a87041e01db563ba96046dfd3d5b59f47} 
+void {\bfseries aplicar\+Daño\+Recurrente} (\mbox{\hyperlink{interface_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_i_interaccion_con_usuario}{IInteraccion\+Con\+Usuario}} interaccion)
+\item 
+\Hypertarget{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_a2514538403b94cb6665a5e5d7029f736}\label{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_a2514538403b94cb6665a5e5d7029f736} 
+bool {\bfseries puede\+Atacar} (\mbox{\hyperlink{interface_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_i_interaccion_con_usuario}{IInteraccion\+Con\+Usuario}} interaccion)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_afa0c4540cb2545067b64f356d18b0b19}\label{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_afa0c4540cb2545067b64f356d18b0b19} 
+List$<$ \mbox{\hyperlink{class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento}{Movimiento}} $>$ {\bfseries lista\+Movimientos} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_aeab4f243ea9b669f97109d32135a1e11}\label{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_aeab4f243ea9b669f97109d32135a1e11} 
+string {\bfseries Nombre}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_a925fa518873db26a120926802549335e}\label{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_a925fa518873db26a120926802549335e} 
+string {\bfseries Tipo}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_a202c1350acb8c380e43ce4ce1524437f}\label{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_a202c1350acb8c380e43ce4ce1524437f} 
+int {\bfseries Vida\+Max}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_a9d02730f8a2dbac782ec344f85fefa81}\label{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_a9d02730f8a2dbac782ec344f85fefa81} 
+int {\bfseries Vida\+Actual}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_a6c4eccd2584bd9d4c734977aea958cba}\label{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_a6c4eccd2584bd9d4c734977aea958cba} 
+int {\bfseries Ataque}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_ad1fa65c0969ca44e4413f7765a607b76}\label{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_ad1fa65c0969ca44e4413f7765a607b76} 
+int {\bfseries Defensa}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_a33dd22193d7687ca062b5a5d35dfe285}\label{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_a33dd22193d7687ca062b5a5d35dfe285} 
+string {\bfseries Estado}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_a2597c6ae764345e9fcc5e1081aca813c}\label{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_a2597c6ae764345e9fcc5e1081aca813c} 
+int {\bfseries Turnos\+Dormido}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_add5895060fb113d83c6797715dae6718}\label{class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_add5895060fb113d83c6797715dae6718} 
+double {\bfseries Porcentaje\+Daño\+Por\+Turno}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Se crea la clase \"{}\+Pokemon\"{} encargada de representar a un Pokémon con sus atributos básicos, habilidades y comportamientos en el juego. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Lucas/\+Desktop/\+Proyecto/\+Proyecto\+Pokemon\+\_\+\+PII\+\_\+2024/src/\+Library/Pokemon.\+cs\end{DoxyCompactItemize}

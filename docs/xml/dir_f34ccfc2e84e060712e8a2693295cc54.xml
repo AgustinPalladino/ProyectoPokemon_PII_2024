@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_f34ccfc2e84e060712e8a2693295cc54" kind="dir">
+    <compoundname>C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services</compoundname>
+    <innerfile refid="_bot_8cs">Bot.cs</innerfile>
+    <innerfile refid="_bot_loader_8cs">BotLoader.cs</innerfile>
+    <innerfile refid="_i_bot_8cs">IBot.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/"/>
+  </compounddef>
+</doxygen>

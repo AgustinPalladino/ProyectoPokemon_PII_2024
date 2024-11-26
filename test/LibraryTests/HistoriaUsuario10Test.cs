@@ -1,4 +1,5 @@
-﻿using Ucu.Poo.DiscordBot.Interaccion;
+﻿using NSubstitute;
+using Ucu.Poo.DiscordBot.Interaccion;
 
 namespace Ucu.Poo.DiscordBot.Domain.Tests;
 
@@ -12,7 +13,7 @@ public class HistoriaUsuario10Test
     [SetUp]
     public void Setup()
     {
-        
+
     }
 
     [Test]
@@ -21,7 +22,7 @@ public class HistoriaUsuario10Test
         mockInteraccion = Substitute.For<IInteraccionConUsuario>();
         jugador1 = new Jugador("Ash");
         jugador2 = new Jugador("Misty");
-        
+
         // Simula una lista de espera con varios jugadores
         var listaDeEspera = new List<string> { "Ash", "Misty", "Brock" };
 
@@ -44,3 +45,4 @@ public class HistoriaUsuario10Test
         mockInteraccion.Received(1).ImprimirMensaje("- Misty");
         mockInteraccion.Received(1).ImprimirMensaje("- Brock");
     }
+}

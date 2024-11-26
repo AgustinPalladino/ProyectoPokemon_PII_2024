@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_user_info_command" kind="class" language="C#" prot="public">
+    <compoundname>Ucu::Poo::DiscordBot::Commands::UserInfoCommand</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ModuleBase&lt; SocketCommandContext &gt;</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_user_info_command_1a5e581dd5e7b25f3ca326f4b8e838d1a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ucu.Poo.DiscordBot.Commands.UserInfoCommand.ExecuteAsync</definition>
+        <argsstring>([Remainder][Summary(&quot;El usuario del que tener información, opcional&quot;)] string? displayName=null)</argsstring>
+        <name>ExecuteAsync</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Commands.UserInfoCommand.ExecuteAsync</qualifiedname>
+        <param>
+          <attributes>[Summary(&quot;El usuario del que tener información, opcional&quot;)]</attributes>
+          <type>string?</type>
+          <declname>displayName</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>Implementa el comando &apos;userinfo&apos;, alias &apos;who&apos; o &apos;whois&apos; del bot. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>displayName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El nombre de usuario de Discord a buscar.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/UserInfoCommand.cs" line="26" column="23" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/UserInfoCommand.cs" bodystart="26" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Esta clase implementa el comando &apos;userinfo&apos;, alias &apos;who&apos; o &apos;whois&apos; del bot. Este comando retorna información sobre el usuario que envía el mensaje o sobre otro usuario si se incluye como parámetro.. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ModuleBase&lt; SocketCommandContext &gt;</label>
+      </node>
+      <node id="1">
+        <label>Ucu.Poo.DiscordBot.Commands.UserInfoCommand</label>
+        <link refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_user_info_command"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ModuleBase&lt; SocketCommandContext &gt;</label>
+      </node>
+      <node id="1">
+        <label>Ucu.Poo.DiscordBot.Commands.UserInfoCommand</label>
+        <link refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_user_info_command"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/UserInfoCommand.cs" line="13" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/UserInfoCommand.cs" bodystart="14" bodyend="46"/>
+    <listofallmembers>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_user_info_command_1a5e581dd5e7b25f3ca326f4b8e838d1a5" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Commands::UserInfoCommand</scope><name>ExecuteAsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

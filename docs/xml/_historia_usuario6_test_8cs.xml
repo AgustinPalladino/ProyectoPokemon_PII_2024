@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="_historia_usuario6_test_8cs" kind="file" language="C#">
+    <compoundname>HistoriaUsuario6Test.cs</compoundname>
+    <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario6_test" prot="public">Ucu::Poo::DiscordBot::Domain::Tests::HistoriaUsuario6Test</innerclass>
+    <innernamespace refid="namespace_ucu">Ucu</innernamespace>
+    <innernamespace refid="namespace_ucu_1_1_poo">Ucu::Poo</innernamespace>
+    <innernamespace refid="namespace_ucu_1_1_poo_1_1_discord_bot">Ucu::Poo::DiscordBot</innernamespace>
+    <innernamespace refid="namespace_ucu_1_1_poo_1_1_discord_bot_1_1_domain">Ucu::Poo::DiscordBot::Domain</innernamespace>
+    <innernamespace refid="namespace_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests">Ucu::Poo::DiscordBot::Domain::Tests</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">NSubstitute;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion" kindref="compound">Ucu.Poo.DiscordBot.Interaccion</ref>;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests" kindref="compound">Ucu.Poo.DiscordBot.Domain.Tests</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario6_test" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario6_test" kindref="compound">HistoriaUsuario6Test</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador" kindref="compound">Jugador</ref><sp/>jugador1;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador" kindref="compound">Jugador</ref><sp/>jugador2;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_i_interaccion_con_usuario" kindref="compound">IInteraccionConUsuario</ref><sp/>mockInteraccion;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica" kindref="compound">Logica</ref><sp/>logica;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>[Test]</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FinalizarBatalla_DeclaraGanadorCuandoTodosLosPokemonsDelOponenteSonDerrotados()</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mockInteraccion<sp/>=<sp/>Substitute.For&lt;<ref refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_i_interaccion_con_usuario" kindref="compound">IInteraccionConUsuario</ref>&gt;();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jugador1<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador" kindref="compound">Jugador</ref>(</highlight><highlight class="stringliteral">&quot;Ash&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jugador2<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador" kindref="compound">Jugador</ref>(</highlight><highlight class="stringliteral">&quot;Misty&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Configuración<sp/>de<sp/>los<sp/>jugadores<sp/>y<sp/>sus<sp/>equipos</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>pokemonJugador<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon" kindref="compound">Pokemon</ref>(</highlight><highlight class="stringliteral">&quot;Pikachu&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Eléctrico&quot;</highlight><highlight class="normal">,<sp/>100,<sp/>50,<sp/>40);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>pokemonOponente<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon" kindref="compound">Pokemon</ref>(</highlight><highlight class="stringliteral">&quot;Charizard&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Fuego&quot;</highlight><highlight class="normal">,<sp/>100,<sp/>60,<sp/>50);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jugador1.agregarPokemon(pokemonJugador);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jugador2.<ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1ad4ef3ac0f06ebf4124cdb60bb15997e8" kindref="member">agregarPokemon</ref>(pokemonOponente);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Console.WriteLine($</highlight><highlight class="stringliteral">&quot;{jugador2.pokemonEnCancha().VidaActual}&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Mock<sp/>del<sp/>ataque<sp/>que<sp/>derrota<sp/>al<sp/>Pokémon<sp/>del<sp/>oponente</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>ataque<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento" kindref="compound">Movimiento</ref>(</highlight><highlight class="stringliteral">&quot;Rayo&quot;</highlight><highlight class="normal">,<sp/>100,<sp/>100,<sp/></highlight><highlight class="stringliteral">&quot;Eléctrico&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jugador1.atacar(jugador2,<sp/>ataque,<sp/>mockInteraccion);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Verifica<sp/>que<sp/>el<sp/>HP<sp/>del<sp/>Pokémon<sp/>oponente<sp/>sea<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Assert.That(jugador2.<ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a1ebb5e57eb9b3409ceccda40b52c9e8e" kindref="member">pokemonEnCancha</ref>().VidaActual,Is.LessThanOrEqualTo(0)<sp/>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Simula<sp/>el<sp/>chequeo<sp/>de<sp/>victoria</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>logica<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica" kindref="compound">Logica</ref>(mockInteraccion);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>esVictoria<sp/>=<sp/>logica.ChequeoVictoria(jugador2);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Verifica<sp/>que<sp/>la<sp/>batalla<sp/>termina</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Assert.That(esVictoria,<sp/>Is.EqualTo(</highlight><highlight class="keyword">true</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Verifica<sp/>que<sp/>se<sp/>muestra<sp/>el<sp/>mensaje<sp/>de<sp/>victoria</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mockInteraccion.Received(1).ImprimirMensaje($</highlight><highlight class="stringliteral">&quot;Felicidades,<sp/>a<sp/>{jugador2.Nombre}<sp/>no<sp/>le<sp/>quedan<sp/>mas<sp/>pokemones!<sp/>Has<sp/>ganado<sp/>la<sp/>batalla.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario6Test.cs"/>
+  </compounddef>
+</doxygen>

@@ -1,4 +1,5 @@
-﻿using Ucu.Poo.DiscordBot.Interaccion;
+﻿using NSubstitute;
+using Ucu.Poo.DiscordBot.Interaccion;
 
 namespace Ucu.Poo.DiscordBot.Domain.Tests;
 

@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list" kind="class" language="C#" prot="public">
+    <compoundname>Ucu::Poo::DiscordBot::Domain::WaitingList</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list_1a797152fe5f735d1afb8c1f0d8e218457" prot="private" static="no" mutable="no">
+        <type>readonly List&lt; <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_trainer" kindref="compound">Trainer</ref> &gt;</type>
+        <definition>readonly List&lt;Trainer&gt; Ucu.Poo.DiscordBot.Domain.WaitingList.trainers</definition>
+        <argsstring></argsstring>
+        <name>trainers</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.WaitingList.trainers</qualifiedname>
+        <initializer>= new List&lt;<ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_trainer" kindref="compound">Trainer</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Domain/WaitingList.cs" line="10" column="27" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Domain/WaitingList.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list_1affd9b32e70958900a121579b8e007a0a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Ucu.Poo.DiscordBot.Domain.WaitingList.Count</definition>
+        <argsstring></argsstring>
+        <name>Count</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.WaitingList.Count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Domain/WaitingList.cs" line="12" column="16" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Domain/WaitingList.cs" bodystart="13" bodyend="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list_1a0efa610c3eb068a4036c8261780a58f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ReadOnlyCollection&lt; <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_trainer" kindref="compound">Trainer</ref> &gt;</type>
+        <definition>ReadOnlyCollection&lt; Trainer &gt; Ucu.Poo.DiscordBot.Domain.WaitingList.GetAllWaiting</definition>
+        <argsstring>()</argsstring>
+        <name>GetAllWaiting</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.WaitingList.GetAllWaiting</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Domain/WaitingList.cs" line="17" column="31" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Domain/WaitingList.cs" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list_1ae678a5933c810f3bf198ba5fdf22509b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Ucu.Poo.DiscordBot.Domain.WaitingList.AddTrainer</definition>
+        <argsstring>(string displayName)</argsstring>
+        <name>AddTrainer</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.WaitingList.AddTrainer</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>displayName</declname>
+        </param>
+        <briefdescription>
+<para>Agrega un jugador a la lista de espera. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>displayName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El nombre de usuario de Discord en el servidor del bot a agregar. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> si se agrega el usuario; <computeroutput>false</computeroutput> en caso contrario.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Domain/WaitingList.cs" line="30" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Domain/WaitingList.cs" bodystart="30" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list_1ad818a340d93c88620709d05b930db946" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Ucu.Poo.DiscordBot.Domain.WaitingList.RemoveTrainer</definition>
+        <argsstring>(string displayName)</argsstring>
+        <name>RemoveTrainer</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.WaitingList.RemoveTrainer</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>displayName</declname>
+        </param>
+        <briefdescription>
+<para>Remueve un jugador de la lista de espera. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>displayName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El nombre de usuario de Discord en el servidor del bot a remover. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> si se remueve el usuario; <computeroutput>false</computeroutput> en caso contrario.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Domain/WaitingList.cs" line="51" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Domain/WaitingList.cs" bodystart="51" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list_1acc2e4a01aae29f639187155b8cb61cc2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_trainer" kindref="compound">Trainer</ref>?</type>
+        <definition>Trainer? Ucu.Poo.DiscordBot.Domain.WaitingList.FindTrainerByDisplayName</definition>
+        <argsstring>(string displayName)</argsstring>
+        <name>FindTrainerByDisplayName</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.WaitingList.FindTrainerByDisplayName</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>displayName</declname>
+        </param>
+        <briefdescription>
+<para>Busca un jugador por el nombre de usuario de Discord en el servidor del bot. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>displayName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El nombre de usuario de Discord en el servidor del bot a buscar. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>El jugador encontrado o <computeroutput>null</computeroutput> en caso contrario. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Domain/WaitingList.cs" line="69" column="20" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Domain/WaitingList.cs" bodystart="69" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list_1af24b84ca7b9189022ad6c4114d515e6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_trainer" kindref="compound">Trainer</ref>?</type>
+        <definition>Trainer? Ucu.Poo.DiscordBot.Domain.WaitingList.GetAnyoneWaiting</definition>
+        <argsstring>()</argsstring>
+        <name>GetAnyoneWaiting</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.WaitingList.GetAnyoneWaiting</qualifiedname>
+        <briefdescription>
+<para>Retorna un jugador cualquiera esperando para jugar. En esta implementación provista no es cualquiera, sino el primero. En la implementación definitiva, debería ser uno aleatorio. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Domain/WaitingList.cs" line="89" column="20" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Domain/WaitingList.cs" bodystart="89" bodyend="97"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Esta clase representa la lista de jugadores esperando para jugar. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Domain/WaitingList.cs" line="8" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Domain/WaitingList.cs" bodystart="9" bodyend="98"/>
+    <listofallmembers>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list_1ae678a5933c810f3bf198ba5fdf22509b" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::WaitingList</scope><name>AddTrainer</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list_1affd9b32e70958900a121579b8e007a0a" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::WaitingList</scope><name>Count</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list_1acc2e4a01aae29f639187155b8cb61cc2" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::WaitingList</scope><name>FindTrainerByDisplayName</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list_1a0efa610c3eb068a4036c8261780a58f5" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::WaitingList</scope><name>GetAllWaiting</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list_1af24b84ca7b9189022ad6c4114d515e6e" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::WaitingList</scope><name>GetAnyoneWaiting</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list_1ad818a340d93c88620709d05b930db946" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::WaitingList</scope><name>RemoveTrainer</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list_1a797152fe5f735d1afb8c1f0d8e218457" prot="private" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::WaitingList</scope><name>trainers</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

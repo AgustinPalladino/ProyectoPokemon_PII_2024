@@ -1,5 +1,4 @@
-﻿using Ucu.Poo.DiscordBot.Commands;
-using Ucu.Poo.DiscordBot.Interaccion;
+﻿using Ucu.Poo.DiscordBot.Interaccion;
 
 namespace Ucu.Poo.DiscordBot;
 
@@ -22,11 +21,11 @@ public class Combate
     
     public string MostrarCatalogo()
     {
-        string mensaje = "\nCatálogo de Pokémon disponibles:";
+        string mensaje = "\n Catálogo de Pokémon disponibles:";
 
         foreach (var pokemon in DiccionariosYOperacionesStatic.DiccionarioPokemon)
         {
-            mensaje += $"\n-{pokemon.Value.Nombre}";
+            mensaje += $"-{pokemon.Value.Nombre}";
         }
 
         return mensaje;
@@ -36,29 +35,12 @@ public class Combate
     public void BuclePrincipal(Jugador j1, Jugador j2)
     {
         Logica logica = new Logica(interaccion);
-        interaccion.ImprimirMensaje(MostrarCatalogo());
-        string opcion;
-        for (int i = 0; i < 2; i++) // Los jugadores escogen sus 6 pokemon
+        MostrarCatalogo(); 
+        
+        for (int i = 0; i < 6; i++) // Los jugadores escogen sus 6 pokemon
         {
-            bool bandera = true;
-            while (bandera)
-            {
-                if (logica.EscogerEquipo(j1) != "Error")
-                {
-                    bandera = false;
-                }
-            }
-
-            bandera = true;
-            
-            while (bandera)
-            {
-                opcion = logica.EscogerEquipo(j2);
-                if (opcion != "Error")
-                {
-                    bandera = false;
-                }
-            }
+            logica.EscogerEquipo(j1);
+            logica.EscogerEquipo(j2);
         }
         
         interaccion.ImprimirMensaje(j1.MostrarEquipo());

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespace_ucu_1_1_poo_1_1_discord_bot_1_1_domain" kind="namespace" language="C#">
+    <compoundname>Ucu::Poo::DiscordBot::Domain</compoundname>
+    <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_battle" prot="public">Ucu::Poo::DiscordBot::Domain::Battle</innerclass>
+    <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_battles_list" prot="public">Ucu::Poo::DiscordBot::Domain::BattlesList</innerclass>
+    <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_facade" prot="public">Ucu::Poo::DiscordBot::Domain::Facade</innerclass>
+    <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_trainer" prot="public">Ucu::Poo::DiscordBot::Domain::Trainer</innerclass>
+    <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_waiting_list" prot="public">Ucu::Poo::DiscordBot::Domain::WaitingList</innerclass>
+    <innernamespace refid="namespace_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests">Ucu::Poo::DiscordBot::Domain::Tests</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Domain/Battle.cs" line="1" column="1"/>
+  </compounddef>
+</doxygen>

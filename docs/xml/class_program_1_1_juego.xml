@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_program_1_1_juego" kind="class" language="C#" prot="package">
+    <compoundname>Program::Juego</compoundname>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_program_1_1_juego_1a7f005125f7286e8e30efd81199932879" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Program.Juego.Main</definition>
+        <argsstring>()</argsstring>
+        <name>Main</name>
+        <qualifiedname>Program.Juego.Main</qualifiedname>
+        <briefdescription>
+<para>Punto de entrada al programa. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Program/Juego.cs" line="16" column="25" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Program/Juego.cs" bodystart="16" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_program_1_1_juego_1a9d2d4362abd2dcd0664ed8ef2e831233" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Program.Juego.DemoFacade</definition>
+        <argsstring>()</argsstring>
+        <name>DemoFacade</name>
+        <qualifiedname>Program.Juego.DemoFacade</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Program/Juego.cs" line="29" column="25" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Program/Juego.cs" bodystart="29" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_program_1_1_juego_1a9c91ad8268cd2defdff6ed2e244677a1" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Program.Juego.DemoBot</definition>
+        <argsstring>()</argsstring>
+        <name>DemoBot</name>
+        <qualifiedname>Program.Juego.DemoBot</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Program/Juego.cs" line="38" column="25" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Program/Juego.cs" bodystart="38" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Un programa que implementa un bot de Discord. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Program/Juego.cs" line="11" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Program/Juego.cs" bodystart="12" bodyend="42"/>
+    <listofallmembers>
+      <member refid="class_program_1_1_juego_1a9c91ad8268cd2defdff6ed2e244677a1" prot="private" virt="non-virtual"><scope>Program::Juego</scope><name>DemoBot</name></member>
+      <member refid="class_program_1_1_juego_1a9d2d4362abd2dcd0664ed8ef2e831233" prot="private" virt="non-virtual"><scope>Program::Juego</scope><name>DemoFacade</name></member>
+      <member refid="class_program_1_1_juego_1a7f005125f7286e8e30efd81199932879" prot="private" virt="non-virtual"><scope>Program::Juego</scope><name>Main</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

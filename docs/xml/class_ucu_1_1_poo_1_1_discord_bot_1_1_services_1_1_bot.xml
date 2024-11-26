@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot" kind="class" language="C#" prot="public">
+    <compoundname>Ucu::Poo::DiscordBot::Services::Bot</compoundname>
+    <basecompoundref refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_i_bot" prot="public" virt="non-virtual">Ucu.Poo.DiscordBot.Services.IBot</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_1aeadbb07e4a0f6acb9331de0baa2b96a1" prot="private" static="no" mutable="no">
+        <type>ServiceProvider?</type>
+        <definition>ServiceProvider? Ucu.Poo.DiscordBot.Services.Bot.serviceProvider</definition>
+        <argsstring></argsstring>
+        <name>serviceProvider</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Services.Bot.serviceProvider</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" line="16" column="29" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_1aec6298e9578ae417b06296437c9f1623" prot="private" static="no" mutable="no">
+        <type>readonly ILogger&lt; <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot" kindref="compound">Bot</ref> &gt;</type>
+        <definition>readonly ILogger&lt;Bot&gt; Ucu.Poo.DiscordBot.Services.Bot.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Services.Bot.logger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" line="17" column="30" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_1ac0ae5de9877f255e009c30e0185757b4" prot="private" static="no" mutable="no">
+        <type>readonly IConfiguration</type>
+        <definition>readonly IConfiguration Ucu.Poo.DiscordBot.Services.Bot.configuration</definition>
+        <argsstring></argsstring>
+        <name>configuration</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Services.Bot.configuration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" line="18" column="37" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_1a70f3d47e1170aa5aa03463190e268a5a" prot="private" static="no" mutable="no">
+        <type>readonly DiscordSocketClient</type>
+        <definition>readonly DiscordSocketClient Ucu.Poo.DiscordBot.Services.Bot.client</definition>
+        <argsstring></argsstring>
+        <name>client</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Services.Bot.client</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" line="19" column="42" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_1abd514a61f5a0f032dae546c922d2eded" prot="private" static="no" mutable="no">
+        <type>readonly CommandService</type>
+        <definition>readonly CommandService Ucu.Poo.DiscordBot.Services.Bot.commands</definition>
+        <argsstring></argsstring>
+        <name>commands</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Services.Bot.commands</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" line="20" column="37" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_1ae5f514e9761099591383d822a023d0db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ucu.Poo.DiscordBot.Services.Bot.Bot</definition>
+        <argsstring>(ILogger&lt; Bot &gt; logger, IConfiguration configuration)</argsstring>
+        <name>Bot</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Services.Bot.Bot</qualifiedname>
+        <param>
+          <type>ILogger&lt; <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot" kindref="compound">Bot</ref> &gt;</type>
+          <declname>logger</declname>
+        </param>
+        <param>
+          <type>IConfiguration</type>
+          <declname>configuration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" line="22" column="12" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" bodystart="22" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_1a15bf4ff03e727a6a00ae9b3f0daf5c63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ucu.Poo.DiscordBot.Services.Bot.StartAsync</definition>
+        <argsstring>(ServiceProvider services)</argsstring>
+        <name>StartAsync</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Services.Bot.StartAsync</qualifiedname>
+        <reimplements refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_i_bot_1ae4e76de690ac3a0ce601af36f544c50a">StartAsync</reimplements>
+        <param>
+          <type>ServiceProvider</type>
+          <declname>services</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" line="40" column="23" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" bodystart="40" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_1a0b583be7dd7f5af98e9a1a8fedeae5c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ucu.Poo.DiscordBot.Services.Bot.StopAsync</definition>
+        <argsstring>()</argsstring>
+        <name>StopAsync</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Services.Bot.StopAsync</qualifiedname>
+        <reimplements refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_i_bot_1a84a892069cb085257d10b5925c9e7079">StopAsync</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" line="56" column="23" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" bodystart="56" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_1abc9e2550a4df5c265b11d4822a7348b1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ucu.Poo.DiscordBot.Services.Bot.HandleCommandAsync</definition>
+        <argsstring>(SocketMessage arg)</argsstring>
+        <name>HandleCommandAsync</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Services.Bot.HandleCommandAsync</qualifiedname>
+        <param>
+          <type>SocketMessage</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" line="63" column="24" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" bodystart="63" bodyend="80"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Esta clase implementa el bot de Discord. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IBot</label>
+        <link refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_i_bot"/>
+      </node>
+      <node id="1">
+        <label>Ucu.Poo.DiscordBot.Services.Bot</label>
+        <link refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IBot</label>
+        <link refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_i_bot"/>
+      </node>
+      <node id="1">
+        <label>Ucu.Poo.DiscordBot.Services.Bot</label>
+        <link refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" line="14" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" bodystart="15" bodyend="81"/>
+    <listofallmembers>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_1ae5f514e9761099591383d822a023d0db" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Services::Bot</scope><name>Bot</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_1a70f3d47e1170aa5aa03463190e268a5a" prot="private" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Services::Bot</scope><name>client</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_1abd514a61f5a0f032dae546c922d2eded" prot="private" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Services::Bot</scope><name>commands</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_1ac0ae5de9877f255e009c30e0185757b4" prot="private" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Services::Bot</scope><name>configuration</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_1abc9e2550a4df5c265b11d4822a7348b1" prot="private" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Services::Bot</scope><name>HandleCommandAsync</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_1aec6298e9578ae417b06296437c9f1623" prot="private" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Services::Bot</scope><name>logger</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_1aeadbb07e4a0f6acb9331de0baa2b96a1" prot="private" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Services::Bot</scope><name>serviceProvider</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_1a15bf4ff03e727a6a00ae9b3f0daf5c63" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Services::Bot</scope><name>StartAsync</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_1a0b583be7dd7f5af98e9a1a8fedeae5c0" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Services::Bot</scope><name>StopAsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

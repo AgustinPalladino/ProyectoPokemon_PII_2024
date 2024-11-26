@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">&lt;a<sp/>name=&quot;readme-top&quot;&gt;&lt;/a&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>ProyectoPokemon_PII_2024</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&gt;<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>¿Qué<sp/>cosas<sp/>aprendieron<sp/>enfrentándose<sp/>al<sp/>proyecto<sp/>que<sp/>no<sp/>aprendieron<sp/>en<sp/>clase<sp/>como<sp/>parte<sp/>de<sp/>la<sp/>currícula?</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Creemos<sp/>que<sp/>aunque<sp/>casi<sp/>todo<sp/>lo<sp/>que<sp/>hicimos<sp/>durante<sp/>el<sp/>proyecto<sp/>lo<sp/>aprendimos<sp/>en<sp/>clase,<sp/>al<sp/>enfrentarnos<sp/>a<sp/>este<sp/>gran<sp/>desafio<sp/>tuvimos<sp/>que<sp/></highlight></codeline>
+<codeline><highlight class="normal">investigar<sp/>y<sp/>reforzar<sp/>aun<sp/>mas<sp/>nuestros<sp/>conocimientos<sp/>para<sp/>lograrlo.</highlight></codeline>
+<codeline><highlight class="normal">Averiguamos<sp/>más<sp/>sobre<sp/>cómo<sp/>realizar<sp/>los<sp/>tests<sp/>dependiendo<sp/>del<sp/>caso<sp/>que<sp/>queriamos<sp/>probar<sp/>con<sp/>el<sp/>objetivo<sp/>de<sp/>cubrir<sp/>la<sp/>maxima<sp/>cantidad<sp/>de</highlight></codeline>
+<codeline><highlight class="normal">codigo<sp/>del<sp/>Programa.<sp/>Esto<sp/>nos<sp/>ayudo<sp/>a<sp/>asegurarnos<sp/>de<sp/>que<sp/>al<sp/>agregar<sp/>nuevos<sp/>metodos<sp/>o<sp/>modificar<sp/>parte<sp/>del<sp/>codigo,<sp/>las<sp/>pruebas<sp/>nos<sp/>avisen<sp/>de<sp/>errores.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>¿Qué<sp/>recursos<sp/>(páginas<sp/>web,<sp/>libros,<sp/>foros,<sp/>etc)<sp/>encontraron<sp/>que<sp/>les<sp/>fueron<sp/>valiosos<sp/>para<sp/>sortear<sp/>los<sp/>desafíos<sp/>que<sp/>encontraron?</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Un<sp/>recurso<sp/>que<sp/>nos<sp/>ayudo<sp/>a<sp/>lo<sp/>largo<sp/>del<sp/>curso<sp/>para<sp/>poder<sp/>remodelar<sp/>nuestros<sp/>conocimientos<sp/>acerca<sp/>de<sp/>como<sp/>perfeccionar<sp/>nuestra<sp/>forma<sp/>de<sp/>programar<sp/>en<sp/>c#<sp/>fueron<sp/>las<sp/>librerias<sp/>de<sp/>microsoft.</highlight></codeline>
+<codeline><highlight class="normal">Estas<sp/>nos<sp/>proporcionan<sp/>todo<sp/>tipo<sp/>de<sp/>información<sp/>sobre<sp/>las<sp/>herramientas<sp/>que<sp/>podemos<sp/>utilizar<sp/>dentro<sp/>de<sp/>c#<sp/>(https://learn.microsoft.com/es-es/)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>¿Qué<sp/>desafios<sp/>de<sp/>la<sp/>entrega<sp/>fueron<sp/>los<sp/>más<sp/>difíciles?</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Cualquier<sp/>otro<sp/>tipo<sp/>de<sp/>reflexión,<sp/>material<sp/>o<sp/>comentarios<sp/>sobre<sp/>el<sp/>trabajo<sp/>en<sp/>el<sp/>proyecto</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Miembros</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>👤<sp/>Lucas<sp/>Bentancour</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>👤<sp/>Pedro<sp/>Moreira</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>👤<sp/>Rodrigo<sp/>Fagundez</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>👤<sp/>Agustín<sp/>Palladino</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/README.md"/>
+  </compounddef>
+</doxygen>

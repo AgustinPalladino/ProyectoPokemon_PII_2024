@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_pokemon_name_command" kind="class" language="C#" prot="public">
+    <compoundname>Ucu::Poo::DiscordBot::Commands::PokemonNameCommand</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ModuleBase&lt; SocketCommandContext &gt;</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_pokemon_name_command_1a5341a17324dafcf8ba51daff2b3d92c1" prot="private" static="no" mutable="no">
+        <type>readonly ILogger&lt; <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_pokemon_name_command" kindref="compound">PokemonNameCommand</ref> &gt;</type>
+        <definition>readonly ILogger&lt;PokemonNameCommand&gt; Ucu.Poo.DiscordBot.Commands.PokemonNameCommand.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Commands.PokemonNameCommand.logger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/PokemonNameCommand.cs" line="16" column="30" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/PokemonNameCommand.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_pokemon_name_command_1a6abe7ede48b8fd1b8b8bbaa55fda40a7" prot="private" static="no" mutable="no">
+        <type>readonly HttpClient</type>
+        <definition>readonly HttpClient Ucu.Poo.DiscordBot.Commands.PokemonNameCommand.httpClient</definition>
+        <argsstring></argsstring>
+        <name>httpClient</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Commands.PokemonNameCommand.httpClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/PokemonNameCommand.cs" line="17" column="33" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/PokemonNameCommand.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_pokemon_name_command_1a9bef2e1f53cb8e3c39e4efadeed644c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ucu.Poo.DiscordBot.Commands.PokemonNameCommand.PokemonNameCommand</definition>
+        <argsstring>(ILogger&lt; PokemonNameCommand &gt; logger)</argsstring>
+        <name>PokemonNameCommand</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Commands.PokemonNameCommand.PokemonNameCommand</qualifiedname>
+        <param>
+          <type>ILogger&lt; <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_pokemon_name_command" kindref="compound">PokemonNameCommand</ref> &gt;</type>
+          <declname>logger</declname>
+        </param>
+        <briefdescription>
+<para>Inicializa una nueva instancia de la clase PokemonNameCommand con los valores recibidos como argumento. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>logger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El servicio de logging a utilizar.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/PokemonNameCommand.cs" line="25" column="12" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/PokemonNameCommand.cs" bodystart="25" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_pokemon_name_command_1a8a0df3497618ee2734c1c584e24cad4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ucu.Poo.DiscordBot.Commands.PokemonNameCommand.ExecuteAsync</definition>
+        <argsstring>([Remainder][Summary(&quot;ID&quot;)] int id=0)</argsstring>
+        <name>ExecuteAsync</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Commands.PokemonNameCommand.ExecuteAsync</qualifiedname>
+        <param>
+          <attributes>[Summary(&quot;ID&quot;)]</attributes>
+          <type>int</type>
+          <declname>id</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Implementa el comando &apos;name&apos;. Este comando retorna el nombre de un Pokémon dado su identificador. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El identificador del Pokémon a buscar.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/PokemonNameCommand.cs" line="42" column="23" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/PokemonNameCommand.cs" bodystart="42" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Esta clase implementa el comando &apos;name&apos; del bot. Este comando retorna el nombre de un Pokémon dado su identificador. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ModuleBase&lt; SocketCommandContext &gt;</label>
+      </node>
+      <node id="1">
+        <label>Ucu.Poo.DiscordBot.Commands.PokemonNameCommand</label>
+        <link refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_pokemon_name_command"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ModuleBase&lt; SocketCommandContext &gt;</label>
+      </node>
+      <node id="1">
+        <label>Ucu.Poo.DiscordBot.Commands.PokemonNameCommand</label>
+        <link refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_pokemon_name_command"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/PokemonNameCommand.cs" line="14" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/PokemonNameCommand.cs" bodystart="15" bodyend="89"/>
+    <listofallmembers>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_pokemon_name_command_1a8a0df3497618ee2734c1c584e24cad4c" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Commands::PokemonNameCommand</scope><name>ExecuteAsync</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_pokemon_name_command_1a6abe7ede48b8fd1b8b8bbaa55fda40a7" prot="private" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Commands::PokemonNameCommand</scope><name>httpClient</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_pokemon_name_command_1a5341a17324dafcf8ba51daff2b3d92c1" prot="private" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Commands::PokemonNameCommand</scope><name>logger</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_pokemon_name_command_1a9bef2e1f53cb8e3c39e4efadeed644c3" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Commands::PokemonNameCommand</scope><name>PokemonNameCommand</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

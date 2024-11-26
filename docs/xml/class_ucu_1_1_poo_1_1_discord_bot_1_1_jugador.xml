@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador" kind="class" language="C#" prot="public">
+    <compoundname>Ucu::Poo::DiscordBot::Jugador</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1ad0a7adbf662bd05fa917dd932c74748b" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Ucu.Poo.DiscordBot.Jugador.Nombre</definition>
+        <argsstring></argsstring>
+        <name>Nombre</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Jugador.Nombre</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Jugador.cs" line="8" column="19" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Jugador.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a1025284105c1cc2d9710f38acd1fee88" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon" kindref="compound">Pokemon</ref> &gt;</type>
+        <definition>List&lt;Pokemon&gt; Ucu.Poo.DiscordBot.Jugador.equipoPokemon</definition>
+        <argsstring></argsstring>
+        <name>equipoPokemon</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Jugador.equipoPokemon</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Jugador.cs" line="9" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Jugador.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a24a9f5d263781794667110fcf41d0b37" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon" kindref="compound">Pokemon</ref> &gt;</type>
+        <definition>List&lt;Pokemon&gt; Ucu.Poo.DiscordBot.Jugador.equipoPokemonDerrotados</definition>
+        <argsstring></argsstring>
+        <name>equipoPokemonDerrotados</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Jugador.equipoPokemonDerrotados</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Jugador.cs" line="10" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Jugador.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a88038105441838e859eb33f48348ccd3" prot="public" static="no" mutable="no">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt;string&gt; Ucu.Poo.DiscordBot.Jugador.nombreCheck</definition>
+        <argsstring></argsstring>
+        <name>nombreCheck</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Jugador.nombreCheck</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Jugador.cs" line="11" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Jugador.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a6a21aa94e7d4565df830dc66ce293aa1" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_item" kindref="compound">Item</ref> &gt;</type>
+        <definition>List&lt;Item&gt; Ucu.Poo.DiscordBot.Jugador.Mochila</definition>
+        <argsstring></argsstring>
+        <name>Mochila</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Jugador.Mochila</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Jugador.cs" line="12" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Jugador.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1afae2e50e05b908a4f82ecdb757c737e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ucu.Poo.DiscordBot.Jugador.Jugador</definition>
+        <argsstring>(string Nombre)</argsstring>
+        <name>Jugador</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Jugador.Jugador</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>Nombre</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Jugador.cs" line="19" column="12" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Jugador.cs" bodystart="19" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a5a99036e10f81b6a7a532d830682ad93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Jugador.MostrarEquipo</definition>
+        <argsstring>(IInteraccionConUsuario interaccion)</argsstring>
+        <name>MostrarEquipo</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Jugador.MostrarEquipo</qualifiedname>
+        <param>
+          <type><ref refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_i_interaccion_con_usuario" kindref="compound">IInteraccionConUsuario</ref></type>
+          <declname>interaccion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Jugador.cs" line="31" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Jugador.cs" bodystart="31" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1aa51bf273a3bb6dd065d311a3232e8279" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Jugador.verMovimientos</definition>
+        <argsstring>(IInteraccionConUsuario interaccion)</argsstring>
+        <name>verMovimientos</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Jugador.verMovimientos</qualifiedname>
+        <param>
+          <type><ref refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_i_interaccion_con_usuario" kindref="compound">IInteraccionConUsuario</ref></type>
+          <declname>interaccion</declname>
+        </param>
+        <briefdescription>
+<para>Método para ver ataques que tiene el pokemon. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Jugador.cs" line="55" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Jugador.cs" bodystart="55" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a57f2d9cdb33339b7fdd59d2cb3a41e72" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Jugador.verSalud</definition>
+        <argsstring>(IInteraccionConUsuario interaccion)</argsstring>
+        <name>verSalud</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Jugador.verSalud</qualifiedname>
+        <param>
+          <type><ref refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_i_interaccion_con_usuario" kindref="compound">IInteraccionConUsuario</ref></type>
+          <declname>interaccion</declname>
+        </param>
+        <briefdescription>
+<para>Metodo para ver la salud del pokemon. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Jugador.cs" line="66" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Jugador.cs" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1ad4ef3ac0f06ebf4124cdb60bb15997e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Jugador.agregarPokemon</definition>
+        <argsstring>(Pokemon pokemon)</argsstring>
+        <name>agregarPokemon</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Jugador.agregarPokemon</qualifiedname>
+        <param>
+          <type><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon" kindref="compound">Pokemon</ref></type>
+          <declname>pokemon</declname>
+        </param>
+        <briefdescription>
+<para>Método para agregar pokemon. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pokemon</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Jugador.cs" line="75" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Jugador.cs" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a1ebb5e57eb9b3409ceccda40b52c9e8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon" kindref="compound">Pokemon</ref></type>
+        <definition>Pokemon Ucu.Poo.DiscordBot.Jugador.pokemonEnCancha</definition>
+        <argsstring>()</argsstring>
+        <name>pokemonEnCancha</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Jugador.pokemonEnCancha</qualifiedname>
+        <briefdescription>
+<para>Método que devuelvo el pokemon en cancha. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Jugador.cs" line="84" column="20" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Jugador.cs" bodystart="84" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a9c5b54019893f9ace03108552340b8d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Jugador.cambiarPokemon</definition>
+        <argsstring>(Pokemon pokemon)</argsstring>
+        <name>cambiarPokemon</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Jugador.cambiarPokemon</qualifiedname>
+        <param>
+          <type><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon" kindref="compound">Pokemon</ref></type>
+          <declname>pokemon</declname>
+        </param>
+        <briefdescription>
+<para>Método para cambiar de pokemon. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pokemon</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Jugador.cs" line="93" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Jugador.cs" bodystart="93" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a4333178f6c4b9d89f85751f82a0a05d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Jugador.atacar</definition>
+        <argsstring>(Jugador jugadorEnemigo, Movimiento movimiento, IInteraccionConUsuario interaccion)</argsstring>
+        <name>atacar</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Jugador.atacar</qualifiedname>
+        <param>
+          <type><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador" kindref="compound">Jugador</ref></type>
+          <declname>jugadorEnemigo</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento" kindref="compound">Movimiento</ref></type>
+          <declname>movimiento</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_i_interaccion_con_usuario" kindref="compound">IInteraccionConUsuario</ref></type>
+          <declname>interaccion</declname>
+        </param>
+        <briefdescription>
+<para>Método para atacar al enemigo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jEnemigo</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>movimiento</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Jugador.cs" line="105" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Jugador.cs" bodystart="105" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a193d46c02b8fb254dec8836ec823461c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Jugador.UsarMochila</definition>
+        <argsstring>(Item item, IInteraccionConUsuario interaccion)</argsstring>
+        <name>UsarMochila</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Jugador.UsarMochila</qualifiedname>
+        <param>
+          <type><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_item" kindref="compound">Item</ref></type>
+          <declname>item</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_i_interaccion_con_usuario" kindref="compound">IInteraccionConUsuario</ref></type>
+          <declname>interaccion</declname>
+        </param>
+        <briefdescription>
+<para>Método usar Mochila. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Jugador.cs" line="116" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Jugador.cs" bodystart="116" bodyend="120"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Jugador.cs" line="6" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Jugador.cs" bodystart="7" bodyend="121"/>
+    <listofallmembers>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1ad4ef3ac0f06ebf4124cdb60bb15997e8" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Jugador</scope><name>agregarPokemon</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a4333178f6c4b9d89f85751f82a0a05d7" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Jugador</scope><name>atacar</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a9c5b54019893f9ace03108552340b8d4" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Jugador</scope><name>cambiarPokemon</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a1025284105c1cc2d9710f38acd1fee88" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Jugador</scope><name>equipoPokemon</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a24a9f5d263781794667110fcf41d0b37" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Jugador</scope><name>equipoPokemonDerrotados</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1afae2e50e05b908a4f82ecdb757c737e9" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Jugador</scope><name>Jugador</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a6a21aa94e7d4565df830dc66ce293aa1" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Jugador</scope><name>Mochila</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a5a99036e10f81b6a7a532d830682ad93" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Jugador</scope><name>MostrarEquipo</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1ad0a7adbf662bd05fa917dd932c74748b" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Jugador</scope><name>Nombre</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a88038105441838e859eb33f48348ccd3" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Jugador</scope><name>nombreCheck</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a1ebb5e57eb9b3409ceccda40b52c9e8e" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Jugador</scope><name>pokemonEnCancha</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a193d46c02b8fb254dec8836ec823461c" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Jugador</scope><name>UsarMochila</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1aa51bf273a3bb6dd065d311a3232e8279" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Jugador</scope><name>verMovimientos</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a57f2d9cdb33339b7fdd59d2cb3a41e72" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Jugador</scope><name>verSalud</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

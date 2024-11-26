@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['usarmochila_0',['UsarMochila',['../class_library_1_1_jugador.html#aa82ceada307d89dac4119da689cca908',1,'Library::Jugador']]]
+  ['jugador_0',['Jugador',['../class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador.html#afae2e50e05b908a4f82ecdb757c737e9',1,'Ucu::Poo::DiscordBot::Jugador']]]
 ];

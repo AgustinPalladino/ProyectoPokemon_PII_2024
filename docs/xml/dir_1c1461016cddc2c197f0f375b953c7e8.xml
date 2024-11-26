@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_1c1461016cddc2c197f0f375b953c7e8" kind="dir">
+    <compoundname>C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items</compoundname>
+    <innerfile refid="_cura_total_8cs">CuraTotal.cs</innerfile>
+    <innerfile refid="_item_base_8cs">ItemBase.cs</innerfile>
+    <innerfile refid="_revivir_8cs">Revivir.cs</innerfile>
+    <innerfile refid="_superpocion_8cs">Superpocion.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items/"/>
+  </compounddef>
+</doxygen>

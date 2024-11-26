@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespace_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion" kind="namespace" language="C#">
+    <compoundname>Ucu::Poo::DiscordBot::Interaccion</compoundname>
+    <innerclass refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_i_interaccion_con_usuario" prot="public">Ucu::Poo::DiscordBot::Interaccion::IInteraccionConUsuario</innerclass>
+    <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_interaccion_por_bot" prot="public">Ucu::Poo::DiscordBot::Interaccion::InteraccionPorBot</innerclass>
+    <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_interaccion_por_consola" prot="public">Ucu::Poo::DiscordBot::Interaccion::InteraccionPorConsola</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Interaccion/IInteraccionConUsuario.cs" line="1" column="1"/>
+  </compounddef>
+</doxygen>
