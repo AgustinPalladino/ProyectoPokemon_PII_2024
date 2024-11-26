@@ -6,41 +6,97 @@ namespace Ucu.Poo.DiscordBot.Domain.Tests;
 
 public class HistoriaUsuario8Test
 {
-    private Jugador jugador1;
-    private Jugador jugador2;
     private IInteraccionConUsuario mockInteraccion;
     private Logica logica;
-    
-    
+
     [Test]
-    public void hdUsuario8Test()
+    public void SeleccionarPokemonDeCambio_UsaSuperPocionCorrectamente()
     {
         mockInteraccion = Substitute.For<IInteraccionConUsuario>();
-        jugador1 = new Jugador("Ash");
-        jugador2 = new Jugador("Misty");
-        
-        // Configuración del jugador y su Pokémon
-        var pokemon = new Pokemon("Pikachu", "Eléctrico", 100, 50, 40);
-        jugador1.agregarPokemon(pokemon);
-        jugador1.pokemonEnCancha().VidaActual = 50;
-        // Agregar un ítem de curación a la mochila del jugador
-        var pocion = new SuperPocion();
-        jugador1.Mochila.Add(pocion);
-        int mochilaInicial = jugador1.Mochila.Count;
-        
-        // Mock de la interacción para seleccionar el ítem
-        mockInteraccion.LeerEntrada().Returns("SuperPocion");
-        
-        // Simula el uso de la mochila
-        var logica = new Logica(mockInteraccion);
-        logica.Mochila(jugador1);
+        logica = new Logica(mockInteraccion);
 
-        // Verifica que el ítem fue utilizado y su efecto aplicado
-        //Assert.That(pokemon.VidaActual, Is.EqualTo(100) ); // La vida debería estar completamente curada
-        Assert.That(jugador1.Mochila.Count, Is.LessThan(mochilaInicial)); // El ítem debe haberse removido
+        Jugador jugador = new Jugador("Jugador");
+        Pokemon pokemon = new Pokemon("Charizard", "Fuego", 120, 80, 100);
+        jugador.agregarPokemon(pokemon);
         
+        pokemon.VidaActual -= 50; // Vida actual = 70
 
-        // Verifica que se muestra el mensaje de curación
-        mockInteraccion.Received(1).ImprimirMensaje($"{pokemon.Nombre} se ha restaurado 70 puntos de vida.");
+        // Simula las entradas del usuario
+        mockInteraccion.LeerEntrada().Returns("SuperPocion", "Charizard","0");
+
+        // prueba de haber utilizado bien el item
+        bool resultado = logica.Mochila(jugador);
+        Assert.That(resultado, Is.True, "El ítem debería haber sido usado correctamente.");
+        mockInteraccion.Received(2).LeerEntrada(); // Verifica que se realizaron 2 entradas
+        Assert.That(pokemon.VidaActual, Is.EqualTo(120));
+    }
+
+    [Test]
+    public void SeleccionarItemErroneo()
+    {
+        mockInteraccion = Substitute.For<IInteraccionConUsuario>();
+        logica = new Logica(mockInteraccion);
+
+        Jugador jugador = new Jugador("Jugador");
+        Pokemon pokemon = new Pokemon("Charizard", "Fuego", 120, 80, 100);
+        jugador.agregarPokemon(pokemon);
+        
+        pokemon.VidaActual -= 50; // Vida actual = 70
+
+        // Simula las entradas del usuario
+        mockInteraccion.LeerEntrada().Returns("ItemMal");
+
+        // prueba de haber utilizado bien el item
+        bool resultado = logica.Mochila(jugador);
+        Assert.That(resultado, Is.False, "El ítem debería no haber sido encontrado");
+        mockInteraccion.Received(1).LeerEntrada(); //Verifica
+        Assert.That(pokemon.VidaActual, Is.EqualTo(70));
+    }
+    
+    [Test]
+    public void SeleccionarItemParaSalir()
+    {
+        mockInteraccion = Substitute.For<IInteraccionConUsuario>();
+        logica = new Logica(mockInteraccion);
+
+        Jugador jugador = new Jugador("Jugador");
+        Pokemon pokemon = new Pokemon("Charizard", "Fuego", 120, 80, 100);
+        jugador.agregarPokemon(pokemon);
+        
+        pokemon.VidaActual -= 50; // Vida actual = 70
+
+        // Simula las entradas del usuario
+        mockInteraccion.LeerEntrada().Returns("0");
+
+        // prueba de haber utilizado bien el item
+        bool resultado = logica.Mochila(jugador);
+        Assert.That(resultado, Is.False, "El ítem debería haber sido usado correctamente.");
+        mockInteraccion.Received(1).LeerEntrada(); // verifica
+        Assert.That(pokemon.VidaActual, Is.EqualTo(70));
+    }
+    
+    [Test]
+    public void MochilaVacia()
+    {
+        mockInteraccion = Substitute.For<IInteraccionConUsuario>();
+        logica = new Logica(mockInteraccion);
+
+        Jugador jugador = new Jugador("Jugador");
+        Pokemon pokemon = new Pokemon("Charizard", "Fuego", 120, 80, 100);
+        jugador.agregarPokemon(pokemon);
+        
+        for(int i = 0; i <= jugador.Mochila.Count; i++)
+        {
+            jugador.Mochila.Remove(jugador.Mochila[i]);
+        }
+
+        // Simula las entradas del usuario
+        mockInteraccion.LeerEntrada().Returns("MochilaVacia");
+
+        // prueba de haber utilizado bien el item
+        bool resultado = logica.Mochila(jugador);
+        Assert.That(resultado, Is.False, "Mochila deberia estar vacia");
+        mockInteraccion.Received(1).LeerEntrada();
+        Assert.That(logica.Mochila(jugador), Is.EqualTo(false));
     }
 }
