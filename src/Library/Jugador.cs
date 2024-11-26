@@ -10,7 +10,8 @@ public class Jugador
     public List<Pokemon> equipoPokemonDerrotados = new();
     public List<string> nombreCheck = new();
     public List<Item> Mochila = new();
-    
+
+    private const int MaxPoke = 6;
     
     /// <summary>
     /// Constructor
@@ -77,9 +78,20 @@ public class Jugador
     /// Método para agregar pokemon
     /// </summary>
     /// <param name="pokemon"></param>
-    public void agregarPokemon(Pokemon pokemon)
+    public string agregarPokemon(Pokemon pokemon)
     {
+        if (equipoPokemon.Count >= MaxPoke)
+        {
+            return "No se puede agregar mas de 6 pokemones";
+        }
+        if (equipoPokemon.Any(p => p.Nombre.Equals(pokemon.Nombre, StringComparison.OrdinalIgnoreCase)))
+        {
+            return $"{pokemon.Nombre} ya está en tu equipo.";
+        }
+        
         this.equipoPokemon.Add(pokemon);
+
+        return $"{pokemon.Nombre} agregado al equipo de {Nombre}.";
     }
     /// <summary>
     /// Método que devuelvo el pokemon en cancha
@@ -106,6 +118,7 @@ public class Jugador
     /// </summary>
     /// <param name="jEnemigo"></param>
     /// <param name="movimiento"></param>
+    
     public void atacar(Jugador jugadorEnemigo, Movimiento movimiento, IInteraccionConUsuario interaccion)
     {
         double ataqueFinal = DiccionariosYOperacionesStatic.Precision(movimiento.Precision, movimiento.Ataque, interaccion);

@@ -8,7 +8,10 @@ namespace Ucu.Poo.DiscordBot;
 /// </summary>
 public class Combate
 {
-    public readonly IInteraccionConUsuario interaccion;
+    private readonly IInteraccionConUsuario interaccion;
+    
+    public Jugador JugadorActual { get; private set; }
+    public int numActual { get; private set; }
 
     public Combate(IInteraccionConUsuario interaccion)
     {
@@ -16,16 +19,15 @@ public class Combate
     }
     
     
-    public string MostrarCatalogo()
+    public static string MostrarCatalogo()
     {
-        string mensaje = "\nCatálogo de Pokémon disponibles:";
-
+        string mostrarCatalogo = "\n Catálogo de Pokémon disponibles:";
         foreach (var pokemon in DiccionariosYOperacionesStatic.DiccionarioPokemon)
         {
-            mensaje += $"\n-{pokemon.Value.Nombre}";
+            mostrarCatalogo += $"\n-{pokemon.Value.Nombre}";
         }
 
-        return mensaje;
+        return mostrarCatalogo;
     }
     
     
@@ -35,7 +37,7 @@ public class Combate
         
         interaccion.ImprimirMensaje(MostrarCatalogo()); 
         
-        for (int i = 0; i < 2; i++) // Los jugadores escogen sus 6 pokemon
+        for (int i = 0; i < 6; i++) // Los jugadores escogen sus 6 pokemon
         {
             bool bandera = true;
             while (bandera)
@@ -67,17 +69,21 @@ public class Combate
             //Si el numero random es 1 empieza el jugador uno
             if (numeroRandom == 1)
             {
+                numActual = numeroRandom;
                 // Turno del jugador 1
+                JugadorActual = j1;
                 banderaGlobal = logica.MenuDeJugador(j1, j2); 
                 // Si la bandera global toma el valor de falso, significa que termino el combate
 
                 if (banderaGlobal)
                 {
+                    numActual = numeroRandom;
                     // Turno del jugador 2
+                    JugadorActual = j2;
                     banderaGlobal = logica.MenuDeJugador(j2, j1);
                 }
             }
-            //Si random es el 2 empieza el jugador dos
+            //Si el numero random es el 2 empieza el jugador dos
             else
             {
                 // Turno del jugador 2
