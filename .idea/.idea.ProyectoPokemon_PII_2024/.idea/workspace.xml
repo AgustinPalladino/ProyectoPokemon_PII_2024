@@ -9,12 +9,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e804c097-b6aa-4b95-a455-d56cf5311d8b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_24_2024_12_17_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_24_2024_12_17_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_24_2024_12_17_PM__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_24_2024_12_17_PM__Changes_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProyectoPokemon_PII_2024.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoPokemon_PII_2024.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Library/Logica.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library/Logica.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/LibraryTests/LogicaTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/test/LibraryTests/LogicaTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/LibraryTests/HistoriaUsuario9Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/test/LibraryTests/HistoriaUsuario9Test.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="remodificarTest" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,12 +35,12 @@
     &quot;assignee&quot;: &quot;AgustinPalladino&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/AgustinPalladino/ProyectoPokemon_PII_2024.git",
-    "accountId": "9168b09f-e050-4441-9be1-2eaf534ff90b"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/AgustinPalladino/ProyectoPokemon_PII_2024.git&quot;,
+    &quot;accountId&quot;: &quot;9168b09f-e050-4441-9be1-2eaf534ff90b&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/2aade6beb02ea367fd97c4070a4198802fe61c03/src/coreclr/System.Private.CoreLib/src/System/Runtime/CompilerServices/RuntimeHelpers.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/2aade6beb02ea367fd97c4070a4198802fe61c03/src/libraries/System.Private.CoreLib/src/System/ArgumentNullException.cs" root0="SKIP_HIGHLIGHTING" />
@@ -93,28 +90,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.Program.executor&quot;: &quot;Run&quot;,
-    &quot;1f5e09e1-7545-43fd-a5da-0c7d28480865.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;haciendoTest&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/agust/Desktop/ProyectoPokemon_PII_2024&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.Program.executor": "Run",
+    "1f5e09e1-7545-43fd-a5da-0c7d28480865.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "hdusuarionuevas",
+    "last_opened_file_path": "C:/Users/agust/Desktop/ProyectoPokemon_PII_2024",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\agust\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\agust\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\agust\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\agust\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\agust\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\agust\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Project.Program">
     <configuration name="Program" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -162,38 +159,23 @@
     <option name="coveragePercentColumnWidth" value="150" />
     <option name="sortOrder" value="DESCENDING" />
     <option name="sortedColumn" value="1" />
-    <option name="symbolColumnWidth" value="236" />
+    <option name="symbolColumnWidth" value="242" />
     <coverage-tree-state>
       <expand>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 51% 807/1649" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 62% 628/1640" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 51% 807/1649" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="src 44% 618/1102" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 62% 628/1640" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="src 48% 575/1101" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 51% 807/1649" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="src 44% 618/1102" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Library 45% 602/1086" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 51% 807/1649" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="src 44% 618/1102" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Library 45% 602/1086" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Ucu.Poo.DiscordBot 45% 602/1086" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 51% 807/1649" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="src 44% 618/1102" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Library 45% 602/1086" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Ucu.Poo.DiscordBot 45% 602/1086" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Logica 30% 140/199" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 62% 628/1640" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="src 48% 575/1101" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Library 48% 559/1085" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
       </expand>
       <select />
@@ -203,17 +185,5 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/test/LibraryTests/HistoriaUsuario8Test.cs</url>
-          <line>31</line>
-          <properties documentPath="C:\dev\Programacion 2\ProyectoFinal\ProyectoPokemon_PII_2024\test\LibraryTests\HistoriaUsuario8Test.cs" containingFunctionPresentation="Method 'hdUsuario8Test'" />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

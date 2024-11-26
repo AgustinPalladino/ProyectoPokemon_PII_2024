@@ -31,6 +31,29 @@
     &lt;TestId&gt;NUnit3x::F52B0608-D4C6-4241-821F-8761A8338C00::net8.0::Ucu.Poo.DiscordBot.Domain.Tests.LogicaTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=71049606_002D19e7_002D4de6_002Dbf9c_002D04835ddfdce4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ItemTests #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:CombateTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:DiccionariosyOpStaticTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:FacadeTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:HistoriaUsuario1Test.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:HistoriaUsuario2Test.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:HistoriaUsuario3Test.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:HistoriaUsuario4Test.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:HistoriaUsuario5Test.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:HistoriaUsuario6Test.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:HistoriaUsuario7Test.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:HistoriaUsuario8Test.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:HistoriaUsuario9Test.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:HistoriaUsuario10Test.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:HistoriaUsuario11Test.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:ItemTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:JugadorTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:LogicaTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:MovimientoTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:PokemonTest.cs&lt;/ProjectFile&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=753324e5_002D1729_002D435c_002Dafdb_002D81e99ab6d83c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;test&amp;gt;\&amp;lt;LibraryTests&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Project Location="C:\repositorio\ProyectoPokemon_PII_2024\test\LibraryTests" Presentation="&amp;lt;test&amp;gt;\&amp;lt;LibraryTests&amp;gt;" /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
