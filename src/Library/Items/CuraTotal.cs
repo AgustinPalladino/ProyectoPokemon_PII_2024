@@ -9,13 +9,15 @@ public class CuraTotal : Item
 {
     // Implementación de la propiedad abstracta Nombre
     public override string Nombre => "CuraTotal";
+    
+    public override string Descripcion => "Cura cualquier estado";
 
     // Implementación del método abstracto Usar
     public override string Usar(Jugador jugador, string pokeIngresado)
     {
-        for (int i = 0; i < jugador.equipoPokemonDerrotados.Count; i++)
+        for (int i = 0; i < jugador.equipoPokemon.Count; i++)
         {
-            if (pokeIngresado == jugador.equipoPokemonDerrotados[i].Nombre)
+            if (pokeIngresado == jugador.equipoPokemon[i].Nombre)
             {
                 if (jugador.equipoPokemon[i].Estado == "Normal")
                 {
@@ -24,7 +26,8 @@ public class CuraTotal : Item
 
                 if (jugador.equipoPokemon[i].Estado != "Normal")
                 {
-                    return SacarEstadoPokemon(jugador.equipoPokemon[i]);
+                    SacarEstadoPokemon(jugador.equipoPokemon[i]);
+                    return "Se ha utilizado el objeto correctamente";
                 }
             }
         }
@@ -33,12 +36,11 @@ public class CuraTotal : Item
             return "Usted volvio hacia atras";
         }
         
-        return "Pokemon incorrecto, seleccione de nuevo";
+        return "Pokemon incorrecto";
     }
-    
-    private string SacarEstadoPokemon(Pokemon pokemon)
+
+    public void SacarEstadoPokemon(Pokemon pokemon)
     {
         pokemon.Estado = "Normal";
-        return "Su pokemon se ha curado de todos sus estados";
     }
 }

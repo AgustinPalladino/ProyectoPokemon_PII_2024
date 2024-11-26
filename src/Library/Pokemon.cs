@@ -82,7 +82,8 @@ public class Pokemon
     {
         return new Pokemon(this.Nombre, this.Tipo, this.VidaMax, this.Ataque, this.Defensa)
         {
-            listaMovimientos = this.listaMovimientos.Select(m => m.Clonar()).ToList()
+            listaMovimientos = this.listaMovimientos.Select(m => m.Clonar()).ToList(),
+            Estado = this.Estado
         };
     }
     

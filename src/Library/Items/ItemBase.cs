@@ -10,6 +10,8 @@ public abstract class Item
 {
     // Propiedad abstracta 
     public abstract string Nombre { get; }
+    
+    public abstract string Descripcion { get; }
 
     // Método abstracto que obliga a las subclases a definir cómo usar el ítem
     public abstract string Usar(Jugador j, string pokeIngresado);

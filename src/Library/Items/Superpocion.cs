@@ -6,6 +6,8 @@ public class SuperPocion : Item
 {
     public override string Nombre => "SuperPocion";
 
+    public override string Descripcion => "Recupera 70 puntos de vida";
+    
     public override string Usar(Jugador jugador, string pokeIngresado)
     {
         for (int i = 0; i < jugador.equipoPokemon.Count; i++)
@@ -18,7 +20,8 @@ public class SuperPocion : Item
                 }
                 else
                 {
-                    return CurarPokemon(jugador.equipoPokemon[i]);
+                    CurarPokemon(jugador.equipoPokemon[i]);
+                    return "Se ha utilizado el objeto correctamente";
                 }
             }
         }
@@ -26,16 +29,15 @@ public class SuperPocion : Item
         {
             return "Usted volvio hacia atras";
         }
-        return "Pokemon incorrecto, seleccione de nuevo";
+        return "Pokemon incorrecto";
     }
 
-    public string CurarPokemon(Pokemon pokemon)
+    public void CurarPokemon(Pokemon pokemon)
     {
         pokemon.VidaActual += 70;
         if (pokemon.VidaActual > pokemon.VidaMax)
         {
             pokemon.VidaActual = pokemon.VidaMax;
         }
-        return "Su pokemon se ha restaurado 70 puntos de vida.";
     }
 }

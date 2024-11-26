@@ -171,7 +171,7 @@ public class Logica
                 interaccion.ImprimirMensaje("\nMochila:");
                 for (int i = 0; i < jugador.Mochila.Count; i++)
                 {
-                    interaccion.ImprimirMensaje($"- {jugador.Mochila[i].Nombre}");
+                    interaccion.ImprimirMensaje($"- {jugador.Mochila[i].Nombre}: {jugador.Mochila[i].Descripcion}");
                 }
                 interaccion.ImprimirMensaje("¿Que item desea usar?");
                 string item = interaccion.LeerEntrada();
@@ -183,8 +183,13 @@ public class Logica
                     {
                         interaccion.ImprimirMensaje($"Con cual pokemon desea usar el {jugador.Mochila[i].Nombre}");
                         string pokeIngresado = interaccion.LeerEntrada();
-                        interaccion.ImprimirMensaje(jugador.UsarMochila(jugador.Mochila[i], pokeIngresado));
-                        return true;
+                        item = jugador.UsarMochila(jugador.Mochila[i], pokeIngresado);
+                        interaccion.ImprimirMensaje(item);
+                        if (item == "Se ha utilizado el objeto correctamente")
+                        {
+                            return true;
+                        }
+                        return false;
                     }
                 }
                 if (item == "0")
