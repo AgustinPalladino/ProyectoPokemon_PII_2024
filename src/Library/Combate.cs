@@ -35,7 +35,7 @@ public class Combate
         Logica logica = new Logica(interaccion);
         MostrarCatalogo(); 
         
-        for (int i = 0; i < 6; i++) // Los jugadores escogen sus 6 pokemon
+        for (int i = 0; i < 2; i++) // Los jugadores escogen sus 6 pokemon
         {
             logica.EscogerEquipo(j1);
             logica.EscogerEquipo(j2);
