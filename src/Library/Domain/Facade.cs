@@ -9,6 +9,7 @@ namespace Ucu.Poo.DiscordBot.Domain;
 public class Facade
 {
     private static Facade? _instance;
+    private readonly Dictionary<string, Jugador> _activePlayers;
 
     // Este constructor privado impide que otras clases puedan crear instancias
     // de esta.
@@ -16,7 +17,10 @@ public class Facade
     {
         this.WaitingList = new WaitingList();
         this.BattlesList = new BattlesList();
+        this._activePlayers = new Dictionary<string, Jugador>();
     }
+    
+    
 
     /// <summary>
     /// Obtiene la única instancia de la clase <see cref="Facade"/>.
@@ -32,6 +36,73 @@ public class Facade
 
             return _instance;
         }
+    }
+    
+// Método para agregar o obtener un jugador activo
+    public Jugador GetOrCreatePlayer(string displayName)
+    {
+        if (!_activePlayers.ContainsKey(displayName))
+        {
+            _activePlayers[displayName] = new Jugador(displayName);
+        }
+        return _activePlayers[displayName];
+    }
+    public Jugador? GetOpponent(string playerDisplayName)
+    {
+        // Busca en la lista de batallas activas
+        var battle = this.BattlesList.GetBattleByPlayer(playerDisplayName);
+
+        if (battle == null)
+        {
+            return null; // No hay batalla activa para este jugador
+        }
+
+        // Determina el oponente en función del jugador
+        if (battle.Player1 == playerDisplayName)
+        {
+            return GetPlayer(battle.Player2); // Devuelve el segundo jugador
+        }
+        else if (battle.Player2 == playerDisplayName)
+        {
+            return GetPlayer(battle.Player1); // Devuelve el primer jugador
+        }
+
+        return null; // Caso improbable, pero cubierto
+    }
+    // Método para obtener un jugador ya existente
+    public Jugador? GetPlayer(string displayName)
+    {
+        _activePlayers.TryGetValue(displayName, out var player);
+        return player;
+    }
+    
+// Método para agregar un Pokémon al equipo del jugador
+    public string addPokemonToPlayer(string playerDisplayName, string pokemonName)
+    {
+        // Recupera o crea al jugador
+        var player = GetOrCreatePlayer(playerDisplayName);
+
+        // Busca el Pokémon en el diccionario
+        if (!DiccionariosYOperacionesStatic.DiccionarioPokemon.TryGetValue(pokemonName, out var pokemonBase))
+        {
+            return $"El Pokémon {pokemonName} no existe.";
+        }
+
+        // Clona el Pokémon para evitar modificar el original en el diccionario
+        var pokemonClonado = new Pokemon(pokemonBase.Nombre, pokemonBase.Tipo, pokemonBase.VidaMax, pokemonBase.Ataque, pokemonBase.Defensa)
+        {
+            listaMovimientos = new List<Movimiento>(pokemonBase.listaMovimientos)
+        };
+
+        // Agrega el Pokémon al equipo del jugador
+        return player.agregarPokemon(pokemonClonado);
+    }
+
+
+    // Método para remover un jugador
+    public void RemovePlayer(string displayName)
+    {
+        _activePlayers.Remove(displayName);
     }
 
     /// <summary>

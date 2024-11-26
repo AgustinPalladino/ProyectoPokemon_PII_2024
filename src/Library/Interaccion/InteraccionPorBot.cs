@@ -2,57 +2,31 @@
 using Discord.Commands;
 using Discord.WebSocket;
 using Ucu.Poo.DiscordBot.Domain;
+using Ucu.Poo.DiscordBot.Interaccion;
+using Discord.Commands;
+using Ucu.Poo.DiscordBot.Interaccion;
 
-namespace Ucu.Poo.DiscordBot.Commands;
-
-/// <summary>
-/// Esta clase implementa el comando 'battle' del bot. Este comando une al
-/// jugador que envía el mensaje con el oponente que se recibe como parámetro,
-/// si lo hubiera, en una batalla; si no se recibe un oponente, lo une con
-/// cualquiera que esté esperando para jugar.
-/// </summary>
-// ReSharper disable once UnusedType.Global
-public class InteraccionPorBot : ModuleBase<SocketCommandContext>
+namespace Ucu.Poo.DiscordBot.Interaccion
 {
-    /// <summary>
-    /// Implementa el comando 'battle'. Este comando une al jugador que envía el
-    /// mensaje a la lista de jugadores esperando para jugar.
-    /// </summary>
-    [Command("battle")]
-    [Summary(
-        """
-        Une al jugador que envía el mensaje con el oponente que se recibe
-        como parámetro, si lo hubiera, en una batalla; si no se recibe un
-        oponente, lo une con cualquiera que esté esperando para jugar.
-        """)]
-    // ReSharper disable once UnusedMember.Global
-    public async Task ExecuteAsync(
-        [Remainder]
-        [Summary("Display name del oponente, opcional")]
-        string? opponentDisplayName = null)
+    public class DiscordInteraction : IInteraccionConUsuario
     {
-        string displayName = CommandHelper.GetDisplayName(Context);
-        
-        SocketGuildUser? opponentUser = CommandHelper.GetUser(
-            Context, opponentDisplayName);
+        private readonly SocketCommandContext _context;
 
-        string result;
-        if (opponentUser != null)
+        public DiscordInteraction(SocketCommandContext context)
         {
-            result = Facade.Instance.StartBattle(displayName, opponentUser.DisplayName);
-            await Context.Message.Author.SendMessageAsync(result);
-            await Context.Message.Author.SendMessageAsync("\n Catálogo de Pokémon disponibles:");
-            foreach (var pokemon in DiccionariosYOperacionesStatic.DiccionarioPokemon)
-            {
-                await Context.Message.Author.SendMessageAsync($"-{pokemon.Value.Nombre}");
-            }
-            await opponentUser.SendMessageAsync(result);
-        }
-        else
-        {
-            result = $"No hay un usuario {opponentDisplayName}";
+            _context = context;
         }
 
-        await ReplyAsync(result);
+        // Implementación de ImprimirMensaje: Enviar mensaje al canal de Discord
+        public void ImprimirMensaje(string mensaje)
+        {
+            _context.Channel.SendMessageAsync(mensaje).Wait();
+        }
+
+        // Implementación de LeerEntrada: No es aplicable en Discord, arroja excepción si se usa
+        public string LeerEntrada()
+        {
+            throw new NotSupportedException("LeerEntrada no es compatible en Discord.");
+        }
     }
 }

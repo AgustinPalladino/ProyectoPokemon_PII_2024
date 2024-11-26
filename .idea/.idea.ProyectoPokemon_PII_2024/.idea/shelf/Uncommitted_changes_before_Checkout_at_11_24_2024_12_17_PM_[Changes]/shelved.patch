@@ -1,0 +1,165 @@
+Index: TestProject/HistoriaUsuario3Test.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>namespace TestProject;\r\n\r\npublic class HistoriaUsuario3Test\r\n{\r\n    \r\n}
+===================================================================
+diff --git a/TestProject/HistoriaUsuario3Test.cs b/TestProject/HistoriaUsuario3Test.cs
+--- a/TestProject/HistoriaUsuario3Test.cs	
++++ b/TestProject/HistoriaUsuario3Test.cs	
+@@ -2,5 +2,15 @@
+ 
+ public class HistoriaUsuario3Test
+ {
+-    
++    [SetUp]
++    public void Setup()
++    {
++        
++    }
++
++    [Test]
++    public void hdUsuario3Test()
++    {
++        
++    }
+ }
+\ No newline at end of file
+Index: TestProject/HistoriaUsuario4Test.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>namespace TestProject;\r\n\r\npublic class HistoriaUsuario4Test\r\n{\r\n    \r\n}
+===================================================================
+diff --git a/TestProject/HistoriaUsuario4Test.cs b/TestProject/HistoriaUsuario4Test.cs
+--- a/TestProject/HistoriaUsuario4Test.cs	
++++ b/TestProject/HistoriaUsuario4Test.cs	
+@@ -1,6 +1,19 @@
++using Library;
++
+ namespace TestProject;
+ 
+ public class HistoriaUsuario4Test
+ {
+-    
++    [SetUp]
++    public void Setup()
++    {
++        
++    }
++
++    [Test]
++
++    public void hdUsuario4Test()
++    {
++        
++    }
+ }
+\ No newline at end of file
+Index: TestProject/HisotriaUsuario1Test.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>namespace TestProject;\r\n\r\npublic class HisotriaUsuario1Test\r\n{\r\n    \r\n}
+===================================================================
+diff --git a/TestProject/HisotriaUsuario1Test.cs b/TestProject/HisotriaUsuario1Test.cs
+--- a/TestProject/HisotriaUsuario1Test.cs	
++++ b/TestProject/HisotriaUsuario1Test.cs	
+@@ -1,6 +1,47 @@
++using Library;
++
+ namespace TestProject;
+ 
+ public class HisotriaUsuario1Test
+ {
+-    
++    [SetUp]
++    public void Setup()
++    {
++        
++    }
++/// <summary>
++/// Unit Test para chequear que se pueden agregar 6 pokemones al equipo
++/// </summary>
++    [Test]
++    public void historiaDeUsuraio1()
++    {
++        var jugador = new Jugador("Ash");
++        
++        var poke = new Pokemon("chari", "fuego",100,20,20);
++        
++        var poke2 = new Pokemon("chari2", "fuego",100,20,20);
++        
++        var poke3 = new Pokemon("chari3", "fuego",100,20,20);
++        
++        var poke4 = new Pokemon("chari4", "fuego",100,20,20);
++        
++        var poke5 = new Pokemon("chari5", "fuego",100,20,20);
++        
++        var poke6 = new Pokemon("chari6", "fuego",100,20,20);
++        
++        jugador.agregarPokemon(poke);
++        
++        jugador.agregarPokemon(poke2);
++        
++        jugador.agregarPokemon(poke3);
++        
++        jugador.agregarPokemon(poke4);
++        
++        jugador.agregarPokemon(poke5);
++        
++        jugador.agregarPokemon(poke6);
++        
++        Assert.That(jugador.equipoPokemon.Count, Is.EqualTo(6));
++
++    }
+ }
+\ No newline at end of file
+Index: TestProject/HistoriaUsuario2.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>namespace TestProject;\r\n\r\npublic class HistoriaUsuario2\r\n{\r\n    \r\n}
+===================================================================
+diff --git a/TestProject/HistoriaUsuario2.cs b/TestProject/HistoriaUsuario2.cs
+--- a/TestProject/HistoriaUsuario2.cs	
++++ b/TestProject/HistoriaUsuario2.cs	
+@@ -1,6 +1,40 @@
++using Library;
++
+ namespace TestProject;
+ 
+ public class HistoriaUsuario2
+ {
+-    
++    [SetUp]
++    public void Setup()
++    {
++        
++    }
++
++    /// <summary>
++    /// Unit Test para chequear que se pued
++    /// </summary>
++    [Test]
++    public void hUsuario2()
++    {
++        var jugador = new Jugador("Ash");
++        
++        var poke = new Pokemon("chari", "fuego",100,20,20);
++        
++        var movimiento = new Movimiento("Hidrocañon", 5, 1,"Acuatico",false);
++        
++        var movimiento2 = new Movimiento("Lanzallama", 5, 1,"Acuatico",false);
++        
++        var Dormir = new Movimiento("dormir", 0, 100, "Psíquico", true);
++        var Quemar = new Movimiento("Quemar", 0, 100, "Psíquico", true);
++        
++        jugador.agregarPokemon(poke);
++
++        List<Movimiento> moves = new List<Movimiento>();
++        
++        poke.AgregarMovimientos(moves);
++        
++        
++        
++        
++    }
+ }
+\ No newline at end of file
