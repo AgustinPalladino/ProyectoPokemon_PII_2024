@@ -5,7 +5,7 @@ namespace Ucu.Poo.DiscordBot.Commands;
 
 public class CambiarPokemon : ModuleBase<SocketCommandContext>
 {
-    [Command("switch")]
+    [Command("5")]
     [Summary("Cambia al Pokémon activo del jugador.")]
     public async Task ExecuteAsync([Remainder] string pokemonName)
     {
