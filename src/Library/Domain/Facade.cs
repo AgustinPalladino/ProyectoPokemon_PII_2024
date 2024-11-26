@@ -83,19 +83,14 @@ public class Facade
         var player = GetOrCreatePlayer(playerDisplayName);
 
         // Busca el Pokémon en el diccionario
-        if (!DiccionariosYOperacionesStatic.DiccionarioPokemon.TryGetValue(pokemonName, out var pokemonBase))
+        if (!DiccionariosYOperacionesStatic.DiccionarioPokemon.TryGetValue(pokemonName, out var pokemon))
         {
             return $"El Pokémon {pokemonName} no existe.";
         }
-
-        // Clona el Pokémon para evitar modificar el original en el diccionario
-        var pokemonClonado = new Pokemon(pokemonBase.Nombre, pokemonBase.Tipo, pokemonBase.VidaMax, pokemonBase.Ataque, pokemonBase.Defensa)
-        {
-            listaMovimientos = new List<Movimiento>(pokemonBase.listaMovimientos)
-        };
+        
 
         // Agrega el Pokémon al equipo del jugador
-        return player.agregarPokemon(pokemonClonado);
+        return player.agregarPokemon(pokemon.Clonar());
     }
 
 
