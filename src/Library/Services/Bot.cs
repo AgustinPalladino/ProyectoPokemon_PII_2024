@@ -54,6 +54,7 @@ public class Bot : IBot
         await commands.AddModulesAsync(Assembly.GetAssembly(typeof(AttackComand)), serviceProvider);
         await commands.AddModulesAsync(Assembly.GetAssembly(typeof(MovesCommand)), serviceProvider);
         await commands.AddModulesAsync(Assembly.GetAssembly(typeof(CambiarPokemon)), serviceProvider);
+        await commands.AddModulesAsync(Assembly.GetAssembly(typeof(MenuCommand)), serviceProvider);
         
         await client.LoginAsync(TokenType.Bot, discordToken);
         await client.StartAsync();
