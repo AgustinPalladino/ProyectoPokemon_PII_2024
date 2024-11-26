@@ -43,6 +43,10 @@ public class BattleCommand : ModuleBase<SocketCommandContext>
             await Context.Message.Author.SendMessageAsync(result);
             await Context.Message.Author.SendMessageAsync(Combate.MostrarCatalogo());
             await opponentUser.SendMessageAsync(Combate.MostrarCatalogo());
+            await Context.Message.Author.SendMessageAsync("Usa `!name <nombre_del_pokemon> para agregar un pokemon.");
+            await opponentUser.SendMessageAsync("Usa `!name <nombre_del_pokemon> para agregar un pokemon.");
+            await Context.Message.Author.SendMessageAsync("Y despues de haber seleccionado tus 6 pokemon, presiona `!menu para ver el menu.");
+            await opponentUser.SendMessageAsync("Y despues de haber seleccionado tus 6 pokemon, presiona `!menu para ver el menu.");
             await opponentUser.SendMessageAsync(result);
         }
         else

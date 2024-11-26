@@ -23,7 +23,7 @@ internal static class Juego
         
         
         // DemoFacade();
-        // DemoBot();
+        DemoBot();
     }
 
     private static void DemoFacade()
