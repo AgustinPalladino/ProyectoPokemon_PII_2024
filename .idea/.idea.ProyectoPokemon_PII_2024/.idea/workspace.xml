@@ -30,12 +30,12 @@
     &quot;assignee&quot;: &quot;AgustinPalladino&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/AgustinPalladino/ProyectoPokemon_PII_2024.git",
-    "accountId": "843cdfe2-0c13-4674-9f67-25b33e1d4d75"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/AgustinPalladino/ProyectoPokemon_PII_2024.git&quot;,
+    &quot;accountId&quot;: &quot;843cdfe2-0c13-4674-9f67-25b33e1d4d75&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
@@ -49,7 +49,7 @@
   "keyToString": {
     ".NET Project.Program.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Doxygen",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/agust/Desktop/ProyectoPokemon_PII_2024",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
