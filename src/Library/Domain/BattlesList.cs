@@ -8,6 +8,17 @@ public class BattlesList
     private List<Battle> battles = new List<Battle>();
 
     /// <summary>
+    /// Busca una batalla activa en la que participe el jugador especificado.
+    /// </summary>
+    /// <param name="playerDisplayName">El nombre del jugador.</param>
+    /// <returns>La batalla activa si se encuentra, de lo contrario, null.</returns>
+    public Battle? GetBattleByPlayer(string playerDisplayName)
+    {
+        return battles.FirstOrDefault(b => 
+            b.Player1 == playerDisplayName || b.Player2 == playerDisplayName);
+    }
+    
+    /// <summary>
     /// Crea una nueva batalla entre dos jugadores.
     /// </summary>
     /// <param name="player1">El primer jugador.</param>
