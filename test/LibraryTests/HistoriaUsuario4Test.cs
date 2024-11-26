@@ -5,39 +5,103 @@ namespace Ucu.Poo.DiscordBot.Domain.Tests;
 
 public class HistoriaUsuario4Test
 {
-    private Jugador jugador1;
-    private Jugador jugador2;
     private IInteraccionConUsuario mockInteraccion;
     private Logica logica;
+
     
     [Test]
-    public void hdUsuario4Test()
+    public void SeleccionarAtaque()
     {
         mockInteraccion = Substitute.For<IInteraccionConUsuario>();
-        jugador1 = new Jugador("Ash");
-        jugador2 = new Jugador("Misty");
+        logica = new Logica(mockInteraccion);
+
+        Jugador jugador1 = new Jugador("Jugador1");
+        Jugador jugador2 = new Jugador("Jugador2");
+        Pokemon pokemon = new Pokemon("Charizard", "Fuego", 120, 80, 100);
+        Pokemon pokemon2 = new Pokemon("Magmar", "Fuego", 200, 80, 100);
+        Dictionary<string, Movimiento> DiccionarioMovimientos = new Dictionary<string, Movimiento>
+        {
+            { "Lanzallamas", new Movimiento("Lanzallamas", 40, 40, "Fuego", false) },
+            { "Hidrobomba", new Movimiento("Hidrobomba", 50, 35, "Agua", false) },
+            { "Rayo", new Movimiento("Rayo", 40, 40, "Eléctrico", false) },
+            { "Terremoto", new Movimiento("Terremoto", 50, 30, "Tierra", false) }
+        };
+        pokemon.AgregarMovimientos(new List<Movimiento>
+        {
+            DiccionarioMovimientos["Lanzallamas"],
+            DiccionarioMovimientos["Hidrobomba"],
+            DiccionarioMovimientos["Rayo"],
+            DiccionarioMovimientos["Terremoto"]
+        });
+        jugador1.agregarPokemon(pokemon);
+        jugador2.agregarPokemon(pokemon2);
         
-        // Configuración de los Pokémons
-        var pokemonJugador = new Pokemon("Pikachu", "Eléctrico", 100, 50, 40);
-        var pokemonOponente = new Pokemon("Blastoise", "Agua", 120, 40, 50);
-        jugador1.agregarPokemon(pokemonJugador);
-        jugador2.agregarPokemon(pokemonOponente);
 
-        // Configuración del ataque
-        var ataque = new Movimiento("Rayo", 20, 100, "Eléctrico", false);
+        // Simula las entradas del usuario
+        mockInteraccion.LeerEntrada().Returns("Lanzallamas");
 
-        // Simula el ataque
-        jugador1.atacar(jugador2, ataque, mockInteraccion);
+        // prueba de haber utilizado bien el item
+        bool resultado = logica.SeleccionarAtaque(jugador1, jugador2);
+        Assert.That(resultado, Is.True, "El ataque deberia haber sido escogido correctamente");
+        mockInteraccion.Received(1).LeerEntrada(); // Verifica que se realizaron 2 entradas
+        Assert.That(resultado, Is.EqualTo(true));
+    }
 
-        // Verifica que el mensaje de "muy eficaz" se muestra (Eléctrico > Agua)
-        mockInteraccion.Received(1).ImprimirMensaje("Es muy eficaz");
+    
+    [Test]
+    public void SeleccionarAtaqueErroneo()
+    {
+        mockInteraccion = Substitute.For<IInteraccionConUsuario>();
+        logica = new Logica(mockInteraccion);
 
-        // Verifica que la vida del Pokémon oponente se actualizó correctamente
-        double ataqueFinal = DiccionariosYOperacionesStatic.Precision(ataque.Precision, ataque.Ataque, mockInteraccion);
-        double bonificacionTipo = DiccionariosYOperacionesStatic.bonificacionTipos(ataque.Tipo, pokemonOponente.Tipo, mockInteraccion);
-        double critico = DiccionariosYOperacionesStatic.CalcularCritico(ataque.Precision, mockInteraccion);
-        double dañoEsperado = (pokemonJugador.Ataque) * ataqueFinal * ataque.Ataque / pokemonOponente.Defensa;
-        dañoEsperado *= bonificacionTipo * critico; // Aplicamos bonificación por tipo y crítico
-        Assert.That(pokemonOponente.VidaMax - (int)dañoEsperado, Is.EqualTo(jugador2.pokemonEnCancha().VidaActual));
+        Jugador jugador = new Jugador("Jugador");
+        Pokemon pokemon = new Pokemon("Charizard", "Fuego", 120, 80, 100);
+        Dictionary<string, Movimiento> DiccionarioMovimientos = new Dictionary<string, Movimiento>
+        {
+            { "Lanzallamas", new Movimiento("Lanzallamas", 40, 40, "Fuego", false) },
+            { "Hidrobomba", new Movimiento("Hidrobomba", 50, 35, "Agua", false) },
+            { "Rayo", new Movimiento("Rayo", 40, 40, "Eléctrico", false) },
+            { "Terremoto", new Movimiento("Terremoto", 50, 30, "Tierra", false) }
+        };
+        pokemon.AgregarMovimientos(new List<Movimiento>
+        {
+            DiccionarioMovimientos["Lanzallamas"],
+            DiccionarioMovimientos["Hidrobomba"],
+            DiccionarioMovimientos["Rayo"],
+            DiccionarioMovimientos["Terremoto"]
+        });
+        jugador.agregarPokemon(pokemon);
+
+        // Simula las entradas del usuario
+        mockInteraccion.LeerEntrada().Returns("MovimientoMal");
+
+        // prueba de haber utilizado bien el item
+        bool resultado = logica.Mochila(jugador);
+        Assert.That(resultado, Is.False, "El movimiento debería no haber sido encontrado");
+        mockInteraccion.Received(1).LeerEntrada(); //Verifica
+        Assert.That(logica.Mochila(jugador), Is.EqualTo(false));
+    }
+    
+    
+    [Test]
+    public void SeleccionarAtaqueVolverAtras()
+    {
+        mockInteraccion = Substitute.For<IInteraccionConUsuario>();
+        logica = new Logica(mockInteraccion);
+
+        Jugador jugador = new Jugador("Jugador");
+        Pokemon pokemon = new Pokemon("Charizard", "Fuego", 120, 80, 100);
+        jugador.agregarPokemon(pokemon);
+        
+        pokemon.VidaActual -= 50; // Vida actual = 70
+
+        // Simula las entradas del usuario
+        mockInteraccion.LeerEntrada().Returns("0");
+
+        // prueba de haber utilizado bien el item
+        bool resultado = logica.Mochila(jugador);
+        Assert.That(resultado, Is.False, "El deberia haber vuelto hacia atras.");
+        mockInteraccion.Received(1).LeerEntrada(); // verifica
+        Assert.That(logica.Mochila(jugador), Is.EqualTo(false));
     }
 }

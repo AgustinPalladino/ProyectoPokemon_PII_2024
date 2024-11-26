@@ -238,7 +238,6 @@ public class Logica
             interaccion.ImprimirMensaje("Error inesperado");
             return false;
         }
-        interaccion.ImprimirMensaje("No se encontro ese movimiento");
         return false;
     }
     

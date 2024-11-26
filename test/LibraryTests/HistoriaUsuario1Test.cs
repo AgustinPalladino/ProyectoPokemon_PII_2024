@@ -5,8 +5,6 @@ namespace Ucu.Poo.DiscordBot.Domain.Tests;
 
 public class HisotriaUsuario1Test
 {
-    private Jugador jugador1;
-    private Jugador jugador2;
     private IInteraccionConUsuario mockInteraccion;
     private Logica logica;
 
