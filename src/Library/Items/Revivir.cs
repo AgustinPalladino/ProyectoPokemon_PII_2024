@@ -11,6 +11,9 @@ public class Revivir : Item
     
     public override string Descripcion => "Revive a un pokemon con la mitad de su vida";
 
+    /// <summary>
+    /// Decidimos separar esta clase en dos metodos, creimos que era buena idea aplicar el principio srp de solid
+    /// </summary>
     public override string Usar(Jugador jugador, string pokeIngresado)
     {
         if (jugador.equipoPokemonDerrotados.Count() == 0)

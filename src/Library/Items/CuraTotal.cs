@@ -7,12 +7,13 @@ namespace Ucu.Poo.DiscordBot.Items;
 /// </summary>
 public class CuraTotal : Item
 {
-    // Implementación de la propiedad abstracta Nombre
     public override string Nombre => "CuraTotal";
     
     public override string Descripcion => "Cura cualquier estado";
 
-    // Implementación del método abstracto Usar
+    /// <summary>
+    /// Decidimos separar esta clase en dos metodos, creimos que era buena idea aplicar el principio srp de solid
+    /// </summary>
     public override string Usar(Jugador jugador, string pokeIngresado)
     {
         for (int i = 0; i < jugador.equipoPokemon.Count; i++)

@@ -11,32 +11,26 @@ public class HisotriaUsuario1Test
     private Logica logica;
     
     [Test]
-    public void SeleccionarEquipo_AgregaSeisPokemons_Correctamente()
+    public void SeleccionarPokemonDeCambio_CambiaPokemonCorrectamente()
     {
+        // Arrange
         mockInteraccion = Substitute.For<IInteraccionConUsuario>();
-        jugador1 = new Jugador("Ash");
-        jugador2 = new Jugador("Misty");
-        DiccionariosYOperacionesStatic.DiccionarioPokemon = new Dictionary<string, Pokemon>
-        {
-            { "Pikachu", new Pokemon("Pikachu", "Eléctrico", 100, 50, 40) },
-            { "Charmander", new Pokemon("Charmander", "Fuego", 90, 60, 35) },
-            { "Squirtle", new Pokemon("Squirtle", "Agua", 95, 45, 50) },
-            { "Bulbasaur", new Pokemon("Bulbasaur", "Planta", 100, 50, 40) },
-            { "Jigglypuff", new Pokemon("Jigglypuff", "Normal", 80, 40, 30) },
-            { "Meowth", new Pokemon("Meowth", "Normal", 85, 50, 35) }
-        };
+        logica = new Logica(mockInteraccion); // Pasa el mock al constructor
 
-        
-        // Simula entradas para seleccionar 6 Pokémons.
-        
-        mockInteraccion.LeerEntrada().Returns("Pikachu", "Charmander", "Squirtle", "Bulbasaur", "Jigglypuff", "Meowth");
-        Logica.CambiarPokeStringAPokemon(jugador1, "Pikachu");
-        // Verifica que se hayan agregado exactamente 6 Pokémons.
-        Assert.That(jugador1.equipoPokemon.Count, Is.EqualTo(6) );
+        Jugador jugador = new Jugador("Jugador");
+        Pokemon charizard = new Pokemon("Charizard", "Fuego", 120, 80, 100);
+        jugador.agregarPokemon(charizard);
 
-        // Verifica que los nombres sean correctos.
-        //  Assert.That(jugador1.equipoPokemon, Has.Some.Matches<Pokemon>(p => p.Nombre == "Charizard"));
-        //Assert.That(jugador1.equipoPokemon, Has.Some.Matches<Pokemon>(p => p.Nombre == "Pikachu"));
+        // Simula la entrada del usuario
+        mockInteraccion.LeerEntrada().Returns("Charizard");
+
+        // Act
+        bool resultado = logica.SeleccionarPokemonDeCambio(jugador);
+
+        // Assert
+        Assert.That(resultado, Is.True, "El Pokémon debería haber sido cambiado correctamente.");
+        mockInteraccion.Received(1).LeerEntrada(); // Verifica que se llamó al método LeerEntrada
+        Assert.That(jugador.pokemonEnCancha().Nombre, Is.EqualTo("Charizard"), "El Pokémon actual no fue cambiado correctamente.");
     }
-
+    
 }

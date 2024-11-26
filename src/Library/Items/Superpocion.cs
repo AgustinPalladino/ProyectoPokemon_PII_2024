@@ -8,6 +8,9 @@ public class SuperPocion : Item
 
     public override string Descripcion => "Recupera 70 puntos de vida";
     
+    /// <summary>
+    /// Decidimos separar esta clase en dos metodos, creimos que era buena idea aplicar el principio srp de solid
+    /// </summary>
     public override string Usar(Jugador jugador, string pokeIngresado)
     {
         for (int i = 0; i < jugador.equipoPokemon.Count; i++)
@@ -31,6 +34,7 @@ public class SuperPocion : Item
         }
         return "Pokemon incorrecto";
     }
+
 
     public void CurarPokemon(Pokemon pokemon)
     {

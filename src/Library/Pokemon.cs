@@ -32,19 +32,16 @@ public class Pokemon
     public string Nombre
     {
         get { return this.nombre; }
-        set { this.nombre = value; }
     }
 
     public string Tipo
     {
         get { return this.tipo; }
-        set { this.tipo = value; }
     }
 
     public int VidaMax
     {
         get { return this.vidaMax; }
-        set { this.vidaMax = value; }
     }
 
     public int VidaActual
@@ -56,13 +53,11 @@ public class Pokemon
     public int Ataque
     {
         get { return this.ataque; }
-        set { this.Ataque = value; }
     }
     
     public int Defensa
     {
         get { return this.defensa; }
-        set { this.defensa = value; }
     }
 
     public string Estado
