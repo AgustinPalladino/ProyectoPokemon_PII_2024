@@ -28,7 +28,7 @@ public class HistoriaUsuario7Test
 
         // Simula el cambio de Pokémon
         var logica = new Logica(mockInteraccion);
-        bool turnoConsumido = logica.CambiarPokemon(jugador1);
+        bool turnoConsumido = logica.SeleccionarPokemonDeCambio(jugador1);
 
         // Verifica que el Pokémon en cancha ahora sea "Blastoise"
         Assert.That(jugador1.pokemonEnCancha().Nombre, Is.EqualTo("Blastoise"));

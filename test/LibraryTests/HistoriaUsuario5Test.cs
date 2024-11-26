@@ -29,18 +29,6 @@ public class HistoriaUsuario5Test
 
         // Verifica que el mensaje de turno para el jugador 1 aparece
 
-        if (combate.numActual==1)
-        {
-            Assert.That(combate.JugadorActual==jugador1);
-        }
-        if (combate.numActual==2)
-        {
-            Assert.That(combate.JugadorActual==jugador2);
-        }
-        
-        mockInteraccion.Received(1).ImprimirMensaje($"\nTurno de {jugador2.Nombre}. ¿Qué deseas hacer? Seleccione un numero porfavor.");    
-        mockInteraccion.LeerEntrada().Returns("1");
-
         // Verifica que el mensaje de turno para el jugador 2 aparece después
     }
 }

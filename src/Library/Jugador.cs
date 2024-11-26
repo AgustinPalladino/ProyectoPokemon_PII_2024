@@ -35,14 +35,14 @@ public class Jugador
         {
             for (int i = 0; i < this.equipoPokemon.Count; i++)
             {
-                mensaje += $"-{this.equipoPokemon[i].Nombre}";
+                mensaje += $"\n-{this.equipoPokemon[i].Nombre}";
             }
         }
         else
         {
             for (int i = 1; i < this.equipoPokemon.Count; i++)
             {
-                mensaje += $"-{this.equipoPokemon[i].Nombre}";
+                mensaje += $"\n-{this.equipoPokemon[i].Nombre}";
             }
         }
 

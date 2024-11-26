@@ -33,7 +33,7 @@ public class HistoriaUsuario3Test
         Assert.That(jugador2.pokemonEnCancha().VidaActual, Is.EqualTo(pokemonOponente.VidaActual));
 
         // Simula otra acción para mostrar la vida del Pokémon propio
-        jugador1.verSalud(mockInteraccion);
+        jugador1.verSalud();
         mockInteraccion.Received(1)
             .ImprimirMensaje(
                 $"La vida del {pokemonJugador.Nombre} es: {pokemonJugador.VidaActual}/{pokemonJugador.VidaMax}");

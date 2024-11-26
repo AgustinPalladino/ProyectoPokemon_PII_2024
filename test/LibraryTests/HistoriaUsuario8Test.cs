@@ -33,7 +33,7 @@ public class HistoriaUsuario8Test
         
         // Simula el uso de la mochila
         var logica = new Logica(mockInteraccion);
-        logica.Mochila(jugador1, "Pikachu");
+        logica.Mochila(jugador1);
 
         // Verifica que el ítem fue utilizado y su efecto aplicado
         Assert.That(pokemon.VidaActual, Is.EqualTo(100) ); // La vida debería estar completamente curada

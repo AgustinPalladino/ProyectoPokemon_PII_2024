@@ -1,4 +1,7 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5717993e_002Dbdaa_002D40a2_002D9ce1_002D1a813df88343/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from CombateTest.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:CombateTest.cs&lt;/ProjectFile&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5d42e482_002D03bb_002D4328_002D9af7_002De7979db4e5d5/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from ItemTest.cs #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:ItemTest.cs&lt;/ProjectFile&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
@@ -13,9 +16,29 @@
     &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:CombateTest.cs&lt;/ProjectFile&gt;&#xD;
   &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=753324e5_002D1729_002D435c_002Dafdb_002D81e99ab6d83c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;test&amp;gt;\&amp;lt;LibraryTests&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Project Location="C:\repositorio\ProyectoPokemon_PII_2024\test\LibraryTests" Presentation="&amp;lt;test&amp;gt;\&amp;lt;LibraryTests&amp;gt;" /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a2a480da_002Dbc54_002D4dac_002Db267_002D96ebcc210964/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from ItemTest.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:ItemTest.cs&lt;/ProjectFile&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c4a4acfc_002Dc1e2_002D4459_002D974a_002Dcf6ab497c3ae/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from JugadorTest.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:JugadorTest.cs&lt;/ProjectFile&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d09bfa3d_002D820d_002D4646_002D8b15_002D519ad6e903ae/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Session #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:MovimientoTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:LogicaTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:JugadorTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:PokemonTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:ItemTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:FacadeTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:DiccionariosyOpStaticTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:CombateTest.cs&lt;/ProjectFile&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fa7bf1ce_002Dbaae_002D43ef_002D9b19_002D627d007b7aac/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="itemCuraTotal" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F52B0608-D4C6-4241-821F-8761A8338C00::net8.0::Ucu.Poo.DiscordBot.Domain.Tests.ItemTest.itemCuraTotal&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
