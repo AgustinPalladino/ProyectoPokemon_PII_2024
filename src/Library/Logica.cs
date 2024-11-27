@@ -281,7 +281,6 @@ public class Logica
         {
             jugador.atacar(jugadorEnemigo, movimiento, interaccion);
             jugadorEnemigo.pokemonEnCancha().aplicarDañoRecurrente(interaccion);
-            
         }
 
         // Aplica ataques especiales si corresponde
@@ -299,7 +298,7 @@ public class Logica
         }
         else
         {
-            jugadorEnemigo.verSalud();
+            interaccion.ImprimirMensaje(jugadorEnemigo.verSalud());
         }
     }
 

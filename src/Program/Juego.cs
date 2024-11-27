@@ -15,11 +15,13 @@ internal static class Juego
     /// </summary>
     private static void Main()
     {
-        //Anterior Program:
+        //Juego por consola:
+        /*
         Jugador j1 = new Jugador("Jugador 1");
         Jugador j2 = new Jugador("Jugador 2");
         Combate combate = new Combate(new InteraccionPorConsola());
         combate.BuclePrincipal(j1, j2);
+        */
         
         
         // DemoFacade();
