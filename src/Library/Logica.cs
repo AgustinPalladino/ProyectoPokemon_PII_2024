@@ -93,7 +93,7 @@ public class Logica
                             break; //Si volvio para atras vuelve al bucle
 
                         case 6: // El case 6 muestra tus puntos y los puntos del rival
-                            interaccion.ImprimirMensaje($"La probabilidad de victoria tuya es:: {probabilidadDeGanar(j1)}%");
+                            interaccion.ImprimirMensaje($"La probabilidad de victoria tuya es: {probabilidadDeGanar(j1)}%");
                             interaccion.ImprimirMensaje($"La prob. de victoria del {j2.Nombre} es de: {probabilidadDeGanar(j2)}%");
                             break;
                         
