@@ -14,30 +14,6 @@ public class Logica
     {
         this.interaccion = interaccion;
     }
-    public void calcularprobabilidaddeganar(Jugador j1, Jugador j2)
-    {
-        double puntajeJugador1 = CalcularPuntaje(j1);
-        double puntajeJugador2= CalcularPuntaje(j2);
-
-        double probabilidadJugador1 = (puntajeJugador1 / (puntajeJugador1 + puntajeJugador2)) * 100;
-        double probabilidadJugador2 = (puntajeJugador2/ (puntajeJugador2 + puntajeJugador2)) * 100;
-
-        string mensaje =$"Probabilidades de ganar:\n" +
-                        $"{j1.Nombre}: {probabilidadJugador1:0.00}%\n" + //la seteo en 0 las dos 
-                        $"{j2.Nombre}: {probabilidadJugador2:0.00}%";  
-        interaccion.ImprimirMensaje(mensaje);
-    }
-    public double CalcularPuntaje(Jugador j1, Jugador j2)
-    {
-        double puntajeFactorPokemon = (Jugador.equipoPokemon.Count / 6.0) *60;
-
-        double puntajeFactorItems = (Jugador.Mochila.Count / 10.0)  *30;
-
-        bool puntajePorEstadoAlterado = Jugador.equipokemon.Any(pokemon => pokemon.Estado != "Normal");
-        double puntajeResultanteEstadoAlterado = puntajePorEstadoAlterado ? 0.9 : 1.0; //le saco un 10% por que detecte un estado alteardo
-
-        return (puntajeFactorPokemon + puntajeFactorItems) * puntajeResultanteEstadoAlterado;
-    }
     
     
     /// <summary>
@@ -77,7 +53,6 @@ public class Logica
                     interaccion.ImprimirMensaje("3- Mochila (Solo usar objeto consume un turno)");
                     interaccion.ImprimirMensaje("4- Atacar (Consume un turno)");
                     interaccion.ImprimirMensaje("5- Cambiar de Pokémon (Consume un turno)");
-                    interaccion.ImprimirMensaje("6- Mostrar Posibilidad de victoria (No consume un turno)");
                     int opcion = Convert.ToInt32(interaccion.LeerEntrada());
                    
                     switch (opcion)
@@ -113,10 +88,8 @@ public class Logica
                                 return true; // Si cambio de pokemon termino su turno
                             }
 
-                            break;//Si volvio para atras vuelve al bucle
-                        case 6: 
-                            logica.CalcularProbabilidadDeGanar(j1, j2);
-                            
+                            break; //Si volvio para atras vuelve al bucle
+
                         default: // Si ingresa una opcion mala, vuelve al bucle
                             interaccion.ImprimirMensaje("Error, opcion incorrecta");
                             break;
