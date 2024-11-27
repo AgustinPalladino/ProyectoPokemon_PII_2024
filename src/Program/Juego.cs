@@ -1,6 +1,7 @@
 ﻿using Ucu.Poo.DiscordBot;
 using Ucu.Poo.DiscordBot.Domain;
 using Ucu.Poo.DiscordBot.Interaccion;
+using Ucu.Poo.DiscordBot.Items;
 using Ucu.Poo.DiscordBot.Services;
 
 namespace Program;
@@ -16,13 +17,10 @@ internal static class Juego
     private static void Main()
     {
         //Juego por consola:
-        /*
         Jugador j1 = new Jugador("Jugador 1");
         Jugador j2 = new Jugador("Jugador 2");
         Combate combate = new Combate(new InteraccionPorConsola());
         combate.BuclePrincipal(j1, j2);
-        */
-        
         
         // DemoFacade();
         // DemoBot();

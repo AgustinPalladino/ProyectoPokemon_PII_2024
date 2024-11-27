@@ -1,4 +1,5 @@
-﻿using Ucu.Poo.DiscordBot.Interaccion;
+﻿using Ucu.Poo.DiscordBot.Commands;
+using Ucu.Poo.DiscordBot.Interaccion;
 
 namespace Ucu.Poo.DiscordBot;
 
@@ -53,6 +54,7 @@ public class Logica
                     interaccion.ImprimirMensaje("3- Mochila (Solo usar objeto consume un turno)");
                     interaccion.ImprimirMensaje("4- Atacar (Consume un turno)");
                     interaccion.ImprimirMensaje("5- Cambiar de Pokémon (Consume un turno)");
+                    interaccion.ImprimirMensaje("6- Ver puntos de victoria (No consume turno)"); // Se agrega imprimir por pantalla
                     int opcion = Convert.ToInt32(interaccion.LeerEntrada());
                    
                     switch (opcion)
@@ -90,6 +92,11 @@ public class Logica
 
                             break; //Si volvio para atras vuelve al bucle
 
+                        case 6: // El case 6 muestra tus puntos y los puntos del rival
+                            interaccion.ImprimirMensaje($"La probabilidad de victoria tuya es:: {probabilidadDeGanar(j1)}%");
+                            interaccion.ImprimirMensaje($"La prob. de victoria del {j2.Nombre} es de: {probabilidadDeGanar(j2)}%");
+                            break;
+                        
                         default: // Si ingresa una opcion mala, vuelve al bucle
                             interaccion.ImprimirMensaje("Error, opcion incorrecta");
                             break;
@@ -103,6 +110,45 @@ public class Logica
             }
         }
         return true;
+    }
+
+
+    //Metodo de la defensa
+    public float probabilidadDeGanar(Jugador jugador)
+    {
+        float puntos = 0;
+        bool descuentoEstado = false; 
+        for (int i = 0; i < jugador.equipoPokemon.Count; i++) //Recorro los pokes
+        {
+            if (jugador.equipoPokemon[i] != null)
+            {
+                puntos += 10; // Si el pokemon no es null suma 10 puntos, para evitar futuros problemas
+            }
+
+            if (jugador.equipoPokemon[i].Estado != "Normal")
+            {
+                descuentoEstado = true; //booleano para detectar si hay algun pokemon con algun problema de estado
+            }
+        }
+
+        if (jugador.Mochila.Count == jugador.ContadorMochila) //Si el jugador no uso ningun objeto hasta ahora, le da los 30 puntos
+        {
+            puntos += 30; 
+        }
+        else
+        {
+            for (int i = 0; i < jugador.Mochila.Count(); i++) //Recorro los objetos de la mochila
+            {
+                puntos += 30 / jugador.ContadorMochila; // Le da puntos por cada item que aun mantiene en su inventario
+            }
+        }
+
+        if (!descuentoEstado)
+        {
+            puntos += 10; //Si ningun pokemon tiene problemas de estado le da 10 puntos extra
+        }
+        
+        return puntos;
     }
     
     

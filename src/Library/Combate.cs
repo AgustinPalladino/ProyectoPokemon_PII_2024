@@ -13,6 +13,8 @@ public class Combate
     public Jugador JugadorActual { get; private set; }
     public int numActual { get; private set; }
 
+    public int turno;
+    
     public Combate(IInteraccionConUsuario interaccion)
     {
         this.interaccion = interaccion;
@@ -64,14 +66,17 @@ public class Combate
         
         bool banderaGlobal = true;
         int numeroRandom = DiccionariosYOperacionesStatic.numeroAleatorio(1, 2);
+        turno = 0;
         while (banderaGlobal)
         {
             //Si el numero random es 1 empieza el jugador uno
             if (numeroRandom == 1)
             {
+                turno += 1;
                 numActual = numeroRandom;
                 // Turno del jugador 1
                 JugadorActual = j1;
+                interaccion.ImprimirMensaje($"{turno}");
                 banderaGlobal = logica.MenuDeJugador(j1, j2); 
                 // Si la bandera global toma el valor de falso, significa que termino el combate
 
@@ -80,6 +85,8 @@ public class Combate
                     numActual = numeroRandom;
                     // Turno del jugador 2
                     JugadorActual = j2;
+                    turno += 1;
+                    interaccion.ImprimirMensaje($"{turno}");
                     banderaGlobal = logica.MenuDeJugador(j2, j1);
                 }
             }
@@ -87,12 +94,16 @@ public class Combate
             else
             {
                 // Turno del jugador 2
+                turno += 1;
+                interaccion.ImprimirMensaje($"{turno}");
                 banderaGlobal = logica.MenuDeJugador(j2, j1); 
                 // Si la bandera global toma el valor de falso, significa que termino el combate
 
                 if (banderaGlobal)
                 {
                     // Turno del jugador 1
+                    turno += 1;
+                    interaccion.ImprimirMensaje($"{turno}");
                     banderaGlobal = logica.MenuDeJugador(j1, j2);
                 }
             }

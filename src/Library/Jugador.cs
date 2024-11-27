@@ -9,6 +9,7 @@ public class Jugador
     public List<Pokemon> equipoPokemon = new();
     public List<Pokemon> equipoPokemonDerrotados = new();
     public List<Item> Mochila = new();
+    public int ContadorMochila;
 
     private const int MaxPoke = 6;
     
@@ -25,7 +26,8 @@ public class Jugador
         Mochila.Add(new SuperPocion());
         Mochila.Add(new Revivir());
         Mochila.Add(new CuraTotal()); 
-        Mochila.Add(new CuraTotal()); 
+        Mochila.Add(new CuraTotal());
+        ContadorMochila = this.Mochila.Count();
     }
     
     public string MostrarEquipo()
