@@ -12,6 +12,19 @@ public class Jugador
 
     private const int MaxPoke = 6;
     
+    //DEFENSA
+    
+    private int pokePuntaje = 0;
+
+    private int inventarioPuntaje = 0;
+
+    private int estadoPuntaje = 0;
+
+    private int puntajeTotal = 0;
+
+    private int contadorEstadosNormal = 0;
+
+    
     /// <summary>
     /// Constructor
     /// </summary>
@@ -19,7 +32,6 @@ public class Jugador
     public Jugador(string Nombre)
     {
         this.Nombre = Nombre;
-        Mochila.Add(new SuperPocion());
         Mochila.Add(new SuperPocion());
         Mochila.Add(new SuperPocion());
         Mochila.Add(new SuperPocion());
@@ -135,4 +147,85 @@ public class Jugador
         Mochila.Remove(item);
         return mensaje;
     }
+    
+    ////////////////////////////////////////// DEFENSA PEDRO MOREIRA 27/11/24 ///////////////////////////////////////////////////////
+
+    /// <summary>
+    /// Creo metodo tipo int para que me devuelva el pountaje del jugadro por los pokemones en el equipo.
+    /// </summary>
+    /// 
+    /// <returns></returns>
+    public int PuntajePokemon()
+    {
+        this.pokePuntaje = 0;
+        for (int i = 0; i < this.equipoPokemon.Count; i++)
+        {
+            this.pokePuntaje = 10 + this.pokePuntaje;
+            if (this.equipoPokemon[i]==null)
+            {
+                this.pokePuntaje = this.pokePuntaje - 10;
+            }
+        }
+        
+        
+        return pokePuntaje;
+    }
+    
+    /// <summary>
+    /// Creo metodo tipo int para que me devuelva la cantidad de puntos por los items en el inventario (Mochila).
+    /// Reduje a 6 la cantidad inicial de items en la mochila, asi cada item vale 5 ptos.
+    /// </summary>
+    /// 
+    /// <returns></returns>
+    public int PuntajeInventario()
+    {
+        this.inventarioPuntaje = 0;
+        for (int i = 0; i < this.Mochila.Count; i++)
+        {
+            this.inventarioPuntaje = 5 + this.inventarioPuntaje;
+        }
+
+        return this.inventarioPuntaje;
+    }
+    
+    /// <summary>
+    /// Creo metodo tipo int para que me devuelva 10 pts si tiene 
+    /// </summary>
+    /// 
+    /// <returns></returns>
+    public int PuntajeEstado()
+    {
+        this.estadoPuntaje = 0;
+        for (int i = 0; i < this.equipoPokemon.Count; i++)
+        {
+            if (this.equipoPokemon[i].Estado != "Normal")
+            {
+                this.estadoPuntaje = 0;
+            }
+            else
+            {
+                this.contadorEstadosNormal += 1;
+            }
+            
+        }
+        if (this.contadorEstadosNormal == this.equipoPokemon.Count)
+        {
+            this.estadoPuntaje = 10;
+        }
+
+        return this.estadoPuntaje;
+    }
+    
+    /// <summary>
+    /// Creo metodo tipo int para que me devuelva 10 pts si tiene 
+    /// </summary>
+    /// <param name="j1"></param>
+    /// <returns></returns>
+    public int PuntajeTotal()
+    {
+        puntajeTotal = 0;
+        puntajeTotal = this.PuntajeInventario() + this.PuntajeEstado() + this.PuntajePokemon();
+        return puntajeTotal;
+    }
+
 }

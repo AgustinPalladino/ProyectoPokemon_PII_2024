@@ -8,7 +8,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e804c097-b6aa-4b95-a455-d56cf5311d8b" name="Changes" comment="" />
+    <list default="true" id="e804c097-b6aa-4b95-a455-d56cf5311d8b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_24_2024_12_17_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_24_2024_12_17_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_24_2024_12_17_PM__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_24_2024_12_17_PM__Changes_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_26_2024_4_28_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_26_2024_4_28_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_26_2024_5_02_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_26_2024_5_02_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Library/Jugador.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library/Jugador.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Library/Logica.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library/Logica.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,12 +39,12 @@
     &quot;assignee&quot;: &quot;AgustinPalladino&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/AgustinPalladino/ProyectoPokemon_PII_2024.git",
-    "accountId": "c3539025-b95e-48f0-91b2-82edf294c913"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/AgustinPalladino/ProyectoPokemon_PII_2024.git&quot;,
+    &quot;accountId&quot;: &quot;c3539025-b95e-48f0-91b2-82edf294c913&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/2aade6beb02ea367fd97c4070a4198802fe61c03/src/coreclr/System.Private.CoreLib/src/System/Runtime/CompilerServices/RuntimeHelpers.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/2aade6beb02ea367fd97c4070a4198802fe61c03/src/libraries/System.Private.CoreLib/src/System/ArgumentNullException.cs" root0="SKIP_HIGHLIGHTING" />
@@ -76,10 +84,10 @@
     <setting file="mock://C:/dev/Programacion 2/ProyectoFinal/ProyectoPokemon_PII_2024/src/Library/Interaccion/InteraccionPorBot.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/dev/Programacion 2/ProyectoFinal/ProyectoPokemon_PII_2024/src/Library/Interaccion/InteraccionPorBot.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -95,7 +103,7 @@
     ".NET Project.Program.executor": "Run",
     "1f5e09e1-7545-43fd-a5da-0c7d28480865.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Defensa271124__Pedro",
     "last_opened_file_path": "C:/Users/agust/Desktop/ProyectoPokemon_PII_2024",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",

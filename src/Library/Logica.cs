@@ -252,6 +252,7 @@ public class Logica
                 if (movimiento == mov.Nombre)
                 {
                     CalculoAtaque(jugador, jugadorEnemigo, mov);
+                    Probabilidad(jugador, jugadorEnemigo); /////// DEFENSA //////////
                     return true;
                 }
             }
@@ -315,4 +316,23 @@ public class Logica
         }
         return false;
     }
+    
+    ////////////////////////////////////////// DEFENSA PEDRO MOREIRA 27/11/24 ///////////////////////////////////////////////////////
+    public string Probabilidad(Jugador jugador1, Jugador jugador2)
+    {
+        if (jugador1.PuntajeTotal()>jugador2.PuntajeTotal())
+        {
+            return $"{jugador1.Nombre} tiene mas probabilidad de ganar.\n{jugador1.Nombre} tiene: {jugador1.PuntajeTotal()} puntos, mientras que {jugador2.Nombre} tiene: {jugador2.PuntajeTotal()} puntos.";
+        }
+        else if (jugador2.PuntajeTotal()>jugador1.PuntajeTotal())
+        {
+            return $"{jugador2.Nombre} tiene mas probabilidad de ganar.\n{jugador2.Nombre} tiene: {jugador2.PuntajeTotal()} puntos, mientras que {jugador1.Nombre} tiene: {jugador1.PuntajeTotal()} puntos.";
+        }
+        else
+        {
+            return "Ambos tienen la misma probabilidad";   
+        }
+    
+    }
+
 }
