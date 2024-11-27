@@ -4,6 +4,10 @@ namespace Ucu.Poo.DiscordBot;
 
 public class Logica
 {
+    /// <summary>
+    /// Logica es una clase en la cual se dividen procesos que tendria que tener jugador, con el fin de seguir el principio
+    /// solid srp. Aun asi esta clase interactua con jugador cuando paso este proceso de logica y validación
+    /// </summary>
     private readonly IInteraccionConUsuario interaccion;
 
     public Logica(IInteraccionConUsuario interaccion)
@@ -11,10 +15,14 @@ public class Logica
         this.interaccion = interaccion;
     }
     
+    
     /// <summary>
-    /// Este metodo despliega el menu de opciones de cada jugador, decidimos ponerlo aqui, por uno de los patrones GRASP
-    /// llamado bajo acomplamiento, con la intencion de que logica interactue con jugador de una manera mas cercana que combate
+    /// Este es el bucle del menu de jugador para jugar mediante consola, es el responsable de tomar la decision del jugador
+    /// y saber cuando este finaliza y consume su turno
     /// </summary>
+    /// <param name="j1"></param>
+    /// <param name="j2"></param>
+    /// <returns></returns>
     public bool MenuDeJugador(Jugador j1, Jugador j2)
     {
         bool bandera = true;
@@ -98,6 +106,13 @@ public class Logica
     }
     
     
+    /// <summary>
+    /// Cambia un string pokemon a un objeto de tipo Pokemon mediante una cooperacion con jugador.agregarPokemon para añadir
+    /// este pokemon directo al equipo
+    /// </summary>
+    /// <param name="jugador"></param>
+    /// <param name="pokeIngresado"></param>
+    /// <returns></returns>
     public static string CambiarPokeStringAPokemon(Jugador jugador, string pokeIngresado)
     {
         foreach (var pokemon in DiccionariosYOperacionesStatic.DiccionarioPokemon)
@@ -111,7 +126,11 @@ public class Logica
         return $"{pokeIngresado}, no es correcto";
     }
     
-    
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="jugador"></param>
+    /// <returns></returns>
     public bool SeleccionarPokemonDeCambio(Jugador jugador)
     {
         try
@@ -158,7 +177,11 @@ public class Logica
     }
     
 
-    //Metodo que comprueba si el item recibido esta bien
+    /// <summary>
+    /// Metodo que comprueba si el item recibido esta bien y recibe el nombre del pokemon que va a interactuar con ese objeto
+    /// </summary>
+    /// <param name="jugador"></param>
+    /// <returns></returns>
     public bool Mochila(Jugador jugador)
     {
         try
@@ -212,7 +235,12 @@ public class Logica
     }
     
     
-    // Metodo para seleccionar un ataque
+    /// <summary>
+    /// Metodo que confirma la eleccion del movimiento
+    /// </summary>
+    /// <param name="jugador"></param>
+    /// <param name="jugadorEnemigo"></param>
+    /// <returns></returns>
     public bool SeleccionarAtaque(Jugador jugador, Jugador jugadorEnemigo)
     {
         try
@@ -241,7 +269,12 @@ public class Logica
         return false;
     }
     
-    
+    /// <summary>
+    /// Calcula el ataque
+    /// </summary>
+    /// <param name="jugador"></param>
+    /// <param name="jugadorEnemigo"></param>
+    /// <param name="movimiento"></param>
     public void CalculoAtaque(Jugador jugador, Jugador jugadorEnemigo, Movimiento movimiento)
     {
         if (jugador.pokemonEnCancha().puedeAtacar(interaccion) && !movimiento.EsEspecial)
@@ -270,7 +303,11 @@ public class Logica
         }
     }
 
-    
+    /// <summary>
+    /// Si el jugador rival tiene solo 1 pokemon y es null este retorna true y por ende confirma que la pelea termina
+    /// </summary>
+    /// <param name="jugadorEnemigo"></param>
+    /// <returns></returns>
     public bool ChequeoVictoria(Jugador jugadorEnemigo)
     {
         if (jugadorEnemigo.equipoPokemon.Count == 1 && jugadorEnemigo.equipoPokemon[0] == null)

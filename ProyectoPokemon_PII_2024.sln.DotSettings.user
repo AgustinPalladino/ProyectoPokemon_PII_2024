@@ -80,7 +80,7 @@
     &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:CombateTest.cs&lt;/ProjectFile&gt;&#xD;
   &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fa7bf1ce_002Dbaae_002D43ef_002D9b19_002D627d007b7aac/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="itemCuraTotal" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fa7bf1ce_002Dbaae_002D43ef_002D9b19_002D627d007b7aac/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="itemCuraTotal" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Or&gt;&#xD;
     &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:CombateTest.cs&lt;/ProjectFile&gt;&#xD;
     &lt;ProjectFile&gt;F52B0608-D4C6-4241-821F-8761A8338C00/f:DiccionariosyOpStaticTest.cs&lt;/ProjectFile&gt;&#xD;

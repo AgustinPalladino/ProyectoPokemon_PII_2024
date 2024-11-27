@@ -5,19 +5,12 @@ public class CombateTest
     [Test]
     public void mostrarCatalogo()
     {
-        var expectedPokemonNames = new List<string> { "Blastoise", "Charizard", "Venusaur" };
-        var listaPokemon = new List<Pokemon>
+        string mostrarCatalogo = "\n Catálogo de Pokémon disponibles:";
+        foreach (var pokemon in DiccionariosYOperacionesStatic.DiccionarioPokemon)
         {
-            new Pokemon("Blastoise", "Agua", 100, 100, 80),
-            new Pokemon("Charizard", "Fuego", 120, 80, 100),
-            new Pokemon("Venusaur", "Planta", 90, 85, 80)
-        };
-        foreach (var pokemon in listaPokemon)
-        {
-            Assert.Contains(pokemon.Nombre, expectedPokemonNames);
+            mostrarCatalogo += $"\n-{pokemon.Value.Nombre}";
         }
         
-        Assert.That(listaPokemon[0].Nombre, Is.EqualTo("Blastoise"));
-        Assert.That(listaPokemon[1].Nombre, Is.EqualTo("Charizard"));
+        Assert.That(Combate.MostrarCatalogo(), Is.EqualTo(mostrarCatalogo));
     }
 }

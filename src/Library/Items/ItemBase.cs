@@ -4,7 +4,7 @@ namespace Ucu.Poo.DiscordBot.Items;
 
 /// <summary>
 /// Clase base abstracta para representar un ítem. Sigue el principio de inversión de dependencias (DIP)
-/// porque las dependencias estarán en la clase base, no en implementaciones concretas.
+/// Porque no queremos que los modulos de alto nivel dependan de bajo nivel, sino de abstracciones
 /// </summary>
 public abstract class Item
 {

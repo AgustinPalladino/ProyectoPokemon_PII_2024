@@ -10,17 +10,17 @@ namespace Ucu.Poo.DiscordBot.Interaccion
 {
     public class DiscordInteraction : IInteraccionConUsuario
     {
-        private readonly SocketCommandContext _context;
+        private readonly SocketCommandContext context;
 
         public DiscordInteraction(SocketCommandContext context)
         {
-            _context = context;
+            this.context = context;
         }
 
         // Implementación de ImprimirMensaje: Enviar mensaje al canal de Discord
         public void ImprimirMensaje(string mensaje)
         {
-            _context.Channel.SendMessageAsync(mensaje).Wait();
+            this.context.Channel.SendMessageAsync(mensaje).Wait();
         }
 
         // Implementación de LeerEntrada: No es aplicable en Discord, arroja excepción si se usa

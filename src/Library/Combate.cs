@@ -18,7 +18,10 @@ public class Combate
         this.interaccion = interaccion;
     }
     
-    
+    /// <summary>
+    /// Mostrar catalogo se ocupa de devolver un string en base de todos los pokemon del diccionario
+    /// </summary>
+    /// <returns></returns>
     public static string MostrarCatalogo()
     {
         string mostrarCatalogo = "\n Catálogo de Pokémon disponibles:";
@@ -31,6 +34,11 @@ public class Combate
     }
     
     
+    /// <summary>
+    /// Aqui se ejecuta el bucle principal del juego por consola, este maneja el flujo de toda la partida y cuando esta termina
+    /// </summary>
+    /// <param name="j1"></param>
+    /// <param name="j2"></param>
     public void BuclePrincipal(Jugador j1, Jugador j2)
     {
         Logica logica = new Logica(interaccion);
