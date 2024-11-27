@@ -8,7 +8,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e804c097-b6aa-4b95-a455-d56cf5311d8b" name="Changes" comment="" />
+    <list default="true" id="e804c097-b6aa-4b95-a455-d56cf5311d8b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_26_2024_4_28_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_26_2024_4_28_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_26_2024_5_02_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_26_2024_5_02_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProyectoPokemon_PII_2024.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoPokemon_PII_2024.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/LibraryTests/HistoriaUsuario5Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/test/LibraryTests/HistoriaUsuario5Test.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/LibraryTests/HistoriaUsuario6Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/test/LibraryTests/HistoriaUsuario6Test.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,28 +93,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.Program.executor&quot;: &quot;Run&quot;,
-    &quot;1f5e09e1-7545-43fd-a5da-0c7d28480865.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/agust/Desktop/ProyectoPokemon_PII_2024&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.Program.executor": "Run",
+    "1f5e09e1-7545-43fd-a5da-0c7d28480865.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "hdusuario5y6",
+    "last_opened_file_path": "C:/Users/agust/Desktop/ProyectoPokemon_PII_2024",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\agust\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\agust\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\agust\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\agust\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\agust\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\agust\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Project.Program">
     <configuration name="Program" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -155,72 +162,38 @@
     <option name="coveragePercentColumnWidth" value="116" />
     <option name="sortOrder" value="DESCENDING" />
     <option name="sortedColumn" value="1" />
-    <option name="symbolColumnWidth" value="180" />
+    <option name="symbolColumnWidth" value="226" />
     <coverage-tree-state>
       <expand>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 68% 544/1691" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 69% 519/1683" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 68% 544/1691" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="test 95% 29/591" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 68% 544/1691" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 69% 519/1683" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
           <item name="src 53% 515/1100" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 68% 544/1691" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 69% 519/1683" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
           <item name="src 53% 515/1100" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
           <item name="Library 54% 499/1084" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 68% 544/1691" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 69% 519/1683" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
           <item name="src 53% 515/1100" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
           <item name="Library 54% 499/1084" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
           <item name="Ucu.Poo.DiscordBot 54% 499/1084" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 68% 544/1691" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 69% 519/1683" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
           <item name="src 53% 515/1100" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
           <item name="Library 54% 499/1084" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
           <item name="Ucu.Poo.DiscordBot 54% 499/1084" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="DiccionariosYOperacionesStatic 91% 3/33" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 68% 544/1691" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="src 53% 515/1100" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Library 54% 499/1084" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Ucu.Poo.DiscordBot 54% 499/1084" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Logica 61% 76/197" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 68% 544/1691" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="src 53% 515/1100" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Program 0% 16/16" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 68% 544/1691" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="src 53% 515/1100" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Program 0% 16/16" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Program 0% 16/16" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 68% 544/1691" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="src 53% 515/1100" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Program 0% 16/16" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Program 0% 16/16" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Juego 0% 16/16" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Combate 0% 61/61" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
       </expand>
       <select />

@@ -15,32 +15,23 @@ public class HistoriaUsuario6Test
     {
         
         mockInteraccion = Substitute.For<IInteraccionConUsuario>();
-        jugador1 = new Jugador("Ash");
-        jugador2 = new Jugador("Misty");
-        // Simula el chequeo de victoria
-        var logica = new Logica(mockInteraccion);
-        // Configuración de los jugadores y sus equipos
-        var pokemonJugador = new Pokemon("Pikachu", "Eléctrico", 100, 50, 40);
-        var pokemonOponente = new Pokemon("Charizard", "Fuego", 100, 60, 50);
-        jugador1.agregarPokemon(pokemonJugador);
-        jugador2.agregarPokemon(pokemonOponente);
-
-        // Mock del ataque que derrota al Pokémon del oponente
-        var ataque = new Movimiento("Rayo", 100, 100, "Eléctrico", false);
+        var logica = new Logica(new InteraccionPorConsola());
+        var jugador1 = new Jugador("Jugador1");
+        var jugador2 = new Jugador("Jugador2");
+        var pokemon1 = new Pokemon("Blastoise", "Agua", 100, 100, 80); 
+        var pokemon2 = new Pokemon("Charizard", "Fuego", 120, 80, 100);
         
-        jugador1.atacar(jugador2, ataque, mockInteraccion);
-        // Verifica que el HP del Pokémon oponente sea 0
-        Assert.That(jugador2.pokemonEnCancha().VidaActual,Is.LessThanOrEqualTo(0) );
-
+        jugador1.agregarPokemon(pokemon1);
+        jugador2.agregarPokemon(pokemon2);
         
+        //Prueba de si no gano la persona
+        var test = logica.ChequeoVictoria(jugador2);
+        Assert.That(test, Is.EqualTo(false));
         
-        bool esVictoria = logica.ChequeoVictoria(jugador2);
+        //Prueba de si gano la persona
+        var movimientoLetal = new Movimiento("Instakill", 9999, 100,"Agua",false);
+        logica.CalculoAtaque(jugador1, jugador2, movimientoLetal);
+        Assert.That(logica.ChequeoVictoria(jugador2), Is.EqualTo(true));
         
-        
-        // Verifica que la batalla termina
-        Assert.That(esVictoria, Is.EqualTo(true));
-        // Verifica que se muestra el mensaje de victoria
-        mockInteraccion.Received(1).ImprimirMensaje($"Felicidades, a {jugador2.Nombre} no le quedan mas pokemones! Has ganado la batalla.");
-
     }
 }
