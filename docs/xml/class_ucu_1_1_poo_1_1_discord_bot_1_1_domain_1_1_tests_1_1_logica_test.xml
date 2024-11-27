@@ -15,31 +15,46 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/LogicaTest.cs" line="8" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/LogicaTest.cs" bodystart="8" bodyend="40"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/LogicaTest.cs" line="9" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/LogicaTest.cs" bodystart="9" bodyend="38"/>
       </memberdef>
-      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_logica_test_1a837c2b18f32e21cf2b5287e1ea10260e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_logica_test_1abb7a69150f5ea159b9fd3885cf73fe57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
-        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.LogicaTest.chequeoNoVictoriaTest</definition>
+        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.LogicaTest.chequeoVictoriaTest</definition>
         <argsstring>()</argsstring>
-        <name>chequeoNoVictoriaTest</name>
-        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.LogicaTest.chequeoNoVictoriaTest</qualifiedname>
+        <name>chequeoVictoriaTest</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.LogicaTest.chequeoVictoriaTest</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/LogicaTest.cs" line="43" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/LogicaTest.cs" bodystart="43" bodyend="60"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/LogicaTest.cs" line="41" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/LogicaTest.cs" bodystart="41" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_logica_test_1a8e9e834d64b20751bfcda9996d5a8bf3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.LogicaTest.CambiarPokeStringAPokemon</definition>
+        <argsstring>()</argsstring>
+        <name>CambiarPokeStringAPokemon</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.LogicaTest.CambiarPokeStringAPokemon</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/LogicaTest.cs" line="64" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/LogicaTest.cs" bodystart="64" bodyend="72"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/LogicaTest.cs" line="5" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/LogicaTest.cs" bodystart="6" bodyend="61"/>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/LogicaTest.cs" line="6" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/LogicaTest.cs" bodystart="7" bodyend="73"/>
     <listofallmembers>
       <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_logica_test_1a133f3f2eb8ec0226cd814d73e180f76b" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::LogicaTest</scope><name>calculoAtaqueTest</name></member>
-      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_logica_test_1a837c2b18f32e21cf2b5287e1ea10260e" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::LogicaTest</scope><name>chequeoNoVictoriaTest</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_logica_test_1a8e9e834d64b20751bfcda9996d5a8bf3" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::LogicaTest</scope><name>CambiarPokeStringAPokemon</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_logica_test_1abb7a69150f5ea159b9fd3885cf73fe57" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::LogicaTest</scope><name>chequeoVictoriaTest</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

@@ -2,18 +2,26 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
   <compounddef id="namespace_ucu_1_1_poo_1_1_discord_bot_1_1_commands" kind="namespace" language="C#">
     <compoundname>Ucu::Poo::DiscordBot::Commands</compoundname>
+    <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_add_pokemon_command" prot="public">Ucu::Poo::DiscordBot::Commands::AddPokemonCommand</innerclass>
+    <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_attack_comand" prot="public">Ucu::Poo::DiscordBot::Commands::AttackComand</innerclass>
     <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_battle_command" prot="public">Ucu::Poo::DiscordBot::Commands::BattleCommand</innerclass>
+    <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_cambiar_pokemon" prot="public">Ucu::Poo::DiscordBot::Commands::CambiarPokemon</innerclass>
     <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_command_helper" prot="public">Ucu::Poo::DiscordBot::Commands::CommandHelper</innerclass>
+    <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_health_command" prot="public">Ucu::Poo::DiscordBot::Commands::HealthCommand</innerclass>
     <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_imprimir_bot" prot="public">Ucu::Poo::DiscordBot::Commands::ImprimirBot</innerclass>
     <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_join_command" prot="public">Ucu::Poo::DiscordBot::Commands::JoinCommand</innerclass>
     <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_leave_command" prot="public">Ucu::Poo::DiscordBot::Commands::LeaveCommand</innerclass>
+    <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_menu_command" prot="public">Ucu::Poo::DiscordBot::Commands::MenuCommand</innerclass>
+    <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_mochila_command" prot="public">Ucu::Poo::DiscordBot::Commands::MochilaCommand</innerclass>
+    <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_moves_command" prot="public">Ucu::Poo::DiscordBot::Commands::MovesCommand</innerclass>
     <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_pokemon_name_command" prot="public">Ucu::Poo::DiscordBot::Commands::PokemonNameCommand</innerclass>
+    <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_show_pokemon_command" prot="public">Ucu::Poo::DiscordBot::Commands::ShowPokemonCommand</innerclass>
     <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_user_info_command" prot="public">Ucu::Poo::DiscordBot::Commands::UserInfoCommand</innerclass>
     <innerclass refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_waiting_command" prot="public">Ucu::Poo::DiscordBot::Commands::WaitingCommand</innerclass>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/BattleCommand.cs" line="6" column="1"/>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/AddPokemonCommand.cs" line="10" column="1"/>
   </compounddef>
 </doxygen>

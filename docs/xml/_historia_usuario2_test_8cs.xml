@@ -42,13 +42,12 @@
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jugador1.agregarPokemon(pokemon);</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Muestra<sp/>los<sp/>ataques.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jugador1.verMovimientos(mockInteraccion);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>movimiento<sp/>=<sp/>jugador1.verMovimientos();</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Verifica<sp/>que<sp/>los<sp/>mensajes<sp/>correspondientes<sp/>fueron<sp/>enviados.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mockInteraccion.Received(1).ImprimirMensaje(</highlight><highlight class="stringliteral">&quot;-Lanzallamas&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mockInteraccion.Received(1).ImprimirMensaje(</highlight><highlight class="stringliteral">&quot;-Cola<sp/>Dragón&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Assert.That(movimiento,<sp/>Is.EqualTo(</highlight><highlight class="stringliteral">&quot;-Lanzallamas-Cola<sp/>Dragón&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario2Test.cs"/>
   </compounddef>

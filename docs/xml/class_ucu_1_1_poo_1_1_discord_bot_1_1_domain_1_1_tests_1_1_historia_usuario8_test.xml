@@ -3,34 +3,6 @@
   <compounddef id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario8_test" kind="class" language="C#" prot="public">
     <compoundname>Ucu::Poo::DiscordBot::Domain::Tests::HistoriaUsuario8Test</compoundname>
       <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario8_test_1aa1672c90fca52d392a335ef1da65cff8" prot="private" static="no" mutable="no">
-        <type><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador" kindref="compound">Jugador</ref></type>
-        <definition>Jugador Ucu.Poo.DiscordBot.Domain.Tests.HistoriaUsuario8Test.jugador1</definition>
-        <argsstring></argsstring>
-        <name>jugador1</name>
-        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.HistoriaUsuario8Test.jugador1</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario8Test.cs" line="9" column="21" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario8Test.cs" bodystart="9" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario8_test_1aebb6e61d3d4e6359f2a42ef3e4a9e8c1" prot="private" static="no" mutable="no">
-        <type><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador" kindref="compound">Jugador</ref></type>
-        <definition>Jugador Ucu.Poo.DiscordBot.Domain.Tests.HistoriaUsuario8Test.jugador2</definition>
-        <argsstring></argsstring>
-        <name>jugador2</name>
-        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.HistoriaUsuario8Test.jugador2</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario8Test.cs" line="10" column="21" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario8Test.cs" bodystart="10" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario8_test_1ac9eb8d8cd6a87f5c463f0c1b938c0b04" prot="private" static="no" mutable="no">
         <type><ref refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_i_interaccion_con_usuario" kindref="compound">IInteraccionConUsuario</ref></type>
         <definition>IInteraccionConUsuario Ucu.Poo.DiscordBot.Domain.Tests.HistoriaUsuario8Test.mockInteraccion</definition>
@@ -43,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario8Test.cs" line="11" column="36" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario8Test.cs" bodystart="11" bodyend="-1"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario8Test.cs" line="9" column="36" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario8Test.cs" bodystart="9" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario8_test_1a197775d93cedd8c3f86a5088642e15d8" prot="private" static="no" mutable="no">
         <type><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica" kindref="compound">Logica</ref></type>
@@ -57,36 +29,79 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario8Test.cs" line="12" column="20" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario8Test.cs" bodystart="12" bodyend="-1"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario8Test.cs" line="10" column="20" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario8Test.cs" bodystart="10" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario8_test_1a9269151d0f4b0a1d1c8f9a2a8556d889" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario8_test_1a5f911e2457ba34f87a600628ffeed314" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
-        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.HistoriaUsuario8Test.hdUsuario8Test</definition>
+        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.HistoriaUsuario8Test.SeleccionarPokemonDeCambio_UsaSuperPocionCorrectamente</definition>
         <argsstring>()</argsstring>
-        <name>hdUsuario8Test</name>
-        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.HistoriaUsuario8Test.hdUsuario8Test</qualifiedname>
+        <name>SeleccionarPokemonDeCambio_UsaSuperPocionCorrectamente</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.HistoriaUsuario8Test.SeleccionarPokemonDeCambio_UsaSuperPocionCorrectamente</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario8Test.cs" line="16" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario8Test.cs" bodystart="16" bodyend="47"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario8Test.cs" line="13" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario8Test.cs" bodystart="13" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario8_test_1a67a8fd74d3dfa3a7d1cca4042a5797bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.HistoriaUsuario8Test.SeleccionarItemErroneo</definition>
+        <argsstring>()</argsstring>
+        <name>SeleccionarItemErroneo</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.HistoriaUsuario8Test.SeleccionarItemErroneo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario8Test.cs" line="35" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario8Test.cs" bodystart="35" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario8_test_1aca211e6c637a4b83614ed1272300a769" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.HistoriaUsuario8Test.SeleccionarItemParaSalir</definition>
+        <argsstring>()</argsstring>
+        <name>SeleccionarItemParaSalir</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.HistoriaUsuario8Test.SeleccionarItemParaSalir</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario8Test.cs" line="57" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario8Test.cs" bodystart="57" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario8_test_1aed96c5bf6662cf2ff9721b71d62c60e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.HistoriaUsuario8Test.MochilaVacia</definition>
+        <argsstring>()</argsstring>
+        <name>MochilaVacia</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.HistoriaUsuario8Test.MochilaVacia</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario8Test.cs" line="79" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario8Test.cs" bodystart="79" bodyend="101"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario8Test.cs" line="7" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario8Test.cs" bodystart="8" bodyend="48"/>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario8Test.cs" line="7" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario8Test.cs" bodystart="8" bodyend="102"/>
     <listofallmembers>
-      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario8_test_1a9269151d0f4b0a1d1c8f9a2a8556d889" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::HistoriaUsuario8Test</scope><name>hdUsuario8Test</name></member>
-      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario8_test_1aa1672c90fca52d392a335ef1da65cff8" prot="private" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::HistoriaUsuario8Test</scope><name>jugador1</name></member>
-      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario8_test_1aebb6e61d3d4e6359f2a42ef3e4a9e8c1" prot="private" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::HistoriaUsuario8Test</scope><name>jugador2</name></member>
       <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario8_test_1a197775d93cedd8c3f86a5088642e15d8" prot="private" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::HistoriaUsuario8Test</scope><name>logica</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario8_test_1aed96c5bf6662cf2ff9721b71d62c60e6" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::HistoriaUsuario8Test</scope><name>MochilaVacia</name></member>
       <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario8_test_1ac9eb8d8cd6a87f5c463f0c1b938c0b04" prot="private" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::HistoriaUsuario8Test</scope><name>mockInteraccion</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario8_test_1a67a8fd74d3dfa3a7d1cca4042a5797bc" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::HistoriaUsuario8Test</scope><name>SeleccionarItemErroneo</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario8_test_1aca211e6c637a4b83614ed1272300a769" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::HistoriaUsuario8Test</scope><name>SeleccionarItemParaSalir</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario8_test_1a5f911e2457ba34f87a600628ffeed314" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::HistoriaUsuario8Test</scope><name>SeleccionarPokemonDeCambio_UsaSuperPocionCorrectamente</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

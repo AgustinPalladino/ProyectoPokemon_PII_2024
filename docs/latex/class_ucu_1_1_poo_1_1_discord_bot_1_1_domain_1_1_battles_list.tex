@@ -8,6 +8,8 @@ Esta clase representa la lista de batallas en curso.
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_battle}{Battle}}? \mbox{\hyperlink{class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_battles_list_a984075cbaa7304536e782ab8586ad5e8}{Get\+Battle\+By\+Player}} (string player\+Display\+Name)
+\begin{DoxyCompactList}\small\item\em Busca una batalla activa en la que participe el jugador especificado. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_battle}{Battle}} \mbox{\hyperlink{class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_battles_list_a0296d732f53091db728b8a825e52e16c}{Add\+Battle}} (string player1, string player2)
 \begin{DoxyCompactList}\small\item\em Crea una nueva batalla entre dos jugadores. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -35,6 +37,24 @@ Crea una nueva batalla entre dos jugadores.
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 La batalla creada.
+\end{DoxyReturn}
+\Hypertarget{class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_battles_list_a984075cbaa7304536e782ab8586ad5e8}\label{class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_battles_list_a984075cbaa7304536e782ab8586ad5e8} 
+\index{Ucu.Poo.DiscordBot.Domain.BattlesList@{Ucu.Poo.DiscordBot.Domain.BattlesList}!GetBattleByPlayer@{GetBattleByPlayer}}
+\index{GetBattleByPlayer@{GetBattleByPlayer}!Ucu.Poo.DiscordBot.Domain.BattlesList@{Ucu.Poo.DiscordBot.Domain.BattlesList}}
+\doxysubsubsection{\texorpdfstring{GetBattleByPlayer()}{GetBattleByPlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_battle}{Battle}}? Ucu.\+Poo.\+Discord\+Bot.\+Domain.\+Battles\+List.\+Get\+Battle\+By\+Player (\begin{DoxyParamCaption}\item[{string}]{player\+Display\+Name }\end{DoxyParamCaption})}
+
+
+
+Busca una batalla activa en la que participe el jugador especificado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+Display\+Name} & El nombre del jugador.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La batalla activa si se encuentra, de lo contrario, null.
 \end{DoxyReturn}
 
 

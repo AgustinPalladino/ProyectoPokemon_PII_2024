@@ -1,5 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.7" xml:lang="en-US">
+  <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_add_pokemon_command" kind="class"><name>Ucu::Poo::DiscordBot::Commands::AddPokemonCommand</name>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_add_pokemon_command_1ae9b5567f3d861df03d933f4ccb5e8da7" kind="function"><name>ExecuteAsync</name></member>
+  </compound>
+  <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_attack_comand" kind="class"><name>Ucu::Poo::DiscordBot::Commands::AttackComand</name>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_attack_comand_1abf7ede043706d4291479ca4cc05018e6" kind="function"><name>ExecutAsync</name></member>
+  </compound>
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_battle" kind="class"><name>Ucu::Poo::DiscordBot::Domain::Battle</name>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_battle_1a42dd33da3e0267f1376449dcabe15eb4" kind="property"><name>Player1</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_battle_1a58120eb272d8f494e142a68b2c53d7eb" kind="property"><name>Player2</name></member>
@@ -10,6 +16,7 @@
   </compound>
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_battles_list" kind="class"><name>Ucu::Poo::DiscordBot::Domain::BattlesList</name>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_battles_list_1a4a73b191dedd5a29d51b8314df410634" kind="variable"><name>battles</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_battles_list_1a984075cbaa7304536e782ab8586ad5e8" kind="function"><name>GetBattleByPlayer</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_battles_list_1a0296d732f53091db728b8a825e52e16c" kind="function"><name>AddBattle</name></member>
   </compound>
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot" kind="class"><name>Ucu::Poo::DiscordBot::Services::Bot</name>
@@ -26,13 +33,16 @@
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_loader" kind="class"><name>Ucu::Poo::DiscordBot::Services::BotLoader</name>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_loader_1ab05b0968a432322f96f64c1e9942effb" kind="function"><name>LoadAsync</name></member>
   </compound>
+  <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_cambiar_pokemon" kind="class"><name>Ucu::Poo::DiscordBot::Commands::CambiarPokemon</name>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_cambiar_pokemon_1a80e08cfcceca359caf419a668be0e1fd" kind="function"><name>ExecuteAsync</name></member>
+  </compound>
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_combate" kind="class"><name>Ucu::Poo::DiscordBot::Combate</name>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_combate_1a12c4fa8c995ea7d27c53e695984b7b82" kind="variable"><name>interaccion</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_combate_1a76677107135d2feb23214ee1ba3d2662" kind="property"><name>JugadorActual</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_combate_1a65433dd7dbd8270fafefd9072110e827" kind="property"><name>numActual</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_combate_1a821feade21af2f98cd957ceae6c2546e" kind="function"><name>Combate</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_combate_1a7b5121df60f26959d7194e90b1df7e83" kind="function"><name>MostrarCatalogo</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_combate_1a6c4630373a92e03cbe71d56d7429607b" kind="function"><name>BuclePrincipal</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_combate_1a44db35e7e95b0897161dae25057edf46" kind="function"><name>MostrarCatalogo</name></member>
   </compound>
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_combate_test" kind="class"><name>Ucu::Poo::DiscordBot::Domain::Tests::CombateTest</name>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_combate_test_1a7309aad05069546b7659d2861a2a7467" kind="function"><name>mostrarCatalogo</name></member>
@@ -43,8 +53,9 @@
   </compound>
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_cura_total" kind="class"><name>Ucu::Poo::DiscordBot::Items::CuraTotal</name>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_cura_total_1a8aca5c5543497a267ab6ad4f88f2da97" kind="property"><name>Nombre</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_cura_total_1af0bd11b64680bb61d8cd0c8c1815f198" kind="function"><name>Usar</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_cura_total_1ae11d87a2703c6a9ac2453c7d3e8d0d5e" kind="function"><name>SacarEstadoPokemon</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_cura_total_1a508ebafbb7f87fdfc2a060cb54eccedb" kind="property"><name>Descripcion</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_cura_total_1af89c9070b3869164b1bad57339caab77" kind="function"><name>Usar</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_cura_total_1ae9516246eea414fe151fa9344b8ff209" kind="function"><name>SacarEstadoPokemon</name></member>
   </compound>
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_diccionarios_y_operaciones_static" kind="class"><name>Ucu::Poo::DiscordBot::DiccionariosYOperacionesStatic</name>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_diccionarios_y_operaciones_static_1a9381d5e044260c108737b4add48d39b8" kind="variable"><name>randomDouble</name></member>
@@ -62,19 +73,31 @@
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_diccionariosy_op_static_test_1ad73de29e11c55049167d13d02aecc4bc" kind="function"><name>CalcularCritico_GolpeCritico_DeberiaRetornar1_0</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_diccionariosy_op_static_test_1a9281f08329316417e599656f792fb18d" kind="function"><name>PrecisionTest</name></member>
   </compound>
+  <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_discord_interaction" kind="class"><name>Ucu::Poo::DiscordBot::Interaccion::DiscordInteraction</name>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_discord_interaction_1a6ba974d19aefdba1cd96a2dcd730cd23" kind="variable"><name>context</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_discord_interaction_1a127c0a0a52881dc9e35ed9720bce425e" kind="function"><name>DiscordInteraction</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_discord_interaction_1a6bc2303c7fa1a42d2ad80e74ac8a87db" kind="function"><name>ImprimirMensaje</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_discord_interaction_1ad9f966c7ed8a85c0bf8be0543106df3c" kind="function"><name>LeerEntrada</name></member>
+  </compound>
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_facade" kind="class"><name>Ucu::Poo::DiscordBot::Domain::Facade</name>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_facade_1a310fe60249994e217c198d309fcab8b1" kind="variable"><name>_instance</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_facade_1acd299f65b563cb271c5fa2a5ac6bde33" kind="variable"><name>_activePlayers</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_facade_1a5ba10a1da29b6141e13013a9b590699e" kind="property"><name>Instance</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_facade_1acdae5cab739af5f4e5d508121de88248" kind="property"><name>WaitingList</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_facade_1aeaf83a4d95580c66bc141cd91191e378" kind="property"><name>BattlesList</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_facade_1adfa0bfe22ef96df25db162de6ccae407" kind="function"><name>Facade</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_facade_1a38e6b606c88363b835f42469f28653bc" kind="function"><name>CreateBattle</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_facade_1a79498c7def36d33cb3ccf6ee7576c63d" kind="function"><name>Reset</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_facade_1a907abffb89f2b70da77dc820e845456d" kind="function"><name>GetOrCreatePlayer</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_facade_1a176c2578a9b151ef636645d77d4f185a" kind="function"><name>GetOpponent</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_facade_1ab10407b776ebffe599cb67f3cb76d0ca" kind="function"><name>GetPlayer</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_facade_1a77c35d6241bd53172968476e656c2198" kind="function"><name>addPokemonToPlayer</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_facade_1a16acdc6745b82f38500086c59368803d" kind="function"><name>RemovePlayer</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_facade_1a376de7e42e94abce3bb7135b634345d3" kind="function"><name>AddTrainerToWaitingList</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_facade_1a89a4414772440d41adf0930bff407a7e" kind="function"><name>RemoveTrainerFromWaitingList</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_facade_1a15b3b1fcceca0d79806e76ff4f6df547" kind="function"><name>GetAllTrainersWaiting</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_facade_1a5e0b1d9ca1347c92c36a3a336e902152" kind="function"><name>TrainerIsWaiting</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_facade_1a19265138428026d4508ca0a462459191" kind="function"><name>StartBattle</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_facade_1a79498c7def36d33cb3ccf6ee7576c63d" kind="function"><name>Reset</name></member>
   </compound>
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests" kind="class"><name>Ucu::Poo::DiscordBot::Domain::Tests::FacadeTests</name>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests_1a0d9b34c24f14cd6b1546db3c99efe9d5" kind="function"><name>TearDown</name></member>
@@ -91,28 +114,22 @@
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests_1a7e4e9589f58c2ab49f0c68333128788d" kind="function"><name>StartBattle_WhenNoOpponentButOneWaiting_ReturnsBattleWithWaiting</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_facade_tests_1ae1497e98529c89f55f21e5473458f5b8" kind="function"><name>StartBattle_WhenOpponentWaiting_ReturnsBattleWithOpponent</name></member>
   </compound>
+  <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_health_command" kind="class"><name>Ucu::Poo::DiscordBot::Commands::HealthCommand</name>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_health_command_1a20c1a6aeaa337b9521491267617bcf3a" kind="function"><name>ExecuteAsync</name></member>
+  </compound>
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_hisotria_usuario1_test" kind="class"><name>Ucu::Poo::DiscordBot::Domain::Tests::HisotriaUsuario1Test</name>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_hisotria_usuario1_test_1a715437e26f672d0d42ab51e336a7d561" kind="variable"><name>jugador1</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_hisotria_usuario1_test_1a9f6129cf925dc1f18a75d059aace230c" kind="variable"><name>jugador2</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_hisotria_usuario1_test_1a52f29ecd888b10c1ec4ae7b4d0c32e8d" kind="variable"><name>mockInteraccion</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_hisotria_usuario1_test_1aa6e4d501b0e7a8cf407e321ca57d1da3" kind="variable"><name>logica</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_hisotria_usuario1_test_1aee9e7952a3a5dd74ed2dabe50651b22b" kind="function"><name>SeleccionarEquipo_AgregaSeisPokemons_Correctamente</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_hisotria_usuario1_test_1ac08489db24c59a712552392bb1d2a4e1" kind="function"><name>SeleccionarPokemonDeCambio_CambiaPokemonCorrectamente</name></member>
   </compound>
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario10_test" kind="class"><name>Ucu::Poo::DiscordBot::Domain::Tests::HistoriaUsuario10Test</name>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario10_test_1a406e66b41837d46d3200c6a4fd50ce38" kind="variable"><name>jugador1</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario10_test_1a6411e3834ab2a32e77764816e4abb750" kind="variable"><name>jugador2</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario10_test_1a626d8e90d5317a7e6a2ce5896592664b" kind="variable"><name>mockInteraccion</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario10_test_1a11c3b2930a3263e8d5c984a17ce565c1" kind="variable"><name>logica</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario10_test_1a150d6ebb5bb2cf8bcbf9ad7df7bf4e3b" kind="function"><name>Setup</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario10_test_1ae9bae0107744b3820b686b30e2ef89e8" kind="function"><name>hdUsuario10Test</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario10_test_1ad0a6119b3ffdf85d3bd03cc052dbb78d" kind="function"><name>TearDown</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario10_test_1af37db0940703b7157a0bb5d17bf2e45b" kind="function"><name>hdUsuario10Test1</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario10_test_1ac7916ab6a036bdd7a7e729dcc8bc2911" kind="function"><name>hdUsuario10Test2</name></member>
   </compound>
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario11_test" kind="class"><name>Ucu::Poo::DiscordBot::Domain::Tests::HistoriaUsuario11Test</name>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario11_test_1a293872fa99d6f1bce6f06969b3672b2b" kind="variable"><name>jugador1</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario11_test_1a58b9dd4a46d1a9def1cb619a488f7816" kind="variable"><name>jugador2</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario11_test_1abfd8f0bbeec73c3b22b1ec3a85a975f0" kind="variable"><name>mockInteraccion</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario11_test_1ad29391924d3a388c7e8ee874312a9f33" kind="variable"><name>logica</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario11_test_1ae5515c12e7900f5909490afb587a9c40" kind="function"><name>Setup</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario11_test_1af04ac03e8f316489911659c21426489d" kind="function"><name>hdUsuario11Test</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario11_test_1a4310e7c9a8441ccb1191f5dd8cec7178" kind="function"><name>TearDown</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario11_test_1af687c80aed1c2a0c39101581eb3122f8" kind="function"><name>hdUsuario11Test1</name></member>
   </compound>
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario2_test" kind="class"><name>Ucu::Poo::DiscordBot::Domain::Tests::HistoriaUsuario2Test</name>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario2_test_1a898d2468b70770b146aa7115943277df" kind="variable"><name>jugador1</name></member>
@@ -129,11 +146,11 @@
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario3_test_1acd4bd0d9be0994bbfcafbd4b8c6c4330" kind="function"><name>hdUsuario3Test</name></member>
   </compound>
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario4_test" kind="class"><name>Ucu::Poo::DiscordBot::Domain::Tests::HistoriaUsuario4Test</name>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario4_test_1a3da2bf4b322dc43ce8eec3376a4cde81" kind="variable"><name>jugador1</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario4_test_1ab26b3091dd7f0050a7e12d630bd6d6b8" kind="variable"><name>jugador2</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario4_test_1a97a51811dc6108ee6d47abf86648f5db" kind="variable"><name>mockInteraccion</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario4_test_1a273c074665d3504f48881e626fa0296a" kind="variable"><name>logica</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario4_test_1ae5a26f9dd6a8bd304dbd453500a1caf6" kind="function"><name>hdUsuario4Test</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario4_test_1a01c901979a2952817bc969e2e52e60b1" kind="function"><name>SeleccionarAtaque</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario4_test_1ab87d4de4c74470b1556b4b3d13cb69ae" kind="function"><name>SeleccionarAtaqueErroneo</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario4_test_1aed21eb2d315d3f6b2031714058edf5dc" kind="function"><name>SeleccionarAtaqueVolverAtras</name></member>
   </compound>
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario5_test" kind="class"><name>Ucu::Poo::DiscordBot::Domain::Tests::HistoriaUsuario5Test</name>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario5_test_1a9a78fb628055a1875d00369d925e1dc2" kind="variable"><name>jugador1</name></member>
@@ -147,7 +164,7 @@
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario6_test_1aaa9da8ab114e58d14a941073c684f261" kind="variable"><name>jugador2</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario6_test_1a1cc7bb117f97ef6111c2508857bc0969" kind="variable"><name>mockInteraccion</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario6_test_1add73e83d1938ac07a30c3b6b0d350ceb" kind="variable"><name>logica</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario6_test_1afb2e4f16fe25ad7f692010b3047f4a35" kind="function"><name>FinalizarBatalla_DeclaraGanadorCuandoTodosLosPokemonsDelOponenteSonDerrotados</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario6_test_1a3d729a130630991f02d964310faa8a2f" kind="function"><name>hdUsuario6Test</name></member>
   </compound>
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario7_test" kind="class"><name>Ucu::Poo::DiscordBot::Domain::Tests::HistoriaUsuario7Test</name>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario7_test_1aec627e7ce9c9d1d71b293e201da63a4f" kind="variable"><name>jugador1</name></member>
@@ -157,18 +174,16 @@
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario7_test_1a82bd04725b867ce0a324f02351f72848" kind="function"><name>hdUsuario7Test</name></member>
   </compound>
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario8_test" kind="class"><name>Ucu::Poo::DiscordBot::Domain::Tests::HistoriaUsuario8Test</name>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario8_test_1aa1672c90fca52d392a335ef1da65cff8" kind="variable"><name>jugador1</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario8_test_1aebb6e61d3d4e6359f2a42ef3e4a9e8c1" kind="variable"><name>jugador2</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario8_test_1ac9eb8d8cd6a87f5c463f0c1b938c0b04" kind="variable"><name>mockInteraccion</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario8_test_1a197775d93cedd8c3f86a5088642e15d8" kind="variable"><name>logica</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario8_test_1a9269151d0f4b0a1d1c8f9a2a8556d889" kind="function"><name>hdUsuario8Test</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario8_test_1a5f911e2457ba34f87a600628ffeed314" kind="function"><name>SeleccionarPokemonDeCambio_UsaSuperPocionCorrectamente</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario8_test_1a67a8fd74d3dfa3a7d1cca4042a5797bc" kind="function"><name>SeleccionarItemErroneo</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario8_test_1aca211e6c637a4b83614ed1272300a769" kind="function"><name>SeleccionarItemParaSalir</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario8_test_1aed96c5bf6662cf2ff9721b71d62c60e6" kind="function"><name>MochilaVacia</name></member>
   </compound>
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario9_test" kind="class"><name>Ucu::Poo::DiscordBot::Domain::Tests::HistoriaUsuario9Test</name>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario9_test_1a779bfed75bb25d1736be32c035e93204" kind="variable"><name>jugador1</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario9_test_1a872cd0e282fffb64a22962d63d23658d" kind="variable"><name>jugador2</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario9_test_1aed9d71eb5993a1dfb0645a60dde7e64f" kind="variable"><name>mockInteraccion</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario9_test_1a7e6682b1c6b350ff44a565c7d6b2e1b4" kind="variable"><name>logica</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario9_test_1a669605a241d2f758676ef762ff7f981c" kind="function"><name>hdUsuario9Test</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario9_test_1a4c226ade2cf0370d1bfad350f1817b61" kind="function"><name>TearDown</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario9_test_1ae1f23df6ed44f61def0815c75c099cfa" kind="function"><name>hdUsuario9Test1</name></member>
   </compound>
   <compound refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_i_bot" kind="interface"><name>Ucu::Poo::DiscordBot::Services::IBot</name>
     <member refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_i_bot_1ae4e76de690ac3a0ce601af36f544c50a" kind="function"><name>StartAsync</name></member>
@@ -181,20 +196,18 @@
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_imprimir_bot" kind="class"><name>Ucu::Poo::DiscordBot::Commands::ImprimirBot</name>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_imprimir_bot_1a97b2add78a50c823f236248f03fb4177" kind="function"><name>ExecuteAsync</name></member>
   </compound>
-  <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_interaccion_por_bot" kind="class"><name>Ucu::Poo::DiscordBot::Interaccion::InteraccionPorBot</name>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_interaccion_por_bot_1a994e95dd0cc8f04e095ede33cccc8d56" kind="function"><name>ImprimirMensaje</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_interaccion_por_bot_1a28728adb10cdd11cfd5438fc4926d7cf" kind="function"><name>LeerEntrada</name></member>
-  </compound>
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_interaccion_por_consola" kind="class"><name>Ucu::Poo::DiscordBot::Interaccion::InteraccionPorConsola</name>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_interaccion_por_consola_1a9cfa12c59e015770a0ae0428e8106572" kind="function"><name>ImprimirMensaje</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_interaccion_por_consola_1a0312abc776625ef9e105867780eac7d7" kind="function"><name>LeerEntrada</name></member>
   </compound>
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_item" kind="class"><name>Ucu::Poo::DiscordBot::Items::Item</name>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_item_1a1bc9e7d8b3e7715cd938239432ed2795" kind="property"><name>Nombre</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_item_1a834028a760360375cb2c2a7740c3c363" kind="function"><name>Usar</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_item_1a24fb38a23dbe8b85c22b25842e662226" kind="property"><name>Descripcion</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_item_1a8e0d22a7fafd17bc923561bbbeb2725b" kind="function"><name>Usar</name></member>
   </compound>
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_item_test" kind="class"><name>Ucu::Poo::DiscordBot::Domain::Tests::ItemTest</name>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_item_test_1a706969fbfa458485635ddb0cb69b2c0f" kind="function"><name>itemCuraTotal</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_item_test_1aef90e56de540141784cf65f8b12dea96" kind="function"><name>itemRevivir</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_item_test_1a66b2abdddce98e2fb53386837003986c" kind="function"><name>itemSuperpocion</name></member>
   </compound>
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_join_command" kind="class"><name>Ucu::Poo::DiscordBot::Commands::JoinCommand</name>
@@ -209,24 +222,26 @@
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1ad0a7adbf662bd05fa917dd932c74748b" kind="variable"><name>Nombre</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a1025284105c1cc2d9710f38acd1fee88" kind="variable"><name>equipoPokemon</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a24a9f5d263781794667110fcf41d0b37" kind="variable"><name>equipoPokemonDerrotados</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a88038105441838e859eb33f48348ccd3" kind="variable"><name>nombreCheck</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a6a21aa94e7d4565df830dc66ce293aa1" kind="variable"><name>Mochila</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a0e23efdc2144969e401370c370dc7dfe" kind="variable"><name>MaxPoke</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1afae2e50e05b908a4f82ecdb757c737e9" kind="function"><name>Jugador</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a5a99036e10f81b6a7a532d830682ad93" kind="function"><name>MostrarEquipo</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1aa51bf273a3bb6dd065d311a3232e8279" kind="function"><name>verMovimientos</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a57f2d9cdb33339b7fdd59d2cb3a41e72" kind="function"><name>verSalud</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1ad4ef3ac0f06ebf4124cdb60bb15997e8" kind="function"><name>agregarPokemon</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a7c86683139dc8fd410f96946234ad2bc" kind="function"><name>MostrarEquipo</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a0eff5dead1c1a1685cd0618b9c47d11c" kind="function"><name>verMovimientos</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1acc528ab45cbe2d53c64efebda8f1fed6" kind="function"><name>verSalud</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a047c5fd545b1eb9c1cc56078e7d9b5e4" kind="function"><name>agregarPokemon</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a1ebb5e57eb9b3409ceccda40b52c9e8e" kind="function"><name>pokemonEnCancha</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a9c5b54019893f9ace03108552340b8d4" kind="function"><name>cambiarPokemon</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a4333178f6c4b9d89f85751f82a0a05d7" kind="function"><name>atacar</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a193d46c02b8fb254dec8836ec823461c" kind="function"><name>UsarMochila</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1a4e34b7c9241c12bffac96ae2d24b7438" kind="function"><name>UsarMochila</name></member>
   </compound>
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_jugador_test" kind="class"><name>Ucu::Poo::DiscordBot::Domain::Tests::JugadorTest</name>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_jugador_test_1accaf31e91f9e3b21d3dbb85befa0b79c" kind="function"><name>Setup</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_jugador_test_1ab6d59264134efd842e3c0081247a0be3" kind="function"><name>agregarPokemon</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_jugador_test_1a9848d6aded9bdd2086dacd21793e58e4" kind="function"><name>atacarTest</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_jugador_test_1ae1e482ba4748ea7b3685fb52c485b983" kind="function"><name>usarMochilaTest</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_jugador_test_1a38b1bdab51a1ead6e34bc882462c2012" kind="function"><name>cambiarPoscionPokeTest</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_jugador_test_1a81718f9bc315c8f7fd4fa6909b4ba5a3" kind="function"><name>pokeEnCanchaTest</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_jugador_test_1aafd4aa909df5122677a83aeaf02d1c62" kind="function"><name>mostrarEquipo</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_jugador_test_1a43fe2a59439d9cb876636e6600d4480d" kind="function"><name>verSalud</name></member>
   </compound>
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_leave_command" kind="class"><name>Ucu::Poo::DiscordBot::Commands::LeaveCommand</name>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_leave_command_1a4d859d792ce4f73491ea0108dd881f9f" kind="function"><name>ExecuteAsync</name></member>
@@ -235,16 +250,26 @@
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1a270a1608b1fa772dc8e982793fb7aebe" kind="variable"><name>interaccion</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1a194213763192674f18835e46cf46b08e" kind="function"><name>Logica</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1a8d69b363e924375efdf5e2f03c0b57b1" kind="function"><name>MenuDeJugador</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1a3c5afee2f8e47f5899fcf68a0d033c61" kind="function"><name>EscogerEquipo</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1a5e0dbc929026ff0b8f143e44e44a5fee" kind="function"><name>CambiarPokemon</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1a260c247a606025c1c02727e86f817a7c" kind="function"><name>SeleccionarPokemonDeCambio</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1a465babb65bb81fae62d143a258d9a69b" kind="function"><name>Mochila</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1afb7bdab10a32044545a188fb7007c56e" kind="function"><name>SeleccionarAtaque</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1ab4c1b8f81ff9ca783dd29a940d660977" kind="function"><name>CalculoAtaque</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1a8e1879dbeb35d334cc20a6fd6b4bf7a5" kind="function"><name>ChequeoVictoria</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1a5514b31829b7507b87db5a3abcdf50de" kind="function"><name>CambiarPokeStringAPokemon</name></member>
   </compound>
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_logica_test" kind="class"><name>Ucu::Poo::DiscordBot::Domain::Tests::LogicaTest</name>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_logica_test_1a133f3f2eb8ec0226cd814d73e180f76b" kind="function"><name>calculoAtaqueTest</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_logica_test_1a837c2b18f32e21cf2b5287e1ea10260e" kind="function"><name>chequeoNoVictoriaTest</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_logica_test_1abb7a69150f5ea159b9fd3885cf73fe57" kind="function"><name>chequeoVictoriaTest</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_logica_test_1a8e9e834d64b20751bfcda9996d5a8bf3" kind="function"><name>CambiarPokeStringAPokemon</name></member>
+  </compound>
+  <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_menu_command" kind="class"><name>Ucu::Poo::DiscordBot::Commands::MenuCommand</name>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_menu_command_1a6cd6baf0a7246f068638d2f0f71b3569" kind="function"><name>ExecuteAsync</name></member>
+  </compound>
+  <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_mochila_command" kind="class"><name>Ucu::Poo::DiscordBot::Commands::MochilaCommand</name>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_mochila_command_1a43e89412755d5d4155f5c682496b0acb" kind="function"><name>ExecuteAsync</name></member>
+  </compound>
+  <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_moves_command" kind="class"><name>Ucu::Poo::DiscordBot::Commands::MovesCommand</name>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_moves_command_1a6b172f82c5ce1bf9ddc3c76e590f1813" kind="function"><name>ExecuteAsync</name></member>
   </compound>
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento" kind="class"><name>Ucu::Poo::DiscordBot::Movimiento</name>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento_1a0c22efaafb8a94b839445abdbc44375b" kind="property"><name>Nombre</name></member>
@@ -301,17 +326,27 @@
   </compound>
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_revivir" kind="class"><name>Ucu::Poo::DiscordBot::Items::Revivir</name>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_revivir_1af2aa36ed21e2a0219597bdbf6f876aba" kind="property"><name>Nombre</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_revivir_1a790f92e9364e823248b2f32c61d328d1" kind="function"><name>Usar</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_revivir_1a760bfe327c517821c2ee1cf510835e6a" kind="function"><name>RevivirPokemon</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_revivir_1a8d71889d762d6eda0c694bde3dab642d" kind="property"><name>Descripcion</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_revivir_1a4467f1179f6160ae0d3ec1f2c807bd69" kind="function"><name>Usar</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_revivir_1ac4cc8c0edef4acb0bb29516519885678" kind="function"><name>RevivirPokemon</name></member>
+  </compound>
+  <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_show_pokemon_command" kind="class"><name>Ucu::Poo::DiscordBot::Commands::ShowPokemonCommand</name>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_show_pokemon_command_1ad327c7708211a7119a457a8c85513b80" kind="function"><name>ExecuteAsync</name></member>
   </compound>
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_super_pocion" kind="class"><name>Ucu::Poo::DiscordBot::Items::SuperPocion</name>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_super_pocion_1a650b7e6b4044218976b6c73948673a87" kind="property"><name>Nombre</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_super_pocion_1a6dc8b54f38ce36af7d85505a1e5d7d5f" kind="function"><name>Usar</name></member>
-    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_super_pocion_1acfc2ed20cb0311da8439ef500b844485" kind="function"><name>CurarPokemon</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_super_pocion_1a83efe03cf797abe3cf4bb77d43cacb21" kind="property"><name>Descripcion</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_super_pocion_1a2e2d3bdf3b8802ce5e1e30b5a84629d9" kind="function"><name>Usar</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_super_pocion_1a6f5284630bab14aab6d8c72d506500ea" kind="function"><name>CurarPokemon</name></member>
   </compound>
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_trainer" kind="class"><name>Ucu::Poo::DiscordBot::Domain::Trainer</name>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_trainer_1aa192a6e967ada36623c47e8ba25abfa1" kind="property"><name>DisplayName</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_trainer_1a6b93895105bd84a904be90f6a08ef844" kind="variable"><name>equipoPokemon</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_trainer_1a85349b1eb762259efa13c4717bdc6c70" kind="variable"><name>equipoPokemonDerrotados</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_trainer_1a3870567942c4a510fbacb15a318104db" kind="variable"><name>nombreCheck</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_trainer_1a6831606bc76c7cd32b810efd049dcde7" kind="variable"><name>Mochila</name></member>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_trainer_1aed71dc889355e8a310a0607168e00cbf" kind="function"><name>Trainer</name></member>
+    <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_trainer_1a397016b95c916f86b38ba2362a6111ae" kind="function"><name>agregarPokemon</name></member>
   </compound>
   <compound refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_user_info_command" kind="class"><name>Ucu::Poo::DiscordBot::Commands::UserInfoCommand</name>
     <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_user_info_command_1a5e581dd5e7b25f3ca326f4b8e838d1a5" kind="function"><name>ExecuteAsync</name></member>
@@ -370,6 +405,8 @@
   </compound>
   <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
   </compound>
+  <compound refid="namespace_system_1_1_reflection_1_1_portable_executable" kind="namespace"><name>System::Reflection::PortableExecutable</name>
+  </compound>
   <compound refid="namespace_system_1_1_text_1_1_json_1_1_nodes" kind="namespace"><name>System::Text::Json::Nodes</name>
   </compound>
   <compound refid="namespace_ucu" kind="namespace"><name>Ucu</name>
@@ -394,15 +431,31 @@
   </compound>
   <compound refid="_combate_8cs" kind="file"><name>Combate.cs</name>
   </compound>
+  <compound refid="_add_pokemon_command_8cs" kind="file"><name>AddPokemonCommand.cs</name>
+  </compound>
+  <compound refid="_attack_comand_8cs" kind="file"><name>AttackComand.cs</name>
+  </compound>
   <compound refid="_battle_command_8cs" kind="file"><name>BattleCommand.cs</name>
   </compound>
+  <compound refid="_cambiar_pokemon_8cs" kind="file"><name>CambiarPokemon.cs</name>
+  </compound>
   <compound refid="_command_helper_8cs" kind="file"><name>CommandHelper.cs</name>
+  </compound>
+  <compound refid="_health_command_8cs" kind="file"><name>HealthCommand.cs</name>
   </compound>
   <compound refid="_join_command_8cs" kind="file"><name>JoinCommand.cs</name>
   </compound>
   <compound refid="_leave_command_8cs" kind="file"><name>LeaveCommand.cs</name>
   </compound>
+  <compound refid="_menu_command_8cs" kind="file"><name>MenuCommand.cs</name>
+  </compound>
+  <compound refid="_mochila_command_8cs" kind="file"><name>MochilaCommand.cs</name>
+  </compound>
+  <compound refid="_moves_command_8cs" kind="file"><name>MovesCommand.cs</name>
+  </compound>
   <compound refid="_pokemon_name_command_8cs" kind="file"><name>PokemonNameCommand.cs</name>
+  </compound>
+  <compound refid="_show_pokemon_command_8cs" kind="file"><name>ShowPokemonCommand.cs</name>
   </compound>
   <compound refid="_user_info_command_8cs" kind="file"><name>UserInfoCommand.cs</name>
   </compound>

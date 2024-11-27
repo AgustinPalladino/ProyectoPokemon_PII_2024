@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['menudejugador_0',['MenuDeJugador',['../class_ucu_1_1_poo_1_1_discord_bot_1_1_logica.html#a8d69b363e924375efdf5e2f03c0b57b1',1,'Ucu::Poo::DiscordBot::Logica']]],
-  ['movimiento_1',['Movimiento',['../class_ucu_1_1_poo_1_1_discord_bot_1_1_movimiento.html#a9a921586e912d9d94edacf0c57040ecc',1,'Ucu::Poo::DiscordBot::Movimiento']]]
+  ['jugador_0',['Jugador',['../class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador.html#afae2e50e05b908a4f82ecdb757c737e9',1,'Ucu::Poo::DiscordBot::Jugador']]]
 ];
