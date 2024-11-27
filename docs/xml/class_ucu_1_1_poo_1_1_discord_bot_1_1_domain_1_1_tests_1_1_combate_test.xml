@@ -15,14 +15,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/CombateTest.cs" line="6" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/CombateTest.cs" bodystart="6" bodyend="22"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/CombateTest.cs" line="6" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/CombateTest.cs" bodystart="6" bodyend="15"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/CombateTest.cs" line="3" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/CombateTest.cs" bodystart="4" bodyend="23"/>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/CombateTest.cs" line="3" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/CombateTest.cs" bodystart="4" bodyend="16"/>
     <listofallmembers>
       <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_combate_test_1a7309aad05069546b7659d2861a2a7467" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::CombateTest</scope><name>mostrarCatalogo</name></member>
     </listofallmembers>

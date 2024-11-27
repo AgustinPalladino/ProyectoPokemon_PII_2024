@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_mochila_command" kind="class" language="C#" prot="public">
+    <compoundname>Ucu::Poo::DiscordBot::Commands::MochilaCommand</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ModuleBase&lt; SocketCommandContext &gt;</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_mochila_command_1a43e89412755d5d4155f5c682496b0acb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ucu.Poo.DiscordBot.Commands.MochilaCommand.ExecuteAsync</definition>
+        <argsstring>(string itemName=null, string pokemonName=null)</argsstring>
+        <name>ExecuteAsync</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Commands.MochilaCommand.ExecuteAsync</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>itemName</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>pokemonName</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/MochilaCommand.cs" line="12" column="23" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/MochilaCommand.cs" bodystart="12" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ModuleBase&lt; SocketCommandContext &gt;</label>
+      </node>
+      <node id="1">
+        <label>Ucu.Poo.DiscordBot.Commands.MochilaCommand</label>
+        <link refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_mochila_command"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ModuleBase&lt; SocketCommandContext &gt;</label>
+      </node>
+      <node id="1">
+        <label>Ucu.Poo.DiscordBot.Commands.MochilaCommand</label>
+        <link refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_mochila_command"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/MochilaCommand.cs" line="7" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/MochilaCommand.cs" bodystart="8" bodyend="48"/>
+    <listofallmembers>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_mochila_command_1a43e89412755d5d4155f5c682496b0acb" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Commands::MochilaCommand</scope><name>ExecuteAsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

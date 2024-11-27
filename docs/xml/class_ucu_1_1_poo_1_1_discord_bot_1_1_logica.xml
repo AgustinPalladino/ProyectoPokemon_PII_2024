@@ -10,12 +10,13 @@
         <name>interaccion</name>
         <qualifiedname>Ucu.Poo.DiscordBot.Logica.interaccion</qualifiedname>
         <briefdescription>
+<para>Logica es una clase en la cual se dividen procesos que tendria que tener jugador, con el fin de seguir el principio solid srp. Aun asi esta clase interactua con jugador cuando paso este proceso de logica y validación. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" line="7" column="45" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" bodystart="7" bodyend="-1"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" line="11" column="45" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" bodystart="11" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -35,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" line="9" column="12" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" bodystart="9" bodyend="12"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" line="13" column="12" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" bodystart="13" bodyend="16"/>
       </memberdef>
       <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1a8d69b363e924375efdf5e2f03c0b57b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -52,38 +53,38 @@
           <declname>j2</declname>
         </param>
         <briefdescription>
-<para>Este metodo despliega el menu de opciones de cada jugador, decidimos ponerlo aqui, por uno de los patrones GRASP llamado bajo acomplamiento, con la intencion de que logica interactue con jugador de una manera mas cercana que combate. </para>
+<para>Este es el bucle del menu de jugador para jugar mediante consola, es el responsable de tomar la decision del jugador y saber cuando este finaliza y consume su turno. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j1</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j2</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" line="18" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" bodystart="18" bodyend="71"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" line="26" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" bodystart="26" bodyend="106"/>
       </memberdef>
-      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1a3c5afee2f8e47f5899fcf68a0d033c61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void Ucu.Poo.DiscordBot.Logica.EscogerEquipo</definition>
-        <argsstring>(Jugador jugador)</argsstring>
-        <name>EscogerEquipo</name>
-        <qualifiedname>Ucu.Poo.DiscordBot.Logica.EscogerEquipo</qualifiedname>
-        <param>
-          <type><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador" kindref="compound">Jugador</ref></type>
-          <declname>jugador</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" line="74" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" bodystart="74" bodyend="107"/>
-      </memberdef>
-      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1a5e0dbc929026ff0b8f143e44e44a5fee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1a260c247a606025c1c02727e86f817a7c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
-        <definition>bool Ucu.Poo.DiscordBot.Logica.CambiarPokemon</definition>
+        <definition>bool Ucu.Poo.DiscordBot.Logica.SeleccionarPokemonDeCambio</definition>
         <argsstring>(Jugador jugador)</argsstring>
-        <name>CambiarPokemon</name>
-        <qualifiedname>Ucu.Poo.DiscordBot.Logica.CambiarPokemon</qualifiedname>
+        <name>SeleccionarPokemonDeCambio</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Logica.SeleccionarPokemonDeCambio</qualifiedname>
         <param>
           <type><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador" kindref="compound">Jugador</ref></type>
           <declname>jugador</declname>
@@ -91,10 +92,21 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jugador</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" line="110" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" bodystart="110" bodyend="156"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" line="134" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" bodystart="134" bodyend="177"/>
       </memberdef>
       <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1a465babb65bb81fae62d143a258d9a69b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -107,12 +119,24 @@
           <declname>jugador</declname>
         </param>
         <briefdescription>
+<para>Metodo que comprueba si el item recibido esta bien y recibe el nombre del pokemon que va a interactuar con ese objeto. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jugador</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" line="160" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" bodystart="160" bodyend="199"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" line="185" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" bodystart="185" bodyend="235"/>
       </memberdef>
       <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1afb7bdab10a32044545a188fb7007c56e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -129,12 +153,31 @@
           <declname>jugadorEnemigo</declname>
         </param>
         <briefdescription>
+<para>Metodo que confirma la eleccion del movimiento. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jugador</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jugadorEnemigo</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" line="203" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" bodystart="203" bodyend="226"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" line="244" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" bodystart="244" bodyend="270"/>
       </memberdef>
       <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1ab4c1b8f81ff9ca783dd29a940d660977" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -155,12 +198,36 @@
           <declname>movimiento</declname>
         </param>
         <briefdescription>
+<para>Calcula el ataque. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jugador</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jugadorEnemigo</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>movimiento</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" line="229" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" bodystart="229" bodyend="264"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" line="278" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" bodystart="278" bodyend="303"/>
       </memberdef>
       <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1a8e1879dbeb35d334cc20a6fd6b4bf7a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -173,29 +240,84 @@
           <declname>jugadorEnemigo</declname>
         </param>
         <briefdescription>
+<para>Si el jugador rival tiene solo 1 pokemon y es null este retorna true y por ende confirma que la pelea termina. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jugadorEnemigo</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" line="267" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" bodystart="267" bodyend="275"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" line="310" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" bodystart="310" bodyend="317"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1a5514b31829b7507b87db5a3abcdf50de" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Ucu.Poo.DiscordBot.Logica.CambiarPokeStringAPokemon</definition>
+        <argsstring>(Jugador jugador, string pokeIngresado)</argsstring>
+        <name>CambiarPokeStringAPokemon</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Logica.CambiarPokeStringAPokemon</qualifiedname>
+        <param>
+          <type><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador" kindref="compound">Jugador</ref></type>
+          <declname>jugador</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>pokeIngresado</declname>
+        </param>
+        <briefdescription>
+<para>Cambia un string pokemon a un objeto de tipo Pokemon mediante una cooperacion con jugador.agregarPokemon para añadir este pokemon directo al equipo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jugador</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pokeIngresado</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" line="116" column="26" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" bodystart="116" bodyend="127"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" line="5" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" bodystart="6" bodyend="276"/>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" line="5" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Logica.cs" bodystart="6" bodyend="318"/>
     <listofallmembers>
       <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1ab4c1b8f81ff9ca783dd29a940d660977" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Logica</scope><name>CalculoAtaque</name></member>
-      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1a5e0dbc929026ff0b8f143e44e44a5fee" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Logica</scope><name>CambiarPokemon</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1a5514b31829b7507b87db5a3abcdf50de" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Logica</scope><name>CambiarPokeStringAPokemon</name></member>
       <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1a8e1879dbeb35d334cc20a6fd6b4bf7a5" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Logica</scope><name>ChequeoVictoria</name></member>
-      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1a3c5afee2f8e47f5899fcf68a0d033c61" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Logica</scope><name>EscogerEquipo</name></member>
       <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1a270a1608b1fa772dc8e982793fb7aebe" prot="private" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Logica</scope><name>interaccion</name></member>
       <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1a194213763192674f18835e46cf46b08e" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Logica</scope><name>Logica</name></member>
       <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1a8d69b363e924375efdf5e2f03c0b57b1" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Logica</scope><name>MenuDeJugador</name></member>
       <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1a465babb65bb81fae62d143a258d9a69b" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Logica</scope><name>Mochila</name></member>
       <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1afb7bdab10a32044545a188fb7007c56e" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Logica</scope><name>SeleccionarAtaque</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica_1a260c247a606025c1c02727e86f817a7c" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Logica</scope><name>SeleccionarPokemonDeCambio</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" line="16" column="29" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" bodystart="16" bodyend="-1"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" line="17" column="29" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" bodystart="17" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_1aec6298e9578ae417b06296437c9f1623" prot="private" static="no" mutable="no">
         <type>readonly ILogger&lt; <ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot" kindref="compound">Bot</ref> &gt;</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" line="17" column="30" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" bodystart="17" bodyend="-1"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" line="18" column="30" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_1ac0ae5de9877f255e009c30e0185757b4" prot="private" static="no" mutable="no">
         <type>readonly IConfiguration</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" line="18" column="37" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" bodystart="18" bodyend="-1"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" line="19" column="37" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" bodystart="19" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_1a70f3d47e1170aa5aa03463190e268a5a" prot="private" static="no" mutable="no">
         <type>readonly DiscordSocketClient</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" line="19" column="42" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" bodystart="19" bodyend="-1"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" line="20" column="42" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" bodystart="20" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_1abd514a61f5a0f032dae546c922d2eded" prot="private" static="no" mutable="no">
         <type>readonly CommandService</type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" line="20" column="37" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" bodystart="20" bodyend="-1"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" line="21" column="37" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" bodystart="21" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -96,7 +96,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" line="22" column="12" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" bodystart="22" bodyend="38"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" line="23" column="12" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" bodystart="23" bodyend="39"/>
       </memberdef>
       <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_1a15bf4ff03e727a6a00ae9b3f0daf5c63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>async Task</type>
@@ -115,7 +115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" line="40" column="23" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" bodystart="40" bodyend="54"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" line="41" column="23" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" bodystart="41" bodyend="63"/>
       </memberdef>
       <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_1a0b583be7dd7f5af98e9a1a8fedeae5c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>async Task</type>
@@ -130,7 +130,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" line="56" column="23" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" bodystart="56" bodyend="61"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" line="65" column="23" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" bodystart="65" bodyend="70"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -150,7 +150,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" line="63" column="24" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" bodystart="63" bodyend="80"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" line="72" column="24" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" bodystart="72" bodyend="89"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -182,7 +182,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" line="14" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" bodystart="15" bodyend="81"/>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" line="15" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Services/Bot.cs" bodystart="16" bodyend="90"/>
     <listofallmembers>
       <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_1ae5f514e9761099591383d822a023d0db" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Services::Bot</scope><name>Bot</name></member>
       <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_services_1_1_bot_1a70f3d47e1170aa5aa03463190e268a5a" prot="private" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Services::Bot</scope><name>client</name></member>

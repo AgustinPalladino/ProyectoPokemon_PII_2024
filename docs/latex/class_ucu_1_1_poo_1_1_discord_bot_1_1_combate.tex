@@ -11,12 +11,13 @@ constructor de clase Combate Esta clase se ocupa de ejecutar y mantener el comba
 \Hypertarget{class_ucu_1_1_poo_1_1_discord_bot_1_1_combate_a821feade21af2f98cd957ceae6c2546e}\label{class_ucu_1_1_poo_1_1_discord_bot_1_1_combate_a821feade21af2f98cd957ceae6c2546e} 
 {\bfseries Combate} (\mbox{\hyperlink{interface_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_i_interaccion_con_usuario}{IInteraccion\+Con\+Usuario}} interaccion)
 \item 
-\Hypertarget{class_ucu_1_1_poo_1_1_discord_bot_1_1_combate_a7b5121df60f26959d7194e90b1df7e83}\label{class_ucu_1_1_poo_1_1_discord_bot_1_1_combate_a7b5121df60f26959d7194e90b1df7e83} 
-void {\bfseries Mostrar\+Catalogo} ()
+void \mbox{\hyperlink{class_ucu_1_1_poo_1_1_discord_bot_1_1_combate_a6c4630373a92e03cbe71d56d7429607b}{Bucle\+Principal}} (\mbox{\hyperlink{class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador}{Jugador}} j1, \mbox{\hyperlink{class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador}{Jugador}} j2)
+\begin{DoxyCompactList}\small\item\em Aqui se ejecuta el bucle principal del juego por consola, este maneja el flujo de toda la partida y cuando esta termina. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_ucu_1_1_poo_1_1_discord_bot_1_1_combate_a6c4630373a92e03cbe71d56d7429607b}\label{class_ucu_1_1_poo_1_1_discord_bot_1_1_combate_a6c4630373a92e03cbe71d56d7429607b} 
-void {\bfseries Bucle\+Principal} (\mbox{\hyperlink{class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador}{Jugador}} j1, \mbox{\hyperlink{class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador}{Jugador}} j2)
-\end{DoxyCompactItemize}
+static string \mbox{\hyperlink{class_ucu_1_1_poo_1_1_discord_bot_1_1_combate_a44db35e7e95b0897161dae25057edf46}{Mostrar\+Catalogo}} ()
+\begin{DoxyCompactList}\small\item\em Mostrar catalogo se ocupa de devolver un string en base de todos los pokemon del diccionario. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
@@ -30,6 +31,39 @@ int {\bfseries num\+Actual}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 
 \doxysubsection{Detailed Description}
 constructor de clase Combate Esta clase se ocupa de ejecutar y mantener el combate pokemon hasta llegar a un final 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ucu_1_1_poo_1_1_discord_bot_1_1_combate_a6c4630373a92e03cbe71d56d7429607b}\label{class_ucu_1_1_poo_1_1_discord_bot_1_1_combate_a6c4630373a92e03cbe71d56d7429607b} 
+\index{Ucu.Poo.DiscordBot.Combate@{Ucu.Poo.DiscordBot.Combate}!BuclePrincipal@{BuclePrincipal}}
+\index{BuclePrincipal@{BuclePrincipal}!Ucu.Poo.DiscordBot.Combate@{Ucu.Poo.DiscordBot.Combate}}
+\doxysubsubsection{\texorpdfstring{BuclePrincipal()}{BuclePrincipal()}}
+{\footnotesize\ttfamily void Ucu.\+Poo.\+Discord\+Bot.\+Combate.\+Bucle\+Principal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador}{Jugador}}}]{j1,  }\item[{\mbox{\hyperlink{class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador}{Jugador}}}]{j2 }\end{DoxyParamCaption})}
+
+
+
+Aqui se ejecuta el bucle principal del juego por consola, este maneja el flujo de toda la partida y cuando esta termina. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em j1} & \\
+\hline
+{\em j2} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_ucu_1_1_poo_1_1_discord_bot_1_1_combate_a44db35e7e95b0897161dae25057edf46}\label{class_ucu_1_1_poo_1_1_discord_bot_1_1_combate_a44db35e7e95b0897161dae25057edf46} 
+\index{Ucu.Poo.DiscordBot.Combate@{Ucu.Poo.DiscordBot.Combate}!MostrarCatalogo@{MostrarCatalogo}}
+\index{MostrarCatalogo@{MostrarCatalogo}!Ucu.Poo.DiscordBot.Combate@{Ucu.Poo.DiscordBot.Combate}}
+\doxysubsubsection{\texorpdfstring{MostrarCatalogo()}{MostrarCatalogo()}}
+{\footnotesize\ttfamily static string Ucu.\+Poo.\+Discord\+Bot.\+Combate.\+Mostrar\+Catalogo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Mostrar catalogo se ocupa de devolver un string en base de todos los pokemon del diccionario. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

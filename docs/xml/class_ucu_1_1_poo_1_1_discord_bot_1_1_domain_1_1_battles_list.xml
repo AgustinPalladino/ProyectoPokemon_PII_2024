@@ -20,6 +20,37 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_battles_list_1a984075cbaa7304536e782ab8586ad5e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_battle" kindref="compound">Battle</ref>?</type>
+        <definition>Battle? Ucu.Poo.DiscordBot.Domain.BattlesList.GetBattleByPlayer</definition>
+        <argsstring>(string playerDisplayName)</argsstring>
+        <name>GetBattleByPlayer</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.BattlesList.GetBattleByPlayer</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>playerDisplayName</declname>
+        </param>
+        <briefdescription>
+<para>Busca una batalla activa en la que participe el jugador especificado. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>playerDisplayName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El nombre del jugador.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>La batalla activa si se encuentra, de lo contrario, null.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Domain/BattlesList.cs" line="15" column="19" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Domain/BattlesList.cs" bodystart="15" bodyend="19"/>
+      </memberdef>
       <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_battles_list_1a0296d732f53091db728b8a825e52e16c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_battle" kindref="compound">Battle</ref></type>
         <definition>Battle Ucu.Poo.DiscordBot.Domain.BattlesList.AddBattle</definition>
@@ -61,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Domain/BattlesList.cs" line="16" column="19" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Domain/BattlesList.cs" bodystart="16" bodyend="21"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Domain/BattlesList.cs" line="27" column="19" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Domain/BattlesList.cs" bodystart="27" bodyend="32"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -69,10 +100,11 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Domain/BattlesList.cs" line="6" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Domain/BattlesList.cs" bodystart="7" bodyend="22"/>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Domain/BattlesList.cs" line="6" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Domain/BattlesList.cs" bodystart="7" bodyend="33"/>
     <listofallmembers>
       <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_battles_list_1a0296d732f53091db728b8a825e52e16c" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::BattlesList</scope><name>AddBattle</name></member>
       <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_battles_list_1a4a73b191dedd5a29d51b8314df410634" prot="private" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::BattlesList</scope><name>battles</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_battles_list_1a984075cbaa7304536e782ab8586ad5e8" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::BattlesList</scope><name>GetBattleByPlayer</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_cambiar_pokemon" kind="class" language="C#" prot="public">
+    <compoundname>Ucu::Poo::DiscordBot::Commands::CambiarPokemon</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ModuleBase&lt; SocketCommandContext &gt;</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_cambiar_pokemon_1a80e08cfcceca359caf419a668be0e1fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ucu.Poo.DiscordBot.Commands.CambiarPokemon.ExecuteAsync</definition>
+        <argsstring>([Remainder] string pokemonName)</argsstring>
+        <name>ExecuteAsync</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Commands.CambiarPokemon.ExecuteAsync</qualifiedname>
+        <param>
+          <attributes>[Remainder]</attributes>
+          <type>string</type>
+          <declname>pokemonName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/CambiarPokemon.cs" line="10" column="23" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/CambiarPokemon.cs" bodystart="10" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ModuleBase&lt; SocketCommandContext &gt;</label>
+      </node>
+      <node id="1">
+        <label>Ucu.Poo.DiscordBot.Commands.CambiarPokemon</label>
+        <link refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_cambiar_pokemon"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ModuleBase&lt; SocketCommandContext &gt;</label>
+      </node>
+      <node id="1">
+        <label>Ucu.Poo.DiscordBot.Commands.CambiarPokemon</label>
+        <link refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_cambiar_pokemon"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/CambiarPokemon.cs" line="6" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/CambiarPokemon.cs" bodystart="7" bodyend="26"/>
+    <listofallmembers>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_cambiar_pokemon_1a80e08cfcceca359caf419a668be0e1fd" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Commands::CambiarPokemon</scope><name>ExecuteAsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

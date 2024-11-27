@@ -18,56 +18,63 @@
         </inbodydescription>
         <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items/Superpocion.cs" line="7" column="28" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items/Superpocion.cs" bodystart="7" bodyend="-1"/>
       </memberdef>
-      </sectiondef>
-      <sectiondef kind="public-func">
-      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_super_pocion_1a6dc8b54f38ce36af7d85505a1e5d7d5f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>override void</type>
-        <definition>override void Ucu.Poo.DiscordBot.Items.SuperPocion.Usar</definition>
-        <argsstring>(Jugador jugador, IInteraccionConUsuario interaccion)</argsstring>
-        <name>Usar</name>
-        <qualifiedname>Ucu.Poo.DiscordBot.Items.SuperPocion.Usar</qualifiedname>
-        <reimplements refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_item_1a834028a760360375cb2c2a7740c3c363">Usar</reimplements>
-        <param>
-          <type><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador" kindref="compound">Jugador</ref></type>
-          <declname>jugador</declname>
-        </param>
-        <param>
-          <type><ref refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_i_interaccion_con_usuario" kindref="compound">IInteraccionConUsuario</ref></type>
-          <declname>interaccion</declname>
-        </param>
+      <memberdef kind="property" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_super_pocion_1a83efe03cf797abe3cf4bb77d43cacb21" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>override string</type>
+        <definition>override string Ucu.Poo.DiscordBot.Items.SuperPocion.Descripcion</definition>
+        <argsstring></argsstring>
+        <name>Descripcion</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Items.SuperPocion.Descripcion</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items/Superpocion.cs" line="9" column="26" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items/Superpocion.cs" bodystart="9" bodyend="51"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items/Superpocion.cs" line="9" column="28" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items/Superpocion.cs" bodystart="9" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_super_pocion_1acfc2ed20cb0311da8439ef500b844485" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void Ucu.Poo.DiscordBot.Items.SuperPocion.CurarPokemon</definition>
-        <argsstring>(Jugador jugador, Pokemon pokemon, IInteraccionConUsuario interaccion)</argsstring>
-        <name>CurarPokemon</name>
-        <qualifiedname>Ucu.Poo.DiscordBot.Items.SuperPocion.CurarPokemon</qualifiedname>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_super_pocion_1a2e2d3bdf3b8802ce5e1e30b5a84629d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override string</type>
+        <definition>override string Ucu.Poo.DiscordBot.Items.SuperPocion.Usar</definition>
+        <argsstring>(Jugador jugador, string pokeIngresado)</argsstring>
+        <name>Usar</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Items.SuperPocion.Usar</qualifiedname>
+        <reimplements refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_item_1a8e0d22a7fafd17bc923561bbbeb2725b">Usar</reimplements>
         <param>
           <type><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador" kindref="compound">Jugador</ref></type>
           <declname>jugador</declname>
         </param>
+        <param>
+          <type>string</type>
+          <declname>pokeIngresado</declname>
+        </param>
+        <briefdescription>
+<para>Decidimos separar esta clase en dos metodos, creimos que era buena idea aplicar el principio srp de solid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items/Superpocion.cs" line="14" column="28" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items/Superpocion.cs" bodystart="14" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_super_pocion_1a6f5284630bab14aab6d8c72d506500ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Items.SuperPocion.CurarPokemon</definition>
+        <argsstring>(Pokemon pokemon)</argsstring>
+        <name>CurarPokemon</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Items.SuperPocion.CurarPokemon</qualifiedname>
         <param>
           <type><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon" kindref="compound">Pokemon</ref></type>
           <declname>pokemon</declname>
         </param>
-        <param>
-          <type><ref refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_i_interaccion_con_usuario" kindref="compound">IInteraccionConUsuario</ref></type>
-          <declname>interaccion</declname>
-        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items/Superpocion.cs" line="53" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items/Superpocion.cs" bodystart="53" bodyend="63"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items/Superpocion.cs" line="39" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items/Superpocion.cs" bodystart="39" bodyend="46"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -98,11 +105,12 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items/Superpocion.cs" line="5" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items/Superpocion.cs" bodystart="6" bodyend="64"/>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items/Superpocion.cs" line="5" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Items/Superpocion.cs" bodystart="6" bodyend="47"/>
     <listofallmembers>
-      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_super_pocion_1acfc2ed20cb0311da8439ef500b844485" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Items::SuperPocion</scope><name>CurarPokemon</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_super_pocion_1a6f5284630bab14aab6d8c72d506500ea" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Items::SuperPocion</scope><name>CurarPokemon</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_super_pocion_1a83efe03cf797abe3cf4bb77d43cacb21" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Items::SuperPocion</scope><name>Descripcion</name></member>
       <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_super_pocion_1a650b7e6b4044218976b6c73948673a87" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Items::SuperPocion</scope><name>Nombre</name></member>
-      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_super_pocion_1a6dc8b54f38ce36af7d85505a1e5d7d5f" prot="public" virt="virtual"><scope>Ucu::Poo::DiscordBot::Items::SuperPocion</scope><name>Usar</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_items_1_1_super_pocion_1a2e2d3bdf3b8802ce5e1e30b5a84629d9" prot="public" virt="virtual"><scope>Ucu::Poo::DiscordBot::Items::SuperPocion</scope><name>Usar</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

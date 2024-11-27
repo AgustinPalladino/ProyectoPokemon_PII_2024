@@ -24,41 +24,27 @@
 <codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador" kindref="compound">Jugador</ref><sp/>jugador2;</highlight></codeline>
 <codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_i_interaccion_con_usuario" kindref="compound">IInteraccionConUsuario</ref><sp/>mockInteraccion;</highlight></codeline>
 <codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_logica" kindref="compound">Logica</ref><sp/>logica;</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>[Test]</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>hdUsuario5Test()</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mockInteraccion<sp/>=<sp/>Substitute.For&lt;<ref refid="interface_ucu_1_1_poo_1_1_discord_bot_1_1_interaccion_1_1_i_interaccion_con_usuario" kindref="compound">IInteraccionConUsuario</ref>&gt;();</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jugador1<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador" kindref="compound">Jugador</ref>(</highlight><highlight class="stringliteral">&quot;Ash&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jugador2<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador" kindref="compound">Jugador</ref>(</highlight><highlight class="stringliteral">&quot;Misty&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Configuración<sp/>inicial</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>combate<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_combate" kindref="compound">Combate</ref>(mockInteraccion);</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Mockeamos<sp/>un<sp/>flujo<sp/>de<sp/>turnos</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jugador1.agregarPokemon(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon" kindref="compound">Pokemon</ref>(</highlight><highlight class="stringliteral">&quot;Pikachu&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Eléctrico&quot;</highlight><highlight class="normal">,<sp/>100,<sp/>50,<sp/>40));</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jugador2.<ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_jugador_1ad4ef3ac0f06ebf4124cdb60bb15997e8" kindref="member">agregarPokemon</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon" kindref="compound">Pokemon</ref>(</highlight><highlight class="stringliteral">&quot;Charizard&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Fuego&quot;</highlight><highlight class="normal">,<sp/>100,<sp/>60,<sp/>50));</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Simula<sp/>el<sp/>bucle<sp/>principal<sp/>de<sp/>turnos</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>combate.BuclePrincipal(jugador1,<sp/>jugador2);</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Verifica<sp/>que<sp/>el<sp/>mensaje<sp/>de<sp/>turno<sp/>para<sp/>el<sp/>jugador<sp/>1<sp/>aparece</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>[Test]</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario5_test_1ac426c23423ad9bb567e51e36d058a3dd" kindref="member">hdUsuario5Test</ref>()</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>mockInteraccion<sp/>=<sp/>Substitute.For&lt;IInteraccionConUsuario&gt;();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>jugador1<sp/>=<sp/>new<sp/>Jugador(&quot;Ash&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>jugador2<sp/>=<sp/>new<sp/>Jugador(&quot;Misty&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Configuración<sp/>inicial</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>var<sp/>logica<sp/>=<sp/>new<sp/>Logica(mockInteraccion);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>jugador1.agregarPokemon(new<sp/>Pokemon(&quot;Pikachu&quot;,<sp/>&quot;Eléctrico&quot;,<sp/>100,<sp/>50,<sp/>40));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>jugador2.agregarPokemon(new<sp/>Pokemon(&quot;Charizard&quot;,<sp/>&quot;Fuego&quot;,<sp/>100,<sp/>60,<sp/>50));</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(combate.numActual==1)</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Assert.That(combate.JugadorActual==jugador1);</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(combate.numActual==2)</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Assert.That(combate.JugadorActual==jugador2);</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mockInteraccion.Received(1).ImprimirMensaje($</highlight><highlight class="stringliteral">&quot;\nTurno<sp/>de<sp/>{jugador2.Nombre}.<sp/>¿Qué<sp/>deseas<sp/>hacer?<sp/>Seleccione<sp/>un<sp/>numero<sp/>porfavor.&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mockInteraccion.LeerEntrada().Returns(</highlight><highlight class="stringliteral">&quot;1&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Verifica<sp/>que<sp/>el<sp/>mensaje<sp/>de<sp/>turno<sp/>para<sp/>el<sp/>jugador<sp/>2<sp/>aparece<sp/>después</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>mockInteraccion.LeerEntrada().Returns(&quot;5&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>logica.MenuDeJugador(jugador1,<sp/>jugador2);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>mockInteraccion.ImprimirMensaje($&quot;\nTurno<sp/>de<sp/>{jugador1.Nombre}.&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario5Test.cs"/>
   </compounddef>

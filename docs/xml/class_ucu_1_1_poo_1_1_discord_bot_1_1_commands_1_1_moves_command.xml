@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_moves_command" kind="class" language="C#" prot="public">
+    <compoundname>Ucu::Poo::DiscordBot::Commands::MovesCommand</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ModuleBase&lt; SocketCommandContext &gt;</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_moves_command_1a6b172f82c5ce1bf9ddc3c76e590f1813" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ucu.Poo.DiscordBot.Commands.MovesCommand.ExecuteAsync</definition>
+        <argsstring>()</argsstring>
+        <name>ExecuteAsync</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Commands.MovesCommand.ExecuteAsync</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/MovesCommand.cs" line="12" column="23" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/MovesCommand.cs" bodystart="12" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ModuleBase&lt; SocketCommandContext &gt;</label>
+      </node>
+      <node id="1">
+        <label>Ucu.Poo.DiscordBot.Commands.MovesCommand</label>
+        <link refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_moves_command"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ModuleBase&lt; SocketCommandContext &gt;</label>
+      </node>
+      <node id="1">
+        <label>Ucu.Poo.DiscordBot.Commands.MovesCommand</label>
+        <link refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_moves_command"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/MovesCommand.cs" line="8" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Commands/MovesCommand.cs" bodystart="9" bodyend="26"/>
+    <listofallmembers>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_commands_1_1_moves_command_1a6b172f82c5ce1bf9ddc3c76e590f1813" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Commands::MovesCommand</scope><name>ExecuteAsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

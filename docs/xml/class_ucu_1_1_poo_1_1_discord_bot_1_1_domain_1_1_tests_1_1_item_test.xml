@@ -15,7 +15,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/ItemTest.cs" line="9" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/ItemTest.cs" bodystart="9" bodyend="21"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/ItemTest.cs" line="11" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/ItemTest.cs" bodystart="11" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_item_test_1aef90e56de540141784cf65f8b12dea96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ucu.Poo.DiscordBot.Domain.Tests.ItemTest.itemRevivir</definition>
+        <argsstring>()</argsstring>
+        <name>itemRevivir</name>
+        <qualifiedname>Ucu.Poo.DiscordBot.Domain.Tests.ItemTest.itemRevivir</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/ItemTest.cs" line="46" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/ItemTest.cs" bodystart="46" bodyend="79"/>
       </memberdef>
       <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_item_test_1a66b2abdddce98e2fb53386837003986c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -29,16 +43,17 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/ItemTest.cs" line="39" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/ItemTest.cs" bodystart="39" bodyend="51"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/ItemTest.cs" line="84" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/ItemTest.cs" bodystart="84" bodyend="123"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/ItemTest.cs" line="6" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/ItemTest.cs" bodystart="7" bodyend="52"/>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/ItemTest.cs" line="6" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/ItemTest.cs" bodystart="7" bodyend="124"/>
     <listofallmembers>
       <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_item_test_1a706969fbfa458485635ddb0cb69b2c0f" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::ItemTest</scope><name>itemCuraTotal</name></member>
+      <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_item_test_1aef90e56de540141784cf65f8b12dea96" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::ItemTest</scope><name>itemRevivir</name></member>
       <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_item_test_1a66b2abdddce98e2fb53386837003986c" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::ItemTest</scope><name>itemSuperpocion</name></member>
     </listofallmembers>
   </compounddef>

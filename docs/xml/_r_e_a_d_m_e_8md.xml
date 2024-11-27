@@ -10,8 +10,12 @@
 <codeline><highlight class="normal">&lt;a<sp/>name=&quot;readme-top&quot;&gt;&lt;/a&gt;</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">#<sp/>ProyectoPokemon_PII_2024</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">&gt;<sp/></highlight></codeline>
+<codeline><highlight class="normal">##<sp/>Equipo<sp/>3<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">##<sp/>Miembros:</highlight></codeline>
+<codeline><highlight class="normal">👤<sp/>Lucas<sp/>Bentancour</highlight></codeline>
+<codeline><highlight class="normal">--<sp/>👤<sp/>Pedro<sp/>Moreira</highlight></codeline>
+<codeline><highlight class="normal">--<sp/>👤<sp/>Rodrigo<sp/>Fagundez</highlight></codeline>
+<codeline><highlight class="normal">--<sp/>👤<sp/>Agustín<sp/>Palladino</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">##<sp/>¿Qué<sp/>cosas<sp/>aprendieron<sp/>enfrentándose<sp/>al<sp/>proyecto<sp/>que<sp/>no<sp/>aprendieron<sp/>en<sp/>clase<sp/>como<sp/>parte<sp/>de<sp/>la<sp/>currícula?</highlight></codeline>
 <codeline></codeline>
@@ -20,24 +24,28 @@
 <codeline><highlight class="normal">Averiguamos<sp/>más<sp/>sobre<sp/>cómo<sp/>realizar<sp/>los<sp/>tests<sp/>dependiendo<sp/>del<sp/>caso<sp/>que<sp/>queriamos<sp/>probar<sp/>con<sp/>el<sp/>objetivo<sp/>de<sp/>cubrir<sp/>la<sp/>maxima<sp/>cantidad<sp/>de</highlight></codeline>
 <codeline><highlight class="normal">codigo<sp/>del<sp/>Programa.<sp/>Esto<sp/>nos<sp/>ayudo<sp/>a<sp/>asegurarnos<sp/>de<sp/>que<sp/>al<sp/>agregar<sp/>nuevos<sp/>metodos<sp/>o<sp/>modificar<sp/>parte<sp/>del<sp/>codigo,<sp/>las<sp/>pruebas<sp/>nos<sp/>avisen<sp/>de<sp/>errores.</highlight></codeline>
 <codeline></codeline>
+<codeline></codeline>
 <codeline><highlight class="normal">##<sp/>¿Qué<sp/>recursos<sp/>(páginas<sp/>web,<sp/>libros,<sp/>foros,<sp/>etc)<sp/>encontraron<sp/>que<sp/>les<sp/>fueron<sp/>valiosos<sp/>para<sp/>sortear<sp/>los<sp/>desafíos<sp/>que<sp/>encontraron?</highlight></codeline>
 <codeline></codeline>
+<codeline><highlight class="normal">-<sp/>###<sp/>Utilizamos<sp/>principalmente<sp/>material<sp/>del<sp/>curso,<sp/>pero<sp/>en<sp/>algunos<sp/>casos<sp/>tuvimos<sp/>que<sp/>usar<sp/>material<sp/>de<sp/>otro<sp/>lado,<sp/>de<sp/>aqui<sp/>algunas<sp/>fuentes<sp/>y<sp/>recursos:</highlight></codeline>
 <codeline><highlight class="normal">-<sp/>Un<sp/>recurso<sp/>que<sp/>nos<sp/>ayudo<sp/>a<sp/>lo<sp/>largo<sp/>del<sp/>curso<sp/>para<sp/>poder<sp/>remodelar<sp/>nuestros<sp/>conocimientos<sp/>acerca<sp/>de<sp/>como<sp/>perfeccionar<sp/>nuestra<sp/>forma<sp/>de<sp/>programar<sp/>en<sp/>c#<sp/>fueron<sp/>las<sp/>librerias<sp/>de<sp/>microsoft.</highlight></codeline>
-<codeline><highlight class="normal">Estas<sp/>nos<sp/>proporcionan<sp/>todo<sp/>tipo<sp/>de<sp/>información<sp/>sobre<sp/>las<sp/>herramientas<sp/>que<sp/>podemos<sp/>utilizar<sp/>dentro<sp/>de<sp/>c#<sp/>(https://learn.microsoft.com/es-es/)</highlight></codeline>
+<codeline><highlight class="normal">Estas<sp/>nos<sp/>proporcionan<sp/>todo<sp/>tipo<sp/>de<sp/>información<sp/>sobre<sp/>las<sp/>herramientas<sp/>que<sp/>podemos<sp/>utilizar<sp/>dentro<sp/>de<sp/>c#<sp/>(https://learn.microsoft.com/es-es/).</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>El<sp/>uso<sp/>de<sp/>Doxygen,<sp/>más<sp/>allá<sp/>de<sp/>ser<sp/>un<sp/>requisito<sp/>para<sp/>una<sp/>de<sp/>las<sp/>entregas,<sp/>vimos<sp/>que<sp/>es<sp/>fundamental<sp/>en<sp/>cualquier<sp/>proyecto<sp/>de<sp/>programación.<sp/>Poder<sp/>generar<sp/>una<sp/>documentación<sp/>en<sp/>formato<sp/>html,<sp/>visualmente<sp/>amigable<sp/>para<sp/>el<sp/>usuario,<sp/>donde<sp/>podemos<sp/>acceder<sp/>facil<sp/>a<sp/>la<sp/>información<sp/>que<sp/>los<sp/>programadores<sp/>comparten,<sp/>como<sp/>los<sp/>patrones<sp/>de<sp/>diseño<sp/>elegidos<sp/>y<sp/>los<sp/>comentarios<sp/>relevantes<sp/>sobre<sp/>el<sp/>codigo.<sp/>Para<sp/>hacer<sp/>el<sp/>doxygen<sp/>vimos<sp/>este<sp/>video<sp/>del<sp/>canal<sp/>de<sp/>TIC<sp/>UTMACH<sp/>en<sp/>youtube:<sp/>https://www.youtube.com/watch?v=MmEjzrO5MpA.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Para<sp/>el<sp/>bot<sp/>tuvimos<sp/>que<sp/>conseguir<sp/>mucha<sp/>inform</highlight></codeline>
+<codeline></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">##<sp/>¿Qué<sp/>desafios<sp/>de<sp/>la<sp/>entrega<sp/>fueron<sp/>los<sp/>más<sp/>difíciles?</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">-<sp/></highlight></codeline>
+<codeline><highlight class="normal">-<sp/>El<sp/>proyecto<sp/>tuvo<sp/>muchos<sp/>desafíos<sp/>a<sp/>lo<sp/>largo<sp/>del<sp/>desarrollo.<sp/>Desde<sp/>adaptar<sp/>los<sp/>conceptos<sp/>de<sp/>patrones<sp/>de<sp/>diseño<sp/>a<sp/>un<sp/>proyecto<sp/>que<sp/>empezó<sp/>de<sp/>cero,<sp/>hasta<sp/>implementar<sp/>nuevas<sp/>funciones.<sp/>Pero<sp/>creemos<sp/>que<sp/>lo<sp/>mas<sp/>complicado<sp/>fue<sp/>trabajar<sp/>con<sp/>el<sp/>bot.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>El<sp/>bot<sp/>fue<sp/>un<sp/>gran<sp/>reto<sp/>porque<sp/>al<sp/>principio<sp/>teníamos<sp/>muy<sp/>poco<sp/>contexto<sp/>sobre<sp/>cómo<sp/>funcionaba.<sp/>Tuvimos<sp/>que<sp/>leer,<sp/>entender,<sp/>ajustar<sp/>y<sp/>modelar<sp/>nuestro<sp/>código<sp/>para<sp/>adaptarlo<sp/>a<sp/>los<sp/>comandos<sp/>con<sp/>los<sp/>que<sp/>se<sp/>controla.</highlight></codeline>
+<codeline></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">##<sp/>Cualquier<sp/>otro<sp/>tipo<sp/>de<sp/>reflexión,<sp/>material<sp/>o<sp/>comentarios<sp/>sobre<sp/>el<sp/>trabajo<sp/>en<sp/>el<sp/>proyecto</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">-</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Enfrentarnos<sp/>a<sp/>este<sp/>proyecto<sp/>fue<sp/>clave<sp/>para<sp/>mejorar<sp/>nuestra<sp/>forma<sp/>de<sp/>programar.<sp/>A<sp/>lo<sp/>largo<sp/>del<sp/>curso<sp/>aprendimos<sp/>muchos<sp/>conceptos<sp/>y<sp/>los<sp/>fuimos<sp/>aplicando<sp/>constantemente<sp/>tanto<sp/>en<sp/>los<sp/>proyectos<sp/>grupales,<sp/>IRATs/TRATs<sp/>y<sp/>pruebas.<sp/>Pero,<sp/>aunque<sp/>todas<sp/>esas<sp/>instancias<sp/>nos<sp/>ayudaron<sp/>a<sp/>crecer<sp/>y<sp/>aprender,<sp/>no<sp/>se<sp/>comparan<sp/>con<sp/>el<sp/>desafío<sp/>de<sp/>empezar<sp/>un<sp/>proyecto<sp/>desde<sp/>cero.<sp/>Ahora<sp/>entendemos,<sp/>quizas<sp/>un<sp/>poco<sp/>tarde,<sp/>la<sp/>importancia<sp/>de<sp/>lo<sp/>que<sp/>el<sp/>curso<sp/>intenta<sp/>grabar<sp/>y<sp/>hacer<sp/>memorizar<sp/>en<sp/>la<sp/>mente<sp/>de<sp/>sus<sp/>alumnos:<sp/>tener<sp/>un<sp/>código<sp/>claro,<sp/>legible<sp/>y<sp/>preparado<sp/>para<sp/>futuras<sp/>implementaciones.<sp/>Esto<sp/>reduce<sp/>al<sp/>mínimo<sp/>los<sp/>problemas<sp/>cuando<sp/>llegan<sp/>esos<sp/>cambios.<sp/>Trabajar<sp/>con<sp/>el<sp/>bot<sp/>nos<sp/>hizo<sp/>ver<sp/>esa<sp/>realidad<sp/>mas<sp/>de<sp/>cerca,<sp/>especialmente<sp/>cuando<sp/>nos<sp/>enfrentamos<sp/>a<sp/>un<sp/>codigo<sp/>que<sp/>habia<sp/>sido<sp/>escrito<sp/>sin<sp/>ser<sp/>del<sp/>todo<sp/>conciente<sp/>estos<sp/>futuros<sp/>cambios.<sp/>Fue<sp/>una<sp/>experiencia<sp/>muy<sp/>entretenida<sp/>y<sp/>que<sp/>nutre<sp/>nuestros<sp/>conocimientos<sp/>de<sp/>programadores.</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">##<sp/>Miembros</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>👤<sp/>Lucas<sp/>Bentancour</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>👤<sp/>Pedro<sp/>Moreira</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>👤<sp/>Rodrigo<sp/>Fagundez</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>👤<sp/>Agustín<sp/>Palladino</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Otro<sp/>aprendizaje<sp/>clave<sp/>de<sp/>este<sp/>proyecto<sp/>fue<sp/>entender<sp/>lo<sp/>importante<sp/>que<sp/>es<sp/>hacer<sp/>tests<sp/>después<sp/>de<sp/>implementar<sp/>cada<sp/>funcionalidad.<sp/>Cuando<sp/>introducis<sp/>nuevos<sp/>cambios,<sp/>esos<sp/>tests<sp/>se<sp/>convierten<sp/>en<sp/>checkpoints<sp/>que<sp/>te<sp/>ayudan<sp/>a<sp/>identificar<sp/>problemas<sp/>de<sp/>forma<sp/>mas<sp/>rapida,<sp/>clara<sp/>y<sp/>efectiva.<sp/>Ayudandote<sp/>asi<sp/>a<sp/>encontrar<sp/>y<sp/>solucionar<sp/>estos<sp/>errores<sp/>mas<sp/>facil.</highlight></codeline>
+<codeline><highlight class="normal">Ahora,<sp/>viendolo<sp/>en<sp/>retrospectiva<sp/>(en<sp/>comparacion<sp/>con<sp/>cuando<sp/>nos<sp/>presentaron<sp/>los<sp/>tests<sp/>e<sp/>insistian<sp/>en<sp/>su<sp/>importancia),<sp/>nos<sp/>damos<sp/>cuenta<sp/>de<sp/>que<sp/>tienen<sp/>un<sp/>valor<sp/>clave<sp/>y<sp/>fundamental.</highlight></codeline>
     </programlisting>
     <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/README.md"/>
   </compounddef>

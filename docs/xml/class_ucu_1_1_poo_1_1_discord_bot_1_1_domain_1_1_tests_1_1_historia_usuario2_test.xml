@@ -73,14 +73,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario2Test.cs" line="14" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario2Test.cs" bodystart="14" bodyend="35"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario2Test.cs" line="14" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario2Test.cs" bodystart="14" bodyend="34"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario2Test.cs" line="6" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario2Test.cs" bodystart="7" bodyend="36"/>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario2Test.cs" line="6" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/test/LibraryTests/HistoriaUsuario2Test.cs" bodystart="7" bodyend="35"/>
     <listofallmembers>
       <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario2_test_1ac9ef364ecee43822ce342e7ac8bf6e93" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::HistoriaUsuario2Test</scope><name>hdUsuario2Test</name></member>
       <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_domain_1_1_tests_1_1_historia_usuario2_test_1a898d2468b70770b146aa7115943277df" prot="private" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Domain::Tests::HistoriaUsuario2Test</scope><name>jugador1</name></member>

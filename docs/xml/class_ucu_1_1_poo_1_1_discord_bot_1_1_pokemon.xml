@@ -147,7 +147,7 @@
         </inbodydescription>
         <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" line="20" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" bodystart="20" bodyend="20"/>
       </memberdef>
-      <memberdef kind="property" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_1aeab4f243ea9b669f97109d32135a1e11" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+      <memberdef kind="property" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_1aeab4f243ea9b669f97109d32135a1e11" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
         <type>string</type>
         <definition>string Ucu.Poo.DiscordBot.Pokemon.Nombre</definition>
         <argsstring></argsstring>
@@ -159,9 +159,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" line="32" column="19" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" bodystart="33" bodyend="36"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" line="32" column="19" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" bodystart="33" bodyend="35"/>
       </memberdef>
-      <memberdef kind="property" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_1a925fa518873db26a120926802549335e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+      <memberdef kind="property" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_1a925fa518873db26a120926802549335e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
         <type>string</type>
         <definition>string Ucu.Poo.DiscordBot.Pokemon.Tipo</definition>
         <argsstring></argsstring>
@@ -173,9 +173,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" line="38" column="19" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" bodystart="39" bodyend="42"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" line="37" column="19" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" bodystart="38" bodyend="40"/>
       </memberdef>
-      <memberdef kind="property" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_1a202c1350acb8c380e43ce4ce1524437f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+      <memberdef kind="property" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_1a202c1350acb8c380e43ce4ce1524437f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
         <type>int</type>
         <definition>int Ucu.Poo.DiscordBot.Pokemon.VidaMax</definition>
         <argsstring></argsstring>
@@ -187,7 +187,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" line="44" column="16" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" bodystart="45" bodyend="48"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" line="42" column="16" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" bodystart="43" bodyend="45"/>
       </memberdef>
       <memberdef kind="property" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_1a9d02730f8a2dbac782ec344f85fefa81" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>int</type>
@@ -201,9 +201,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" line="50" column="16" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" bodystart="51" bodyend="54"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" line="47" column="16" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" bodystart="48" bodyend="51"/>
       </memberdef>
-      <memberdef kind="property" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_1a6c4eccd2584bd9d4c734977aea958cba" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+      <memberdef kind="property" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_1a6c4eccd2584bd9d4c734977aea958cba" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
         <type>int</type>
         <definition>int Ucu.Poo.DiscordBot.Pokemon.Ataque</definition>
         <argsstring></argsstring>
@@ -215,9 +215,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" line="56" column="16" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" bodystart="57" bodyend="60"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" line="53" column="16" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" bodystart="54" bodyend="56"/>
       </memberdef>
-      <memberdef kind="property" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_1ad1fa65c0969ca44e4413f7765a607b76" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+      <memberdef kind="property" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_1ad1fa65c0969ca44e4413f7765a607b76" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
         <type>int</type>
         <definition>int Ucu.Poo.DiscordBot.Pokemon.Defensa</definition>
         <argsstring></argsstring>
@@ -229,7 +229,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" line="62" column="16" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" bodystart="63" bodyend="66"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" line="58" column="16" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" bodystart="59" bodyend="61"/>
       </memberdef>
       <memberdef kind="property" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_1a33dd22193d7687ca062b5a5d35dfe285" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>string</type>
@@ -243,7 +243,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" line="68" column="19" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" bodystart="69" bodyend="72"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" line="63" column="19" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" bodystart="64" bodyend="67"/>
       </memberdef>
       <memberdef kind="property" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_1a2597c6ae764345e9fcc5e1081aca813c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>int</type>
@@ -257,7 +257,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" line="74" column="16" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" bodystart="75" bodyend="78"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" line="69" column="16" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" bodystart="70" bodyend="73"/>
       </memberdef>
       <memberdef kind="property" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_1add5895060fb113d83c6797715dae6718" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>double</type>
@@ -271,7 +271,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" line="90" column="19" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" bodystart="91" bodyend="94"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" line="86" column="19" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" bodystart="87" bodyend="90"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -321,7 +321,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" line="81" column="20" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" bodystart="81" bodyend="87"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" line="76" column="20" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" bodystart="76" bodyend="83"/>
       </memberdef>
       <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_1ab702e2e25cb2cb519273c9ccee3395bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon" kindref="compound">Pokemon</ref></type>
@@ -339,7 +339,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" line="96" column="20" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" bodystart="96" bodyend="100"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" line="92" column="20" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" bodystart="92" bodyend="96"/>
       </memberdef>
       <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_1a87041e01db563ba96046dfd3d5b59f47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -357,7 +357,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" line="102" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" bodystart="102" bodyend="110"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" line="98" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" bodystart="98" bodyend="106"/>
       </memberdef>
       <memberdef kind="function" id="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_1a2514538403b94cb6665a5e5d7029f736" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -375,7 +375,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" line="111" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" bodystart="111" bodyend="137"/>
+        <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" line="107" column="17" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" bodystart="107" bodyend="133"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -383,7 +383,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" line="9" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" bodystart="10" bodyend="138"/>
+    <location file="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" line="9" column="7" bodyfile="C:/Users/Lucas/Desktop/Proyecto/ProyectoPokemon_PII_2024/src/Library/Pokemon.cs" bodystart="10" bodyend="134"/>
     <listofallmembers>
       <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_1ab702e2e25cb2cb519273c9ccee3395bb" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Pokemon</scope><name>AgregarMovimientos</name></member>
       <member refid="class_ucu_1_1_poo_1_1_discord_bot_1_1_pokemon_1a87041e01db563ba96046dfd3d5b59f47" prot="public" virt="non-virtual"><scope>Ucu::Poo::DiscordBot::Pokemon</scope><name>aplicarDañoRecurrente</name></member>
