@@ -8,7 +8,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e804c097-b6aa-4b95-a455-d56cf5311d8b" name="Changes" comment="" />
+    <list default="true" id="e804c097-b6aa-4b95-a455-d56cf5311d8b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_26_2024_4_28_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_26_2024_4_28_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_26_2024_5_02_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_26_2024_5_02_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProyectoPokemon_PII_2024/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProyectoPokemon_PII_2024.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoPokemon_PII_2024.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/LibraryTests/HistoriaUsuario5Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/test/LibraryTests/HistoriaUsuario5Test.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/LibraryTests/HistoriaUsuario6Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/test/LibraryTests/HistoriaUsuario6Test.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,7 +98,7 @@
     ".NET Project.Program.executor": "Run",
     "1f5e09e1-7545-43fd-a5da-0c7d28480865.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "catalogoTest",
+    "git-widget-placeholder": "hdusuario5y6",
     "last_opened_file_path": "C:/Users/agust/Desktop/ProyectoPokemon_PII_2024",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -145,7 +152,6 @@
       <workItem from="1732479878565" duration="2195000" />
       <workItem from="1732570495956" duration="897000" />
       <workItem from="1732644196526" duration="1657000" />
-      <workItem from="1732668612125" duration="2858000" />
     </task>
     <servers />
   </component>
@@ -153,49 +159,41 @@
     <option name="version" value="3" />
   </component>
   <component name="UnitTestsCoverage.Settings">
-    <option name="coveragePercentColumnWidth" value="115" />
+    <option name="coveragePercentColumnWidth" value="116" />
     <option name="sortOrder" value="DESCENDING" />
     <option name="sortedColumn" value="1" />
-    <option name="symbolColumnWidth" value="179" />
+    <option name="symbolColumnWidth" value="226" />
     <coverage-tree-state>
       <expand>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 68% 533/1689" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 69% 519/1683" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 68% 533/1689" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="src 54% 504/1100" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 69% 519/1683" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="src 53% 515/1100" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 68% 533/1689" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="src 54% 504/1100" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Library 55% 488/1084" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 69% 519/1683" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="src 53% 515/1100" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Library 54% 499/1084" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 68% 533/1689" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="src 54% 504/1100" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Library 55% 488/1084" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Ucu.Poo.DiscordBot 55% 488/1084" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 69% 519/1683" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="src 53% 515/1100" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Library 54% 499/1084" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Ucu.Poo.DiscordBot 54% 499/1084" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 68% 533/1689" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="src 54% 504/1100" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Library 55% 488/1084" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Ucu.Poo.DiscordBot 55% 488/1084" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Logica 61% 76/197" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 68% 533/1689" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="src 54% 504/1100" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Library 55% 488/1084" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Ucu.Poo.DiscordBot 55% 488/1084" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Combate 18% 50/61" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 69% 519/1683" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="src 53% 515/1100" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Library 54% 499/1084" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Ucu.Poo.DiscordBot 54% 499/1084" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Combate 0% 61/61" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
       </expand>
       <select />
