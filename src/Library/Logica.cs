@@ -224,6 +224,7 @@ public class Logica
             else
             {
                 interaccion.ImprimirMensaje("Su mochila se encuentra vacia");
+                
                 return false;
             }
         }
@@ -232,7 +233,11 @@ public class Logica
             interaccion.ImprimirMensaje("Error inesperado");
             return false;
         }
+        
+        
     }
+
+    
     
     
     /// <summary>
